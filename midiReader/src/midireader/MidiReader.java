@@ -62,6 +62,6 @@ public class MidiReader {
 
             System.out.println();
         }
-
+System.out.println("Bullshit");
     }
 }
