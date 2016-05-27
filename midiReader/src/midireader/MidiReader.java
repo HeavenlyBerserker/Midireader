@@ -27,7 +27,7 @@ public class MidiReader {
     public static final String[] NOTE_NAMES = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"};
     
     
-    public static void write() {
+    public static void write(ArrayList<float[]> notes) {
     System.out.println("midifile begin ");
 	try
 	{
@@ -43,81 +43,49 @@ public class MidiReader {
 		sm.setMessage(b, 6);
 		MidiEvent me = new MidiEvent(sm,(long)0);
 		t.add(me);
-
 //****  set tempo (meta event)  ****
 		MetaMessage mt = new MetaMessage();
         byte[] bt = {0x02, (byte)0x00, 0x00};
 		mt.setMessage(0x51 ,bt, 3);
 		me = new MidiEvent(mt,(long)0);
 		t.add(me);
-
 //****  set track name (meta event)  ****
 		mt = new MetaMessage();
 		String TrackName = new String("midifile track");
 		mt.setMessage(0x03 ,TrackName.getBytes(), TrackName.length());
 		me = new MidiEvent(mt,(long)0);
 		t.add(me);
-
 //****  set omni on  ****
 		ShortMessage mm = new ShortMessage();
 		mm.setMessage(0xB0, 0x7D,0x00);
 		me = new MidiEvent(mm,(long)0);
 		t.add(me);
-
 //****  set poly on  ****
 		mm = new ShortMessage();
 		mm.setMessage(0xB0, 0x7F,0x00);
 		me = new MidiEvent(mm,(long)0);
 		t.add(me);
-
 //****  set instrument to Piano  ****
 		mm = new ShortMessage();
 		mm.setMessage(0xC0, 0x00, 0x00);
 		me = new MidiEvent(mm,(long)0);
 		t.add(me);
-
-//****  note on - middle C  ****
-		mm = new ShortMessage();
-		mm.setMessage(0x90,0x3C,0x60);
-		me = new MidiEvent(mm,(long)1);
-		t.add(me);
-
-//****  note off - middle C - 120 ticks later  ****
-		mm = new ShortMessage();
-		mm.setMessage(0x80,0x3C,0x40);
-		me = new MidiEvent(mm,(long)121);
-		t.add(me);
                 
-                mm = new ShortMessage();
-		mm.setMessage(0x90,0x40,0x60);
-		me = new MidiEvent(mm,(long)122);
-		t.add(me);
+                for (int i=0; i<notes.size();i++) {
+                    float[] note = notes.get(i);
+                    
+                    //****  note on  ****
+                    mm = new ShortMessage();
+                    mm.setMessage(0x90,(int)note[0],0x60); //0x90, note, 0x60
+                    me = new MidiEvent(mm,(long)note[1]); //time on
+                    t.add(me);
+                    //****  note off  ****
+                    mm = new ShortMessage();
+                    mm.setMessage(0x80,(int)note[0],0x40); //0x80, note, 0x40
+                    me = new MidiEvent(mm,(long)note[2]); //time off
+                    t.add(me);
+                }
                 
-                mm = new ShortMessage();
-		mm.setMessage(0x80,0x40,0x40);
-		me = new MidiEvent(mm,(long)242);
-		t.add(me);
-                
-                mm = new ShortMessage();
-		mm.setMessage(0x90,0x43,0x60);
-		me = new MidiEvent(mm,(long)243);
-		t.add(me);
-                
-                mm = new ShortMessage();
-		mm.setMessage(0x80,0x43,0x40);
-		me = new MidiEvent(mm,(long)363);
-		t.add(me);
-                
-                mm = new ShortMessage();
-		mm.setMessage(0x90,0x3C,0x60);
-		me = new MidiEvent(mm,(long)364);
-		t.add(me);
-                
-                mm = new ShortMessage();
-		mm.setMessage(0x80,0x3C,0x40);
-		me = new MidiEvent(mm,(long)485);
-		t.add(me);
-
 //****  set end of track (meta event) 19 ticks later  ****
 		mt = new MetaMessage();
         byte[] bet = {}; // empty array
@@ -135,6 +103,7 @@ public class MidiReader {
 	} //catch
     System.out.println("midifile end ");
 } //main
+    
     
     public static ArrayList<float[]> readMidi(Sequence sequence) {
         
@@ -168,7 +137,7 @@ public class MidiReader {
                         for (int j=notes.size()-1; j>=0; j--) {
                             if (found == 0 && notes.get(j)[0] == (float)key) {
                                 float notey[] = notes.get(j);
-                                notey[2] = time-notes.get(j)[1];
+                                notey[2] = time;//-notes.get(j)[1];
                                 notes.set(j,notey);
                                 System.out.println(notes.get(j)[0] + " " + notes.get(j)[1] + " " + notes.get(j)[2]);
                                 found = 1;
@@ -195,9 +164,9 @@ public class MidiReader {
     
     public static void main(String[] args) throws Exception {
         
-        write();
         
-        //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("sample.mid")));
+        ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("sample.mid")));
+        write(notes);
         //ArrayList<float[]> rhythm = syncopate(notes);
         //ArrayList<float[]> synco = changeRhythm(notes,rhythm);
     }
