@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package midireader;
 
 /**
@@ -76,12 +71,12 @@ public class MidiReader {
                     
                     //****  note on  ****
                     mm = new ShortMessage();
-                    mm.setMessage(0x90,(int)note[0],0x60); //0x90, note, 0x60
+                    mm.setMessage(NOTE_ON,(int)note[0],0x60); 
                     me = new MidiEvent(mm,(long)note[1]); //time on
                     t.add(me);
                     //****  note off  ****
                     mm = new ShortMessage();
-                    mm.setMessage(0x80,(int)note[0],0x40); //0x80, note, 0x40
+                    mm.setMessage(NOTE_OFF,(int)note[0],0x40);
                     me = new MidiEvent(mm,(long)note[2]); //time off
                     t.add(me);
                 }
@@ -111,26 +106,19 @@ public class MidiReader {
         int trackNumber = 0;
         for (Track track :  sequence.getTracks()) {
             trackNumber++;
-            //System.out.println("Track " + trackNumber + ": size = " + track.size());
-            //System.out.println();
             for (int i=0; i < track.size(); i++) { 
                 MidiEvent event = track.get(i);
-                //System.out.print("@" + event.getTick() + " ");
                 float time = event.getTick();
                 MidiMessage message = event.getMessage();
                 if (message instanceof ShortMessage) {
                     ShortMessage sm = (ShortMessage) message;
-                    //System.out.print("Channel: " + sm.getChannel() + " ");
                     if (sm.getCommand() == NOTE_ON) {
                         int key = sm.getData1();
-                        float notey[] = {(float)key,time,0}; //note, starttime, duration
+                        float notey[] = {(float)key,time,0}; //note, starttime, stoptime
                         notes.add(notey);
-                        //System.out.println(notey[0] + " " + notey[1]);
                         //int octave = (key / 12)-1;
                         //int note = key % 12;
-                        //String noteName = NOTE_NAMES[note];
                         //int velocity = sm.getData2();
-                        //System.out.println("Note on, " + noteName + octave + " key=" + key + " velocity: " + velocity);
                     } else if (sm.getCommand() == NOTE_OFF) {
                         int key = sm.getData1();
                         int found = 0;
@@ -154,10 +142,13 @@ public class MidiReader {
         }
     return notes;
     }
+    
+    //returns some sort of rhythm structure
     public static ArrayList<float[]> syncopate(ArrayList<float[]> notelist) {
         return notelist;
     }
     
+    //applies rhythm structure to notelist and returns modified notelist
     public static ArrayList<float[]> changeRhythm(ArrayList<float[]> notelist, ArrayList<float[]> rhythmlist) {
         return notelist;
     }
