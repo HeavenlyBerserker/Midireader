@@ -20,14 +20,17 @@ public class MidiReader {
     public static final int NOTE_ON = 0x90;
     public static final int NOTE_OFF = 0x80;
     public static final String[] NOTE_NAMES = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"};
-    
+    public static ArrayList differences = new ArrayList();
+    public static int GCD = 0;
+    public static float resolution;
+    public static float tempo;
     
     public static void write(ArrayList<float[]> notes) {
     System.out.println("midifile begin ");
 	try
 	{
 //****  Create a new MIDI sequence with 24 ticks per beat  ****
-		Sequence s = new Sequence(javax.sound.midi.Sequence.PPQ,24);
+		Sequence s = new Sequence(javax.sound.midi.Sequence.PPQ,(int)resolution);
 
 //****  Obtain a MIDI track from the sequence  ****
 		Track t = s.createTrack();
@@ -40,7 +43,7 @@ public class MidiReader {
 		t.add(me);
 //****  set tempo (meta event)  ****
 		MetaMessage mt = new MetaMessage();
-        byte[] bt = {0x02, (byte)0x00, 0x00};
+                byte[] bt = {0x02, (byte)0x00, 0x00};
 		mt.setMessage(0x51 ,bt, 3);
 		me = new MidiEvent(mt,(long)0);
 		t.add(me);
@@ -62,7 +65,7 @@ public class MidiReader {
 		t.add(me);
 //****  set instrument to Piano  ****
 		mm = new ShortMessage();
-		mm.setMessage(0xC0, 0x00, 0x00);
+		mm.setMessage(0xC0, 11, 0x00);
 		me = new MidiEvent(mm,(long)0);
 		t.add(me);
                 
@@ -91,7 +94,7 @@ public class MidiReader {
 //****  write the MIDI sequence to a MIDI file  ****
 		File f = new File("output.mid");
 		MidiSystem.write(s,1,f);
-	} //try
+	} //try //try
 		catch(Exception e)
 	{
 		System.out.println("Exception caught " + e.toString());
@@ -103,12 +106,16 @@ public class MidiReader {
     public static ArrayList<float[]> readMidi(Sequence sequence) {
         
         ArrayList<float[]> notes = new ArrayList();
+        resolution = sequence.getResolution();
+        System.out.println("Resolution = " + resolution);
         int trackNumber = 0;
         for (Track track :  sequence.getTracks()) {
             trackNumber++;
             for (int i=0; i < track.size(); i++) { 
                 MidiEvent event = track.get(i);
                 float time = event.getTick();
+                tempo = time;
+                System.out.println("Tempo = " + tempo);
                 MidiMessage message = event.getMessage();
                 if (message instanceof ShortMessage) {
                     ShortMessage sm = (ShortMessage) message;
@@ -127,7 +134,7 @@ public class MidiReader {
                                 float notey[] = notes.get(j);
                                 notey[2] = time;//-notes.get(j)[1];
                                 notes.set(j,notey);
-                                System.out.println(notes.get(j)[0] + " " + notes.get(j)[1] + " " + notes.get(j)[2]);
+                                //System.out.println(notes.get(j)[0] + " " + notes.get(j)[1] + " " + notes.get(j)[2]);
                                 found = 1;
                             }
                         }
@@ -140,23 +147,139 @@ public class MidiReader {
             }
             //System.out.println();
         }
+        
     return notes;
     }
     
+    
+    /*Function: GCD and sorting---------------------------------------------------------
+    Computes GCDs and sorts notes by time
+    Input: List of notes
+    Output: Sorted list, GCD by global variable
+    */
+    public static ArrayList<float[]> gcds(ArrayList<float[]> notes) {
+        /* Calculating the tempos of each note in the song
+        Change this section if it is ------expressive performance----- we are dealing with.
+        */
+        double dmin = Double.POSITIVE_INFINITY;
+        for(int i=0; i < notes.size(); i++) {
+            differences.add(notes.get(i)[2] - notes.get(i)[1]);
+            //System.out.println(differences.get(i));
+            if(i == 0){
+                dmin = (int)(float)differences.get(i);
+            }
+        }
+        int min = (int)dmin;
+        for(int i = min; i > 0; i--) {
+            boolean gcd = true;
+            for(int j=0; j < notes.size(); j++) {
+                if((int)(float)differences.get(j)%i == 0){}
+                else{
+                    gcd = false;
+                }
+            }
+            if(gcd){
+                GCD = i;
+                break;
+            }
+        }
+        System.out.println(GCD);
+        
+        /*Sorting notes by starting time
+        
+        */
+        ArrayList<float[]> sNotes = new ArrayList();
+        int si = notes.size();
+        for(int i=0; i < si; i++) {
+            dmin = Double.POSITIVE_INFINITY;
+            int minind = 0;
+             for(int j=0; j < notes.size(); j++) {
+                if((double)notes.get(j)[1] < dmin){
+                    dmin = (double)notes.get(j)[1];
+                    minind = j;
+                }
+            }
+            float[] n = {(float)notes.get(minind)[0], (float)notes.get(minind)[1], (float)notes.get(minind)[2]};
+            sNotes.add(n);
+            notes.remove(minind);
+            //System.out.println(sNotes.get(i)[0] + " " + sNotes.get(i)[1] + " " + sNotes.get(i)[2]);
+        }
+        return sNotes;
+    }
+    
+    public static String rhythIO(ArrayList<float[]> notesrest) {
+        String io = "";
+        for(int i=0; i < notesrest.size(); i++) {
+            if(notesrest.get(i)[0] == -1){
+                for(int j=0; j < notesrest.get(i)[1]; j++){
+                    io += "O";
+                }
+            }
+            else{
+                io += "I";
+                for(int j=0; j < notesrest.get(i)[1]-1; j++){
+                    io += "O";
+                }
+            }
+        }
+        return io;
+    }
+    
+    public static ArrayList<float[]> silences(ArrayList<float[]> notes) {
+        // Note silences is an array list of format = {note number, unit duration}
+        // -1 is the note is a rest
+        // unit duration is note_duration/GCD
+        // *Does not work with polyphonic melodies
+        ArrayList<float[]> notessilences = new ArrayList();
+        int count = 0;
+        if(notes.get(0)[1] != 0){
+            float[] s = {-1, (int)notes.get(0)[1]/GCD};
+            notessilences.add(s);
+            System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
+        }
+        for(int i=0; i < notes.size()-1; i++) {
+            if(notes.get(i)[2] < notes.get(i+1)[1]){
+                float[] s = {(int)notes.get(i)[0], ((int)notes.get(i)[2]-(int)notes.get(i)[1])/GCD};
+                notessilences.add(s);
+                System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
+                float[] s2 = {-1, ((int)notes.get(i+1)[1]-notes.get(i)[2])/GCD};
+                notessilences.add(s2);
+                System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
+            }
+            // Does not work with polyphonic melodies.
+            else if(notes.get(i)[2] > notes.get(i+1)[1]){
+                System.out.println("Error: Melody is not monophonic.");
+                break;
+            }
+            else{
+                float[] s = {(int)notes.get(i)[0], ((int)notes.get(i)[2]-(int)notes.get(i)[1])/GCD};
+                notessilences.add(s);
+                System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
+            }
+        }
+        return notessilences;
+    }
+    
     //returns some sort of rhythm structure
-    public static ArrayList<float[]> syncopate(ArrayList<float[]> notelist) {
-        return notelist;
+    public static ArrayList<float[]> syncopate(ArrayList<float[]> notes) {
+        return notes;
     }
     
     //applies rhythm structure to notelist and returns modified notelist
-    public static ArrayList<float[]> changeRhythm(ArrayList<float[]> notelist, ArrayList<float[]> rhythmlist) {
-        return notelist;
+    public static ArrayList<float[]> changeRhythm(ArrayList<float[]> notes, ArrayList<float[]> rhythmlist) {
+        return notes;
     }
     
     public static void main(String[] args) throws Exception {
         
-        
-        ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("sample.mid")));
+        String pattern;
+        ArrayList<float[]> notesrests = new ArrayList();
+        ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("Hello.mid")));
+        notes = gcds(notes);
+        //System.out.println(MidiSystem.getSequence(new File("sample.mid")));
+        notesrests = silences(notes);
+        pattern = rhythIO(notesrests);
+        System.out.println(pattern);
         write(notes);
         //ArrayList<float[]> rhythm = syncopate(notes);
         //ArrayList<float[]> synco = changeRhythm(notes,rhythm);
