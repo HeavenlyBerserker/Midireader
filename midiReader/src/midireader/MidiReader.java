@@ -43,7 +43,7 @@ public class MidiReader {
 		t.add(me);
 //****  set tempo (meta event)  ****
 		MetaMessage mt = new MetaMessage();
-                byte[] bt = {0x02, (byte)0x00, 0x00};
+                byte[] bt = {0x06, (byte)0x00, 0x00};
 		mt.setMessage(0x51 ,bt, 3);
 		me = new MidiEvent(mt,(long)0);
 		t.add(me);
@@ -102,7 +102,11 @@ public class MidiReader {
     System.out.println("midifile end ");
 } //main
     
-    
+    /*Function: Read Midi---------------------------------------------------------
+    Reads a midi file and returns an list of values about the notes
+    Input: Midi sequence
+    Output: List of notes (note, onset, offset)
+    */
     public static ArrayList<float[]> readMidi(Sequence sequence) {
         
         ArrayList<float[]> notes = new ArrayList();
@@ -114,8 +118,6 @@ public class MidiReader {
             for (int i=0; i < track.size(); i++) { 
                 MidiEvent event = track.get(i);
                 float time = event.getTick();
-                tempo = time;
-                System.out.println("Tempo = " + tempo);
                 MidiMessage message = event.getMessage();
                 if (message instanceof ShortMessage) {
                     ShortMessage sm = (ShortMessage) message;
@@ -158,7 +160,7 @@ public class MidiReader {
     Output: Sorted list, GCD by global variable
     */
     public static ArrayList<float[]> gcds(ArrayList<float[]> notes) {
-        /* Calculating the tempos of each note in the song
+        /* Calculating the lengths of each note in the song
         Change this section if it is ------expressive performance----- we are dealing with.
         */
         double dmin = Double.POSITIVE_INFINITY;
@@ -224,7 +226,7 @@ public class MidiReader {
         }
         return io;
     }
-    
+        
     public static ArrayList<float[]> silences(ArrayList<float[]> notes) {
         // Note silences is an array list of format = {note number, unit duration}
         // -1 is the note is a rest
@@ -260,14 +262,32 @@ public class MidiReader {
         return notessilences;
     }
     
-    //returns some sort of rhythm structure
-    public static ArrayList<float[]> syncopate(ArrayList<float[]> notes) {
-        return notes;
-    }
-    
-    //applies rhythm structure to notelist and returns modified notelist
-    public static ArrayList<float[]> changeRhythm(ArrayList<float[]> notes, ArrayList<float[]> rhythmlist) {
-        return notes;
+    /*Function: Change Rhythm---------------------------------------------------------
+    Combines a list of notes and a rhythmic sequence to produce an arraylist of notes with desired rhythm
+    Input: List of notes, rhythm string in format "IOOIOIO" where 'I' denotes the onset of a note
+    Output: List of notes with new rhythm
+    */
+    public static ArrayList<float[]> changeRhythm(ArrayList<float[]> notes, String rhythmlist) {
+        ArrayList<float[]> notes2 = new ArrayList();
+        int j=0;
+        float currtime = 0;
+        float[] currnote = notes.get(j);
+        currnote[1] = currtime;
+        for (int i=0; i<rhythmlist.length(); i++) {
+            if (notes.size()>j) {
+                if (rhythmlist.charAt(i) == 'I') {
+                    currnote[2] = currtime;
+                    notes2.add(currnote);
+                    currnote = notes.get(j);
+                    currnote[1] = currtime;
+                    j++;
+                }
+            }
+            currtime += GCD;
+        }
+        currnote[2] = currtime;
+        notes2.add(currnote);
+        return notes2;
     }
     
     public static void main(String[] args) throws Exception {
@@ -280,6 +300,11 @@ public class MidiReader {
         //System.out.println(MidiSystem.getSequence(new File("sample.mid")));
         notesrests = silences(notes);
         pattern = rhythIO(notesrests);
+        String newpattern = "IOOOOOIOIIOOIOIOOOIOIOOOIOIOOOIOIIOOOIOIOOOOOOOOOIOIOIOOIOIIOOIOIOOOIOIIOOOIOIOOOIOIOOOIOIOOOOOOOOOIIOIOOOIOIIOOIOIOOOIOIOOOIOIOOOIOIIOOIOIOOOOOOOOOIOIOOOIOIIOOIOOOOOIOOOOOIOIOOOIOIIOOIOIIIIIIIIIOOOOOOOOOO";
+        //this is just the initial rhythm reversed and with some I's added randomly
+        notes = changeRhythm(notes,newpattern);
+        
+        
         System.out.println(pattern);
         
         write(notes);
