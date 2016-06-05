@@ -273,6 +273,8 @@ public class MidiReader {
     public static void main(String[] args) throws Exception {
         
         String pattern;
+        String filename = "canon_tsroot.txt";
+        int quarter = 4;
         ArrayList<float[]> notesrests = new ArrayList();
         ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("Hello.mid")));
         notes = gcds(notes);
@@ -281,6 +283,7 @@ public class MidiReader {
         pattern = rhythIO(notesrests);
         System.out.println(pattern);
         write(notes);
+        ChordAnalyzer.chordNotes(notes, filename, quarter);
         //ArrayList<float[]> rhythm = syncopate(notes);
         //ArrayList<float[]> synco = changeRhythm(notes,rhythm);
     }
