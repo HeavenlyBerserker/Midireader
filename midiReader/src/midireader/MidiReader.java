@@ -272,9 +272,8 @@ public class MidiReader {
     
     public static void main(String[] args) throws Exception {
         
+        //Melody processing
         String pattern;
-        String filename = "canon_tsroot.txt";
-        int quarter = 4;
         ArrayList<float[]> notesrests = new ArrayList();
         ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("Hello.mid")));
         notes = gcds(notes);
@@ -282,9 +281,17 @@ public class MidiReader {
         notesrests = silences(notes);
         pattern = rhythIO(notesrests);
         System.out.println(pattern);
+        
         write(notes);
-        ChordAnalyzer.chordNotes(notes, filename, quarter);
-        //ArrayList<float[]> rhythm = syncopate(notes);
-        //ArrayList<float[]> synco = changeRhythm(notes,rhythm);
+        
+        //Chord processing
+        //Tested and approved - HX
+        String filename = "canon_tsroot.txt";
+        ArrayList<float[]> chordList = new ArrayList(); //ChordList is of the following format = {note1, note2, note3, duration as quarter(4)/eight(8)/sixteenth(16)/etc. note};
+                                                        //Notice that these don't specify onsets and offsets.
+        ChordAnalyzer.chordNotes(chordList, filename);
+        
+        //ChordList is the main output. Just read that and you have most information.
+        //Notice that chordList doesn't have measure counts like the printed output
     }
 }
