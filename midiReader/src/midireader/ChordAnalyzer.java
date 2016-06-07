@@ -181,36 +181,31 @@ public class ChordAnalyzer {
     
     public static ArrayList<float[]> oompah(ArrayList<float[]> notes, int GCD){
         ArrayList<float[]> notes2 = new ArrayList();
-        //int j=0;
+
         float currtimeGCD = 0;
         float currtimeM = 0;
         float[] currnote = notes.get(0);
-        //float[] currnote2 = {0,0,0};
-        
-        //currnote2[1] = currtimeGCD;
         
         for (int i=0; i<notes.size(); i++) {
             if (notes.get(i)[0] != -1){
                 currnote = notes.get(i);
             }
-            if (currtimeM % 16 == 0) {
-                notes2.add(new float[]{currnote[0],currtimeGCD,currtimeGCD+GCD});
-                notes2.add(new float[]{currnote[0],currtimeGCD+GCD*4,currtimeGCD+GCD*8});
-                notes2.add(new float[]{currnote[1],currtimeGCD+GCD*4,currtimeGCD+GCD*8});
-                notes2.add(new float[]{currnote[2],currtimeGCD+GCD*4,currtimeGCD+GCD*8});
-                if (currnote[3] <16 && i < notes.size()-1 && notes.get(i+1)[0] != -1) {
+            if (currtimeM %16 == 0) {
+                notes2.add(new float[]{currnote[0],currtimeGCD,currtimeGCD+GCD*4});
+                notes2.add(new float[]{currnote[0]+12,currtimeGCD+GCD*4,currtimeGCD+GCD*8});
+                notes2.add(new float[]{currnote[1]+12,currtimeGCD+GCD*4,currtimeGCD+GCD*8});
+                notes2.add(new float[]{currnote[2]+12,currtimeGCD+GCD*4,currtimeGCD+GCD*8});
+                if (currnote[3] > 0 && i < notes.size()-1 && notes.get(i+1)[0] != -1) {
                     currnote = notes.get(i+1);
                 }
                 
-                notes2.add(new float[]{currnote[0],currtimeGCD+GCD*8,currtimeGCD+GCD*12});
-                notes2.add(new float[]{currnote[0],currtimeGCD+GCD*12,currtimeGCD+GCD*16});
-                notes2.add(new float[]{currnote[1],currtimeGCD+GCD*12,currtimeGCD+GCD*16});
-                notes2.add(new float[]{currnote[2],currtimeGCD+GCD*12,currtimeGCD+GCD*16});
-                
-                System.out.println(i);
+                System.out.println(i + " " + currtimeM);
             }
             currtimeM += 64/currnote[3];
-            currtimeGCD += GCD*64/currnote[3];
+            if (currtimeM > 64) {
+                currtimeM -= 64;
+            }
+            currtimeGCD += GCD*32/currnote[3];
         }
         
         return notes2;

@@ -65,7 +65,7 @@ public class MidiReader {
 		t.add(me);
 //****  set instrument to Piano  ****
 		mm = new ShortMessage();
-		mm.setMessage(0xC0, 11, 0x00);
+		mm.setMessage(0xC6, 15, 0x05);
 		me = new MidiEvent(mm,(long)0);
 		t.add(me);
                 
