@@ -183,27 +183,19 @@ public class ChordAnalyzer {
         ArrayList<float[]> notes2 = new ArrayList();
 
         float currtimeGCD = 0;
-        float currtimeM = 0;
         float[] currnote = notes.get(0);
-        
+        int j=0;
         for (int i=0; i<notes.size(); i++) {
             if (notes.get(i)[0] != -1){
                 currnote = notes.get(i);
             }
-            if (currtimeM %16 == 0) {
-                notes2.add(new float[]{currnote[0],currtimeGCD,currtimeGCD+GCD*4});
-                notes2.add(new float[]{currnote[0]+12,currtimeGCD+GCD*4,currtimeGCD+GCD*8});
-                notes2.add(new float[]{currnote[1]+12,currtimeGCD+GCD*4,currtimeGCD+GCD*8});
-                notes2.add(new float[]{currnote[2]+12,currtimeGCD+GCD*4,currtimeGCD+GCD*8});
-                if (currnote[3] > 0 && i < notes.size()-1 && notes.get(i+1)[0] != -1) {
-                    currnote = notes.get(i+1);
+            if (currtimeGCD/GCD % 8 == 0) {
+                for (j=0; j<GCD*4; j+=GCD*currnote[3]) {
+                    notes2.add(new float[]{currnote[0],currtimeGCD+8*j,currtimeGCD+GCD*4+8*j});
+                    notes2.add(new float[]{currnote[0]+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
+                    notes2.add(new float[]{currnote[1]+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
+                    notes2.add(new float[]{currnote[2]+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
                 }
-                
-                System.out.println(i + " " + currtimeM);
-            }
-            currtimeM += 64/currnote[3];
-            if (currtimeM > 64) {
-                currtimeM -= 64;
             }
             currtimeGCD += GCD*32/currnote[3];
         }
