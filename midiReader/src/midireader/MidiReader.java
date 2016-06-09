@@ -267,10 +267,10 @@ public class MidiReader {
     Input: List of notes, rhythm string in format "IOOIOIO" where 'I' denotes the onset of a note
     Output: List of notes with new rhythm
     */
-    public static ArrayList<float[]> changeRhythm(ArrayList<float[]> notes, String rhythmlist) {
+    public static ArrayList<float[]> changeRhythm(ArrayList<float[]> notes, String rhythmlist, float timestart) {
         ArrayList<float[]> notes2 = new ArrayList();
         int j=0;
-        float currtime = 0;
+        float currtime = timestart;
         float[] currnote = notes.get(j);
         currnote[1] = currtime;
         for (int i=0; i<rhythmlist.length(); i++) {
@@ -290,6 +290,35 @@ public class MidiReader {
         return notes2;
     }
     
+    //returns a single half-measure of the song
+    public static ArrayList<float[]> getHalfMeasure(ArrayList<float[]> notes, int measureNumber) {
+        ArrayList<float[]> output = new ArrayList();
+        float timestart = measureNumber*GCD*16;
+        float timestop = (measureNumber+1)*GCD*16;
+        for (int i=0; i<notes.size(); i++) {
+            if (notes.get(i)[1] > timestart && notes.get(i)[1] <timestop) {
+                output.add(notes.get(i));
+            }
+        }
+        return output;
+    }
+    
+    //changes each half-measure of the song to a new rhythm and returns entire song
+    public static ArrayList<float[]> changeSong(ArrayList<float[]> notes) {
+        ArrayList<float[]> output = new ArrayList();
+        for (int i=0; i<measures(notes); i++) {
+            System.out.println(i + " "+notes.size() + " " + notes.get(0)[1]);
+            //pick new rhythm from data (getHalfMeasure(notes,i);
+            output.addAll(changeRhythm(getHalfMeasure(notes,i),"IOOOOOOOOOOOOOOO",(float)GCD*i*16));
+        }
+        return output;
+    }
+    
+    //returns # of measures in song
+    public static int measures(ArrayList<float[]> notes) {
+        return (int)(notes.get(notes.size()-1)[2])/(GCD*16);
+    }
+    
     public static void main(String[] args) throws Exception {
         
         //Melody processing
@@ -300,24 +329,23 @@ public class MidiReader {
         //System.out.println(MidiSystem.getSequence(new File("sample.mid")));
         notesrests = silences(notes);
         pattern = rhythIO(notesrests);
-        String newpattern = "IOOOOOIOIIOOIOIOOOIOIOOOIOIOOOIOIIOOOIOIOOOOOOOOOIOIOIOOIOIIOOIOIOOOIOIIOOOIOIOOOIOIOOOIOIOOOOOOOOOIIOIOOOIOIIOOIOIOOOIOIOOOIOIOOOIOIIOOIOIOOOOOOOOOIOIOOOIOIIOOIOOOOOIOOOOOIOIOOOIOIIOOIOIIIIIIIIIOOOOOOOOOO";
         //this is just the initial rhythm reversed and with some I's added randomly
-        notes = changeRhythm(notes,newpattern);
+        notes = changeSong(notes);
         
         
-        System.out.println(pattern);
+        //System.out.println(pattern);
         
         write(notes);
         
         //Chord processing
         //Tested and approved - HX
-        String filename = "LVBSonata3_tsroot.txt";
-        ArrayList<float[]> chordList = new ArrayList(); //ChordList is of the following format = {note1, note2, note3, duration as quarter(4)/eight(8)/sixteenth(16)/etc. note};
+        //String filename = "LVBSonata3_tsroot.txt";
+        //ArrayList<float[]> chordList = new ArrayList(); //ChordList is of the following format = {note1, note2, note3, duration as quarter(4)/eight(8)/sixteenth(16)/etc. note};
                                                         //Notice that these don't specify onsets and offsets.
-        chordList = ChordAnalyzer.chordNotes(chordList, filename);
-        ArrayList<float[]> chordNotes2 = ChordAnalyzer.oompah(chordList, GCD);
-        chordNotes2.addAll(notes);
-        write(chordNotes2);
+        //chordList = ChordAnalyzer.chordNotes(chordList, filename);
+        //ArrayList<float[]> chordNotes2 = ChordAnalyzer.oompah(chordList, GCD);
+        //chordNotes2.addAll(notes);
+        //write(chordNotes2);
         
         //ChordList is the main output. Just read that and you have most information.
         //Notice that chordList doesn't have measure counts like the printed output
