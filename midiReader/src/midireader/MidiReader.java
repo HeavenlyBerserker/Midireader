@@ -214,13 +214,13 @@ public class MidiReader {
         for(int i=0; i < notesrest.size(); i++) {
             if(notesrest.get(i)[0] == -1){
                 for(int j=0; j < notesrest.get(i)[1]; j++){
-                    io += "O";
+                    io += ".";
                 }
             }
             else{
                 io += "I";
                 for(int j=0; j < notesrest.get(i)[1]-1; j++){
-                    io += "O";
+                    io += ".";
                 }
             }
         }
@@ -290,7 +290,7 @@ public class MidiReader {
         return notes2;
     }
     
-    //returns a single half-measure of the song
+    //returns a single half-measure of the song's notes in ArrayList format
     public static ArrayList<float[]> getHalfMeasure(ArrayList<float[]> notes, int measureNumber) {
         ArrayList<float[]> output = new ArrayList();
         float timestart = measureNumber*GCD*16;
@@ -303,20 +303,47 @@ public class MidiReader {
         return output;
     }
     
-    //changes each half-measure of the song to a new rhythm and returns entire song
-    public static ArrayList<float[]> changeSong(ArrayList<float[]> notes) {
+    //changes each half-measure of the song to a new rhythm defined by the list of rules and returns entire song
+    public static ArrayList<float[]> changeSong(ArrayList<float[]> notes, ArrayList<String> pattern, ArrayList<String> rules) {
         ArrayList<float[]> output = new ArrayList();
+        String newSequence;
+        System.out.println("");
         for (int i=0; i<measures(notes); i++) {
-            System.out.println(i + " "+notes.size() + " " + notes.get(0)[1]);
-            //pick new rhythm from data (getHalfMeasure(notes,i);
-            output.addAll(changeRhythm(getHalfMeasure(notes,i),"IOOOOOOOOOOOOOOO",(float)GCD*i*16));
+            newSequence = pattern.get(i);
+            for (int j=0; j<rules.size(); j++) {
+                 if (newSequence.equals((rules.get(j)).substring(0,16))) {
+                     newSequence = rules.get(j).substring(17,33);
+                }
+            }
+            output.addAll(changeRhythm(getHalfMeasure(notes,i),newSequence,(float)GCD*i*16));
+            System.out.println(newSequence);
         }
         return output;
     }
     
     //returns # of measures in song
     public static int measures(ArrayList<float[]> notes) {
-        return (int)(notes.get(notes.size()-1)[2])/(GCD*16);
+        return (int)((notes.get(notes.size()-1)[2])/(GCD*16));
+    }
+    
+    //returns arraylist of pattern strings, each a half measure of the song
+    public static ArrayList<String> getPatterns(String pattern) {
+        ArrayList<String> output = new ArrayList();
+        String thisSeq;
+        for (int i=0; i<pattern.length(); i+= 16) {
+            thisSeq = pattern.substring(i,i+16);
+            output.add(thisSeq);
+            System.out.println(thisSeq);
+        }
+        return output;
+    }
+    
+    //creates a set of rules to be applied to the song in changeSong. Right now just handmade rules.
+    public static ArrayList<String> makeRules(ArrayList<String> patterns) {
+        ArrayList<String> rules = new ArrayList();
+        //rules.add("I.I...I.I...I.I. .I.I...I.I...I.I");
+        //rules.add("..I.I..II.I...I. .II....I.I...I.I");
+        return rules;
     }
     
     public static void main(String[] args) throws Exception {
@@ -330,13 +357,13 @@ public class MidiReader {
         notesrests = silences(notes);
         pattern = rhythIO(notesrests);
         //this is just the initial rhythm reversed and with some I's added randomly
-        notes = changeSong(notes);
+
+        ArrayList<String> measurePatterns = getPatterns(pattern);
         
-        
+        ArrayList<String> rules = makeRules(measurePatterns);
         //System.out.println(pattern);
-        
+        notes = changeSong(notes,measurePatterns,rules);
         write(notes);
-        
         //Chord processing
         //Tested and approved - HX
         //String filename = "LVBSonata3_tsroot.txt";
