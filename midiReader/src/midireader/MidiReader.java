@@ -315,8 +315,8 @@ public class MidiReader {
         ArrayList<float[]> chordList = new ArrayList(); //ChordList is of the following format = {note1, note2, note3, duration as quarter(4)/eight(8)/sixteenth(16)/etc. note};
                                                         //Notice that these don't specify onsets and offsets.
         chordList = ChordAnalyzer.chordNotes(chordList, filename);
-        ArrayList<float[]> chordNotes2 = ChordAnalyzer.oompah(chordList, GCD);
-        write(chordNotes2);
+        //ArrayList<float[]> chordNotes2 = ChordAnalyzer.oompah(chordList, GCD);
+        //write(chordNotes2);
         
         //ChordList is the main output. Just read that and you have most information.
         //Notice that chordList doesn't have measure counts like the printed output
