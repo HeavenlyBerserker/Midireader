@@ -264,7 +264,7 @@ public class MidiReader {
     
     /*Function: Change Rhythm---------------------------------------------------------
     Combines a list of notes and a rhythmic sequence to produce an arraylist of notes with desired rhythm
-    Input: List of notes, rhythm string in format "IOOIOIO" where 'I' denotes the onset of a note
+    Input: List of notes in a half measure, rhythm string in format "IOOIOIO" where 'I' denotes the onset of a note, start time in ticks
     Output: List of notes with new rhythm
     */
     public static ArrayList<float[]> changeRhythm(ArrayList<float[]> notes, String rhythmlist, float timestart) {
@@ -296,7 +296,7 @@ public class MidiReader {
         float timestart = measureNumber*GCD*16;
         float timestop = (measureNumber+1)*GCD*16;
         for (int i=0; i<notes.size(); i++) {
-            if (notes.get(i)[1] > timestart && notes.get(i)[1] <timestop) {
+            if (notes.get(i)[1] >= timestart && notes.get(i)[1] <=timestop) {
                 output.add(notes.get(i));
             }
         }
@@ -323,7 +323,7 @@ public class MidiReader {
     
     //returns # of measures in song
     public static int measures(ArrayList<float[]> notes) {
-        return (int)((notes.get(notes.size()-1)[2])/(GCD*16));
+        return (int)((notes.get(notes.size()-1)[2]+GCD)/(GCD*16));
     }
     
     //returns arraylist of pattern strings, each a half measure of the song
@@ -341,8 +341,8 @@ public class MidiReader {
     //creates a set of rules to be applied to the song in changeSong. Right now just handmade rules.
     public static ArrayList<String> makeRules(ArrayList<String> patterns) {
         ArrayList<String> rules = new ArrayList();
-        //rules.add("I.I...I.I...I.I. .I.I...I.I...I.I");
-        //rules.add("..I.I..II.I...I. .II....I.I...I.I");
+        rules.add("I.I...I.I...I.I. .II....II....I.I");
+        rules.add("..I.I..II.I...I. .IIIIII.........");
         return rules;
     }
     
