@@ -282,19 +282,31 @@ public class ChordAnalyzer {
                             if(notes.size() == 3){
                                 float[] arr3 = {findNums2(line, is),notes.get(0)[0],notes.get(1)[0], notes.get(2)[0]};
                                 chords.add(arr3);
-                                System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0]);
+                                ///System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0]);
                             }
                             else if(notes.size() == 4){
                                 float[] arr3 = {findNums2(line, is),notes.get(0)[0],notes.get(1)[0], notes.get(2)[0], notes.get(3)[0]};
                                 chords.add(arr3);
-                                System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0] + " " + notes.get(3)[0]);
+                                ///System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0] + " " + notes.get(3)[0]);
                             }
                         }
                     }
                     else if(rest == 0){
-                            System.out.println(findNums2(line, is) + " .");
-                            float[] arr3 = {findNums2(line, is),-1};
-                            chords.add(arr3);
+                            if(chords.size() >= 1){
+                                float[] arr3 = chords.get(chords.size()-1);
+                                chords.add(arr3);
+                                if(chords.get(chords.size()-1).length == 4){
+                                    ///System.out.println( chords.get(chords.size()-1)[0] + " " + chords.get(chords.size()-1)[1] + " "+ chords.get(chords.size()-1)[2] + " "+ chords.get(chords.size()-1)[3] + " ");
+                                }
+                                else if(chords.get(chords.size()-1).length == 5){
+                                    ///System.out.println( chords.get(chords.size()-1)[0] + " "+ chords.get(chords.size()-1)[1] + " "+ chords.get(chords.size()-1)[2] + " "+ chords.get(chords.size()-1)[3] + " "+ chords.get(chords.size()-1)[4] + " ");
+                                }
+                            }
+                            else{
+                                float[] arr3 = {findNums2(line, is),-1};
+                                chords.add(arr3);
+                                ///System.out.println(findNums2(line, is) + " .");
+                            }
                     }
                 }
                 
@@ -428,36 +440,23 @@ public class ChordAnalyzer {
     
     public static ArrayList<float[]> oompah(ArrayList<float[]> notes, int GCD){
         ArrayList<float[]> notes2 = new ArrayList();
-        //int j=0;
+
         float currtimeGCD = 0;
-        float currtimeM = 0;
         float[] currnote = notes.get(0);
-        //float[] currnote2 = {0,0,0};
-        
-        //currnote2[1] = currtimeGCD;
-        
+        int j=0;
         for (int i=0; i<notes.size(); i++) {
             if (notes.get(i)[0] != -1){
                 currnote = notes.get(i);
             }
-            if (currtimeM % 16 == 0) {
-                notes2.add(new float[]{currnote[0],currtimeGCD,currtimeGCD+GCD});
-                notes2.add(new float[]{currnote[0],currtimeGCD+GCD*4,currtimeGCD+GCD*8});
-                notes2.add(new float[]{currnote[1],currtimeGCD+GCD*4,currtimeGCD+GCD*8});
-                notes2.add(new float[]{currnote[2],currtimeGCD+GCD*4,currtimeGCD+GCD*8});
-                if (currnote[3] <16 && i < notes.size()-1 && notes.get(i+1)[0] != -1) {
-                    currnote = notes.get(i+1);
+            if (currtimeGCD/GCD % 8 == 0) {
+                for (j=0; j<GCD*4; j+=GCD*currnote[3]) {
+                    notes2.add(new float[]{currnote[0],currtimeGCD+8*j,currtimeGCD+GCD*4+8*j});
+                    notes2.add(new float[]{currnote[0]+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
+                    notes2.add(new float[]{currnote[1]+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
+                    notes2.add(new float[]{currnote[2]+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
                 }
-                
-                notes2.add(new float[]{currnote[0],currtimeGCD+GCD*8,currtimeGCD+GCD*12});
-                notes2.add(new float[]{currnote[0],currtimeGCD+GCD*12,currtimeGCD+GCD*16});
-                notes2.add(new float[]{currnote[1],currtimeGCD+GCD*12,currtimeGCD+GCD*16});
-                notes2.add(new float[]{currnote[2],currtimeGCD+GCD*12,currtimeGCD+GCD*16});
-                
-                System.out.println(i);
             }
-            currtimeM += 64/currnote[3];
-            currtimeGCD += GCD*64/currnote[3];
+            currtimeGCD += GCD*32/currnote[3];
         }
         
         return notes2;
