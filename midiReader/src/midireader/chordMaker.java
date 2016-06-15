@@ -37,9 +37,9 @@ public class chordMaker {
     public static ArrayList<float[]> print(ArrayList<float[]> notes){
         for(int i = 0; i < notes.size(); i++){
             for(int j = 0; j < notes.get(i).length; j++){
-                System.out.print((int)notes.get(i)[j] + " ");
+                //System.out.print((int)notes.get(i)[j] + " ");
             }
-            System.out.println();
+            //System.out.println();
         }
         return notes;
     }
@@ -60,7 +60,7 @@ public class chordMaker {
     
     public static ArrayList<float[]> chordBD(ArrayList<float[]> notes, float ts, float speed){
         print(notes);
-        System.out.println("Measure 1");
+        //System.out.println("Measure 1");
         float modTime = 0, mTime = 0, realTime = 0, difTime = 0, onTime = 0, offTime = 0;
         int measure = 2, beat = 0;
         ArrayList<float[]> currChord = new ArrayList();
@@ -74,12 +74,12 @@ public class chordMaker {
                 offTime = (difTime + (float).25)*speed+speed/4;
                 modTime = modTime - (float).25;
                 if(beat == 0){
-                    System.out.print("(" +  belowMid(notes.get(i)[1]) + ") " + onTime + " " + offTime);
+                    //System.out.print("(" +  belowMid(notes.get(i)[1]) + ") " + onTime + " " + offTime);
                     float[] arr = {belowMid(notes.get(i)[1]), onTime, offTime};
                     chordsWrite.add(arr);
                 }
                 else if(beat == 1 || beat == 3){
-                    System.out.print("(" + belowMid(notes.get(i)[1]) + " " + belowMid(notes.get(i)[2]) + " " + belowMid(notes.get(i)[3]) + ") "  + onTime + " " + offTime);
+                    //System.out.print("(" + belowMid(notes.get(i)[1]) + " " + belowMid(notes.get(i)[2]) + " " + belowMid(notes.get(i)[3]) + ") "  + onTime + " " + offTime);
                     float[] arr = {closestMid(notes.get(i)[1]), onTime, offTime};
                     float[] arr2 = {closestMid(notes.get(i)[2]), onTime, offTime};
                     float[] arr3 = {closestMid(notes.get(i)[3]), onTime, offTime};
@@ -93,18 +93,18 @@ public class chordMaker {
                     }
                 }
                 else if(beat == 2){
-                    System.out.print("(" + belowMid(notes.get(i)[1]) + ") " + onTime + " " + offTime);
+                    //System.out.print("(" + belowMid(notes.get(i)[1]) + ") " + onTime + " " + offTime);
                     float[] arr = {belowMid(notes.get(i)[3]), onTime, offTime};
                     chordsWrite.add(arr);
                 }
                 beat++;
                 if(beat >=4)beat=0;
-                System.out.println();
+                //System.out.println();
             }
             realTime += 1/notes.get(i)[0];
             if(mTime >= ts){
                 
-                System.out.println("Measure " + measure);
+                //System.out.println("Measure " + measure);
                 mTime -= 1;
                 measure++;
             }

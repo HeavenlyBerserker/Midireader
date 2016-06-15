@@ -49,11 +49,11 @@ public class ChordAnalyzer {
     //Function assumes every unit in a measure has the same duration
     
     public static ArrayList<float[]> readFile(ArrayList<float[]> chords, String filename){
-        System.out.println("--------------------------------------------------------------------------------------------------------------------------------------\n"
+        /*System.out.println("--------------------------------------------------------------------------------------------------------------------------------------\n"
                 + "Chords with measure count starts here\n"
                 + "--------------------------------------------------------------------------------------------------------------------------------------\n"
                 + "format = {note1, note2, note3, duration as quarter(4)/eight(8)/sixteenth(16)/etc. note}\n"
-                + "Measure 1");
+                + "Measure 1");*/
         String line = null;
         
         try {
@@ -450,10 +450,10 @@ public class ChordAnalyzer {
             }
             if (currtimeGCD/GCD % 8 == 0) {
                 for (j=0; j<GCD*4; j+=GCD*currnote[3]) {
-                    notes2.add(new float[]{currnote[0],currtimeGCD+8*j,currtimeGCD+GCD*4+8*j});
-                    notes2.add(new float[]{currnote[0]+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
-                    notes2.add(new float[]{currnote[1]+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
-                    notes2.add(new float[]{currnote[2]+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
+                    notes2.add(new float[]{currnote[0]+12,currtimeGCD+8*j,currtimeGCD+GCD*4+8*j});
+                    notes2.add(new float[]{currnote[0]+12+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
+                    notes2.add(new float[]{currnote[1]+12+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
+                    notes2.add(new float[]{currnote[2]+12+12,currtimeGCD+GCD*4+8*j,currtimeGCD+GCD*8+8*j});
                 }
             }
             currtimeGCD += GCD*32/currnote[3];
