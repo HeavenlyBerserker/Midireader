@@ -47,7 +47,7 @@ public class MidiReader {
 		t.add(me);
 //****  set track name (meta event)  ****
 		mt = new MetaMessage();
-		String TrackName = "midifile track";
+		String TrackName = new String("midifile track");
 		mt.setMessage(0x03 ,TrackName.getBytes(), TrackName.length());
 		me = new MidiEvent(mt,(long)0);
 		t.add(me);
@@ -240,6 +240,7 @@ public class MidiReader {
         // unit duration is note_duration/GCD
         // *Does not work with polyphonic melodies
         ArrayList<float[]> notessilences = new ArrayList();
+        int count = 0;
         if(notes.get(0)[1] != 0){
             float[] s = {-1, (int)notes.get(0)[1]/GCD};
             notessilences.add(s);
@@ -359,11 +360,12 @@ public class MidiReader {
     public static void main(String[] args) throws Exception {
         
         //Melody processing
+        /*
         String pattern;
         ArrayList<float[]> notesrests = new ArrayList();
         ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
         notes = gcds(notes);
-        GCD = GCD*30;
+        //GCD = GCD*30;
         //write(notes);
         notesrests = silences(notes);
         pattern = rhythIO(notesrests);
@@ -372,7 +374,7 @@ public class MidiReader {
         ArrayList<String> rules = makeRules(measurePatterns);
         notes = changeSong(notes,measurePatterns,rules);
         //write(notes);
-        
+        */
         String filename = "ksanalysis-tsroot.txt";
         ArrayList<float[]> chordList = new ArrayList();
         
@@ -381,8 +383,8 @@ public class MidiReader {
         float ts = 1 - (float)0.001;
         float speed = 1000;
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
-        notes.addAll(chordsWrite);
-        write(notes);
+        //notes.addAll(chordsWrite);
+        write(chordsWrite);
         
         //notes = MelismaReader.readFile("sonata01-1.notes");
         
