@@ -1,9 +1,6 @@
 package midireader;
 
-/**
- *
- * @author Bilbo
- */
+
 import java.io.File;
 import java.util.ArrayList;
 import javax.sound.midi.MetaMessage;
@@ -50,7 +47,7 @@ public class MidiReader {
 		t.add(me);
 //****  set track name (meta event)  ****
 		mt = new MetaMessage();
-		String TrackName = new String("midifile track");
+		String TrackName = "midifile track";
 		mt.setMessage(0x03 ,TrackName.getBytes(), TrackName.length());
 		me = new MidiEvent(mt,(long)0);
 		t.add(me);
@@ -243,7 +240,6 @@ public class MidiReader {
         // unit duration is note_duration/GCD
         // *Does not work with polyphonic melodies
         ArrayList<float[]> notessilences = new ArrayList();
-        int count = 0;
         if(notes.get(0)[1] != 0){
             float[] s = {-1, (int)notes.get(0)[1]/GCD};
             notessilences.add(s);
@@ -317,9 +313,9 @@ public class MidiReader {
     public static ArrayList<float[]> changeSong(ArrayList<float[]> notes, ArrayList<String> pattern, ArrayList<String> rules) {
         ArrayList<float[]> output = new ArrayList();
         String newSequence;
-        System.out.println();
+        //System.out.println();
         
-        System.out.println(MEASURES + " measures");
+        //System.out.println(MEASURES + " measures");
         for (int i=0; i<MEASURES; i++) {
             
             newSequence = pattern.get(i);
@@ -329,7 +325,7 @@ public class MidiReader {
                 }
             }
             output.addAll(changeRhythm(getHalfMeasure(notes,i),newSequence,(float)GCD*i*16));
-            System.out.println(newSequence);
+            //System.out.println(newSequence);
         }
         return output;
     }
@@ -346,7 +342,7 @@ public class MidiReader {
         for (int i=0; i<pattern.length()-15; i+= 16) {
             thisSeq = pattern.substring(i,i+16);
             output.add(thisSeq);
-            System.out.println(thisSeq);
+            //System.out.println(thisSeq);
         }
         return output;
     }
@@ -365,7 +361,7 @@ public class MidiReader {
         //Melody processing
         String pattern;
         ArrayList<float[]> notesrests = new ArrayList();
-        ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
+        ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
         notes = gcds(notes);
         GCD = GCD*30;
         //write(notes);
@@ -387,6 +383,8 @@ public class MidiReader {
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
         notes.addAll(chordsWrite);
         write(notes);
+        
+        //notes = MelismaReader.readFile("sonata01-1.notes");
         
     }
 }

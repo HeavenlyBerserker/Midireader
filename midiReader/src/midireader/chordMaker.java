@@ -5,34 +5,8 @@
  */
 package midireader;
 
-import java.io.File;
 import java.util.ArrayList;
-import javax.sound.midi.MetaMessage;
 
-import javax.sound.midi.MidiEvent;
-import javax.sound.midi.MidiMessage;
-import javax.sound.midi.MidiSystem;
-import javax.sound.midi.Sequence;
-import javax.sound.midi.ShortMessage;
-import javax.sound.midi.SysexMessage;
-import javax.sound.midi.Track;
-
-import java.io.*;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
-/**
- *
- * @author Hong
- */
 public class chordMaker {
     public static ArrayList<float[]> print(ArrayList<float[]> notes){
         for(int i = 0; i < notes.size(); i++){
