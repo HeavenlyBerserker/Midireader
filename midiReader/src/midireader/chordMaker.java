@@ -37,9 +37,9 @@ public class chordMaker {
     public static ArrayList<float[]> print(ArrayList<float[]> notes){
         for(int i = 0; i < notes.size(); i++){
             for(int j = 0; j < notes.get(i).length; j++){
-                //System.out.print((int)notes.get(i)[j] + " ");
+                System.out.print((int)notes.get(i)[j] + " ");
             }
-            //System.out.println();
+            System.out.println();
         }
         return notes;
     }
@@ -59,8 +59,8 @@ public class chordMaker {
     }
     
     public static ArrayList<float[]> chordBD(ArrayList<float[]> notes, float ts, float speed){
-        print(notes);
-        System.out.println("Measure 1");
+        //print(notes);
+        //System.out.println("Measure 1");
         float modTime = 0, mTime = 0, realTime = -1/notes.get(0)[0], difTime = 0, onTime = 0, offTime = 0, prevOff = 0;
         int measure = 2, beat = 0;
         ArrayList<float[]> currChord = new ArrayList();
@@ -96,8 +96,8 @@ public class chordMaker {
                         //System.out.print(belowMid(notes.get(i)[3]) + " "  + onTime + " " + offTime);
                         float[] arr4 = {closestMid(notes.get(i)[4]), onTime, offTime};
                         chordsWrite.add(arr4);
-                        System.out.println();
-                        System.out.println(notes.get(i).length);
+                        //System.out.println();
+                        //System.out.println(notes.get(i).length);
                     }
                 }
                 else if(beat == 2){
@@ -118,7 +118,7 @@ public class chordMaker {
                 measure++;
             }
         }
-        //print(chordsWrite);
+        print(chordsWrite);
         return chordsWrite;
     }
     
