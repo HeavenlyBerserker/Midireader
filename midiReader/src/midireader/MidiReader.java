@@ -1,6 +1,9 @@
 
+<<<<<<< HEAD
 package midireader;
 
+=======
+>>>>>>> origin/master
 /**
  *
  * @author Bilbo
@@ -308,8 +311,16 @@ public class MidiReader {
     public static ArrayList<float[]> changeSong(ArrayList<float[]> notes, ArrayList<String> pattern, ArrayList<String> rules) {
         ArrayList<float[]> output = new ArrayList();
         String newSequence;
+<<<<<<< HEAD
         System.out.println("");
         for (int i=0; i<measures(notes); i++) {
+=======
+        System.out.println();
+        
+        System.out.println(MEASURES + " measures");
+        for (int i=0; i<MEASURES; i++) {
+            
+>>>>>>> origin/master
             newSequence = pattern.get(i);
             for (int j=0; j<rules.size(); j++) {
                  if (newSequence.equals((rules.get(j)).substring(0,16))) {
@@ -350,6 +361,7 @@ public class MidiReader {
     public static void main(String[] args) throws Exception {
         
         //Melody processing
+<<<<<<< HEAD
         //String pattern;
         //ArrayList<float[]> notesrests = new ArrayList();
         ArrayList<float[]> notes = MelismaReader.readFile("canon.notes");
@@ -362,6 +374,13 @@ public class MidiReader {
         GCD = 250;
         resolution = 240;
         
+=======
+        String pattern;
+        ArrayList<float[]> notesrests = new ArrayList();
+        ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
+        notes = gcds(notes);
+        GCD = GCD*30;
+>>>>>>> origin/master
         //write(notes);
         
         //ArrayList<String> measurePatterns = getPatterns(pattern);
@@ -370,6 +389,7 @@ public class MidiReader {
         //System.out.println(pattern);
         //notes = changeSong(notes,measurePatterns,rules);
         //write(notes);
+<<<<<<< HEAD
         //Chord processing
         //Tested and approved - HX
         //String filename = "LVBSonata3_tsroot.txt";
@@ -378,9 +398,14 @@ public class MidiReader {
                                                         
                                              
         String filename = "canon_tsroot.txt";
+=======
+        
+        String filename = "ksanalysis-tsroot.txt";
+>>>>>>> origin/master
         ArrayList<float[]> chordList = new ArrayList();
         chordList = ChordAnalyzer.chordNotes(chordList, filename);
         ArrayList<float[]> chordsWrite = new ArrayList();
+<<<<<<< HEAD
         float ts = 4/4 - (float)0.001;
         float speed = 1000;
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
@@ -389,5 +414,13 @@ public class MidiReader {
         
         //ChordList is the main output. Just read that and you have most information.
         //Notice that chordList doesn't have measure counts like the printed output
+=======
+        float ts = 1 - (float)0.001;
+        float speed = 500;
+        chordsWrite = chordMaker.chordMake(chordList, ts, speed);
+        notes.addAll(chordsWrite);
+        write(chordsWrite);
+        
+>>>>>>> origin/master
     }
 }
