@@ -23,7 +23,7 @@ public class MelismaReader {
                 //System.out.println(words[0]);
                 if (words[0].equals("Note")) {
                     float[] notey = {Float.parseFloat(words[3]),Float.parseFloat(words[1]),Float.parseFloat(words[2])};
-                    System.out.println(Float.toString(notey[0]) + " " +Float.toString(notey[1]) + " " + Float.toString(notey[2]));
+                    //System.out.println(Float.toString(notey[0]) + " " +Float.toString(notey[1]) + " " + Float.toString(notey[2]));
                     output.add(notey);
                 }
             }

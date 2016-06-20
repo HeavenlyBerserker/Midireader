@@ -49,7 +49,7 @@ public class MidiReader {
 		t.add(me);
 //****  set track name (meta event)  ****
 		mt = new MetaMessage();
-		String TrackName = new String("midifile track");
+		String TrackName = "midifile track";
 		mt.setMessage(0x03 ,TrackName.getBytes(), TrackName.length());
 		me = new MidiEvent(mt,(long)0);
 		t.add(me);
@@ -140,14 +140,9 @@ public class MidiReader {
                                 found = 1;
                             }
                         }
-                    } else {
-                        //System.out.println("Command:" + sm.getCommand());
                     }
-                } else {
-                    //System.out.println("Other message: " + message.getClass());
                 }
             }
-            //System.out.println();
         }
         
     return notes;
@@ -237,27 +232,28 @@ public class MidiReader {
         if(notes.get(0)[1] != 0){
             float[] s = {-1, (int)notes.get(0)[1]/GCD};
             notessilences.add(s);
-            System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
+            //System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
         }
         for(int i=0; i < notes.size()-1; i++) {
-            if(notes.get(i)[2] < notes.get(i+1)[1]){
+            //if(notes.get(i)[2] < notes.get(i+1)[1]){
                 float[] s = {(int)notes.get(i)[0], ((int)notes.get(i)[2]-(int)notes.get(i)[1])/GCD};
                 notessilences.add(s);
-                System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
+                //System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
                 float[] s2 = {-1, ((int)notes.get(i+1)[1]-notes.get(i)[2])/GCD};
                 notessilences.add(s2);
-                System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
-            }
+                //System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
+            //}
             // Does not work with polyphonic melodies.
+            /*
             else if(notes.get(i)[2] > notes.get(i+1)[1]){
                 System.out.println("Error: Melody is not monophonic.");
                 break;
-            }
+                }
             else{
                 float[] s = {(int)notes.get(i)[0], ((int)notes.get(i)[2]-(int)notes.get(i)[1])/GCD};
                 notessilences.add(s);
-                System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
-            }
+                //System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
+                }*/
         }
         return notessilences;
     }
@@ -308,7 +304,6 @@ public class MidiReader {
         ArrayList<float[]> output = new ArrayList();
         String newSequence;
 
-        System.out.println("");
         System.out.println(MEASURES + " measures");
         for (int i=0; i<MEASURES; i++) {
 
@@ -333,10 +328,10 @@ public class MidiReader {
     public static ArrayList<String> getPatterns(String pattern) {
         ArrayList<String> output = new ArrayList();
         String thisSeq;
-        for (int i=0; i<pattern.length(); i+= 16) {
+        for (int i=0; i<pattern.length()-15; i+= 16) {
             thisSeq = pattern.substring(i,i+16);
             output.add(thisSeq);
-            System.out.println(thisSeq);
+            //System.out.println(thisSeq);
         }
         return output;
     }
@@ -352,35 +347,34 @@ public class MidiReader {
     public static void main(String[] args) throws Exception {
         
         //Melody processing
-        //String pattern;
-        //ArrayList<float[]> notesrests = new ArrayList();
-        ArrayList<float[]> notes = MelismaReader.readFile("canon.notes");
+        String pattern;
+        ArrayList<float[]> notesrests = new ArrayList();
+        //ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
+        ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("Hello.mid")));
         notes = gcds(notes);
-        //System.out.println(MidiSystem.getSequence(new File("sample.mid")));
-        //notesrests = silences(notes);
-        //pattern = rhythIO(notesrests);
-        //notes = changeRhythm(notes,newpattern);
         
-        GCD = 250;
+        GCD = 240 ;
         resolution = 240;
+        //System.out.println(MidiSystem.getSequence(new File("sample.mid")));
+        notesrests = silences(notes);
+        pattern = rhythIO(notesrests);
+        ArrayList<String> patterns = getPatterns(pattern);
+        ArrayList<String> rules = makeRules(patterns);
+        //notes = changeSong(notes,patterns,rules);
         
-                                        
-                                             
-        String filename = "canon_tsroot.txt";
-
-        
-
+        /*
         ArrayList<float[]> chordList = new ArrayList();
-        chordList = ChordAnalyzer.chordNotes(chordList, filename);
+        chordList = ChordAnalyzer.chordNotes(chordList, "sonata01-1_tsroot.txt");
         ArrayList<float[]> chordsWrite = new ArrayList();
 
         float ts = 4/4 - (float)0.001;
         float speed = 1000;
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
-        chordsWrite.addAll(notes);
-        write(chordsWrite);
+        chordsWrite.addAll(notes);*/
         
-
+        write(notes);
+        
+        System.out.println(MeasureAnalyzer.getOverallSimilarity(getHalfMeasure(notes,0),getHalfMeasure(notes,0)));
         
     }
 }
