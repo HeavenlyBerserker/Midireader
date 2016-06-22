@@ -11,10 +11,10 @@ public class MeasureAnalyzer {
         ArrayList<float[]> measure1 = MidiReader.getHalfMeasure(song,measurenum1);
         ArrayList<float[]> measure2 = MidiReader.getHalfMeasure(song,measurenum2);
         return (double)(0.4*rhythmSimilarity(measure1,measure2, measurenum1, measurenum2, GCD) +
-                0.2*intervalSimilarity(measure1,measure2) +
+                0.3*intervalSimilarity(measure1,measure2) +
                 0.1*directionalSimilarity(measure1,measure2,false) +
                 0.1*directionalSimilarity(measure1,measure2,true) + //directions with small/large jump distinction
-                0.2*simpleMelSimilarity(measure1,measure2));
+                0.1*simpleMelSimilarity(measure1,measure2));
     }
     
     //converts an edit distance to a similarity percentage

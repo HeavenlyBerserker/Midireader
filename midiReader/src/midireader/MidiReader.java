@@ -344,37 +344,48 @@ public class MidiReader {
         return rules;
     }
     
+    //shifts all onsets/offsets in a note list by some amount of ticks
+    public static ArrayList<float[]> offsetSong( ArrayList<float[]> notes, float ticks) {
+        ArrayList<float[]> output = new ArrayList();
+        for (int i=0; i< notes.size(); i++) {
+            float[] curnote = {notes.get(i)[0],notes.get(i)[1]+ticks,notes.get(i)[2]+ticks};
+            output.add(curnote);
+        }
+        return output;
+    }
+    
+    
     public static void main(String[] args) throws Exception {
         
         //Melody processing
         String pattern;
         ArrayList<float[]> notesrests = new ArrayList();
-        //ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
-        ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("Hello.mid")));
-        notes = gcds(notes);
+        ArrayList<float[]> notes = MelismaReader.readFile("op01n02b.notes");
+        //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("Hello.mid")));
+        //notes = gcds(notes);
         
-        //GCD = 60 ;
-        //resolution = 240;
+        GCD = 60 ;
+        resolution = 240;
         //System.out.println(MidiSystem.getSequence(new File("sample.mid")));
         notesrests = silences(notes);
         pattern = rhythIO(notesrests);
         ArrayList<String> patterns = getPatterns(pattern);
         ArrayList<String> rules = makeRules(patterns);
         //notes = changeSong(notes,patterns,rules);
+        notes = offsetSong(notes,GCD*2);
         
-        /*
         ArrayList<float[]> chordList = new ArrayList();
-        chordList = ChordAnalyzer.chordNotes(chordList, "sonata01-1_tsroot.txt");
+        chordList = ChordAnalyzer.chordNotes(chordList, "tsroot.txt");
         ArrayList<float[]> chordsWrite = new ArrayList();
 
         float ts = 4/4 - (float)0.001;
         float speed = 1000;
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
-        chordsWrite.addAll(notes);*/
+        chordsWrite.addAll(notes);
         
-        write(notes);
+        write(chordsWrite);
         
-        System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,0,3,GCD));
+        System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,8,5,GCD));
         
     }
 }
