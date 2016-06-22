@@ -353,8 +353,8 @@ public class MidiReader {
         ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("Hello.mid")));
         notes = gcds(notes);
         
-        GCD = 240 ;
-        resolution = 240;
+        //GCD = 60 ;
+        //resolution = 240;
         //System.out.println(MidiSystem.getSequence(new File("sample.mid")));
         notesrests = silences(notes);
         pattern = rhythIO(notesrests);
@@ -374,7 +374,7 @@ public class MidiReader {
         
         write(notes);
         
-        System.out.println(MeasureAnalyzer.getOverallSimilarity(getHalfMeasure(notes,0),getHalfMeasure(notes,0)));
+        System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,0,3,GCD));
         
     }
 }
