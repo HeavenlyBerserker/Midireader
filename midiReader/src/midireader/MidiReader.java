@@ -385,7 +385,7 @@ public class MidiReader {
         
         write(chordsWrite);
         
-        System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,8,5,GCD));
+        System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,8,8,GCD));
         
     }
 }
