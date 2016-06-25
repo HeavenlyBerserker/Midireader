@@ -5,6 +5,7 @@ package midireader;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import javax.sound.midi.MetaMessage;
 
 import javax.sound.midi.MidiEvent;
@@ -299,6 +300,35 @@ public class MidiReader {
         return output;
     }
     
+    //subtracts I's in pattern from I's in measure
+    public static String subtractMeasure(String measure, String pattern) {
+        String output = "";
+        for (int i=0; i<16; i++) {
+            if (measure.charAt(i) == 'I' && pattern.charAt(i) != 'I') {
+                output += 'I';
+            }
+            else {
+                output += 'O';
+            }
+        }
+        return output;
+    }
+    
+    public static String addMeasure(String measure, String pattern) {
+        String output = "";
+        for (int i=0; i<16; i++) {
+            if (measure.charAt(i) == 'I' || pattern.charAt(i) == 'I') {
+                output += 'I';
+            }
+            else {
+                output += 'O';
+            }
+        }
+        return output;
+    }
+    
+    
+    
     //changes each half-measure of the song to a new rhythm defined by the list of rules and returns entire song
     public static ArrayList<float[]> changeSong(ArrayList<float[]> notes, ArrayList<String> pattern, ArrayList<String> rules) {
         ArrayList<float[]> output = new ArrayList();
@@ -309,8 +339,23 @@ public class MidiReader {
 
             newSequence = pattern.get(i);
             for (int j=0; j<rules.size(); j++) {
-                 if (newSequence.equals((rules.get(j)).substring(0,16))) {
-                     newSequence = rules.get(j).substring(17,33);
+                if (newSequence.equals((rules.get(j)).substring(0,16))) {
+                    newSequence = rules.get(j).substring(17,33);
+                    break;
+                }
+                //if measure contains the first part of a rule and is similar to 
+                else if (MeasureAnalyzer.rhythmSimilarity(newSequence, (rules.get(j)).substring(0,16)) > 0.8) {
+                    String rule = rules.get(j).substring(0,16);
+                    int count = newSequence.length() - newSequence.replace("I", "").length(); //count number of I's
+                    int count2 = rule.length() - rule.replace("I", "").length();
+                    if (count > count2) {
+                        //applies rule to part of newSequence and then adds the other part back
+                        String newSequence2 = addMeasure(subtractMeasure(newSequence,rule),rules.get(j).substring(17,33));
+                        if (newSequence2.length() - newSequence2.replace("I", "").length() - count == 0) { //only if we haven't deleted notes
+                            newSequence = newSequence2;
+                            break;
+                        }
+                    }
                 }
             }
             output.addAll(changeRhythm(getHalfMeasure(notes,i),newSequence,(float)GCD*i*16));
@@ -361,18 +406,29 @@ public class MidiReader {
         String pattern;
         ArrayList<float[]> notesrests = new ArrayList();
         ArrayList<float[]> notes = MelismaReader.readFile("op01n02b.notes");
-        //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("Hello.mid")));
-        //notes = gcds(notes);
-        
+        //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
         GCD = 60 ;
+        notes = offsetSong(notes,GCD*2);
+        notes = gcds(notes);
+        
+        notes = melodyChanger.makeMonophonic(notes);
+        
+        GCD = 120 ;
         resolution = 240;
+        MEASURES = 15;
         //System.out.println(MidiSystem.getSequence(new File("sample.mid")));
         notesrests = silences(notes);
         pattern = rhythIO(notesrests);
-        ArrayList<String> patterns = getPatterns(pattern);
+        
+        ArrayList<String> patterns = new ArrayList();
+        for (int i=0; i<MEASURES; i++) {
+            patterns.add(MeasureAnalyzer.getRhythm(notes,i,120));
+            System.out.println(patterns.get(i));
+        }
         ArrayList<String> rules = makeRules(patterns);
         //notes = changeSong(notes,patterns,rules);
-        notes = offsetSong(notes,GCD*2);
+        
+
         
         ArrayList<float[]> chordList = new ArrayList();
         chordList = ChordAnalyzer.chordNotes(chordList, "tsroot.txt");
@@ -383,9 +439,21 @@ public class MidiReader {
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
         chordsWrite.addAll(notes);
         
-        write(chordsWrite);
+        write(notes);
         
-        System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,8,8,GCD));
+        System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
+        
+        
+        /* TODO
+        
+        Get ms/beats from kern file, use instead of gcd
+        Figure out beat information?
+        Use top notes in song to assume it's a melody
+        Make fake rules from paper, put in text file format? Use as rules.
+            Make rules apply to measures that contain most of a rule input
+        
+        2:00 monday
+        */
         
     }
 }

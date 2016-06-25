@@ -31,6 +31,11 @@ public class MeasureAnalyzer {
         return output;
     }
     
+    public static double rhythmSimilarity(String measure1, String measure2) {
+        double output = distToSim(minDistance(measure1,measure2),16);
+        return output;
+    }
+    
     //given measure, returns the I/O rhythm, even if polyphonic
     public static String getRhythm(ArrayList<float[]> measure, int measurenum, float GCD) {
         String output = "";
@@ -48,7 +53,7 @@ public class MeasureAnalyzer {
             }
             output += newchar;
         }
-        System.out.println(output);
+        //System.out.println(output);
         return output;
     }
     //returns edit distance similarity between two measures based on their intervals
