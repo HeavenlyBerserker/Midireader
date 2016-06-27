@@ -377,7 +377,7 @@ public class MidiReader {
         notes = changeSong(notes,measurePatterns,rules);
         //write(notes);
         
-        String filename = "ksanalysis-tsroot.txt";
+        String filename = "canon_tsroot.txt";
         ArrayList<float[]> chordList = new ArrayList();
         
         chordList = ChordAnalyzer.chordNotes(chordList, filename);
