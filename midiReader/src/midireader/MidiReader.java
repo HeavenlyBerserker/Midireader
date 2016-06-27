@@ -308,7 +308,7 @@ public class MidiReader {
                 output += 'I';
             }
             else {
-                output += 'O';
+                output += '.';
             }
         }
         return output;
@@ -321,7 +321,7 @@ public class MidiReader {
                 output += 'I';
             }
             else {
-                output += 'O';
+                output += '.';
             }
         }
         return output;
@@ -382,10 +382,18 @@ public class MidiReader {
     }
     
     //creates a set of rules to be applied to the song in changeSong. Right now just handmade rules.
-    public static ArrayList<String> makeRules(ArrayList<String> patterns) {
+    public static ArrayList<String> makeRules(ArrayList<String> patterns, ArrayList<String[]> patternData) {
         ArrayList<String> rules = new ArrayList();
-        rules.add("I.I...I.I...I.I. .II....II....I.I");
-        rules.add("..I.I..II.I...I. .IIIIII.........");
+        for (int i=0; i<MEASURES; i++) {
+            for (int j=0; j<patternData.size(); j++) {
+                if (Float.parseFloat(patternData.get(j)[0]) == (patterns.get(i).length() - patterns.get(i).replace("I", "").length()) ) { //if same number of I's
+                    if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) {
+                        rules.add(patterns.get(i) + " " + patternData.get(j)[2]);
+                        System.out.println("Rule added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
+                    }
+                }
+            }
+        }
         return rules;
     }
     
@@ -401,6 +409,10 @@ public class MidiReader {
     
     
     public static void main(String[] args) throws Exception {
+        
+        //input pattern data
+        ArrayList<String[]> patternData = RhythmReader.readFile("madeuppatterns.txt");
+        
         
         //Melody processing
         String pattern;
@@ -425,8 +437,8 @@ public class MidiReader {
             patterns.add(MeasureAnalyzer.getRhythm(notes,i,120));
             System.out.println(patterns.get(i));
         }
-        ArrayList<String> rules = makeRules(patterns);
-        //notes = changeSong(notes,patterns,rules);
+        ArrayList<String> rules = makeRules(patterns,patternData);
+        notes = changeSong(notes,patterns,rules);
         
 
         
@@ -439,18 +451,14 @@ public class MidiReader {
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
         chordsWrite.addAll(notes);
         
-        write(notes);
+        write(chordsWrite);
         
-        System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
+        //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
         
         
         /* TODO
         
         Get ms/beats from kern file, use instead of gcd
-        Figure out beat information?
-        Use top notes in song to assume it's a melody
-        Make fake rules from paper, put in text file format? Use as rules.
-            Make rules apply to measures that contain most of a rule input
         
         2:00 monday
         */

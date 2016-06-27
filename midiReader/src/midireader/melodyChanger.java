@@ -13,7 +13,7 @@ public class melodyChanger {
     public static ArrayList<Float> findSkyline2(ArrayList<float[]> notes) {
         ArrayList <Float> skyline = new ArrayList<Float>();
         float min = 0;
-        float max = notes.get(notes.size()-1)[2]; //for some reason this has to be [1] on midi files and [2] on .note files
+        float max = notes.get(notes.size()-1)[2]+100000; //for some reason this has to be [1] on midi files and [2] on .note files, or just really big
         float size = max-min;
 	
         float[] mysky = new float[(int)size];
@@ -36,24 +36,20 @@ public class melodyChanger {
 
         while (cnt < size-1) {
 
-            // Increment cnt as long as the height is the same.
             while (cnt < size-1 && mysky[cnt] == mysky[cnt+1])
                     cnt++;
 
-            // Print out information for this part of the skyline.
             //System.out.print(mysky[cnt]+" "+(cnt+1+min)+" ");
             skyline.add(mysky[cnt]);//,cnt+1+min});
             skyline.add(cnt+1+min);
             cnt++;
         }
 
-        // This is the case where the last segment is unique.
         if (cnt == size-1){
             //System.out.print(mysky[(int)size-1]+" "+max);
             skyline.add(mysky[(int)size-1]);
             skyline.add(max);
         }
-        //System.out.println();
 
         return skyline;
     }
