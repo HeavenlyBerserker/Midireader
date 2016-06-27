@@ -417,7 +417,7 @@ public class ChordAnalyzer {
                     //System.out.println("Rest");
                     float[] temp = {-1, -1, -1, findNums(line)};
                     chords.add(temp);
-                    System.out.println(chords.get(index)[0] + " " + chords.get(index)[1] + " " + chords.get(index)[2] + " " + chords.get(index)[3]);
+                    //System.out.println(chords.get(index)[0] + " " + chords.get(index)[1] + " " + chords.get(index)[2] + " " + chords.get(index)[3]);
                     index++;
                     measureNotes++;
                 }
