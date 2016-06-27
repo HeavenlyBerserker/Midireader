@@ -137,7 +137,7 @@ public class ChordAnalyzer {
                 
                 
                 if(line.charAt(0) == '=' && Character.isDigit(line.charAt(1))){
-                    System.out.println("Measure " + measureCnt);
+                    //System.out.println("Measure " + measureCnt);
                     measureCnt++;
                 }
                 
@@ -251,7 +251,7 @@ public class ChordAnalyzer {
                         //if no prev array
                         if(noteCount == 0){
                             realTemp = findGreat(tTable.get(0));
-                            System.out.println(realTemp);
+                            //System.out.println(realTemp);
                             float[] arry = new float[tTable.get(0).length];
                             if(realTemp > 0){
                                 for(int i = 0; i < tTable.get(0).length; i++){
@@ -264,7 +264,7 @@ public class ChordAnalyzer {
                                 }
                             }
                             tTable.set(1, arry);
-                            printArray(tTable.get(1));
+                            //printArray(tTable.get(1));
                         }
                         else{
                             float[] arry = new float[tTable.get(0).length];
@@ -280,7 +280,7 @@ public class ChordAnalyzer {
                                 }
                             }
                             realTemp = findGreat(arry);
-                            System.out.println(realTemp);
+                            //System.out.println(realTemp);
                             if(realTemp > 0){
                                 for(int i = 0; i < tTable.get(0).length; i++){
                                     if(arry[i] > 0 && realTemp == arry[i]){
@@ -293,7 +293,7 @@ public class ChordAnalyzer {
                                 }
                             }
                             tTable.set(1, arry);
-                            printArray(tTable.get(1));
+                            //printArray(tTable.get(1));
                         }
 
                         //Set new thing
