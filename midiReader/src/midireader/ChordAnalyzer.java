@@ -42,6 +42,9 @@ public class ChordAnalyzer {
     public static int[] noteNumbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
     public static int[] natNoteNumbers = {0, 2, 4, 5, 7, 9, 11};
     public static int key = 0;
+    public static int num = 0;
+    public static int den = 0;
+    public static int beats = 0;
     public static final int startingNote = 36;
     public static ArrayList<float[]> tempoTable = new ArrayList();
     public static ArrayList<float[]> tTable = new ArrayList();
@@ -140,6 +143,15 @@ public class ChordAnalyzer {
                 
                 //Find chord
                 if(line.length() >= 3){
+                    if(line.substring(0,3).equals("*MM")){
+                        timeBeat(line);
+                        //System.out.println("Beat " + beats);
+                    }
+                    else if(line.substring(0,2).equals("*M")){
+                        timeSig(line);
+                        //System.out.println("Num " + num);
+                        //System.out.println("Den " + den);
+                    }
                     if(line.charAt(0) == 'D'){
                         count = 1;
                         dim = 1;
@@ -255,16 +267,33 @@ public class ChordAnalyzer {
                             printArray(tTable.get(1));
                         }
                         else{
-                            /*
                             float[] arry = new float[tTable.get(0).length];
                             for(int i = 0; i < tTable.get(0).length; i++){
-                                if(tTable.get(1)[i] > 0){
-                                    arry[i] = 0;
+                                if(tTable.get(1).length > i && tTable.get(1)[i] > 0){
+                                    arry[i] = tTable.get(1)[i];
                                 }
                                 else if(tTable.get(0)[i] > 0){
-                                    arry[i] = 1/(1/tTable.get(0)[i] - 1/realTemp);
+                                    arry[i] = tTable.get(0)[i];
                                 }
-                            }*/
+                                else{
+                                    arry[i] = 0;
+                                }
+                            }
+                            realTemp = findGreat(arry);
+                            System.out.println(realTemp);
+                            if(realTemp > 0){
+                                for(int i = 0; i < tTable.get(0).length; i++){
+                                    if(arry[i] > 0 && realTemp == arry[i]){
+                                        arry[i] = 0;
+                                    }
+                                    else if(arry[i] > 0){
+                                        arry[i] = 1/(1/tTable.get(0)[i] - 1/realTemp);
+                                    }
+                                    else arry[i] = 0;
+                                }
+                            }
+                            tTable.set(1, arry);
+                            printArray(tTable.get(1));
                         }
 
                         //Set new thing
@@ -417,7 +446,7 @@ public class ChordAnalyzer {
                     //System.out.println("Rest");
                     float[] temp = {-1, -1, -1, findNums(line)};
                     chords.add(temp);
-                    //System.out.println(chords.get(index)[0] + " " + chords.get(index)[1] + " " + chords.get(index)[2] + " " + chords.get(index)[3]);
+                    System.out.println(chords.get(index)[0] + " " + chords.get(index)[1] + " " + chords.get(index)[2] + " " + chords.get(index)[3]);
                     index++;
                     measureNotes++;
                 }
@@ -700,6 +729,41 @@ public class ChordAnalyzer {
        return tempo;
     }
     
+    public static float timeSig(String s){
+       float tempo = 0;
+       String temp = "";
+       int in = 0;
+       while(in < s.length() && !Character.isDigit(s.charAt(in))) in++;
+       while(in < s.length() && Character.isDigit(s.charAt(in))){
+           temp += s.charAt(in);
+           in++;
+       }
+       num = (int)Float.parseFloat(temp);
+       if(s.charAt(in) == '/'){
+           in++;
+       }
+       temp = "";
+       while(in < s.length() && Character.isDigit(s.charAt(in))){
+           temp += s.charAt(in);
+           in++;
+       }
+       den = (int)Float.parseFloat(temp);
+       return tempo;
+    }
+    
+    public static float timeBeat(String s){
+       float tempo = 0;
+       String temp = "";
+       int in = 0;
+       while(in < s.length() && !Character.isDigit(s.charAt(in))) in++;
+       while(in < s.length() && Character.isDigit(s.charAt(in))){
+           temp += s.charAt(in);
+           in++;
+       }
+       beats = (int)Float.parseFloat(temp);
+       return tempo;
+    }
+    
     public static float findNums2(String s, int n){
        double tempo = 0;
        String temp = "";
@@ -757,9 +821,12 @@ public class ChordAnalyzer {
        return (float)tempo;
     }
     
-    public static ArrayList<float[]> chordNotes(ArrayList<float[]> notes, String filename){
+    public static ArrayList<float[]> chordNotes(ArrayList<float[]> notes, String filename, int[] timeSig){
         readFile(notes, filename);
         //chordMaker.printF(tempoTable);
+        timeSig[0] = num;
+        timeSig[1] = den;
+        timeSig[2] = beats;
         return notes;
     }
     
