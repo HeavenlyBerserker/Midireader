@@ -48,6 +48,9 @@ public class ChordAnalyzer {
     public static final int startingNote = 36;
     public static ArrayList<float[]> tempoTable = new ArrayList();
     public static ArrayList<float[]> tTable = new ArrayList();
+    public static List<Fractions> table = new ArrayList<>();
+    public static List<Fractions> lastArry = new ArrayList<>();
+    public static Fractions realTemp =  new Fractions();
     
     //Read rootanalysis file(from kern website) and figures out the Chord notes with alterations and durations as given in a kern file
     //Function assumes every unit in a measure has the same duration
@@ -59,7 +62,8 @@ public class ChordAnalyzer {
                 + "format = {note1, note2, note3, duration as quarter(4)/eight(8)/sixteenth(16)/etc. note}\n"
                 + "Measure 1");*/
         String line = null;
-        
+        float chrono = 0;
+        float chrono2 = 0;
         float[] array = {-5};
         tTable.add(array);
         tTable.add(array);
@@ -137,7 +141,12 @@ public class ChordAnalyzer {
                 
                 
                 if(line.charAt(0) == '=' && Character.isDigit(line.charAt(1))){
-                    //System.out.println("Measure " + measureCnt);
+                    //if(chrono != 16){
+                        System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
+                    //}
+                    chrono = 0;
+                    chrono2 = 0;
+                    
                     measureCnt++;
                 }
                 
@@ -243,15 +252,136 @@ public class ChordAnalyzer {
                         tempoTable.add(arr);
                     }
                     int is = count;
-                    float realTemp = 0;
                     if(count!=0 || rest == 0 || rest == 1){
                         putInArray2(line);
+                        putInArray3(line);
+                        //printArray(tTable.get(1));
+                        
+                        //if no prev array
+                        if(noteCount == 0){
+                            //System.out.println();
+                            realTemp = findGreat(table);
+                            realTemp.print();
+                            Fractions[] arry = new Fractions[table.size()];
+                            if(realTemp.num > 0){
+                                for(int i = 0; i < table.size(); i++){
+                                    if(table.get(i).num > 0 && realTemp.num == table.get(i).num && realTemp.den == table.get(i).den){
+                                        arry[i] = new Fractions(0,1);
+                                        //arry[i].print("1");
+                                    }
+                                    else if(table.get(i).num > 0){
+                                        arry[i] = table.get(i).subtract(realTemp);
+                                        //arry[i].print("2");
+                                    }
+                                    else{
+                                        arry[i] = new Fractions(0,1);
+                                    }
+                                }
+                            }
+                            for(int i = 0; i < arry.length; i++){
+                                Fractions temp = new Fractions(arry[i].num, arry[i].den);
+                                lastArry.add(temp);
+                            }
+                            //printListFrac(lastArry);
+                            if(realTemp.num != 0) chrono2 += Fractions.fl(realTemp);
+                            //printListFrac(lastArry);
+                            //System.out.println();System.out.println();System.out.println();
+                        }
+                        else{
+                            //System.out.println();
+                            //System.out.print("LastArray ");printListFrac(lastArry);
+                            List<Fractions> arry = new ArrayList<>();
+                            for(int i = 0; i < table.size(); i++){
+                                if(lastArry.size() > i && lastArry.get(i).num > 0){
+                                    arry.add(lastArry.get(i));
+                                }
+                                else if(table.get(i).num > 0){
+                                    if(lastArry.size() > i)
+                                        lastArry.set(i, new Fractions(table.get(i).num, table.get(i).den));
+                                    else
+                                        lastArry.add(new Fractions(table.get(i).num, table.get(i).den));
+                                }
+                                else{
+                                    if(lastArry.size() > i)
+                                        lastArry.set(i,new Fractions(0,1));
+                                    else
+                                        lastArry.add(new Fractions(0,1));
+                                }
+                            }
+                            //System.out.print("Arry ");printListFrac(lastArry);
+                            realTemp.num = findGreat(lastArry).num;
+                            int t = findGreat(lastArry).den;
+                            realTemp.den = t;
+                            //System.out.print("Arry ");printListFrac(lastArry);
+                            //System.out.println(realTemp);
+                            //printArray(tTable.get(0));
+                            //printArray(arry);
+                            //printListFrac(lastArry);
+                            //System.out.print("Table ");printListFrac(table);
+                            //System.out.println();
+                            //realTemp.print();
+                            Fractions realTemp2 = new Fractions(realTemp.num, realTemp.den);
+                            //System.out.print(Fractions.fl(realTemp));
+                            if(realTemp.num != 0) {chrono2 += Fractions.fl(realTemp);}
+                            //System.out.println(chrono2);
+                            //System.out.print("Arry ");printListFrac(arry);
+                            if(realTemp.num > 0){
+                                //realTemp.print();
+                                for(int i = 0; i < lastArry.size(); i++){
+                                    //System.out.print("{");
+                                    //realTemp.print(", ");
+                                    //lastArry.get(i).print("}");
+                                    if(lastArry.get(i).num > 0 && realTemp.num == lastArry.get(i).num && realTemp.den == lastArry.get(i).den){
+                                        lastArry.set(i, new Fractions(0,1));
+                                        //System.out.print("1");
+                                        //realTemp.print("1 ");
+                                        //arry[i].print("1 ");
+                                    }
+                                    else if(lastArry.size() > i && lastArry.get(i).num > 0){
+                                        lastArry.set(i, lastArry.get(i).subtract(realTemp));
+                                        //realTemp.print("2 ");
+                                        //arry[i].print("2 {");
+                                        //lastArry.get(i).print("2 ");
+                                        //realTemp.print("}2 ");
+                                        //System.out.print("2");
+                                    }
+                                    else{ 
+                                        lastArry.set(i, new Fractions(0,1));
+                                        //realTemp.print("3 ");
+                                        //arry[i].print("3 ");
+                                        //lastArry.get(i).print("3 ");
+                                        //realTemp.print("}3 ");
+                                        //System.out.print("3");
+                                    }
+                                }
+                            }
+                            //System.out.println("\nNewArry ");printListFrac(lastArry);
+                            //realTemp = findGreat(arry);
+                            //realTemp.print();
+                            //System.out.print(Fractions.fl(realTemp));
+                            //if(realTemp.num != 0) chrono2 += Fractions.fl(realTemp);
+                            /*lastArry.clear();
+                            for(int i = 0; i < arry.size(); i++){
+                                lastArry.add(arry.get(i));
+                            }*/
+                            //printArray(tTable.get(1));
+                        }
+
+                        //Set new thing
+                        //printArray(tTable.get(0));
+                        //System.out.println("NextL");
+                        noteCount++;
+                    }
+                    /*
+                    if(count!=0 || rest == 0 || rest == 1){
+                        putInArray2(line);
+                        putInArray3(line);
                         //printArray(tTable.get(1));
                         
                         //if no prev array
                         if(noteCount == 0){
                             realTemp = findGreat(tTable.get(0));
-                            //System.out.println(realTemp);
+                            System.out.println(realTemp);
                             float[] arry = new float[tTable.get(0).length];
                             if(realTemp > 0){
                                 for(int i = 0; i < tTable.get(0).length; i++){
@@ -264,7 +394,8 @@ public class ChordAnalyzer {
                                 }
                             }
                             tTable.set(1, arry);
-                            //printArray(tTable.get(1));
+                            printArray(tTable.get(1));
+                            if(realTemp!= 0) chrono += 16/realTemp;
                         }
                         else{
                             float[] arry = new float[tTable.get(0).length];
@@ -281,17 +412,20 @@ public class ChordAnalyzer {
                             }
                             realTemp = findGreat(arry);
                             //System.out.println(realTemp);
+                            //printArray(tTable.get(0));
+                            //printArray(arry);
                             if(realTemp > 0){
                                 for(int i = 0; i < tTable.get(0).length; i++){
                                     if(arry[i] > 0 && realTemp == arry[i]){
                                         arry[i] = 0;
                                     }
                                     else if(arry[i] > 0){
-                                        arry[i] = 1/(1/tTable.get(0)[i] - 1/realTemp);
+                                        arry[i] = 82944/(82944/arry[i] - 82944/realTemp);
                                     }
                                     else arry[i] = 0;
                                 }
                             }
+                            if(realTemp!= 0) chrono += 16/realTemp;
                             tTable.set(1, arry);
                             //printArray(tTable.get(1));
                         }
@@ -300,7 +434,7 @@ public class ChordAnalyzer {
                         //printArray(tTable.get(0));
                         //System.out.println("NextL");
                         noteCount++;
-                    }
+                    }*/
                     if(count!=0){
                         while(line.charAt(is) == '#' || line.charAt(is) == '-' 
                                 || line.charAt(is) == '+'|| line.charAt(is) == 'b'|| line.charAt(is) == 'c'|| line.charAt(is) == 'd'|| line.charAt(is) == 'e'|| line.charAt(is) == 'f'
@@ -395,12 +529,12 @@ public class ChordAnalyzer {
                             }
                             
                             if(notes.size() == 3){
-                                float[] arr3 = {findNums2(line, is),notes.get(0)[0] % 12,notes.get(1)[0] % 12, notes.get(2)[0] % 12};
+                                float[] arr3 = {Fractions.fl(realTemp),notes.get(0)[0] % 12,notes.get(1)[0] % 12, notes.get(2)[0] % 12};
                                 chords.add(arr3);
                                 //System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0]);
                             }
                             else if(notes.size() == 4){
-                                float[] arr3 = {findNums2(line, is),notes.get(0)[0] % 12,notes.get(1)[0] % 12, notes.get(2)[0] % 12, notes.get(3)[0] % 12};
+                                float[] arr3 = {Fractions.fl(realTemp),notes.get(0)[0] % 12,notes.get(1)[0] % 12, notes.get(2)[0] % 12, notes.get(3)[0] % 12};
                                 chords.add(arr3);
                                 //System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0] + " " + notes.get(3)[0]);
                             }
@@ -409,7 +543,7 @@ public class ChordAnalyzer {
                     else if(rest == 0){
                             if(chords.size() >= 1){
                                 float[] arr3 = chords.get(chords.size()-1);
-                                arr3[0] = findNums2(line, is);
+                                arr3[0] = Fractions.fl(realTemp);
                                 chords.add(arr3);
                                 if(chords.get(chords.size()-1).length == 4){
                                     //System.out.println( chords.get(chords.size()-1)[0] + " " + chords.get(chords.size()-1)[1] + " "+ chords.get(chords.size()-1)[2] + " "+ chords.get(chords.size()-1)[3] + " ");
@@ -422,13 +556,13 @@ public class ChordAnalyzer {
                                 }
                             }
                             else{
-                                float[] arr3 = {findNums2(line, is),-1};
+                                float[] arr3 = {Fractions.fl(realTemp),-1};
                                 chords.add(arr3);
                                 //System.out.println(findNums2(line, is) + " .");
                             }
                     }
                     else if(rest == 1){
-                        float[] arr3 = {findNums2(line, is),-1};
+                        float[] arr3 = {Fractions.fl(realTemp),-1};
                         chords.add(arr3);
                     }
                 }
@@ -509,6 +643,33 @@ public class ChordAnalyzer {
        return bignum;
     }
     
+    public static Fractions findGreat(List <Fractions> a){
+       Fractions bignum = new Fractions(10000, 1);
+       for(int i=0; i < a.size(); i++){
+           if(a.get(i).num != 0 && a.get(i).den != 0 && a.get(i).den != 0 && Fractions.bigger( bignum, a.get(i))){
+               bignum = a.get(i);
+           }
+       }
+       if(bignum.num == 10000) return new Fractions(0,1);
+       //printArray(a);
+       //System.out.println("Big = " + bignum + "Length =" + a.length);
+       //printListFrac(a);
+       return bignum;
+    }
+    
+    public static Fractions findGreat(Fractions [] a){
+       Fractions bignum = new Fractions(10000, 1);
+       for(int i=0; i < a.length; i++){
+           if(a[i].num != 0 && a[i].den != 0 && a[i].den != 0 && Fractions.bigger( bignum, a[i])){
+               bignum = a[i];
+           }
+       }
+       //printArray(a);
+       //System.out.println("Big = " + bignum + "Length =" + a.length);
+       //printListFrac(a);
+       return bignum;
+    }
+    
     public static float findMaxInd(float[] a){
        float bignum = 0;
        int i = 0, s = 0;
@@ -534,6 +695,20 @@ public class ChordAnalyzer {
     public static void printArray(float[] a){
        for(int i=0; i < a.length; i++){
            System.out.print(a[i] + ", ");
+       }
+       System.out.println();
+    }
+    
+    public static void printListFrac(List <Fractions> f){
+       for(int i=0; i < f.size(); i++){
+           System.out.print("[" + f.get(i).num + "/" + f.get(i).den + "]");
+       }
+       System.out.println();
+    }
+    
+    public static void printListFrac(Fractions[] f){
+       for(int i=0; i < f.length; i++){
+           System.out.print("[" + f[i].num + "/" + f[i].den + "]");
        }
        System.out.println();
     }
@@ -705,6 +880,70 @@ public class ChordAnalyzer {
        return (int)tempo;
     }
     
+    public static int putInArray3(String s){
+       table.clear();
+       double tempo = 0;
+       String temp = "";
+       int tabs = 0, tabOn = 0, i = 0;
+       //System.out.println("String--------------------------------" + s.length());
+       if(s.charAt(0) == '=' && Character.isDigit(s.charAt(1))){
+           //Fractions ts = new Fractions(-2, 2);
+           //table.add(ts);
+       }
+       else{
+            ArrayList<float[]> numbers = new ArrayList();
+            while(i < s.length()){
+                 //System.out.print(i + ", ");
+                 if(s.charAt(i) == '\t' && tabs < 1){
+                     tabs++;
+                     tabOn = 1;
+                     i++;
+                 }
+                 else if(s.charAt(i) == '\t'){
+                     Fractions ts = new Fractions();
+                     i++;
+                     //System.out.println(s.charAt(i));
+                     while(i < s.length() && !Character.isDigit(s.charAt(i))  && s.charAt(i) != '\t') i++;
+                     if(i < s.length() && s.charAt(i) != '\t'){
+                         temp = "";
+                         temp += s.charAt(i);
+                         i++;
+                         int c = i-1;
+                         while(i < s.length()-1 && s.charAt(i) != '\t'){i++;}
+                         /*    //System.out.println(s.charAt(i));
+                             if(Character.isDigit(s.charAt(i))){
+                                 temp += s.charAt(i);
+                             }
+                             else if(s.charAt(i) == '.'){
+                                 temp = String.valueOf(Float.valueOf(temp)*2/3);
+                             }
+                             else{
+                                 i++;
+                                 break;
+                             }
+                             i++;
+                         }*/
+                         ts = smallOf2(s.substring(c, i));
+                         //ts.print();
+                         //System.out.print(time[0] + ", ");
+                         /*float[] time = {Float.valueOf(temp)};
+                         numbers.add(time);
+                         tabOn = 0;*/
+                     }
+                     table.add(ts);
+                     
+                     //tabOn = 0;
+                 }
+                 else{
+                     i++;
+                 }
+             }
+       }
+       //printListFrac(table);
+       //findGreat(table).print();
+       //System.out.println();
+       return (int)tempo;
+    }
     
     public static float findNums(String s){
        float tempo = 0;
@@ -821,9 +1060,56 @@ public class ChordAnalyzer {
        return (float)tempo;
     }
     
+    public static Fractions smallOf2(String s){
+       int q = 0;
+       Fractions tempo = new Fractions();
+       String temp = "";
+       int i= 0;
+       while(i < s.length()){
+            if(Character.isDigit(s.charAt(i))){
+                temp = "";
+                temp += s.charAt(i);
+                int dot = -1;
+                i++;
+                Fractions tempo2 = new Fractions(1, 1);
+                while(i < s.length()){
+                    if(Character.isDigit(s.charAt(i))){
+                        temp += s.charAt(i);
+                    }
+                    else if(s.charAt(i) == '.'){
+                        tempo2.num = 3;
+                        dot = 1;
+                    }
+                    else if(s.charAt(i) == 'Q'){
+                        q = 1;
+                    }
+                    else if(s.charAt(i) == ' '){
+                        break;
+                    }
+                    i++;
+                }
+                tempo2.den = (int)Float.parseFloat(temp);
+                if(dot == 1) tempo2.den = 2*(int)Float.parseFloat(temp);
+                //tempo2.print();
+                if(Fractions.bigger(tempo2, tempo)){
+                    tempo.den = tempo2.den;
+                    tempo.num = tempo2.num;
+                }
+            }
+            i++;
+        }
+       if(q == 1){
+            tempo.den = 1;
+            tempo.num = 0;
+       }
+       //System.out.print("||" + temp + ", ");
+       return tempo;
+    }
+    
     public static ArrayList<float[]> chordNotes(ArrayList<float[]> notes, String filename, int[] timeSig){
         readFile(notes, filename);
         //chordMaker.printF(tempoTable);
+        chordMaker.printF(notes);
         timeSig[0] = num;
         timeSig[1] = den;
         timeSig[2] = beats;

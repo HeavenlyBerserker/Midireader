@@ -266,26 +266,24 @@ public class MidiReader {
     */
     public static ArrayList<float[]> changeRhythm(ArrayList<float[]> notes, String rhythmlist, float timestart) {
         ArrayList<float[]> notes2 = new ArrayList();
-        if (notes.size() > 0) {
-            int j=0;
-            float currtime = timestart;
-            float[] currnote = notes.get(j);
-            currnote[1] = currtime;
-            for (int i=0; i<rhythmlist.length(); i++) {
-                if (notes.size()>j) {
-                    if (rhythmlist.charAt(i) == 'I') {
-                        currnote[2] = currtime;
-                        notes2.add(currnote);
-                        currnote = notes.get(j);
-                        currnote[1] = currtime;
-                        j++;
-                    }
+        int j=0;
+        float currtime = timestart;
+        float[] currnote = notes.get(j);
+        currnote[1] = currtime;
+        for (int i=0; i<rhythmlist.length(); i++) {
+            if (notes.size()>j) {
+                if (rhythmlist.charAt(i) == 'I') {
+                    currnote[2] = currtime;
+                    notes2.add(currnote);
+                    currnote = notes.get(j);
+                    currnote[1] = currtime;
+                    j++;
                 }
-                currtime += GCD;
             }
-            currnote[2] = currtime;
-            notes2.add(currnote);
+            currtime += GCD;
         }
+        currnote[2] = currtime;
+        notes2.add(currnote);
         return notes2;
     }
     
@@ -415,46 +413,61 @@ public class MidiReader {
         //input pattern data
         ArrayList<String[]> patternData = RhythmReader.readFile("madeuppatterns.txt");
         
-        //Chord processing
-        ArrayList<float[]> chordList = new ArrayList();
-        int[] timeSig = {0,0,0};
-        //ArrayList<float[]> chordList = new ArrayList();
-        chordList = ChordAnalyzer.chordNotes(chordList, "ksanalysis-tsroot.txt", timeSig);
-        ArrayList<float[]> chordsWrite = new ArrayList();
-        System.out.println("Num " + timeSig[0]);
-        System.out.println("Den " + timeSig[1]);
-        System.out.println("Beat " + timeSig[2]);
-        float ts = 4/4 - (float)0.001;
-        float speed = 1000;
-        chordsWrite = chordMaker.chordMake(chordList, ts, speed);
         
         //Melody processing
         String pattern;
         ArrayList<float[]> notesrests = new ArrayList();
         ArrayList<float[]> notes = MelismaReader.readFile("op01n02b.notes");
         //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
-        GCD = timeSig[0]*timeSig[2]/16 ;
+        GCD = 60 ;
+        notes = offsetSong(notes,GCD*2);
+        notes = gcds(notes);
+        
+        notes = melodyChanger.makeMonophonic(notes);
+        
+        GCD = 120 ;
         resolution = 240;
         MEASURES = 15;
-        notes = offsetSong(notes,GCD*4);
-        notes = gcds(notes);
-        notes = melodyChanger.makeMonophonic(notes);
+        //System.out.println(MidiSystem.getSequence(new File("sample.mid")));
         notesrests = silences(notes);
         pattern = rhythIO(notesrests);
+        
         ArrayList<String> patterns = new ArrayList();
         for (int i=0; i<MEASURES; i++) {
             patterns.add(MeasureAnalyzer.getRhythm(notes,i,120));
-            //System.out.println(patterns.get(i));
+            System.out.println(patterns.get(i));
         }
         ArrayList<String> rules = makeRules(patterns,patternData);
         notes = changeSong(notes,patterns,rules);
         
-        chordsWrite.addAll(notes);
+
+        String filename = "BethSonata1.1Allegro-tsroot.txt";
+        ArrayList<float[]> chordList = new ArrayList();
+
+        int[] timeSig = {0,0,0};
+        //ArrayList<float[]> chordList = new ArrayList();
+        chordList = ChordAnalyzer.chordNotes(chordList, filename, timeSig);
+        ArrayList<float[]> chordsWrite = new ArrayList();
         
+        System.out.println("\nNum " + timeSig[0]);
+        System.out.println("Den " + timeSig[1]);
+        System.out.println("Beat " + timeSig[2]);
+        float ts = 4/4 - (float)0.001;
+        float speed = 1000;
+        chordsWrite = chordMaker.chordMake(chordList, ts, speed);
+        //chordsWrite.addAll(notes);
+        //chordMaker.printF(chordsWrite);
         write(chordsWrite);
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
         
+        
+        /* TODO
+        
+        Get ms/beats from kern file, use instead of gcd
+        
+        2:00 monday
+        */
         
     }
 }
