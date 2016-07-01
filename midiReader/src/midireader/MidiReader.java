@@ -25,6 +25,7 @@ public class MidiReader {
     public static float resolution;
     public static float tempo;
     public static float MEASURES;
+    public static float MM; //beats per minute from melisma
     
     public static void write(ArrayList<float[]> notes) {
     System.out.println("midifile begin ");
@@ -181,7 +182,7 @@ public class MidiReader {
                 break;
             }
         }
-        System.out.println("GCD = " + GCD);
+        //System.out.println("GCD = " + GCD);
         
         /*Sorting notes by starting time
         
@@ -264,21 +265,34 @@ public class MidiReader {
     Input: List of notes in a half measure, rhythm string in format "IOOIOIO" where 'I' denotes the onset of a note, start time in ticks
     Output: List of notes with new rhythm
     */
-    public static ArrayList<float[]> changeRhythm(ArrayList<float[]> notes, String rhythmlist, float timestart) {
+    public static ArrayList<float[]> changeRhythm(ArrayList<float[]> notes, String rhythmlist, float timestart, ArrayList<Float> patternNums) {
         ArrayList<float[]> notes2 = new ArrayList();
         if (notes.size() > 0) {
             int j=0;
             float currtime = timestart;
-            float[] currnote = notes.get(j);
+            float[] currnote = notes.get(0);
+            int currplace = 0;
             currnote[1] = currtime;
             for (int i=0; i<rhythmlist.length(); i++) {
-                if (notes.size()>j) {
-                    if (rhythmlist.charAt(i) == 'I') {
-                        currnote[2] = currtime;
-                        notes2.add(currnote);
-                        currnote = notes.get(j);
-                        currnote[1] = currtime;
-                        j++;
+                if (rhythmlist.charAt(i) == 'I') {
+                    if (patternNums.size() > currplace) {
+                        int numofnotes = Math.round(patternNums.get(currplace));
+                        
+                        currplace++;
+                        float currtime2 = 0;
+                        for (int k=0; k<numofnotes; k++){
+                            if (notes.size()>j) {
+                                currtime2 = patternNums.get(currplace);
+                                //System.out.println(currplace + " " + currtime2 + " " + notes.get(j)[0]);
+                                currnote = notes.get(j);
+                                currnote[1] = currtime;
+                                currnote[2] = currtime+currtime2;
+                                notes2.add(currnote);
+                                j++;
+                                currplace++;
+                            }
+                            
+                        }
                     }
                 }
                 currtime += GCD;
@@ -332,7 +346,7 @@ public class MidiReader {
     
     
     //changes each half-measure of the song to a new rhythm defined by the list of rules and returns entire song
-    public static ArrayList<float[]> changeSong(ArrayList<float[]> notes, ArrayList<String> pattern, ArrayList<String> rules) {
+    public static ArrayList<float[]> changeSong(ArrayList<float[]> notes, ArrayList<String> pattern, ArrayList<String> rules, ArrayList<ArrayList<Float>> patternNums) {
         ArrayList<float[]> output = new ArrayList();
         String newSequence;
 
@@ -360,8 +374,8 @@ public class MidiReader {
                     }
                 }
             }
-            output.addAll(changeRhythm(getHalfMeasure(notes,i),newSequence,(float)GCD*i*16));
-            System.out.println(newSequence);
+            output.addAll(changeRhythm(getHalfMeasure(notes,i),newSequence,(float)GCD*i*16,patternNums.get(i)));
+            //System.out.println(newSequence);
         }
         return output;
     }
@@ -391,7 +405,7 @@ public class MidiReader {
                 if (Float.parseFloat(patternData.get(j)[0]) == (patterns.get(i).length() - patterns.get(i).replace("I", "").length()) ) { //if same number of I's
                     if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) {
                         rules.add(patterns.get(i) + " " + patternData.get(j)[2]);
-                        System.out.println("Rule added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
+                        //System.out.println("Rule added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
                     }
                 }
             }
@@ -419,7 +433,7 @@ public class MidiReader {
         ArrayList<float[]> chordList = new ArrayList();
         int[] timeSig = {0,0,0};
         //ArrayList<float[]> chordList = new ArrayList();
-        chordList = ChordAnalyzer.chordNotes(chordList, "ksanalysis-tsroot.txt", timeSig);
+        chordList = ChordAnalyzer.chordNotes(chordList, "sonata01-1_tsroot.txt", timeSig);
         ArrayList<float[]> chordsWrite = new ArrayList();
         System.out.println("Num " + timeSig[0]);
         System.out.println("Den " + timeSig[1]);
@@ -429,32 +443,39 @@ public class MidiReader {
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
         
         //Melody processing
-        String pattern;
-        ArrayList<float[]> notesrests = new ArrayList();
-        ArrayList<float[]> notes = MelismaReader.readFile("op01n02b.notes");
+        ArrayList<float[]> notes = MelismaReader.readFile("sonata22-2.notes");
         //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
-        GCD = timeSig[0]*timeSig[2]/16 ;
+        System.out.println("MM " + MM);
+        GCD = (int)(1000*60/(MM*4));
+        System.out.println("GCD " + GCD);
         resolution = 240;
-        MEASURES = 15;
-        notes = offsetSong(notes,GCD*4);
-        notes = gcds(notes);
+        MEASURES = measures(notes);
+        
+        //notes = offsetSong(notes,0);
+        //notes = gcds(notes);
         notes = melodyChanger.makeMonophonic(notes);
-        notesrests = silences(notes);
-        pattern = rhythIO(notesrests);
         ArrayList<String> patterns = new ArrayList();
+        ArrayList<ArrayList<Float>> patternNums = new ArrayList();
         for (int i=0; i<MEASURES; i++) {
-            patterns.add(MeasureAnalyzer.getRhythm(notes,i,120));
-            //System.out.println(patterns.get(i));
+            patterns.add(MeasureAnalyzer.getRhythm(notes,i,GCD));
+            patternNums.add(MeasureAnalyzer.patternNums(getHalfMeasure(notes,i),GCD,patterns.get(i),GCD*i*16));
+            //System.out.println(patternNums.get(i));
         }
+        System.out.println();
+        ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
         ArrayList<String> rules = makeRules(patterns,patternData);
-        notes = changeSong(notes,patterns,rules);
+        notes = changeSong(notes,patterns,rules,patternNums);
         
         chordsWrite.addAll(notes);
         
-        write(chordsWrite);
+        write(notes);
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
+        //array of number of notes per i, list of their durations?
         
-        
+        /*todo: 
+            make it sync up nicely
+            make it bin notes together
+        */
     }
 }
