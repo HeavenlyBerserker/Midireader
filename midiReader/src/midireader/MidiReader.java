@@ -26,6 +26,7 @@ public class MidiReader {
     public static float tempo;
     public static float MEASURES;
     public static float MM; //beats per minute from melisma
+    public static int lines[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     
     public static void write(ArrayList<float[]> notes) {
     System.out.println("midifile begin ");
@@ -397,15 +398,41 @@ public class MidiReader {
         return output;
     }
     
-    //creates a set of rules to be applied to the song in changeSong. Right now just handmade rules.
+    //changes from 1/0 to I/O
+    public static ArrayList<String[]> changeToIO(ArrayList<String[]> patterns) {
+        ArrayList<String[]> output = new ArrayList();
+        for (int i=0; i<patterns.size(); i++) {
+            String[] temp = {patterns.get(i)[0], patterns.get(i)[1], patterns.get(i)[2].replace("1", "I").replace("0", "O")};
+            output.add(temp);
+        }
+        
+        return output;
+    }
+    
+    
+    //creates a set of rules to be applied to the song in changeSong. 
     public static ArrayList<String> makeRules(ArrayList<String> patterns, ArrayList<String[]> patternData) {
         ArrayList<String> rules = new ArrayList();
+        int startingnum = 0;
+        
         for (int i=0; i<MEASURES; i++) {
-            for (int j=0; j<patternData.size(); j++) {
-                if (Float.parseFloat(patternData.get(j)[0]) == (patterns.get(i).length() - patterns.get(i).replace("I", "").length()) ) { //if same number of I's
-                    if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) {
-                        rules.add(patterns.get(i) + " " + patternData.get(j)[2]);
-                        //System.out.println("Rule added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
+            int size = (patterns.get(i).length() - patterns.get(i).replace("I", "").length());
+            //float randomnum = (float)Math.random();
+            //float curnum = lines[size];
+            int flag = 0;
+            for (int j=0; j<rules.size(); j++) {
+                if (patterns.get(i).equals( (rules.get(j)).substring(0,16) )) {
+                    flag = 1;
+                }
+            }
+            if (flag == 0) {
+                for (int j=0; j<patternData.size(); j++) { //lines[size]
+                    if (Float.parseFloat(patternData.get(j)[0]) == (patterns.get(i).length() - patterns.get(i).replace("I", "").length()) ) { //if same number of I's
+                        if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) {
+                            rules.add(patterns.get(i) + " " + patternData.get(j)[2]);
+                            System.out.println("Rule added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
+                            break;
+                        }
                     }
                 }
             }
@@ -427,9 +454,13 @@ public class MidiReader {
     public static void main(String[] args) throws Exception {
         
         //input pattern data
-        ArrayList<String[]> patternData = RhythmReader.readFile("madeuppatterns.txt");
+        ArrayList<String[]> patternData = rhythmFrequency.readFile("lhlpatterns_depth_nots.csv");
+        patternData = changeToIO(patternData);
+        MeasureAnalyzer.LHL("IOOOOOOOIOOOOOOOOOOOIOOO");
+        //ArrayList<String[]> patternData = RhythmReader.readFile("madeuppatterns.txt");
         
         //Chord processing
+           /*
         ArrayList<float[]> chordList = new ArrayList();
         int[] timeSig = {0,0,0};
         //ArrayList<float[]> chordList = new ArrayList();
@@ -443,7 +474,7 @@ public class MidiReader {
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
         
         //Melody processing
-        ArrayList<float[]> notes = MelismaReader.readFile("sonata22-2.notes");
+        ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
         //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
         System.out.println("MM " + MM);
         GCD = (int)(1000*60/(MM*4));
@@ -459,10 +490,10 @@ public class MidiReader {
         for (int i=0; i<MEASURES; i++) {
             patterns.add(MeasureAnalyzer.getRhythm(notes,i,GCD));
             patternNums.add(MeasureAnalyzer.patternNums(getHalfMeasure(notes,i),GCD,patterns.get(i),GCD*i*16));
-            //System.out.println(patternNums.get(i));
+            System.out.println(patterns.get(i));
         }
         System.out.println();
-        ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
+        //ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
         ArrayList<String> rules = makeRules(patterns,patternData);
         notes = changeSong(notes,patterns,rules,patternNums);
         
@@ -471,11 +502,17 @@ public class MidiReader {
         write(notes);
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
-        //array of number of notes per i, list of their durations?
         
         /*todo: 
-            make it sync up nicely
-            make it bin notes together
+            Implement LHL syncopation metric on song
+        
+            LHL Syncopation:  The weight of a given note or rest is the level of the highest metrical
+            unit that it initiates
+        
+            If R is a rest or a tied note, and N is the next sounded note before R, and
+            the weight of N is no greater than the weight of R, then the pair (N,R) is said
+            to constitute a syncopation. The "strength" of the syncopation is the weight
+            of R minus the weight of N
         */
     }
 }

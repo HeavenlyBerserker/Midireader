@@ -171,8 +171,8 @@ public class MeasureAnalyzer {
     
     public static ArrayList<String[]> measureFrequencies(ArrayList<String> patterns)  {
         ArrayList<String[]> output = new ArrayList();
-        int found = -1;
         for (int i=0; i<patterns.size(); i++) {
+            int found = -1;
             for (int j=0; j<output.size(); j++) {
                 if (found == -1 && output.get(j)[0].equals(patterns.get(i))) {
                     found = j;
@@ -214,4 +214,33 @@ public class MeasureAnalyzer {
         }
         return output;
     }
+    
+    //runs LHL-p metric described in http://ismir2012.ismir.net/event/papers/283_ISMIR_2012.pdf and https://www.jstor.org/stable/40285271?seq=1
+    public static int LHL(String pattern) {
+        int output = 0;
+        int weight[] = { 5,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1};
+        for (int i=0; i<pattern.length(); i++) {
+            if (pattern.charAt(i) == 'O') {
+                int previousi = i;
+                for (int j=i; j>=0; j--) {
+                    if (j > 0 && pattern.charAt(j-1) == 'I') {
+                        previousi = j-1;
+                        break;
+                    }
+                    else if (j==0) {
+                        previousi = 15;
+                        break;
+                    }
+                }
+                
+                //System.out.println(weight[previousi% 16] + " " + weight[i % 16] + " " + (weight[i %16] - weight[previousi % 16]));
+                if (weight[i% 16] - weight[previousi % 16] > 0) {
+                    output += weight[i %16] - weight[previousi % 16];
+                }
+            }
+        }
+        System.out.println(output);
+        return output;
+    }
+    
 }
