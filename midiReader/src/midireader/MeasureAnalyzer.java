@@ -68,8 +68,8 @@ public class MeasureAnalyzer {
         String output = "";
         float curnote, nextnote, curint;
         for (int i=0; i<measure.size()-1; i++) {
-            curnote = measure.get(i)[0]%13;
-            nextnote = measure.get(i+1)[0]%13;
+            curnote = measure.get(i)[0]%12;
+            nextnote = measure.get(i+1)[0]%12;
             curint = (int)(nextnote-curnote);
             while (curint < 0) {
                 curint += 13;
@@ -132,7 +132,7 @@ public class MeasureAnalyzer {
         String output = "";
         float curnote;
         for (int i=0; i<measure.size(); i++) {
-            curnote = measure.get(i)[0]%13;
+            curnote = measure.get(i)[0]%12;
             output += (char)(curnote + '0');
         }
         //System.out.println(output);
@@ -168,4 +168,79 @@ public class MeasureAnalyzer {
         }
 	return dp[len1][len2];
     }
+    
+    public static ArrayList<String[]> measureFrequencies(ArrayList<String> patterns)  {
+        ArrayList<String[]> output = new ArrayList();
+        for (int i=0; i<patterns.size(); i++) {
+            int found = -1;
+            for (int j=0; j<output.size(); j++) {
+                if (found == -1 && output.get(j)[0].equals(patterns.get(i))) {
+                    found = j;
+                }
+            }
+            if (found == -1) {
+                String[] temp = {patterns.get(i),"1"};
+                output.add(temp);
+            }
+            else {
+                String[] temp = {output.get(found)[0],Float.toString(Float.valueOf(output.get(found)[1]) + 1)};
+                output.set(found,temp);
+            }
+        }
+        for (int j=0; j<output.size(); j++) {
+            System.out.println(output.get(j)[0] + " " + output.get(j)[1]);
+        }
+        return output;
+    }
+    
+    //returns an array of the format <n1, length(0), ... , length(n1-1), n2...>
+    public static ArrayList<Float> patternNums(ArrayList<float[]> notes, float GCD, String pattern, float start) {
+        ArrayList<Float> output = new ArrayList();
+        for (int i=0; i<16; i++) {
+            if (pattern.charAt(i) == 'I') {
+                ArrayList<Float> temp = new ArrayList();
+                for (int j=0; j<notes.size(); j++) {
+                    if (notes.get(j)[1]-start >= i*GCD && notes.get(j)[1]-start <= (i+1)*GCD) {
+                        //System.out.println(notes.get(j)[1]-start + " " + i*GCD);
+                        
+                        
+                        temp.add(notes.get(j)[2]-notes.get(j)[1]);
+                    }
+                output.add((float)temp.size());
+                output.addAll(temp);
+                
+                }
+            }
+        }
+        return output;
+    }
+    
+    //runs LHL-p metric described in http://ismir2012.ismir.net/event/papers/283_ISMIR_2012.pdf and https://www.jstor.org/stable/40285271?seq=1
+    public static int LHL(String pattern) {
+        int output = 0;
+        int weight[] = { 5,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1};
+        for (int i=0; i<pattern.length(); i++) {
+            if (pattern.charAt(i) == 'O') {
+                int previousi = i;
+                for (int j=i; j>=0; j--) {
+                    if (j > 0 && pattern.charAt(j-1) == 'I') {
+                        previousi = j-1;
+                        break;
+                    }
+                    else if (j==0) {
+                        previousi = 15;
+                        break;
+                    }
+                }
+                
+                //System.out.println(weight[previousi% 16] + " " + weight[i % 16] + " " + (weight[i %16] - weight[previousi % 16]));
+                if (weight[i% 16] - weight[previousi % 16] > 0) {
+                    output += weight[i %16] - weight[previousi % 16];
+                }
+            }
+        }
+        System.out.println(output);
+        return output;
+    }
+    
 }
