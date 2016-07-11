@@ -28,7 +28,7 @@ public class MidiReader {
     public static float MM; //beats per minute from melisma
     public static int lines[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     
-    public static void write(ArrayList<float[]> notes) {
+    public static void write(ArrayList<float[]> notes, String filename) {
     System.out.println("midifile begin ");
 	try
 	{
@@ -95,7 +95,7 @@ public class MidiReader {
 		t.add(me);
 
 //****  write the MIDI sequence to a MIDI file  ****
-		File f = new File("output.mid");
+		File f = new File(filename);
 		MidiSystem.write(s,1,f);
 	} //try //try
 		catch(Exception e)
@@ -460,13 +460,12 @@ public class MidiReader {
         MeasureAnalyzer.LHL("IOOOOOOOIOOOOOOOOOOOIOOO");
         //ArrayList<String[]> patternData = RhythmReader.readFile("madeuppatterns.txt");
         
-
-        //Chord processing
-           /*
+        
+        String filename = "sonata01-1_tsroot.txt";
         ArrayList<float[]> chordList = new ArrayList();
         int[] timeSig = {0,0,0};
         //ArrayList<float[]> chordList = new ArrayList();
-        chordList = ChordAnalyzer.chordNotes(chordList, "sonata01-1_tsroot.txt", timeSig);
+        chordList = ChordAnalyzer.chordNotes(chordList, filename, timeSig);
         ArrayList<float[]> chordsWrite = new ArrayList();
         System.out.println("Num " + timeSig[0]);
         System.out.println("Den " + timeSig[1]);
@@ -474,11 +473,13 @@ public class MidiReader {
         float ts = 4/4 - (float)0.001;
         float speed = 1000;
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
->>>>>>> abf4849c75e863e9f2ba6058d6a504ad8288016b
-        
+        write(chordsWrite, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
         //Melody processing
         ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
         //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
+        
+        
+        /*
 <<<<<<< HEAD
         GCD = 60 ;
         notes = offsetSong(notes,GCD*2);
