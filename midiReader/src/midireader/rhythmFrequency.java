@@ -78,7 +78,18 @@ public class rhythmFrequency {
         });
         
         for (int i=0; i<output.size(); i++) {
-            //System.out.println(output.get(i)[0] + " " + output.get(i)[1] + " " + output.get(i)[2]);
+            System.out.println(output.get(i)[0] + " " + output.get(i)[1] + " " + output.get(i)[2]);
+        }
+        
+        return output;
+    }
+    
+    //changes from 1/0 to I/O
+    public static ArrayList<String[]> changeToIO(ArrayList<String[]> patterns) {
+        ArrayList<String[]> output = new ArrayList();
+        for (int i=0; i<patterns.size(); i++) {
+            String[] temp = {patterns.get(i)[0], patterns.get(i)[1], patterns.get(i)[2].replace("1", "I").replace("0", "O")};
+            output.add(temp);
         }
         
         return output;
