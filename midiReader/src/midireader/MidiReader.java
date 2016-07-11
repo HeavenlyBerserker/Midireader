@@ -261,7 +261,7 @@ public class MidiReader {
         return notessilences;
     }
     
-    
+
     //returns a single half-measure of the song's notes in ArrayList format
     public static ArrayList<float[]> getHalfMeasure(ArrayList<float[]> notes, int measureNumber) {
         ArrayList<float[]> output = new ArrayList();
@@ -314,6 +314,7 @@ public class MidiReader {
         //MeasureAnalyzer.LHL("IOOOOOOOIOOOOOOOOOOOIOOO");
         //ArrayList<String[]> patternData = RhythmReader.readFile("madeuppatterns.txt");
         
+
         //Chord processing
         ArrayList<float[]> chordList = new ArrayList();
         int[] timeSig = {0,0,0};
@@ -326,10 +327,12 @@ public class MidiReader {
         float ts = 4/4 - (float)0.001;
         float speed = 1000;
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
+
         
         //Melody processing
         ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
         //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
+
         System.out.println("MM " + MM);
         GCD = (int)(1000*60/(MM*4));
         System.out.println("GCD " + GCD);
@@ -339,20 +342,21 @@ public class MidiReader {
         //notes = offsetSong(notes,0);
         //notes = gcds(notes);
         notes = melodyChanger.makeMonophonic(notes);
+
         ArrayList<String> patterns = new ArrayList();
         ArrayList<ArrayList<Float>> patternNums = new ArrayList();
         for (int i=0; i<MEASURES; i++) {
+
             patterns.add(MeasureAnalyzer.getRhythm(notes,i,GCD));
             patternNums.add(MeasureAnalyzer.patternNums(getHalfMeasure(notes,i),GCD,patterns.get(i),GCD*i*16));
-            //System.out.println(patterns.get(i));
+
+
         }
         System.out.println();
         //ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
         ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
         notes = RhythmChanger.changeSong(notes,patterns,rules,patternNums);
-        
-        chordsWrite.addAll(notes);
-        
+     
         write(chordsWrite);
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
@@ -363,6 +367,7 @@ public class MidiReader {
             Add min distance rule to rhythm changer
             Timing/offsets?
         */
+
         
     }
 }
