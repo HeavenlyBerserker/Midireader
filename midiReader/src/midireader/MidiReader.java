@@ -267,46 +267,10 @@ public class MidiReader {
         chordList = ChordAnalyzer.chordNotes(chordList, filename, timeSig);
         ArrayList<float[]> chordsWrite;
         float ts = 4/4 - (float)0.001;
-        float speed = 100;
+        float speed = 1000;
         //chordMaker.print(chordList);
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
-
-        
-        ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
-        /*System.out.println("\n--------------------------------------------------------------------------------\n--------------------------------------------------------------------------------");
-        printF(chordsWrite);
-        System.out.println("\n--------------------------------------------------------------------------------\n--------------------------------------------------------------------------------");
-        */
-        write(chordsWrite, "Hollllllllllla.mid");
-        //write(chordsWrite, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
-        //Melody processing
-        //ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
-        //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
-        
-        
-        /*
-<<<<<<< HEAD
-        GCD = 60 ;
-        notes = offsetSong(notes,GCD*2);
-        notes = gcds(notes);
-        
-        notes = melodyChanger.makeMonophonic(notes);
-        
-        GCD = 120 ;
-        resolution = 240;
-        MEASURES = 15;
-        //System.out.println(MidiSystem.getSequence(new File("sample.mid")));
-        notesrests = silences(notes);
-        pattern = rhythIO(notesrests);
-        
-=======
-=======
-=======
->>>>>>> 434005298668cd88e7dd930971267a3ff630bd65
-
-=======
->>>>>>> 7ef6ee3eb8d838427c7266a5e355ed991541005c
-        
+        //chordMaker.print(chordsWrite);
         
         //Melody processing
         ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
@@ -337,13 +301,13 @@ public class MidiReader {
         ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
         notes = RhythmChanger.changeSong(notes,patterns,rules,patternNums);
         chordsWrite.addAll(notes);
-        write(notes, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
+        chordMaker.print(chordsWrite);
+        write(chordsWrite, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
         
         /*
         Todo: 
-            New distance metric based on distance I's move in a rule
             Timing/offsets?
         */
     }

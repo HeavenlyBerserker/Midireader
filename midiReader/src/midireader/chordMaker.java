@@ -256,10 +256,10 @@ public class chordMaker {
         //print(notes);
         chordsWrite = chordBD(notes, ts,speed);
         chordInt(chordsWrite);
-        return listCut(chordsWrite, 10);
+        //return listCut(chordsWrite, 10);
         /*System.out.println("--------------------------------------------------------------------------------\n--------------------------------------------------------------------------------");
         printF(chordsWrite);*/
         //print(notes);
-        //return chordsWrite;
+        return chordsWrite;
     }
 }
