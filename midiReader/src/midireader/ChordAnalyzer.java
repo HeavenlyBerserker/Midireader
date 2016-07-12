@@ -142,7 +142,7 @@ public class ChordAnalyzer {
                 
                 if(line.charAt(0) == '=' && Character.isDigit(line.charAt(1))){
                     //if(chrono != 16){
-                        System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
+                        //System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
                     //}
                     chrono = 0;
                     chrono2 = 0;
@@ -256,7 +256,7 @@ public class ChordAnalyzer {
                         putInArray2(line);
                         putInArray3(line);
                         //printArray(tTable.get(1));
-                        System.out.println();
+                        //System.out.println();
                         //if no prev array
                         if(noteCount == 0){
                             //System.out.println();
@@ -696,21 +696,21 @@ public class ChordAnalyzer {
     
     public static void printArray(float[] a){
        for(int i=0; i < a.length; i++){
-           System.out.print(a[i] + ", ");
+           //System.out.print(a[i] + ", ");
        }
        System.out.println();
     }
     
     public static void printListFrac(List <Fractions> f){
        for(int i=0; i < f.size(); i++){
-           System.out.print("[" + f.get(i).num + "/" + f.get(i).den + "]");
+           //System.out.print("[" + f.get(i).num + "/" + f.get(i).den + "]");
        }
        System.out.println();
     }
     
     public static void printListFrac(Fractions[] f){
        for(int i=0; i < f.length; i++){
-           System.out.print("[" + f[i].num + "/" + f[i].den + "]");
+           //System.out.print("[" + f[i].num + "/" + f[i].den + "]");
        }
        System.out.println();
     }

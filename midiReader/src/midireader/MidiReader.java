@@ -157,10 +157,10 @@ public class MidiReader {
     Input: List of notes
     Output: Sorted list, GCD by global variable
     */
+    /*
     public static ArrayList<float[]> gcds(ArrayList<float[]> notes) {
-        /* Calculating the lengths of each note in the song
-        Change this section if it is ------expressive performance----- we are dealing with.
-        */
+        //Calculating the lengths of each note in the song
+        //Change this section if it is ------expressive performance----- we are dealing with.
         double dmin = Double.POSITIVE_INFINITY;
         for(int i=0; i < notes.size(); i++) {
             differences.add(notes.get(i)[2] - notes.get(i)[1]);
@@ -185,9 +185,8 @@ public class MidiReader {
         }
         //System.out.println("GCD = " + GCD);
         
-        /*Sorting notes by starting time
+        //Sorting notes by starting time
         
-        */
         ArrayList<float[]> sNotes = new ArrayList();
         int si = notes.size();
         for(int i=0; i < si; i++) {
@@ -205,61 +204,7 @@ public class MidiReader {
             //System.out.println(sNotes.get(i)[0] + " " + sNotes.get(i)[1] + " " + sNotes.get(i)[2]);
         }
         return sNotes;
-    }
-    
-    public static String rhythIO(ArrayList<float[]> notesrest) {
-        String io = "";
-        for(int i=0; i < notesrest.size(); i++) {
-            if(notesrest.get(i)[0] == -1){
-                for(int j=0; j < notesrest.get(i)[1]; j++){
-                    io += ".";
-                }
-            }
-            else{
-                io += "I";
-                for(int j=0; j < notesrest.get(i)[1]-1; j++){
-                    io += ".";
-                }
-            }
-        }
-        return io;
-    }
-        
-    public static ArrayList<float[]> silences(ArrayList<float[]> notes) {
-        // Note silences is an array list of format = {note number, unit duration}
-        // -1 is the note is a rest
-        // unit duration is note_duration/GCD
-        // *Does not work with polyphonic melodies
-        ArrayList<float[]> notessilences = new ArrayList();
-        int count = 0;
-        if(notes.get(0)[1] != 0){
-            float[] s = {-1, (int)notes.get(0)[1]/GCD};
-            notessilences.add(s);
-            //System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
-        }
-        for(int i=0; i < notes.size()-1; i++) {
-            //if(notes.get(i)[2] < notes.get(i+1)[1]){
-                float[] s = {(int)notes.get(i)[0], ((int)notes.get(i)[2]-(int)notes.get(i)[1])/GCD};
-                notessilences.add(s);
-                //System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
-                float[] s2 = {-1, ((int)notes.get(i+1)[1]-notes.get(i)[2])/GCD};
-                notessilences.add(s2);
-                //System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
-            //}
-            // Does not work with polyphonic melodies.
-            /*
-            else if(notes.get(i)[2] > notes.get(i+1)[1]){
-                System.out.println("Error: Melody is not monophonic.");
-                break;
-                }
-            else{
-                float[] s = {(int)notes.get(i)[0], ((int)notes.get(i)[2]-(int)notes.get(i)[1])/GCD};
-                notessilences.add(s);
-                //System.out.println(notessilences.get(count)[0] + " " + notessilences.get(count++)[1]);
-                }*/
-        }
-        return notessilences;
-    }
+    }*/
     
 
     //returns a single half-measure of the song's notes in ArrayList format
@@ -307,70 +252,35 @@ public class MidiReader {
     
     
     public static void main(String[] args) throws Exception {
-        /*
+
         //input pattern data
         ArrayList<String[]> patternData = rhythmFrequency.readFile("lhlpatterns_depth_nots.csv");
         patternData = rhythmFrequency.changeToIO(patternData);
-        //MeasureAnalyzer.LHL("IOOOOOOOIOOOOOOOOOOOIOOO");
-        //ArrayList<String[]> patternData = RhythmReader.readFile("madeuppatterns.txt");
-        */
 
-        
         String filename = "sonata01-1_tsroot.txt";
 
         //Chord processing
+        
         ArrayList<float[]> chordList = new ArrayList();
         int[] timeSig = {0,0,0};
-        //ArrayList<float[]> chordList = new ArrayList();
         chordList = ChordAnalyzer.chordNotes(chordList, filename, timeSig);
-        ArrayList<float[]> chordsWrite = new ArrayList();
-        //System.out.println("Num " + timeSig[0]);
-        //System.out.println("Den " + timeSig[1]);
-        //System.out.println("Beat " + timeSig[2]);
+        ArrayList<float[]> chordsWrite;
         float ts = 4/4 - (float)0.001;
         float speed = 1000;
         chordMaker.print(chordList);
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
-
-        write(chordsWrite, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
-        //Melody processing
-        ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
-        //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
-        
-        
-        /*
-<<<<<<< HEAD
-        GCD = 60 ;
-        notes = offsetSong(notes,GCD*2);
-        notes = gcds(notes);
-        
-        notes = melodyChanger.makeMonophonic(notes);
-        
-        GCD = 120 ;
-        resolution = 240;
-        MEASURES = 15;
-        //System.out.println(MidiSystem.getSequence(new File("sample.mid")));
-        notesrests = silences(notes);
-        pattern = rhythIO(notesrests);
-        
-=======
-=======
-=======
->>>>>>> 434005298668cd88e7dd930971267a3ff630bd65
-
         
         
         //Melody processing
         ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
         //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
         
-        
-
         System.out.println("MM " + MM);
         GCD = (int)(1000*60/(MM*4));
         System.out.println("GCD " + GCD);
         resolution = 240;
         MEASURES = measures(notes);
+        System.out.println(MEASURES + " measures");
         
         //notes = offsetSong(notes,0);
         //notes = gcds(notes);
@@ -378,29 +288,26 @@ public class MidiReader {
 
         ArrayList<String> patterns = new ArrayList();
         ArrayList<ArrayList<Float>> patternNums = new ArrayList();
+        float lhloverall = 0;
         for (int i=0; i<MEASURES; i++) {
-
             patterns.add(MeasureAnalyzer.getRhythm(notes,i,GCD));
+            lhloverall += MeasureAnalyzer.LHL(MeasureAnalyzer.getRhythm(notes,i,GCD));
             patternNums.add(MeasureAnalyzer.patternNums(getHalfMeasure(notes,i),GCD,patterns.get(i),GCD*i*16));
-
-
         }
-        System.out.println();
+        lhloverall = lhloverall/MEASURES;
+        System.out.println("Syncopation: " + lhloverall);
         //ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
         ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
         notes = RhythmChanger.changeSong(notes,patterns,rules,patternNums);
-     
-        write(chordsWrite, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
+        chordsWrite.addAll(notes);
+        write(notes, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
         
         /*
         Todo: 
-            Redo rhythm changer probabilities
-            Add min distance rule to rhythm changer
+            New distance metric based on distance I's move in a rule
             Timing/offsets?
         */
-
-        
     }
 }

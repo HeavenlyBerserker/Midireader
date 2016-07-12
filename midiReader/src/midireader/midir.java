@@ -54,7 +54,6 @@ public class midir {
                     System.out.println("Other message: " + message.getClass());
                 }
             }
-               //eggs are delicious
             System.out.println();
         }
 

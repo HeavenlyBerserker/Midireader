@@ -24,12 +24,21 @@ public class RhythmChanger {
             }
             if (flag == 0) {
                 for (int j=0; j<patternData.size(); j++) { //lines[size]
-                    if (Float.parseFloat(patternData.get(j)[0]) == (patterns.get(i).length() - patterns.get(i).replace("I", "").length()) ) { //if same number of I's
-                        if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) {
-                            rules.add(patterns.get(i) + " " + patternData.get(j)[2]);
-                            System.out.println("Rule added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
-                            break;
+                    if (!patternData.get(j)[2].equals(patterns.get(i)))  {//if not equal
+                        if (Float.parseFloat(patternData.get(j)[0]) == (patterns.get(i).length() - patterns.get(i).replace("I", "").length()) ) { //if same number of I's
+                            //System.out.println(MeasureAnalyzer.rhythmSimilarity(patternData.get(j)[2], patterns.get(i)));
+                            if (MeasureAnalyzer.rhythmSimilarity(patternData.get(j)[2], patterns.get(i)) > 0.8) { //if somewhat similar
+                                if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) {
+                                    rules.add(patterns.get(i) + " " + patternData.get(j)[2]);
+                                    //System.out.println("Rule added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
+                                    break;
+                                }
+                            }
                         }
+                    }
+                    else if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) { //skip rules that would not change anything
+                        //System.out.println("Rule not added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
+                        break;
                     }
                 }
             }
@@ -42,7 +51,6 @@ public class RhythmChanger {
         ArrayList<float[]> output = new ArrayList();
         String newSequence;
 
-        System.out.println(MEASURES + " measures");
         for (int i=0; i<MEASURES; i++) {
 
             newSequence = pattern.get(i);
