@@ -267,8 +267,8 @@ public class MidiReader {
         chordList = ChordAnalyzer.chordNotes(chordList, filename, timeSig);
         ArrayList<float[]> chordsWrite;
         float ts = 4/4 - (float)0.001;
-        float speed = 1000;
-        //chordMaker.print(chordList);
+        float speed = 1200;
+        chordMaker.print(chordList);
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
         //chordMaker.print(chordsWrite);
         
@@ -300,8 +300,8 @@ public class MidiReader {
         //ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
         ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
         notes = RhythmChanger.changeSong(notes,patterns,rules,patternNums);
-        chordsWrite.addAll(notes);
-        chordMaker.print(chordsWrite);
+        //chordsWrite.addAll(notes);
+        //chordMaker.print(chordsWrite);
         write(chordsWrite, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));

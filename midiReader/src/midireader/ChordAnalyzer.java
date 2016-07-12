@@ -319,7 +319,7 @@ public class ChordAnalyzer {
                             //printListFrac(lastArry);
                             //System.out.print("Table ");printListFrac(table);
                             //System.out.println();
-                            //realTemp.print();
+                            realTemp.print();
                             Fractions realTemp2 = new Fractions(realTemp.num, realTemp.den);
                             //System.out.print(Fractions.fl(realTemp));
                             if(realTemp.num != 0) {chrono2 += Fractions.fl(realTemp);}
