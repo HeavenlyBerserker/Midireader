@@ -142,7 +142,7 @@ public class ChordAnalyzer {
                 
                 if(line.charAt(0) == '=' && Character.isDigit(line.charAt(1))){
                     //if(chrono != 16){
-                        //System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
+//------------------System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
                     //}
                     chrono = 0;
                     chrono2 = 0;
@@ -321,7 +321,7 @@ public class ChordAnalyzer {
                             //System.out.println();
                             //realTemp.print();
                             Fractions realTemp2 = new Fractions(realTemp.num, realTemp.den);
-                            System.out.print(Fractions.fl(realTemp));
+                            //System.out.print(Fractions.fl(realTemp));
                             if(realTemp.num != 0) {chrono2 += Fractions.fl(realTemp);}
                             //System.out.println(chrono2);
                             //System.out.print("Arry ");printListFrac(arry);
@@ -531,13 +531,17 @@ public class ChordAnalyzer {
                             if(notes.size() == 3){
                                 float[] arr3 = {Fractions.fl(realTemp),notes.get(0)[0] % 12,notes.get(1)[0] % 12, notes.get(2)[0] % 12};
                                 chords.add(arr3);
-                                chordMaker.printF(chords);
+                                //printArray(arr3);
+                                //System.out.print(chords.size());
+                                //chordMaker.printF(chords);
                                 //System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0]);
                             }
                             else if(notes.size() == 4){
                                 float[] arr3 = {Fractions.fl(realTemp),notes.get(0)[0] % 12,notes.get(1)[0] % 12, notes.get(2)[0] % 12, notes.get(3)[0] % 12};
                                 chords.add(arr3);
-                                chordMaker.printF(chords);
+                                //printArray(arr3);
+                                //System.out.print(chords.size());
+                                //chordMaker.printF(chords);
                                 //System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0] + " " + notes.get(3)[0]);
                             }
                         }
@@ -1111,10 +1115,11 @@ public class ChordAnalyzer {
     public static ArrayList<float[]> chordNotes(ArrayList<float[]> notes, String filename, int[] timeSig){
         readFile(notes, filename);
         //chordMaker.printF(tempoTable);
-        chordMaker.printF(notes);
+        //chordMaker.printF(notes);
         timeSig[0] = num;
         timeSig[1] = den;
         timeSig[2] = beats;
+        //chordMaker.print(notes);
         return notes;
     }
     

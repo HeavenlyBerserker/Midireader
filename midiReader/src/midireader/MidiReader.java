@@ -15,6 +15,7 @@ import javax.sound.midi.Sequence;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
+import static midireader.chordMaker.printF;
 
 public class MidiReader {
     public static final int NOTE_ON = 0x90;
@@ -32,78 +33,78 @@ public class MidiReader {
     System.out.println("midifile begin ");
 	try
 	{
-//****  Create a new MIDI sequence with 24 ticks per beat  ****
-		Sequence s = new Sequence(javax.sound.midi.Sequence.PPQ,(int)resolution);
+    //****  Create a new MIDI sequence with 24 ticks per beat  ****
+                    Sequence s = new Sequence(javax.sound.midi.Sequence.PPQ,(int)resolution);
 
-//****  Obtain a MIDI track from the sequence  ****
-		Track t = s.createTrack();
+    //****  Obtain a MIDI track from the sequence  ****
+                    Track t = s.createTrack();
 
-//****  General MIDI sysex -- turn on General MIDI sound set  ****
-		byte[] b = {(byte)0xF0, 0x7E, 0x7F, 0x09, 0x01, (byte)0xF7};
-		SysexMessage sm = new SysexMessage();
-		sm.setMessage(b, 6);
-		MidiEvent me = new MidiEvent(sm,(long)0);
-		t.add(me);
-//****  set tempo (meta event)  ****
-		MetaMessage mt = new MetaMessage();
-                byte[] bt = {0x06, (byte)0x00, 0x00};
-		mt.setMessage(0x51 ,bt, 3);
-		me = new MidiEvent(mt,(long)0);
-		t.add(me);
-//****  set track name (meta event)  ****
-		mt = new MetaMessage();
-		String TrackName = "midifile track";
-		mt.setMessage(0x03 ,TrackName.getBytes(), TrackName.length());
-		me = new MidiEvent(mt,(long)0);
-		t.add(me);
-//****  set omni on  ****
-		ShortMessage mm = new ShortMessage();
-		mm.setMessage(0xB0, 0x7D,0x00);
-		me = new MidiEvent(mm,(long)0);
-		t.add(me);
-//****  set poly on  ****
-		mm = new ShortMessage();
-		mm.setMessage(0xB0, 0x7F,0x00);
-		me = new MidiEvent(mm,(long)0);
-		t.add(me);
-//****  set instrument to Piano  ****
-		mm = new ShortMessage();
-		mm.setMessage(0xC6, 15, 0x05);
-		me = new MidiEvent(mm,(long)0);
-		t.add(me);
-                
-                for (int i=0; i<notes.size();i++) {
-                    float[] note = notes.get(i);
-                    
-                    //****  note on  ****
-                    mm = new ShortMessage();
-                    mm.setMessage(NOTE_ON,(int)note[0],0x60); 
-                    me = new MidiEvent(mm,(long)note[1]); //time on
+    //****  General MIDI sysex -- turn on General MIDI sound set  ****
+                    byte[] b = {(byte)0xF0, 0x7E, 0x7F, 0x09, 0x01, (byte)0xF7};
+                    SysexMessage sm = new SysexMessage();
+                    sm.setMessage(b, 6);
+                    MidiEvent me = new MidiEvent(sm,(long)0);
                     t.add(me);
-                    //****  note off  ****
-                    mm = new ShortMessage();
-                    mm.setMessage(NOTE_OFF,(int)note[0],0x40);
-                    me = new MidiEvent(mm,(long)note[2]); //time off
+    //****  set tempo (meta event)  ****
+                    MetaMessage mt = new MetaMessage();
+                    byte[] bt = {0x06, (byte)0x00, 0x00};
+                    mt.setMessage(0x51 ,bt, 3);
+                    me = new MidiEvent(mt,(long)0);
                     t.add(me);
-                }
-                
-//****  set end of track (meta event) 19 ticks later  ****
-		mt = new MetaMessage();
-        byte[] bet = {}; // empty array
-		mt.setMessage(0x2F,bet,0);
-		me = new MidiEvent(mt, (long)140);
-		t.add(me);
+    //****  set track name (meta event)  ****
+                    mt = new MetaMessage();
+                    String TrackName = "midifile track";
+                    mt.setMessage(0x03 ,TrackName.getBytes(), TrackName.length());
+                    me = new MidiEvent(mt,(long)0);
+                    t.add(me);
+    //****  set omni on  ****
+                    ShortMessage mm = new ShortMessage();
+                    mm.setMessage(0xB0, 0x7D,0x00);
+                    me = new MidiEvent(mm,(long)0);
+                    t.add(me);
+    //****  set poly on  ****
+                    mm = new ShortMessage();
+                    mm.setMessage(0xB0, 0x7F,0x00);
+                    me = new MidiEvent(mm,(long)0);
+                    t.add(me);
+    //****  set instrument to Piano  ****
+                    mm = new ShortMessage();
+                    mm.setMessage(0xC6, 15, 0x05);
+                    me = new MidiEvent(mm,(long)0);
+                    t.add(me);
 
-//****  write the MIDI sequence to a MIDI file  ****
-		File f = new File(filename);
-		MidiSystem.write(s,1,f);
-	} //try //try
-		catch(Exception e)
-	{
-		System.out.println("Exception caught " + e.toString());
-	} //catch
-    System.out.println("midifile end ");
-} //main
+                    for (int i=0; i<notes.size();i++) {
+                        float[] note = notes.get(i);
+
+                        //****  note on  ****
+                        mm = new ShortMessage();
+                        mm.setMessage(NOTE_ON,(int)note[0],0x60); 
+                        me = new MidiEvent(mm,(long)note[1]); //time on
+                        t.add(me);
+                        //****  note off  ****
+                        mm = new ShortMessage();
+                        mm.setMessage(NOTE_OFF,(int)note[0],0x40);
+                        me = new MidiEvent(mm,(long)note[2]); //time off
+                        t.add(me);
+                    }
+
+    //****  set end of track (meta event) 19 ticks later  ****
+                    mt = new MetaMessage();
+            byte[] bet = {}; // empty array
+                    mt.setMessage(0x2F,bet,0);
+                    me = new MidiEvent(mt, (long)140);
+                    t.add(me);
+
+    //****  write the MIDI sequence to a MIDI file  ****
+                    File f = new File(filename);
+                    MidiSystem.write(s,1,f);
+            } //try //try
+                    catch(Exception e)
+            {
+                    System.out.println("Exception caught " + e.toString());
+            } //catch
+        System.out.println("midifile end ");
+    } //main
     
     /*Function: Read Midi---------------------------------------------------------
     Reads a midi file and returns an list of values about the notes
@@ -267,9 +268,9 @@ public class MidiReader {
         ArrayList<float[]> chordsWrite;
         float ts = 4/4 - (float)0.001;
         float speed = 1000;
-        chordMaker.print(chordList);
+        //chordMaker.print(chordList);
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
-        
+        //chordMaker.print(chordsWrite);
         
         //Melody processing
         ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
@@ -300,7 +301,8 @@ public class MidiReader {
         ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
         notes = RhythmChanger.changeSong(notes,patterns,rules,patternNums);
         chordsWrite.addAll(notes);
-        write(notes, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
+        chordMaker.print(chordsWrite);
+        write(chordsWrite, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
         

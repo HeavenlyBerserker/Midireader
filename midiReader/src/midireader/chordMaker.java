@@ -38,9 +38,9 @@ public class chordMaker {
     public static ArrayList<float[]> print(ArrayList<float[]> notes){
         for(int i = 0; i < notes.size(); i++){
             for(int j = 0; j < notes.get(i).length; j++){
-                //System.out.print((int)notes.get(i)[j] + " ");
+                System.out.print((int)notes.get(i)[j] + " ");
             }
-            //ystem.out.println();
+            System.out.println();
         }
         return notes;
     }
@@ -48,9 +48,9 @@ public class chordMaker {
     public static ArrayList<float[]> printF(ArrayList<float[]> notes){
         for(int i = 0; i < notes.size(); i++){
             for(int j = 0; j < notes.get(i).length; j++){
-                //System.out.print(notes.get(i)[j] + " ");
+                System.out.print(notes.get(i)[j] + " ");
             }
-            //System.out.println();
+            System.out.println();
         }
         return notes;
     }
@@ -74,7 +74,7 @@ public class chordMaker {
         //System.out.println("Measure 1");
         int[] tempN = {0,0,0,0};
         Random randomGenerator = new Random();
-        float modTime = 0, mTime = 0, realTime = -1/notes.get(0)[0], difTime = 0, onTime = 0, offTime = 0, prevOff = 0, prevOn = 0;
+        float modTime = 0, mTime = 0, realTime = 1/notes.get(0)[0], difTime = 0, onTime = 0, offTime = 0, prevOff = 0, prevOn = 0;
         int measure = 2, beat = 0, octave = 0, passing = 0;
         ArrayList<float[]> currChord = new ArrayList();
         ArrayList<float[]> chordsWrite = new ArrayList();
@@ -226,12 +226,39 @@ public class chordMaker {
         return chordsWrite;
     }
     
+    public static ArrayList<float[]> chordInt(ArrayList<float[]> notes){
+        for(int i = 0; i < notes.size(); i++){
+            float[] temp = new float[notes.get(i).length];
+            for(int j = 0; j < notes.get(i).length; j++){
+                temp[j] = (int)notes.get(i)[j];
+            }
+            notes.set(i, temp);
+        }
+        return notes;
+    }
+    
+    public static ArrayList<float[]> listCut(ArrayList<float[]> notes, int size){
+        ArrayList<float[]> notes2 = new ArrayList();
+        for(int i = 0; i < size; i++){
+            float[] temp = new float[notes.get(i).length];
+            for(int j = 0; j < notes.get(i).length; j++){
+                temp[j] = (int)notes.get(i)[j];
+            }
+            notes2.add(temp);
+        }
+        return notes2;
+    }
+    
+    
     public static ArrayList<float[]> chordMake(ArrayList<float[]> notes, float ts, float speed){
         ArrayList<float[]> chordsWrite = new ArrayList();
         
-        print(notes);
+        //print(notes);
         chordsWrite = chordBD(notes, ts,speed);
-        
+        chordInt(chordsWrite);
+        //return listCut(chordsWrite, 10);
+        /*System.out.println("--------------------------------------------------------------------------------\n--------------------------------------------------------------------------------");
+        printF(chordsWrite);*/
         //print(notes);
         return chordsWrite;
     }
