@@ -306,7 +306,6 @@ public class MidiReader {
         
         /*
         Todo: 
-            New distance metric based on distance I's move in a rule
             Timing/offsets?
         */
     }
