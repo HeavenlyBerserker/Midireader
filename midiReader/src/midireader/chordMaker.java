@@ -228,8 +228,10 @@ public class chordMaker {
     
     public static ArrayList<float[]> chordMake(ArrayList<float[]> notes, float ts, float speed){
         ArrayList<float[]> chordsWrite = new ArrayList();
-        //print(notes);
+        
+        print(notes);
         chordsWrite = chordBD(notes, ts,speed);
+        
         //print(notes);
         return chordsWrite;
     }

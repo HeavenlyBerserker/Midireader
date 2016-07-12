@@ -256,7 +256,7 @@ public class ChordAnalyzer {
                         putInArray2(line);
                         putInArray3(line);
                         //printArray(tTable.get(1));
-                        
+                        System.out.println();
                         //if no prev array
                         if(noteCount == 0){
                             //System.out.println();
@@ -321,7 +321,7 @@ public class ChordAnalyzer {
                             //System.out.println();
                             //realTemp.print();
                             Fractions realTemp2 = new Fractions(realTemp.num, realTemp.den);
-                            //System.out.print(Fractions.fl(realTemp));
+                            System.out.print(Fractions.fl(realTemp));
                             if(realTemp.num != 0) {chrono2 += Fractions.fl(realTemp);}
                             //System.out.println(chrono2);
                             //System.out.print("Arry ");printListFrac(arry);
@@ -531,11 +531,13 @@ public class ChordAnalyzer {
                             if(notes.size() == 3){
                                 float[] arr3 = {Fractions.fl(realTemp),notes.get(0)[0] % 12,notes.get(1)[0] % 12, notes.get(2)[0] % 12};
                                 chords.add(arr3);
+                                chordMaker.printF(chords);
                                 //System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0]);
                             }
                             else if(notes.size() == 4){
                                 float[] arr3 = {Fractions.fl(realTemp),notes.get(0)[0] % 12,notes.get(1)[0] % 12, notes.get(2)[0] % 12, notes.get(3)[0] % 12};
                                 chords.add(arr3);
+                                chordMaker.printF(chords);
                                 //System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0] + " " + notes.get(3)[0]);
                             }
                         }

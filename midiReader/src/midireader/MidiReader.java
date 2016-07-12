@@ -307,20 +307,18 @@ public class MidiReader {
     
     
     public static void main(String[] args) throws Exception {
-        
+        /*
         //input pattern data
         ArrayList<String[]> patternData = rhythmFrequency.readFile("lhlpatterns_depth_nots.csv");
         patternData = rhythmFrequency.changeToIO(patternData);
         //MeasureAnalyzer.LHL("IOOOOOOOIOOOOOOOOOOOIOOO");
         //ArrayList<String[]> patternData = RhythmReader.readFile("madeuppatterns.txt");
-        
-<<<<<<< HEAD
+        */
+
         
         String filename = "sonata01-1_tsroot.txt";
-=======
 
         //Chord processing
->>>>>>> 57cd0eb94ad2a84bbc3d00477d748f061a40bd4b
         ArrayList<float[]> chordList = new ArrayList();
         int[] timeSig = {0,0,0};
         //ArrayList<float[]> chordList = new ArrayList();
@@ -331,8 +329,9 @@ public class MidiReader {
         //System.out.println("Beat " + timeSig[2]);
         float ts = 4/4 - (float)0.001;
         float speed = 1000;
+        chordMaker.print(chordList);
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
-<<<<<<< HEAD
+
         write(chordsWrite, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
         //Melody processing
         ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
