@@ -355,13 +355,17 @@ public class MidiReader {
         
 =======
 =======
+=======
+>>>>>>> 434005298668cd88e7dd930971267a3ff630bd65
 
+        
         
         //Melody processing
         ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
         //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
+        
+        
 
->>>>>>> 57cd0eb94ad2a84bbc3d00477d748f061a40bd4b
         System.out.println("MM " + MM);
         GCD = (int)(1000*60/(MM*4));
         System.out.println("GCD " + GCD);
@@ -386,7 +390,7 @@ public class MidiReader {
         ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
         notes = RhythmChanger.changeSong(notes,patterns,rules,patternNums);
      
-        write(chordsWrite);
+        write(chordsWrite, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
         
