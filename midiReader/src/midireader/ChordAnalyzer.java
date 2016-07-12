@@ -700,21 +700,21 @@ public class ChordAnalyzer {
     
     public static void printArray(float[] a){
        for(int i=0; i < a.length; i++){
-           System.out.print(a[i] + ", ");
+           //System.out.print(a[i] + ", ");
        }
        System.out.println();
     }
     
     public static void printListFrac(List <Fractions> f){
        for(int i=0; i < f.size(); i++){
-           System.out.print("[" + f.get(i).num + "/" + f.get(i).den + "]");
+           //System.out.print("[" + f.get(i).num + "/" + f.get(i).den + "]");
        }
        System.out.println();
     }
     
     public static void printListFrac(Fractions[] f){
        for(int i=0; i < f.length; i++){
-           System.out.print("[" + f[i].num + "/" + f[i].den + "]");
+           //System.out.print("[" + f[i].num + "/" + f[i].den + "]");
        }
        System.out.println();
     }

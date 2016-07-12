@@ -234,12 +234,12 @@ public class MeasureAnalyzer {
                 }
                 
                 //System.out.println(weight[previousi% 16] + " " + weight[i % 16] + " " + (weight[i %16] - weight[previousi % 16]));
-                if (weight[i% 16] - weight[previousi % 16] > 0) {
+                //if (weight[i% 16] - weight[previousi % 16] > 0) {
                     output += weight[i %16] - weight[previousi % 16];
-                }
+                //}
             }
         }
-        System.out.println(output);
+        //System.out.println(output);
         return output;
     }
     
