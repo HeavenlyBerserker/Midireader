@@ -243,4 +243,31 @@ public class MeasureAnalyzer {
         return output;
     }
     
+    //returns the total distance that onsets move between two patterns
+    public static int onsetDistance(String pattern1, String pattern2) {
+        int output = 0;
+        for (int i=0; i<pattern1.length() - pattern1.replace("I", "").length(); i++) {
+            output += Math.abs(findI(pattern1,i)-findI(pattern2,i));
+            //System.out.println(findI(pattern1,i) + " " + findI(pattern2,i));
+        }
+        //System.out.println(pattern1 + " " + pattern2 + " " + output);
+        return output;
+        
+    }
+    //returns position of nth I in a string
+    private static int findI(String pattern, int n) {
+        int output = 0;
+        int numfound = 0;
+        for (int i=0; i<16; i++) {
+            if (pattern.charAt(i) == 'I') {
+                if (numfound == n) {
+                    output = i;
+                    break;
+                }
+                numfound++;
+            }
+        }
+        return output;
+    }
+    
 }
