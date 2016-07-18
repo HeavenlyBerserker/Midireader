@@ -126,8 +126,8 @@ package midireader;
                 float num2 = -1;
                 float d = b.num;
                 float e = b.den;
- 		if(b.den != 0)num2 = d/e; 
- 		
+ 		if(b.den != 0)num2 = d/e;
+                
  		return num2;
  	}
         public static boolean bigger(Fractions a, Fractions b)// converts fraction to float

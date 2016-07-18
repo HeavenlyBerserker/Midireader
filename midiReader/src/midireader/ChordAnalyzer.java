@@ -76,7 +76,7 @@ public class ChordAnalyzer {
             // Always wrap FileReader in BufferedReader.
             BufferedReader bufferedReader = 
                 new BufferedReader(fileReader);
-            int measureCnt = 1, index = 1;
+            int measureCnt = 0, index = 1;
             int measureNotes = 0, noteCount = 0;
             float temporal = 0;
             while((line = bufferedReader.readLine()) != null) {
@@ -144,6 +144,10 @@ public class ChordAnalyzer {
                     //if(chrono != 16){
 //------------------System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
                     //}
+                    if(chrono2 != 1){
+                       System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
+                    }
+                    //System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
                     chrono = 0;
                     chrono2 = 0;
                     
@@ -170,6 +174,12 @@ public class ChordAnalyzer {
                         curr += 10;
                         M = 1;
                         count = 3;
+                    }
+                    else if(line.substring(0,3).equals("Chr")){
+                        //curr += 7;
+                        //M = 0;
+                        //count = 1;
+                        rest = 0;
                     }
                     else if(line.substring(0,3).equals("vii")){
                         curr += 10;
@@ -261,7 +271,7 @@ public class ChordAnalyzer {
                         if(noteCount == 0){
                             //System.out.println();
                             realTemp = findGreat(table);
-                            realTemp.print();
+                            //realTemp.print();
                             Fractions[] arry = new Fractions[table.size()];
                             if(realTemp.num > 0){
                                 for(int i = 0; i < table.size(); i++){
@@ -319,7 +329,7 @@ public class ChordAnalyzer {
                             //printListFrac(lastArry);
                             //System.out.print("Table ");printListFrac(table);
                             //System.out.println();
-                            realTemp.print();
+                            //realTemp.print();
                             Fractions realTemp2 = new Fractions(realTemp.num, realTemp.den);
                             //System.out.print(Fractions.fl(realTemp));
                             if(realTemp.num != 0) {chrono2 += Fractions.fl(realTemp);}
@@ -534,7 +544,7 @@ public class ChordAnalyzer {
                                 //printArray(arr3);
                                 //System.out.print(chords.size());
                                 //chordMaker.printF(chords);
-                                //System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0]);
+                                //System.out.println(Fractions.fl(realTemp) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0]);
                             }
                             else if(notes.size() == 4){
                                 float[] arr3 = {Fractions.fl(realTemp),notes.get(0)[0] % 12,notes.get(1)[0] % 12, notes.get(2)[0] % 12, notes.get(3)[0] % 12};
@@ -542,7 +552,7 @@ public class ChordAnalyzer {
                                 //printArray(arr3);
                                 //System.out.print(chords.size());
                                 //chordMaker.printF(chords);
-                                //System.out.println(findNums2(line, is) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0] + " " + notes.get(3)[0]);
+                                //System.out.println(Fractions.fl(realTemp) + " " + notes.get(0)[0] + " " + notes.get(1)[0] + " " + notes.get(2)[0] + " " + notes.get(3)[0]);
                             }
                         }
                     }
@@ -700,10 +710,18 @@ public class ChordAnalyzer {
     
     public static void printArray(float[] a){
        for(int i=0; i < a.length; i++){
-           //System.out.print(a[i] + ", ");
+           System.out.print(a[i] + ", ");
        }
        System.out.println();
     }
+    
+    public static void printArray(int[] a){
+       for(int i=0; i < a.length; i++){
+           System.out.print(a[i] + ", ");
+       }
+       System.out.println();
+    }
+    
     
     public static void printListFrac(List <Fractions> f){
        for(int i=0; i < f.size(); i++){
@@ -1119,7 +1137,7 @@ public class ChordAnalyzer {
         timeSig[0] = num;
         timeSig[1] = den;
         timeSig[2] = beats;
-        //chordMaker.print(notes);
+        //chordMaker.printFl(notes);
         return notes;
     }
     

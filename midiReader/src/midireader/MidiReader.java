@@ -16,6 +16,7 @@ import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
 import static midireader.chordMaker.printF;
+import static midireader.xmReader.xmRead;
 
 public class MidiReader {
     public static final int NOTE_ON = 0x90;
@@ -24,7 +25,7 @@ public class MidiReader {
     public static ArrayList differences = new ArrayList();
     public static int GCD = 0;
     public static float resolution;
-    public static float tempo;
+    public static float ppq;
     public static float MEASURES;
     public static float MM; //beats per minute from melisma
     public static int lines[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
@@ -112,9 +113,9 @@ public class MidiReader {
     Output: List of notes (note, onset, offset)
     */
     public static ArrayList<float[]> readMidi(Sequence sequence) {
-        
         ArrayList<float[]> notes = new ArrayList();
         resolution = sequence.getResolution();
+        ppq = sequence.PPQ;
         System.out.println("Resolution = " + resolution);
         int trackNumber = 0;
         for (Track track :  sequence.getTracks()) {
@@ -255,38 +256,53 @@ public class MidiReader {
     public static void main(String[] args) throws Exception {
 
         //input pattern data
-        ArrayList<String[]> patternData = rhythmFrequency.readFile("lhlpatterns_depth_nots.csv");
+        ArrayList<String[]> patternData = rhythmFrequency.readFile("input/" + "lhlpatterns_depth_nots.csv");
         patternData = rhythmFrequency.changeToIO(patternData);
 
-        String filename = "sonata01-1_tsroot.txt";
-
-        //Chord processing
+        //All input filenames here------------------------------------------------------------------------------------
+        String fileName = "canon";
+        String filenameHar = fileName + "_tsroot.txt";
+        String filenameMel = "canon.notes";
+        String inFolderN = "";
+        String outFolderN = "";
         
+        //Print Some info.
+        System.out.println("Filename: " + fileName);
+        
+        
+        //-----------------------------------------No input under here------------------------------------------------
+        //Chord processing-----------------------------------------------------------------------
+        System.out.print("Measures not adding up to 1 (Please check): --------------------------------");
         ArrayList<float[]> chordList = new ArrayList();
         int[] timeSig = {0,0,0};
-        chordList = ChordAnalyzer.chordNotes(chordList, filename, timeSig);
+        chordList = ChordAnalyzer.chordNotes(chordList, "input/" + inFolderN + filenameHar, timeSig);
         ArrayList<float[]> chordsWrite;
         float ts = 4/4 - (float)0.001;
-        float speed = 1200;
-        chordMaker.print(chordList);
+        int bpm = timeSig[2];
+        float speed = 60000/bpm*4;
+        //ChordAnalyzer.printArray(timeSig);
+        chordMaker.printF(chordList);
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
-        //chordMaker.print(chordsWrite);
+        chordMaker.print(chordsWrite);
+        System.out.print("\n-----------------------------------------------------------------------------\nBPM from Humdrum: " + bpm);
         
-        //Melody processing
-        ArrayList<float[]> notes = MelismaReader.readFile("sonata01-1.notes");
+        
+        //Melody processing-----------------------------------------------------------------------
+        ArrayList<float[]> notes = MelismaReader.readFile("input/" + inFolderN + filenameMel);
         //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
         
-        System.out.println("MM " + MM);
+        System.out.println("\nMM " + MM);
         GCD = (int)(1000*60/(MM*4));
         System.out.println("GCD " + GCD);
-        resolution = 240;
+        resolution = 1000;
         MEASURES = measures(notes);
         System.out.println(MEASURES + " measures");
         
         //notes = offsetSong(notes,0);
         //notes = gcds(notes);
         notes = melodyChanger.makeMonophonic(notes);
-
+        
+        
         ArrayList<String> patterns = new ArrayList();
         ArrayList<ArrayList<Float>> patternNums = new ArrayList();
         float lhloverall = 0;
@@ -300,15 +316,22 @@ public class MidiReader {
         //ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
         ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
         notes = RhythmChanger.changeSong(notes,patterns,rules,patternNums);
-        //chordsWrite.addAll(notes);
+        
+        //Merging Melody and harmony---------------------------------------------------------------
+        chordsWrite.addAll(notes);
         //chordMaker.print(chordsWrite);
-        write(chordsWrite, "ZTest" + filename.substring(0, filename.length()-4) + ".mid");
+        write(chordsWrite, "output/" + outFolderN + "ZTest" + filenameHar.substring(0, filenameHar.length()-4) + ".mid");
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
         
         /*
-        Todo: 
+        To do:  
             Timing/offsets?
         */
+        
+        //Read .xm files (Xu-Michelson)---------------------------------------------------------------
+        ArrayList<float[]> noteXm = new ArrayList();
+        String filenameXm = "input/test1.xm";
+        noteXm = xmRead(filenameXm);
     }
 }

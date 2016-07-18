@@ -45,6 +45,16 @@ public class chordMaker {
         return notes;
     }
     
+    public static ArrayList<float[]> printFl(ArrayList<float[]> notes){
+        for(int i = 0; i < notes.size(); i++){
+            for(int j = 0; j < notes.get(i).length; j++){
+                System.out.print(notes.get(i)[j] + " ");
+            }
+            System.out.println();
+        }
+        return notes;
+    }
+    
     public static ArrayList<float[]> printF(ArrayList<float[]> notes){
         for(int i = 0; i < notes.size(); i++){
             for(int j = 0; j < notes.get(i).length; j++){
@@ -74,18 +84,18 @@ public class chordMaker {
         //System.out.println("Measure 1");
         int[] tempN = {0,0,0,0};
         Random randomGenerator = new Random();
-        float modTime = 0, mTime = 0, realTime = 1/notes.get(0)[0], difTime = 0, onTime = 0, offTime = 0, prevOff = 0, prevOn = 0;
+        float modTime = 0, mTime = 0, realTime = -notes.get(0)[0], difTime = 0, onTime = 0, offTime = 0, prevOff = 0, prevOn = 0;
         int measure = 2, beat = 0, octave = 0, passing = 0;
         ArrayList<float[]> currChord = new ArrayList();
         ArrayList<float[]> chordsWrite = new ArrayList();
         
         //For every note in the list
         for(int i = 0; i < notes.size(); i++){
-            mTime += 1/notes.get(i)[0];
-            modTime += 1/notes.get(i)[0];
-            realTime += 1/notes.get(i)[0];
+            mTime += notes.get(i)[0];
+            modTime += notes.get(i)[0];
+            realTime += notes.get(i)[0];
             //.out.print(" NoteValue: " + 1/notes.get(i)[0] + " RealTime: " + realTime + " modTime: " + modTime + " ");
-            if(modTime >= 1/4){
+            while(modTime >= 1/4){
                 difTime = realTime - modTime + 1/4;
                 prevOn = onTime;
                 onTime = difTime*speed+speed/4;
