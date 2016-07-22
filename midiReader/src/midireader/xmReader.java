@@ -49,7 +49,8 @@ public class xmReader {
             // Always wrap FileReader in BufferedReader.
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             
-            int[] timeSig = {0, 0, 0};
+            //Figure out time signature
+            float[] timeSig = {0, 0, 0};
             
             //Figure out time signature (num, denom) and bpm
             line = bufferedReader.readLine();
@@ -75,8 +76,8 @@ public class xmReader {
                 i++;
             }
             timeSig[2] = Integer.parseInt(temp);
-            System.out.println("Time sig and bpm = " + timeSig[0] + "/" + timeSig[1] + " at " + timeSig[2] );
-            
+            //System.out.println("Time sig and bpm = " + timeSig[0] + "/" + timeSig[1] + " at " + timeSig[2] );
+            notes.add(timeSig);
             
             
             //-------------------------------------------------------------------------------------------------------
@@ -90,17 +91,19 @@ public class xmReader {
                     measure++;
                 }
                 else{
-                    /*
+                    //System.out.println(line);
+                    temp = "";
                     i = 1;
                     while(line.length() > i && (Character.isDigit(line.charAt(i)) || line.charAt(i) == '-')){
                         temp += line.charAt(i);
                         i++;
                     }
-                    //System.out.println(line);
+                    
+                    
                     int num = Integer.parseInt(temp);
                     temp = "";
                     i += 2;
-                    }
+                    
                     while(line.length() > i && (Character.isDigit(line.charAt(i)) || line.charAt(i) == '-')){
                         temp += line.charAt(i);
                         i++;
@@ -117,16 +120,28 @@ public class xmReader {
                     int note = Integer.parseInt(temp);
                     while(line.length() > i && line.charAt(i) != '\t') i++;
                     i += 2;
+                    
+                    //Reading chords---------------------------------------------------------------
                     List<Integer> l = new ArrayList<Integer>();
                     while(line.length() > i){
+                        temp = "";
                         while(line.length() > i && (Character.isDigit(line.charAt(i)) || line.charAt(i) == '-')){
                             temp += line.charAt(i);
                             i++;
                         }
                         l.add(Integer.parseInt(temp));
                         i += 2;
-                    }*/
-                    
+                    }
+                    //System.out.print(num + ", " + den + ", " + note + ",");
+                    //printListI(l);
+                    float[] lline = new float[3+l.size()];
+                    lline[0] = num;
+                    lline[1] = den;
+                    lline[2] = note;
+                    for(int j = 0; j < l.size(); j++){
+                        lline[j+3] = l.get(j);
+                    }
+                    notes.add(lline);
                 }
             }
             //-------------------------------------------------------------------------------------------------------
@@ -146,7 +161,16 @@ public class xmReader {
             // Or we could just do this: 
             // ex.printStackTrace();
         }
+        //chordMaker.printF(notes);
         return notes;
+    }
+    
+    public static void printListI(List <Integer> f){
+       for(int i=0; i < f.size(); i++){
+           if (i != f.size() - 1)System.out.print(f.get(i) + ", ");
+           else System.out.print(f.get(i));
+       }
+       System.out.println();
     }
     
     //#Main

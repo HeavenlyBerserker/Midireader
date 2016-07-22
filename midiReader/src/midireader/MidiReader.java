@@ -281,9 +281,9 @@ public class MidiReader {
         int bpm = timeSig[2];
         float speed = 60000/bpm*4;
         //ChordAnalyzer.printArray(timeSig);
-        chordMaker.printF(chordList);
+        //chordMaker.printF(chordList);
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
-        chordMaker.print(chordsWrite);
+        //chordMaker.print(chordsWrite);
         System.out.print("\n-----------------------------------------------------------------------------\nBPM from Humdrum: " + bpm);
         
         
@@ -294,7 +294,7 @@ public class MidiReader {
         System.out.println("\nMM " + MM);
         GCD = (int)(1000*60/(MM*4));
         System.out.println("GCD " + GCD);
-        resolution = 1000;
+        resolution = 1500;
         MEASURES = measures(notes);
         System.out.println(MEASURES + " measures");
         
@@ -329,9 +329,15 @@ public class MidiReader {
             Timing/offsets?
         */
         
-        //Read .xm files (Xu-Michelson)---------------------------------------------------------------
+        //Read .xmk files (Xu-Michelson-Kirlin)---------------------------------------------------------------
+        ArrayList<float[]> noteXmRead = new ArrayList();
+        String filenameXm = "input/xm/yankeeD.xmk";
+        noteXmRead = xmRead(filenameXm);
+        
         ArrayList<float[]> noteXm = new ArrayList();
-        String filenameXm = "input/test1.xm";
-        noteXm = xmRead(filenameXm);
+        noteXm = xmPlayer.xmPlay(noteXmRead);
+        
+        //chordMaker.print(noteXm);
+        write(noteXm, "output/xmk/" + outFolderN + "yankeeD.mid");
     }
 }
