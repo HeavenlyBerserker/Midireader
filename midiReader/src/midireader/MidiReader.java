@@ -294,7 +294,7 @@ public class MidiReader {
         System.out.println("\nMM " + MM);
         GCD = (int)(1000*60/(MM*4));
         System.out.println("GCD " + GCD);
-        resolution = 1500;
+        resolution = 1000;
         MEASURES = measures(notes);
         System.out.println(MEASURES + " measures");
         
