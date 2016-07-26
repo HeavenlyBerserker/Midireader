@@ -93,7 +93,7 @@ public class xmReader {
                 else{
                     //System.out.println(line);
                     temp = "";
-                    i = 1;
+                    i = 0;
                     while(line.length() > i && (Character.isDigit(line.charAt(i)) || line.charAt(i) == '-')){
                         temp += line.charAt(i);
                         i++;
@@ -102,7 +102,7 @@ public class xmReader {
                     
                     int num = Integer.parseInt(temp);
                     temp = "";
-                    i += 2;
+                    i += 1;
                     
                     while(line.length() > i && (Character.isDigit(line.charAt(i)) || line.charAt(i) == '-')){
                         temp += line.charAt(i);
@@ -146,8 +146,8 @@ public class xmReader {
                         notes.add(lline);
                     }
                     else{
-                        System.out.println(line);
-                        System.out.println(line.charAt(i));
+                        //System.out.println(line);
+                        //System.out.println(line.charAt(i));
                         temp = "";
                         while(line.length() > i && (Character.isDigit(line.charAt(i)) || line.charAt(i) == '-')){
                             temp += line.charAt(i);

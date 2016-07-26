@@ -324,21 +324,17 @@ public class MidiReader {
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
         
-        /*
-        To do:  
-            Timing/offsets?
-        */
         
-        //Read .xmk files (Xu-Michelson-Kirlin)---------------------------------------------------------------
-        /*
         ArrayList<float[]> noteXmRead = new ArrayList();
-        String filenameXm = "input/xm/jinglebells.xmk";
+        String filenameXm = "input/xm/odeToJoy.xmk";
+
         noteXmRead = xmRead(filenameXm);
         
         ArrayList<float[]> noteXm = new ArrayList();
         noteXm = xmPlayer.xmPlay(noteXmRead);
         
         //chordMaker.print(noteXm);
-        write(noteXm, "output/xmk/" + outFolderN + "jinglebells.mid");*/
+
+        write(noteXm, "output/xmk/" + outFolderN + "odeToJoy.mid");
     }
 }
