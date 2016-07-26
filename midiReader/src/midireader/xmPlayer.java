@@ -88,14 +88,14 @@ public class xmPlayer {
             while(relatTime >= 0.25*speed){
                 tempTime = realTime -relatTime;
                 relatTime -= 0.25*speed;
-                System.out.print(tempTime + ": ");
+                //System.out.print(tempTime + ": ");
                 if(xm.get(i)[0] != -2 && xm.get(i)[1] != 0 && xm.get(i)[3] >= 0){
                     chord.clear();
                     for(int j = 3; j < xm.get(i).length; j++){
                         float[] arr = {0,0,0};
                         //lastNote = xm.get(i)[2];
                         arr[0] = xm.get(i)[j];
-                        System.out.print(xm.get(i)[j] + ", ");
+                        //System.out.print(xm.get(i)[j] + ", ");
                         chord.add(xm.get(i)[j]);
                         arr[1] = tempTime;
                         arr[2] = tempTime + speed*xm.get(i)[0]/ xm.get(i)[1];
@@ -112,7 +112,7 @@ public class xmPlayer {
                         notes.add(arr);
                     }
                 }
-                System.out.println();
+                //System.out.println();
             }
             
             i++;
