@@ -58,12 +58,11 @@ public class xmPlayer {
                 realTime += speed*xm.get(i)[0]/ xm.get(i)[1];
             }
             else if(xm.get(i)[0] != -2 && xm.get(i)[2] == -2){
-                float[] arr = {0,0,0};
-                arr[0] = lastNote;
-                arr[1] = realTime;
+                float[] arr = notes.get(notes.size()-1);
                 realTime += speed*xm.get(i)[0]/ xm.get(i)[1];
                 arr[2] = realTime;
-                notes.add(arr);
+                //ChordAnalyzer.printArray(arr);
+                notes.set(notes.size()-1, arr);
             }
         }
         
@@ -75,7 +74,7 @@ public class xmPlayer {
         
         float tsNum = xm.get(0)[0], tsDen = xm.get(0)[1], tsBpm = xm.get(0)[2];
         float speed = 60000/tsBpm*4;
-        chordMaker.printF(xm);
+        //chordMaker.printF(xm);
         
         List<Float> chord = new ArrayList<>();
         float realTime = 0, relatTime = 0, tempTime = 0;
@@ -88,14 +87,14 @@ public class xmPlayer {
             while(relatTime >= 0.25*speed){
                 tempTime = realTime -relatTime;
                 relatTime -= 0.25*speed;
-                System.out.print(tempTime + ": ");
+                //System.out.print(tempTime + ": ");
                 if(xm.get(i)[0] != -2 && xm.get(i)[1] != 0 && xm.get(i)[3] >= 0){
                     chord.clear();
                     for(int j = 3; j < xm.get(i).length; j++){
                         float[] arr = {0,0,0};
                         //lastNote = xm.get(i)[2];
                         arr[0] = xm.get(i)[j];
-                        System.out.print(xm.get(i)[j] + ", ");
+                        //System.out.print(xm.get(i)[j] + ", ");
                         chord.add(xm.get(i)[j]);
                         arr[1] = tempTime;
                         arr[2] = tempTime + speed*xm.get(i)[0]/ xm.get(i)[1];
@@ -112,12 +111,12 @@ public class xmPlayer {
                         notes.add(arr);
                     }
                 }
-                System.out.println();
+                //System.out.println();
             }
             
             i++;
         }
-        chordMaker.printF(notes);
+        //chordMaker.printF(notes);
         return notes;
     }
     
@@ -128,6 +127,7 @@ public class xmPlayer {
         chords = xmkPlayHar(xm);
         ArrayList<float[]> song = notes;
         song.addAll(chords);
+        chordMaker.printF(notes);
         return song;
     }
 }

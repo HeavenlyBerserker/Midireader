@@ -294,7 +294,7 @@ public class MidiReader {
         System.out.println("\nMM " + MM);
         GCD = (int)(1000*60/(MM*4));
         System.out.println("GCD " + GCD);
-        resolution = 1000;
+        resolution = 500;
         MEASURES = measures(notes);
         System.out.println(MEASURES + " measures");
         
@@ -331,13 +331,13 @@ public class MidiReader {
         
         //Read .xmk files (Xu-Michelson-Kirlin)---------------------------------------------------------------
         ArrayList<float[]> noteXmRead = new ArrayList();
-        String filenameXm = "input/xm/yankeeD.xmk";
+        String filenameXm = "input/xm/odeToJoy.xmk";
         noteXmRead = xmRead(filenameXm);
         
         ArrayList<float[]> noteXm = new ArrayList();
         noteXm = xmPlayer.xmPlay(noteXmRead);
         
         //chordMaker.print(noteXm);
-        write(noteXm, "output/xmk/" + outFolderN + "yankeeD.mid");
+        write(noteXm, "output/xmk/" + outFolderN + "odeToJoy.mid");
     }
 }
