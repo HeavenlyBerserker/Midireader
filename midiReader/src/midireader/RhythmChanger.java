@@ -23,21 +23,25 @@ public class RhythmChanger {
                 }
             }
             if (flag == 0) {
+                double randy = Math.random();
+                double curnum = 0;
                 for (int j=0; j<patternData.size(); j++) { //lines[size]
-                    if (!patternData.get(j)[2].equals(patterns.get(i)))  {//if not equal
-                        if (Float.parseFloat(patternData.get(j)[0]) == (patterns.get(i).length() - patterns.get(i).replace("I", "").length()) ) { //if same number of I's
-                            if (MeasureAnalyzer.onsetDistance(patternData.get(j)[2], patterns.get(i)) < 6) { //if onsets aren't moved too much
-                                if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) {
-                                    rules.add(patterns.get(i) + " " + patternData.get(j)[2]);
-                                    //System.out.println("Rule added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
-                                    break;
+                    if (Float.parseFloat(patternData.get(j)[0]) == (patterns.get(i).length() - patterns.get(i).replace("I", "").length()) ) { //if same number of I's
+                        if (randy >= curnum && randy < curnum+Float.parseFloat(patternData.get(j)[1])) {
+                            curnum += Float.parseFloat(patternData.get(j)[1]);
+                            if (!patternData.get(j)[2].equals(patterns.get(i)))  {//if not equal
+                                    if (MeasureAnalyzer.onsetDistance(patternData.get(j)[2], patterns.get(i)) < 9) { //if onsets aren't moved too much
+                                        rules.add(patterns.get(i) + " " + patternData.get(j)[2]);
+                                        System.out.println("Rule added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
+                                        break;
+                                    }
                                 }
+                            else if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) { //skip rules that would not change anything
+                                //System.out.println("Rule not added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
+                                //randy = Math.random();
+                                break;
                             }
                         }
-                    }
-                    else if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) { //skip rules that would not change anything
-                        //System.out.println("Rule not added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
-                        //break;
                     }
                 }
             }

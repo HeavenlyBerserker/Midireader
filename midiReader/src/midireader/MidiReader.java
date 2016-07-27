@@ -331,7 +331,7 @@ public class MidiReader {
         noteXmRead = xmRead(filenameXm);
         
         ArrayList<float[]> noteXm = new ArrayList();
-        noteXm = xmPlayer.xmPlay(noteXmRead);
+        noteXm = xmPlayer.xmPlay(noteXmRead,0);
         
         //chordMaker.print(noteXm);
 
