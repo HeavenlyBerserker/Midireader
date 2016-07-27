@@ -38,8 +38,8 @@ public class RhythmChanger {
                                 }
                             else if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) { //skip rules that would not change anything
                                 //System.out.println("Rule not added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
-                                //randy = Math.random();
-                                break;
+                                randy = Math.random();
+                                //break;
                             }
                         }
                     }

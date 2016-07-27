@@ -307,7 +307,7 @@ public class xmPlayer {
         return note;
     }
     
-    public static ArrayList<float[]> xmPlay(ArrayList<float[]> xm){
+    public static ArrayList<float[]> xmPlay(ArrayList<float[]> xm, int ischords){
         ArrayList<float[]> notes = new ArrayList();
         ArrayList<float[]> chords = new ArrayList();
         notes = xmkPlayMel(xm);
@@ -316,6 +316,9 @@ public class xmPlayer {
         song.addAll(chords);
         song.addAll(notes);
         //chordMaker.printF(chords);
-        return song;
+        if (ischords == 1)
+            return chords;
+        else
+            return notes;
     }
 }

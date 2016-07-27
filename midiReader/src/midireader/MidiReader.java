@@ -292,16 +292,16 @@ public class MidiReader {
         //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
         
         System.out.println("\nMM " + MM);
-        GCD = (int)(1000*60/(240*4));
+        GCD = (int)(1000*60/(240*2));
         System.out.println("GCD " + GCD);
-        resolution = 1000; //GCD*4; // (ticks/beat)
+        resolution = GCD*4; //GCD*4; // (ticks/beat)
         MEASURES = measures(notes);
         System.out.println(MEASURES + " measures");
         
         //notes = gcds(notes);
-        notes = melodyChanger.makeMonophonic(notes);
+        //notes = melodyChanger.makeMonophonic(notes);
         
-        
+        /*
         ArrayList<String> patterns = new ArrayList();
         ArrayList<ArrayList<Float>> patternNums = new ArrayList();
         float lhloverall = 0;
@@ -323,16 +323,35 @@ public class MidiReader {
         write(notes, "output/" + outFolderN + "ZTest" + filenameHar.substring(0, filenameHar.length()-4) + ".mid");
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
-        
+        */
         
         ArrayList<float[]> noteXmRead = new ArrayList();
         String filenameXm = "input/xm/odeToJoy.xmk";
         noteXmRead = xmRead(filenameXm);
         
-        ArrayList<float[]> noteXm = new ArrayList();
-        noteXm = xmPlayer.xmPlay(noteXmRead);
+        ArrayList<float[]> chords = xmPlayer.xmPlay(noteXmRead,1);
+        ArrayList<float[]> notesXm = xmPlayer.xmPlay(noteXmRead,0);
         
+        GCD = (int)(1000*60/(100*4));
+        ArrayList<String> patterns = new ArrayList();
+        ArrayList<ArrayList<Float>> patternNums = new ArrayList();
+        float lhloverall = 0;
+        
+        MEASURES = measures(notesXm);
+        for (int i=0; i<MEASURES; i++) {
+            patterns.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            System.out.println(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            lhloverall += MeasureAnalyzer.LHL(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            patternNums.add(MeasureAnalyzer.patternNums(getHalfMeasure(notesXm,i),GCD,patterns.get(i),GCD*i*16));
+        }
+        lhloverall = lhloverall/MEASURES;
+        System.out.println("Syncopation: " + lhloverall);
+        //ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
+        ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
+        notesXm = RhythmChanger.changeSong(notesXm,patterns,rules,patternNums);
+        
+        chords.addAll(notesXm);
         //chordMaker.print(noteXm);
-        write(noteXm, "output/xmk/" + outFolderN + "odeToJoy.mid");
+        write(chords, "output/xmk/" + outFolderN + "odeToJoy.mid");
     }
 }
