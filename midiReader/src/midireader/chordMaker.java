@@ -58,9 +58,9 @@ public class chordMaker {
     public static ArrayList<float[]> printF(ArrayList<float[]> notes){
         for(int i = 0; i < notes.size(); i++){
             for(int j = 0; j < notes.get(i).length; j++){
-                //System.out.print(notes.get(i)[j] + " ");
+                System.out.print(notes.get(i)[j] + " ");
             }
-            //System.out.println();
+            System.out.println();
         }
         return notes;
     }
@@ -94,12 +94,18 @@ public class chordMaker {
             mTime += notes.get(i)[0];
             modTime += notes.get(i)[0];
             realTime += notes.get(i)[0];
-            //.out.print(" NoteValue: " + 1/notes.get(i)[0] + " RealTime: " + realTime + " modTime: " + modTime + " ");
+            //System.out.println(" NoteValue: " + 1/notes.get(i)[0] + " RealTime: " + realTime + " modTime: " + modTime + " ");
             while(modTime >= 1/4){
                 difTime = realTime - modTime + 1/4;
                 prevOn = onTime;
                 onTime = difTime*speed+speed/4;
                 //System.out.print(" RealTime: " + realTime + " modTime: " + modTime + " ");
+                if(notes.get(i).length >= 2 && notes.get(i)[1] == -1){
+                    //System.out.println("Rest");
+                    modTime = modTime - (float).25;
+                    break;
+                }
+                //System.out.println("##Note");
                 prevOff = offTime = (difTime + (float).25)*speed+speed/4;
                 if(modTime >= 1/4)modTime = modTime - (float).25;
                 octave = randomGenerator.nextInt(2);

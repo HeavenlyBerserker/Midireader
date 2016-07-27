@@ -260,7 +260,7 @@ public class MidiReader {
         patternData = rhythmFrequency.changeToIO(patternData);
 
         //All input filenames here------------------------------------------------------------------------------------
-        String fileName = "sonata01-1";
+        String fileName = "BethSonata1.1Allegro";
         String filenameHar = fileName + "_tsroot.txt";
         String filenameMel = "sonata01-1.notes";
         String inFolderN = "";
@@ -294,7 +294,7 @@ public class MidiReader {
         System.out.println("\nMM " + MM);
         GCD = (int)(1000*60/(240*4));
         System.out.println("GCD " + GCD);
-        resolution = GCD*4; // (ticks/beat)
+        resolution = 1000; //GCD*4; // (ticks/beat)
         MEASURES = measures(notes);
         System.out.println(MEASURES + " measures");
         
@@ -327,14 +327,12 @@ public class MidiReader {
         
         ArrayList<float[]> noteXmRead = new ArrayList();
         String filenameXm = "input/xm/odeToJoy.xmk";
-
         noteXmRead = xmRead(filenameXm);
         
         ArrayList<float[]> noteXm = new ArrayList();
-        noteXm = xmPlayer.xmPlay(noteXmRead,0);
+        noteXm = xmPlayer.xmPlay(noteXmRead);
         
         //chordMaker.print(noteXm);
-
         write(noteXm, "output/xmk/" + outFolderN + "odeToJoy.mid");
     }
 }
