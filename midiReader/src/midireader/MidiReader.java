@@ -279,7 +279,7 @@ public class MidiReader {
         ArrayList<float[]> chordsWrite;
         float ts = 4/4 - (float)0.001;
         int bpm = timeSig[2];
-        float speed = 60000/bpm*4;
+        float speed = 59520/120*4;
         //ChordAnalyzer.printArray(timeSig);
         //chordMaker.printF(chordList);
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
@@ -292,13 +292,12 @@ public class MidiReader {
         //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
         
         System.out.println("\nMM " + MM);
-        GCD = (int)(1000*60/(MM*4));
+        GCD = (int)(1000*60/(240*4));
         System.out.println("GCD " + GCD);
-        resolution = 1000;
+        resolution = 1000; //GCD*4; // (ticks/beat)
         MEASURES = measures(notes);
         System.out.println(MEASURES + " measures");
         
-        //notes = offsetSong(notes,0);
         //notes = gcds(notes);
         notes = melodyChanger.makeMonophonic(notes);
         
@@ -318,26 +317,22 @@ public class MidiReader {
         notes = RhythmChanger.changeSong(notes,patterns,rules,patternNums);
         
         //Merging Melody and harmony---------------------------------------------------------------
-        chordsWrite.addAll(notes);
+        notes.addAll(chordsWrite);
         //chordMaker.print(chordsWrite);
+        //notes = offsetSong(notes,60);
         write(notes, "output/" + outFolderN + "ZTest" + filenameHar.substring(0, filenameHar.length()-4) + ".mid");
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
         
-        /*
-        To do:  
-            Timing/offsets?
-        */
         
-        //Read .xmk files (Xu-Michelson-Kirlin)---------------------------------------------------------------
         ArrayList<float[]> noteXmRead = new ArrayList();
-        String filenameXm = "input/xm/k545.xmk";
+        String filenameXm = "input/xm/odeToJoy.xmk";
         noteXmRead = xmRead(filenameXm);
         
         ArrayList<float[]> noteXm = new ArrayList();
         noteXm = xmPlayer.xmPlay(noteXmRead);
         
         //chordMaker.print(noteXm);
-        write(noteXm, "output/xmk/" + outFolderN + "k545.mid");
+        write(noteXm, "output/xmk/" + outFolderN + "odeToJoy.mid");
     }
 }

@@ -315,7 +315,7 @@ public class xmPlayer {
         ArrayList<float[]> song = new ArrayList();
         song.addAll(chords);
         song.addAll(notes);
-        //chordMaker.printF(notes);
+        //chordMaker.printF(chords);
         return song;
     }
 }
