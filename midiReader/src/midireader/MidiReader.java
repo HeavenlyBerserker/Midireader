@@ -260,9 +260,9 @@ public class MidiReader {
         patternData = rhythmFrequency.changeToIO(patternData);
 
         //All input filenames here------------------------------------------------------------------------------------
-        String fileName = "canon";
+        String fileName = "BethSonata1.1Allegro";
         String filenameHar = fileName + "_tsroot.txt";
-        String filenameMel = "canon.notes";
+        String filenameMel = "sonata01-1.notes";
         String inFolderN = "";
         String outFolderN = "";
         
@@ -294,7 +294,7 @@ public class MidiReader {
         System.out.println("\nMM " + MM);
         GCD = (int)(1000*60/(MM*4));
         System.out.println("GCD " + GCD);
-        resolution = 500;
+        resolution = 1000;
         MEASURES = measures(notes);
         System.out.println(MEASURES + " measures");
         
@@ -320,7 +320,7 @@ public class MidiReader {
         //Merging Melody and harmony---------------------------------------------------------------
         chordsWrite.addAll(notes);
         //chordMaker.print(chordsWrite);
-        write(chordsWrite, "output/" + outFolderN + "ZTest" + filenameHar.substring(0, filenameHar.length()-4) + ".mid");
+        write(notes, "output/" + outFolderN + "ZTest" + filenameHar.substring(0, filenameHar.length()-4) + ".mid");
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
         
@@ -331,13 +331,13 @@ public class MidiReader {
         
         //Read .xmk files (Xu-Michelson-Kirlin)---------------------------------------------------------------
         ArrayList<float[]> noteXmRead = new ArrayList();
-        String filenameXm = "input/xm/odeToJoy.xmk";
+        String filenameXm = "input/xm/k545.xmk";
         noteXmRead = xmRead(filenameXm);
         
         ArrayList<float[]> noteXm = new ArrayList();
         noteXm = xmPlayer.xmPlay(noteXmRead);
         
         //chordMaker.print(noteXm);
-        write(noteXm, "output/xmk/" + outFolderN + "odeToJoy.mid");
+        write(noteXm, "output/xmk/" + outFolderN + "k545.mid");
     }
 }
