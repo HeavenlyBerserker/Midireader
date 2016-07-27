@@ -78,7 +78,7 @@ public class rhythmFrequency {
         });
         
         for (int i=0; i<output.size(); i++) {
-            //System.out.println(output.get(i)[0] + " " + output.get(i)[1] + " " + output.get(i)[2]);
+            System.out.println(output.get(i)[0] + " " + output.get(i)[1] + " " + output.get(i)[2]);
         }
         
         return output;

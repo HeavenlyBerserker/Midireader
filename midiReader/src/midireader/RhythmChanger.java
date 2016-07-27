@@ -22,26 +22,34 @@ public class RhythmChanger {
                     flag = 1;
                 }
             }
-            if (flag == 0) {
-                double randy = Math.random();
+            double randy;
+            while (flag == 0) {
+                randy = Math.random();
                 double curnum = 0;
                 for (int j=0; j<patternData.size(); j++) { //lines[size]
                     if (Float.parseFloat(patternData.get(j)[0]) == (patterns.get(i).length() - patterns.get(i).replace("I", "").length()) ) { //if same number of I's
-                        if (randy >= curnum && randy < curnum+Float.parseFloat(patternData.get(j)[1])) {
-                            curnum += Float.parseFloat(patternData.get(j)[1]);
-                            if (!patternData.get(j)[2].equals(patterns.get(i)))  {//if not equal
-                                    if (MeasureAnalyzer.onsetDistance(patternData.get(j)[2], patterns.get(i)) < 9) { //if onsets aren't moved too much
-                                        rules.add(patterns.get(i) + " " + patternData.get(j)[2]);
-                                        System.out.println("Rule added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
-                                        break;
-                                    }
+                        if (randy < curnum+Float.parseFloat(patternData.get(j)[1])) {
+                            //System.out.println(curnum + " " + randy);
+                            if (MeasureAnalyzer.onsetDistance(patternData.get(j)[2], patterns.get(i)) < 8) { //if onsets aren't moved too much
+                                if (!patternData.get(j)[2].equals(patterns.get(i)))  {//if not equal
+                                    rules.add(patterns.get(i) + " " + patternData.get(j)[2]);
+
+                                    //System.out.println(curnum + " " + randy);
+                                    System.out.println("Rule added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
+                                    flag = 1;
+                                    break;
                                 }
-                            else if (Math.random() <= Float.parseFloat(patternData.get(j)[1])) { //skip rules that would not change anything
-                                //System.out.println("Rule not added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
-                                randy = Math.random();
-                                //break;
+                                else { //skip rules that would not change anything
+
+                                    //System.out.println(curnum + " " + randy);
+                                    //randy = Math.random();
+                                    //System.out.println("Rule not added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
+                                    if (Math.random() > 0.95) flag = 1;
+                                    break;
+                                }
                             }
                         }
+                        curnum += Float.parseFloat(patternData.get(j)[1]);
                     }
                 }
             }

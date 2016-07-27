@@ -326,13 +326,12 @@ public class MidiReader {
         */
         
         ArrayList<float[]> noteXmRead = new ArrayList();
-        String filenameXm = "input/xm/odeToJoy.xmk";
+        String filenameXm = "input/xm/yankeeDb.xmk";
         noteXmRead = xmRead(filenameXm);
-        
         ArrayList<float[]> chords = xmPlayer.xmPlay(noteXmRead,1);
         ArrayList<float[]> notesXm = xmPlayer.xmPlay(noteXmRead,0);
         
-        GCD = (int)(1000*60/(100*4));
+        GCD = (int)(60000/(noteXmRead.get(0)[2]*4));
         ArrayList<String> patterns = new ArrayList();
         ArrayList<ArrayList<Float>> patternNums = new ArrayList();
         float lhloverall = 0;
@@ -352,6 +351,6 @@ public class MidiReader {
         
         chords.addAll(notesXm);
         //chordMaker.print(noteXm);
-        write(chords, "output/xmk/" + outFolderN + "odeToJoy.mid");
+        write(chords, "output/xmk/" + outFolderN + "yankeeDb.mid");
     }
 }
