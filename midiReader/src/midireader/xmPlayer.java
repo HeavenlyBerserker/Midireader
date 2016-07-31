@@ -147,7 +147,7 @@ public class xmPlayer {
                         //System.out.println("Chord 2,4");
                     }
                     //else passing tone preparation
-                    else if((beat == 0 || beat == 2) && pass[i] < 2 && passing == 0){
+                    else if((beat == 0 || beat == 2) && pass[i] == 0 && passing == 0){
                         passing = 1;
                         float[] arr = {0,0,0};
                         arr[0] = bMid(xm.get(i)[3]);

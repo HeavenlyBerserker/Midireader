@@ -38,9 +38,9 @@ public class chordMaker {
     public static ArrayList<float[]> print(ArrayList<float[]> notes){
         for(int i = 0; i < notes.size(); i++){
             for(int j = 0; j < notes.get(i).length; j++){
-              //  System.out.print((int)notes.get(i)[j] + " ");
+              System.out.print((int)notes.get(i)[j] + " ");
             }
-           // System.out.println();
+           System.out.println();
         }
         return notes;
     }

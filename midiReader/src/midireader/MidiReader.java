@@ -329,6 +329,7 @@ public class MidiReader {
         String filenameXm = "input/xm/odeToJoy.xmk";
         noteXmRead = xmRead(filenameXm);
         
+        chordMaker.print(noteXmRead);
         ArrayList<float[]> noteXm = new ArrayList();
         noteXm = xmPlayer.xmPlay(noteXmRead);
         
