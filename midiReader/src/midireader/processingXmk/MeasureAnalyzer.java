@@ -255,8 +255,9 @@ public class MeasureAnalyzer {
         return output;
         
     }
+    
     //returns position of nth I in a string
-    private static int findI(String pattern, int n) {
+    public static int findI(String pattern, int n) {
         int output = 0;
         int numfound = 0;
         for (int i=0; i<16; i++) {

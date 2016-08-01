@@ -26,6 +26,7 @@ import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
 import static midireader.processingHumdrumMelisma.chordMaker.printF;
 import static midireader.inputXmk.xmReader.xmRead;
+import midireader.processingXmk.syncopalooza;
 
 public class XmkMain {
     public static final int NOTE_ON = 0x90;
@@ -40,8 +41,10 @@ public class XmkMain {
     public static int lines[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     
     public static void main(String[] args) throws Exception {
-
+        
+        syncopalooza.resynch("OOOOIOIOIOOOOOOO");
         //input pattern data
+   
         ArrayList<String[]> patternData = rhythmFrequency.readFile("input/" + "lhlpatterns_depth_nots.csv");
         patternData = rhythmFrequency.changeToIO(patternData);
 
@@ -130,7 +133,7 @@ public class XmkMain {
         MEASURES = basicTransformations.measures(notesXm);
         for (int i=0; i<MEASURES; i++) {
             patterns.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
-            System.out.println(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            //System.out.println(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
             lhloverall += MeasureAnalyzer.LHL(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
             patternNums.add(MeasureAnalyzer.patternNums(basicTransformations.getHalfMeasure(notesXm,i),GCD,patterns.get(i),GCD*i*16));
         }
