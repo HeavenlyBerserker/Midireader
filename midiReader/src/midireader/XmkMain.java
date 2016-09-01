@@ -26,6 +26,8 @@ import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
 import static midireader.processingHumdrumMelisma.chordMaker.printF;
 import static midireader.inputXmk.xmReader.xmRead;
+import midireader.processingXmk.RhythmChanger2;
+import midireader.processingXmk.syncopalooza;
 
 public class XmkMain {
     public static final int NOTE_ON = 0x90;
@@ -40,8 +42,10 @@ public class XmkMain {
     public static int lines[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     
     public static void main(String[] args) throws Exception {
-
+        
+         syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));
         //input pattern data
+   
         ArrayList<String[]> patternData = rhythmFrequency.readFile("input/" + "lhlpatterns_depth_nots.csv");
         patternData = rhythmFrequency.changeToIO(patternData);
 
@@ -112,7 +116,8 @@ public class XmkMain {
         */
         
         ArrayList<float[]> noteXmRead = new ArrayList();
-        String filenameXm = "input/xm/yankeeDb.xmk";
+        String file = "yankeeDb";
+        String filenameXm = "input/xm/" + file + ".xmk";
         noteXmRead = xmRead(filenameXm);
         ArrayList<float[]> chords = xmPlayer.xmPlay(noteXmRead,1);
         ArrayList<float[]> notesXm = xmPlayer.xmPlay(noteXmRead,0);
@@ -130,18 +135,44 @@ public class XmkMain {
         MEASURES = basicTransformations.measures(notesXm);
         for (int i=0; i<MEASURES; i++) {
             patterns.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
-            System.out.println(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            //System.out.println(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
             lhloverall += MeasureAnalyzer.LHL(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
             patternNums.add(MeasureAnalyzer.patternNums(basicTransformations.getHalfMeasure(notesXm,i),GCD,patterns.get(i),GCD*i*16));
         }
         lhloverall = lhloverall/MEASURES;
         System.out.println("Syncopation: " + lhloverall);
         //ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
-        ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
-        notesXm = RhythmChanger.changeSong(notesXm,patterns,rules,patternNums);
+        
+        //ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
+        ArrayList<String> rules = syncopalooza.makeRules(patterns);
+        System.out.println();
+        notesXm = RhythmChanger2.changeSongSync(notesXm,patterns,rules,patternNums,0.3);
+        
+        ArrayList<String> patternsb = new ArrayList();
+        ArrayList<ArrayList<Float>> patternNumsb = new ArrayList();
+        System.out.println();
+        for (int i=0; i<MEASURES; i++) {
+            patternsb.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            patternNumsb.add(MeasureAnalyzer.patternNums(basicTransformations.getHalfMeasure(notesXm,i),GCD,patternsb.get(i),GCD*i*16));
+        }
+        ArrayList<String> rulesb = syncopalooza.makeRules(patternsb);
+        notesXm = RhythmChanger2.changeSongSync(notesXm,patternsb,rulesb,patternNumsb,0.7);
+        
         
         chords.addAll(notesXm);
         //chordMaker.print(noteXm);
-        writeMidi.write(chords, "output/xmk/" + outFolderN + "yankeeDb.mid");
+        writeMidi.write(chords, "output/xmk/palooza/" + outFolderN + file + ".mid");
+        
+        /*
+        double check syncopalooza
+        fix double note problem
+        make object oriented - class for notes
+        
+        study when passing tones occur
+            separate melody
+            identify chords
+            to find passing tones - look at every 3 note block of melody where 2 outer are consonant with each other and dissonant with middle
+            determine how frequent, how often chromatic, compare to other genres
+        */
     }
 }

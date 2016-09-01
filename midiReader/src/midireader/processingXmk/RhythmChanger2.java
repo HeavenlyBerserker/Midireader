@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import static midireader.XmkMain.GCD;
 import static midireader.XmkMain.MEASURES;
 
-public class RhythmChanger {
+public class RhythmChanger2 {
     //creates a set of rules to be applied to the song in changeSong. 
     public static ArrayList<String> makeRules(ArrayList<String> patterns, ArrayList<String[]> patternData) {
         ArrayList<String> rules = new ArrayList();
@@ -91,6 +91,26 @@ public class RhythmChanger {
         return output;
     }
     
+    //changes each half-measure of the song to a new rhythm defined by the list of rules and returns entire song
+    public static ArrayList<float[]> changeSongSync(ArrayList<float[]> notes, ArrayList<String> pattern, ArrayList<String> rules, ArrayList<ArrayList<Float>> patternNums, double num) {
+        ArrayList<float[]> output = new ArrayList();
+        String newSequence;
+
+        for (int i=0; i<MEASURES; i++) {
+
+            newSequence = pattern.get(i);
+            for (int j=0; j<rules.size(); j++) {
+                if (newSequence.equals((rules.get(j)).substring(0,16))) {
+                    newSequence = syncopalooza.randomlyChange(rules.get(j).substring(0,16),rules.get(j).substring(17,33),num);
+                    break;
+                }
+            }
+            output.addAll(changeRhythm(basicTransformations.getHalfMeasure(notes,i),newSequence,(float)GCD*i*16,patternNums.get(i)));
+            //System.out.println(newSequence);
+        }
+        return output;
+    }
+    
     /*Function: Change Rhythm---------------------------------------------------------
     Combines a list of notes and a rhythmic sequence to produce an arraylist of notes with desired rhythm
     Input: List of notes in a half measure, rhythm string in format "IOOIOIO" where 'I' denotes the onset of a note, start time in ticks
@@ -107,22 +127,35 @@ public class RhythmChanger {
             for (int i=0; i<rhythmlist.length(); i++) {
                 if (rhythmlist.charAt(i) == 'I') {
                     if (patternNums.size() > currplace) {
-                        int numofnotes = Math.round(patternNums.get(currplace));
+                        int numofnotes = (int)Math.ceil(patternNums.get(currplace));
                         
                         currplace++;
-                        float currtime2 = 0;
-                        for (int k=0; k<numofnotes; k++){
-                            if (notes.size()>j) {
-                                currtime2 = patternNums.get(currplace);
-                                //System.out.println(currplace + " " + currtime2 + " " + notes.get(j)[0]);
-                                currnote = notes.get(j);
-                                currnote[1] = currtime;
-                                currnote[2] = currtime+currtime2;
-                                notes2.add(currnote);
-                                j++;
-                                currplace++;
+                        float currtime2;
+                        float currtime3 = currtime;
+                        if (numofnotes > 1) {
+                            for (int k=0; k<numofnotes; k++){
+                                if (notes.size()>j) {
+                                    currtime2 = patternNums.get(currplace);
+                                    //System.out.println(currplace + " " + currtime2 + " " + notes.get(j)[0]);
+                                    currnote = notes.get(j);
+                                    currnote[1] = currtime3;
+                                    currnote[2] = currtime3+currtime2;
+                                    notes2.add(currnote);
+                                    j++;
+                                    currplace++;
+                                }
+
                             }
-                            
+                        }
+                        else {
+                            currtime2 = patternNums.get(currplace);
+                            //System.out.println(currplace + " " + currtime2 + " " + notes.get(j)[0]);
+                            currnote = notes.get(j);
+                            currnote[1] = currtime;
+                            currnote[2] = currtime+currtime2;
+                            notes2.add(currnote);
+                            j++;
+                            currplace++;
                         }
                     }
                 }
