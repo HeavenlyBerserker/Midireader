@@ -3,6 +3,7 @@ package midireader.processingXmk;
 
 import midireader.auxClasses.basicTransformations;
 import java.util.ArrayList;
+import midireader.processingHumdrumMelisma.chordMaker;
 
 public class MeasureAnalyzer {
     
@@ -196,6 +197,15 @@ public class MeasureAnalyzer {
     
     //returns an array of the format <n1, length(0), ... , length(n1-1), n2...>
     public static ArrayList<Float> patternNums(ArrayList<float[]> notes, float GCD, String pattern, float start) {
+        
+        System.out.println("DEBUG------------------------------------------");
+        chordMaker.printF(notes);
+        System.out.println("GCD = "+ GCD);
+        System.out.println("Pattern = "+ pattern);
+        System.out.println("Start = "+ start);
+        
+        
+        
         ArrayList<Float> output = new ArrayList();
         for (int i=0; i<16; i++) {
             if (pattern.charAt(i) == 'I') {
@@ -207,12 +217,15 @@ public class MeasureAnalyzer {
                         
                         temp.add(notes.get(j)[2]-notes.get(j)[1]);
                     }
+                }
                 output.add((float)temp.size());
                 output.addAll(temp);
-                
-                }
+                System.out.print(pattern.charAt(i) +" ");
             }
         }
+        System.out.println("OutputLength = "+ output.size());
+        System.out.println("Output = "+ output);
+        System.out.println("DEBUG//----------------------------------------");
         return output;
     }
     

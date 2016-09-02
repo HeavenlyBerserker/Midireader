@@ -12,6 +12,17 @@ public class RhythmChanger2 {
         ArrayList<String> rules = new ArrayList();
         int startingnum = 0;
         
+        /*
+        System.out.println("DEBUG------------------------------------------");
+        for(int i=0; i < patterns.size(); i++){
+            System.out.print(patterns.get(i) + " ");
+        }
+        for(int i=0; i < patternData.size(); i++){
+            System.out.print(patternData.get(i) + " ");
+        }
+        System.out.println("DEBUG//----------------------------------------");
+        */
+        
         for (int i=0; i<MEASURES; i++) {
             int size = (patterns.get(i).length() - patterns.get(i).replace("I", "").length());
             //float randomnum = (float)Math.random();
