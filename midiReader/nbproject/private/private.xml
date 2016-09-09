@@ -3,6 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
+            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/inputXmk/xmReader.java</file>
+            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/XmkMain.java</file>
+            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/inputHumdrumMelisma/ChordAnalyzer.java</file>
+            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/output/writeMidi.java</file>
+            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/inputHumdrumMelisma/readMidi.java</file>
+            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/processingHumdrumMelisma/chordMaker.java</file>
+            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/processingXmk/xmPlayer.java</file>
+=======
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/input/xm/yankeeD.xmk</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/patternDataProcessing/rhythmFrequency.java</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/XmkMain.java</file>
@@ -26,6 +35,7 @@
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/processingXmk/xmPlayer.java</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/input/xm/yankeeDb.xmk</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/inputHumdrumMelisma/ChordAnalyzer.java</file>
+>>>>>>> 1072dd0cdd996301a452c8cf107994740b13e9b5
         </group>
     </open-files>
 </project-private>

@@ -127,6 +127,8 @@ public class XmkMain {
         ArrayList<ArrayList<Float>> patternNums = new ArrayList();
         float lhloverall = 0;
         
+        
+        //chordMaker.print(notesXm);
         /*
         chordMaker.print(noteXmRead);
         ArrayList<float[]> noteXm = new ArrayList();
@@ -146,7 +148,7 @@ public class XmkMain {
         //ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
         ArrayList<String> rules = syncopalooza.makeRules(patterns);
         System.out.println();
-        notesXm = RhythmChanger2.changeSongSync(notesXm,patterns,rules,patternNums,0.3);
+        notesXm = RhythmChanger2.changeSongSync(notesXm,patterns,rules,patternNums,0.1);
         
         ArrayList<String> patternsb = new ArrayList();
         ArrayList<ArrayList<Float>> patternNumsb = new ArrayList();
@@ -156,7 +158,7 @@ public class XmkMain {
             patternNumsb.add(MeasureAnalyzer.patternNums(basicTransformations.getHalfMeasure(notesXm,i),GCD,patternsb.get(i),GCD*i*16));
         }
         ArrayList<String> rulesb = syncopalooza.makeRules(patternsb);
-        notesXm = RhythmChanger2.changeSongSync(notesXm,patternsb,rulesb,patternNumsb,0.7);
+        notesXm = RhythmChanger2.changeSongSync(notesXm,patternsb,rulesb,patternNumsb,0.1);
         
         
         chords.addAll(notesXm);
