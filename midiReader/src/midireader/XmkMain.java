@@ -166,9 +166,15 @@ public class XmkMain {
         writeMidi.write(chords, "output/xmk/palooza/" + outFolderN + file + ".mid");
         
         /*
-        double check syncopalooza
-        fix double note problem
-        make object oriented - class for notes
+        
+        fix note issue
+        pick streams throughout song
+            group streams by average pitch
+            pick highest unil song is mostly filled (gaps <= 1 measure)
+            When overlapping, split into substreams and pick highest overlap
+        
+        get the notes from that stream
+        get the io rhythms from those notes
         
         study when passing tones occur
             separate melody
