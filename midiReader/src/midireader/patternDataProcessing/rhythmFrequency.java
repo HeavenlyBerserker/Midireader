@@ -20,7 +20,7 @@ public class rhythmFrequency {
         ArrayList<String[]> output = new ArrayList();
 
         String line;
-        
+        int totallines = 0;
 
         try (
             InputStream fis = new FileInputStream(filename);
@@ -42,7 +42,7 @@ public class rhythmFrequency {
                     }
                 }
                 XmkMain.lines[pattern.length() - (pattern.replace("1", "")).length()]++;
-                
+                totallines++;
                 if (found == -1) {
                     String[] temp = {Integer.toString(pattern.length() - (pattern.replace("1", "")).length()),"1",pattern};
                     output.add(temp);
@@ -61,7 +61,8 @@ public class rhythmFrequency {
         }
         
         for (int i=0; i<output.size(); i++) {
-            String[] temp = {output.get(i)[0],String.format("%.12f", (Float.valueOf(output.get(i)[1]) / XmkMain.lines[ Integer.parseInt(output.get(i)[0])] )),output.get(i)[2]};
+            //String[] temp = {output.get(i)[0],String.format("%.12f", (Float.valueOf(output.get(i)[1]) / XmkMain.lines[ Integer.parseInt(output.get(i)[0])] )),output.get(i)[2]};
+            String[] temp = {output.get(i)[0],String.format("%.12f", (Float.valueOf(output.get(i)[1]) / totallines )),output.get(i)[2]};
             output.set(i,temp);
         }
         
@@ -71,12 +72,13 @@ public class rhythmFrequency {
                 return new Float(Float.parseFloat(otherStrings[1])).compareTo(Float.parseFloat(strings[1]));
             }
         });
+        /*
         Collections.sort(output,new Comparator<String[]>() {
             @Override
             public int compare(String[] strings, String[] otherStrings) {
                 return new Float(Float.parseFloat(strings[0])).compareTo(Float.parseFloat(otherStrings[0]));
             }
-        });
+        });*/
         
         for (int i=0; i<output.size(); i++) {
             //System.out.println(output.get(i)[0] + " " + output.get(i)[1] + " " + output.get(i)[2]);

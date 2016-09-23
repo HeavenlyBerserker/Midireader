@@ -40,10 +40,20 @@ public class syncopalooza {
     public static String resynch(String pattern) {
         int shifted = 1;
         int weight[] = {5,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1};
+        int minweight = 2;
+        int maxweight = 3;
+        for (int i=0; i<16; i++) {
+            if (weight[i] > maxweight) {
+                weight[i] = maxweight;
+            }
+            else if (weight[i] < minweight) {
+                weight[i] = 0;
+            }
+        }
         String transforms = pattern;
         while (shifted == 1) {
             shifted = 0;
-            System.out.println(pattern);
+            //System.out.println(pattern);
             for (int i=0; i<pattern.length() - pattern.replace("I", "").length(); i++) {
                 int pos = MeasureAnalyzer.findI(pattern, i);
                 int posweight = weight[pos];
