@@ -127,8 +127,10 @@ public class ProbMelisma {
 
 		create_streamlists();
 
-		print_streams(Polyph.streamlist, -1, -1, 1);
-
+		//print_streams(Polyph.streamlist, -1, -1, 1);
+                
+                MonophonicStreams.selectStreams();
+                /*
 		make_profiles();
 
 		create_pipstreams();
@@ -183,5 +185,6 @@ public class ProbMelisma {
 		if (Globals.verbosity == -2) {
 			print_chords();
 		}
+                */
 	}
 }

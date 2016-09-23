@@ -680,10 +680,10 @@ static void assign_voice_numbers() {
 	    if (set==0) {
 		segment[seg].voice_number[i]=v;
 		v++;
-		//System.out.printf("In seg %d, creating new voice %d\n", seg, segment[seg].voice_number[i]);
+		System.out.printf("In seg %d, creating new voice %d\n", seg, segment[seg].voice_number[i]);
 	    }
 	}
-	/* System.out.printf("\n"); */
+	//System.out.printf("\n"); 
 
 	/* To force voice numbers to a segment, do so here */
 	/*    if(seg==690) {
