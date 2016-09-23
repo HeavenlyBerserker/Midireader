@@ -1382,7 +1382,8 @@ static void graphic_display() {
 
     for(p=0; p<num_pips; p++) {
 
-	for(i=0; i<100; i++) pip[p].row[i]=0;
+	for(i=0; i<100; i++) 
+            pip[p].row[i]=0;
 	s = streamlist;
 	while(s!=null) {
 	    sn=s.sn;
