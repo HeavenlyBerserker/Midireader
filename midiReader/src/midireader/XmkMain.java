@@ -27,9 +27,12 @@ import javax.sound.midi.Sequence;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
+import midireader.auxClasses.fooCallers;
+import midireader.inputHumdrumMelisma.readMidi;
 import midireader.Temperley.ProbMelisma;
 import static midireader.processingHumdrumMelisma.chordMaker.printF;
 import static midireader.inputXmk.xmReader.xmRead;
+import midireader.output.writeNotes;
 import midireader.processingXmk.RhythmChanger2;
 import midireader.processingXmk.syncopalooza;
 
@@ -68,7 +71,7 @@ public class XmkMain {
          syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));
         //input pattern data
    
-        ArrayList<String[]> patternData = rhythmFrequency.readFile("input/" + "lhlpatterns_depth_nots.csv");
+        ArrayList<String[]> patternData = rhythmFrequency.readFile("input/V1 Input/" + "lhlpatterns_depth_nots.csv");
         patternData = rhythmFrequency.changeToIO(patternData);
 
         //All input filenames here------------------------------------------------------------------------------------
@@ -81,13 +84,18 @@ public class XmkMain {
         //Print Some info.
         System.out.println("Filename: " + fileName);
         
+        //-----------------------------------------MidiToNote------------------------------------------------
+        ArrayList<float[]> readingMid = new ArrayList();
+        readingMid = fooCallers.midiToNotes("bach.annamin.mid");
+        //chordMaker.printF(readingMid);
+        writeNotes.writeNotes("bach.annamin", readingMid);
         
         //-----------------------------------------No input under here------------------------------------------------
         //Chord processing-----------------------------------------------------------------------
         System.out.print("Measures not adding up to 1 (Please check): --------------------------------");
         ArrayList<float[]> chordList = new ArrayList();
         int[] timeSig = {0,0,0};
-        chordList = ChordAnalyzer.chordNotes(chordList, "input/" + inFolderN + filenameHar, timeSig);
+        chordList = ChordAnalyzer.chordNotes(chordList, "input/V1 Input/" + inFolderN + filenameHar, timeSig);
         ArrayList<float[]> chordsWrite;
         float ts = 4/4 - (float)0.001;
         int bpm = timeSig[2];
@@ -100,7 +108,7 @@ public class XmkMain {
         
         
         //Melody processing-----------------------------------------------------------------------
-        ArrayList<float[]> notes = MelismaReader.readFile("input/" + inFolderN + filenameMel);
+        ArrayList<float[]> notes = MelismaReader.readFile("input/V1 Input/" + inFolderN + filenameMel);
         //ArrayList<float[]> notes = readMidi(MidiSystem.getSequence(new File("op01n02b.mid")));
         
         System.out.println("\nMM " + MM);
