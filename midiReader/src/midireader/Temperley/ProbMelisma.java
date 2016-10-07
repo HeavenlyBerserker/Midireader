@@ -25,7 +25,7 @@ public class ProbMelisma {
 
 		int param_file_specified = 0;
 
-		Globals.verbosity = 1;   /* set verbosity */ //i added globals.
+		Globals.verbosity = 0;   /* set verbosity */ //i added globals.
 
 		for (j = 0; j < argv.length; j++) {
 			if (argv[j].equals("-p")) {
@@ -117,7 +117,7 @@ public class ProbMelisma {
 
 		create_streams();
 
-		//display_streams();
+                //display_streams();
 
 		/*
 		printf("Notes as output by streamer:\n");
@@ -130,6 +130,15 @@ public class ProbMelisma {
 		//print_streams(Polyph.streamlist, -1, -1, 1);
                 
                 MonophonicStreams.selectStreams();
+                
+                //map <String, Map<String, Int>> <-how to make map of maps, first string, second string, tally
+                //  or get guava working and use its table, a 2d map
+                //
+                // import os to read directory and do a loop for each file in directory
+                //glob module - lists files that meet requirements
+                //javac *.java compiles everything in current folder
+                //then java___
+                
                 /*
 		make_profiles();
 

@@ -33,6 +33,7 @@ public class MonophonicStreams {
 	sn = s.sn;
         float pitchcounter = 0;
         float notecounter = 0;
+        //System.out.println(s.index + " " + s.start);
 	while(true) {
 	    if(sn==null) break;
 	    if(sn.ontime < starttime) continue;
@@ -54,6 +55,11 @@ public class MonophonicStreams {
     }
     
     float size = realend;
+    
+    
+    for (int i=0; i<500; i++) {
+        //System.out.println(i + " " + average[i]+" " + min[i] + " " +max[i]);
+    }
     
     int numofstreams=0;
     for (int i=1; i<500; i++) {
