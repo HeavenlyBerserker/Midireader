@@ -24,6 +24,7 @@ import javax.sound.midi.Sequence;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
+import midireader.Temperley.ProbMelisma;
 import static midireader.processingHumdrumMelisma.chordMaker.printF;
 import static midireader.inputXmk.xmReader.xmRead;
 import midireader.processingXmk.RhythmChanger2;
@@ -42,7 +43,9 @@ public class XmkMain {
     public static int lines[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     
     public static void main(String[] args) throws Exception {
+        ProbMelisma.analyzeRag("D:\\Users\\Joel\\Desktop\\Documents\\NetBeansProjects\\Midireader\\midiReader\\input\\InputV1\\canon.notes");
         
+        /*
          syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));
         //input pattern data
    
@@ -113,7 +116,7 @@ public class XmkMain {
         writeMidi.write(notes, "output/" + outFolderN + "ZTest" + filenameHar.substring(0, filenameHar.length()-4) + ".mid");
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
-        */
+        
         
         ArrayList<float[]> noteXmRead = new ArrayList();
         String file = "yankeeDb";
@@ -133,7 +136,7 @@ public class XmkMain {
         chordMaker.print(noteXmRead);
         ArrayList<float[]> noteXm = new ArrayList();
         noteXm = xmPlayer.xmPlay(noteXmRead);
-        */
+        
         MEASURES = basicTransformations.measures(notesXm);
         for (int i=0; i<MEASURES; i++) {
             patterns.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));

@@ -79,8 +79,11 @@ public class MonophonicStreams {
     
     
     ArrayList<String> patterns = new ArrayList();
-    for (int i=0; i<(realend-realstart)/(4000); i++)
+    
+    for (int i=0; i<(realend-realstart)/(4000); i++) { 
         System.out.println(MeasureAnalyzer.getRhythm(notes, i, 250));
+        
+    }
     return notes;
 }
     
@@ -108,11 +111,11 @@ public class MonophonicStreams {
 	    if(sn.offtime > right) break;
 	    //System.out.printf("[%d %d %d] ", sn.ontime, sn.offtime, sn.pitch);
             float[] floaty =  {(float)sn.pitch, (float)sn.ontime-start, (float)sn.offtime-start};
-            System.out.print(sn.pitch + " " + sn.ontime + " " + sn.offtime + "  ");
+            //System.out.print(sn.pitch + " " + sn.ontime + " " + sn.offtime + "  ");
             output.add(floaty);
 	    sn=sn.next;
 	}
-        System.out.print("\n");
+        //System.out.print("\n");
         
     
         return output;
@@ -148,13 +151,13 @@ public class MonophonicStreams {
             while (cnt < size - 1 && mysky[cnt] == mysky[cnt + 1]) {
                 cnt++;
             }
-            System.out.print(mystream[cnt]+" "+(cnt+1+0)+" ");
+            //System.out.print(mystream[cnt]+" "+(cnt+1+0)+" ");
             skyline.add(mystream[cnt]); //,cnt+1+min});
             skyline.add((float)cnt + 1 + 0);
             cnt++;
         }
         if (cnt == size - 1) {
-            System.out.print(mystream[(int)size-1]+" "+realend);
+            //System.out.print(mystream[(int)size-1]+" "+realend);
             skyline.add(mystream[(int) size - 1]);
             skyline.add(realend);
         }

@@ -12,12 +12,12 @@ import java.util.Scanner;
 
 public class ProbMelisma {
 
-	public static void main(String argv[]) {
+	public static void analyzeRag(String input_file) {
 		int n = 0, j;
 		Snote sn;
 		Stream s;
 
-		String parameter_file, input_file = "D:\\Users\\Joel\\Desktop\\Documents\\NetBeansProjects\\Midireader\\midiReader\\input\\V1 Input\\canon.notes";//char *parameter_file = NULL, *input_file = NULL;
+		String parameter_file = input_file; //char *parameter_file = NULL, *input_file = NULL;
 		BufferedReader in_file;//FILE *in_file;
 		String line;// char line[] = new char[1000];
 		String noteword; //char noteword[] = new char[10];
@@ -26,21 +26,21 @@ public class ProbMelisma {
 		int param_file_specified = 0;
 
 		Globals.verbosity = 0;   /* set verbosity */ //i added globals.
-
+                /*
 		for (j = 0; j < argv.length; j++) {
-			if (argv[j].equals("-p")) {
-				parameter_file = argv[j + 1];
-				param_file_specified = 1;
-				j++;
-			} else if (argv[j].equals("-v")) {
-				j++;
-				Globals.verbosity = Integer.parseInt(argv[j]); //sscanf(argv[j], "%d", &verbosity); //added globals.
-			} else if (input_file == null) {
-				/* assume it's a file */
-				input_file = argv[j];
-                                System.out.print("egg");
-			}
-		}
+                    if (argv[j].equals("-p")) {
+                            parameter_file = argv[j + 1];
+                            param_file_specified = 1;
+                            j++;
+                    } else if (argv[j].equals("-v")) {
+                            j++;
+                            Globals.verbosity = Integer.parseInt(argv[j]); //sscanf(argv[j], "%d", &verbosity); //added globals.
+                    } else if (input_file == null) {
+                            /* assume it's a file 
+                            input_file = argv[j];
+                            System.out.print("egg");
+                    }
+		}*/
 
 		//read_parameter_file (parameter_file, param_file_specified);
 
@@ -65,7 +65,7 @@ public class ProbMelisma {
 					continue;
 				}
 
-				System.out.println(line);
+				//System.out.println(line);
 
 				Scanner scanner = new Scanner(line);
 
