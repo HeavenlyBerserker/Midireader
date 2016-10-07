@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/inputXmk/xmReader.java</file>
-            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/XmkMain.java</file>
-            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/inputHumdrumMelisma/ChordAnalyzer.java</file>
-            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/output/writeMidi.java</file>
-            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/inputHumdrumMelisma/readMidi.java</file>
-            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/processingHumdrumMelisma/chordMaker.java</file>
-            <file>file:/home/domini/Documents/Kirlin/git/Midireader/midiReader/src/midireader/processingXmk/xmPlayer.java</file>
-=======
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/Temperley/Streamer.java</file>
+            <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/Temperley/MonophonicStreams.java</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/XmkMain.java</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/inputHumdrumMelisma/MelismaReader.java</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/input/V1%20Input/sonata01-1.notes</file>
@@ -21,7 +14,6 @@
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/inputHumdrumMelisma/readMidi.java</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/Temperley/Polyph.java</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/processingXmk/MeasureAnalyzer.java</file>
-            <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/Temperley/JoelMelisma.java</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/Temperley/ProbMelisma.java</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/input/V1%20Input/sonata22-2.txt</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/input/xm/menuet%20in%20g.xmk</file>
@@ -43,7 +35,6 @@
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/input/xm/k545.xmk</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/input/xm/yankeeDb.xmk</file>
             <file>file:/D:/Users/Joel/Desktop/Documents/NetBeansProjects/Midireader/midiReader/src/midireader/Temperley/Segment.java</file>
->>>>>>> 537875adb2296a71796ac425222f08cdfad1a9e0
         </group>
     </open-files>
 </project-private>

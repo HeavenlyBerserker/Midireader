@@ -24,8 +24,12 @@ import javax.sound.midi.Sequence;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
+<<<<<<< HEAD
 import midireader.auxClasses.fooCallers;
 import midireader.inputHumdrumMelisma.readMidi;
+=======
+import midireader.Temperley.ProbMelisma;
+>>>>>>> c53eda68de92d57eea304bc9e2cdad1886ff703e
 import static midireader.processingHumdrumMelisma.chordMaker.printF;
 import static midireader.inputXmk.xmReader.xmRead;
 import midireader.output.writeNotes;
@@ -45,7 +49,9 @@ public class XmkMain {
     public static int lines[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     
     public static void main(String[] args) throws Exception {
+        ProbMelisma.analyzeRag("D:\\Users\\Joel\\Desktop\\Documents\\NetBeansProjects\\Midireader\\midiReader\\input\\InputV1\\canon.notes");
         
+        /*
          syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));
         //input pattern data
    
@@ -121,7 +127,7 @@ public class XmkMain {
         writeMidi.write(notes, "output/" + outFolderN + "ZTest" + filenameHar.substring(0, filenameHar.length()-4) + ".mid");
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
-        */
+        
         
         ArrayList<float[]> noteXmRead = new ArrayList();
         String file = "yankeeDb";
@@ -141,7 +147,7 @@ public class XmkMain {
         chordMaker.print(noteXmRead);
         ArrayList<float[]> noteXm = new ArrayList();
         noteXm = xmPlayer.xmPlay(noteXmRead);
-        */
+        
         MEASURES = basicTransformations.measures(notesXm);
         for (int i=0; i<MEASURES; i++) {
             patterns.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
@@ -174,15 +180,6 @@ public class XmkMain {
         writeMidi.write(chords, "output/xmk/palooza/" + outFolderN + file + ".mid");
         
         /*
-        
-        fix note issue
-        pick streams throughout song
-            group streams by average pitch
-            pick highest unil song is mostly filled (gaps <= 1 measure)
-            When overlapping, split into substreams and pick highest overlap
-        
-        get the notes from that stream
-        get the io rhythms from those notes
         
         study when passing tones occur
             separate melody

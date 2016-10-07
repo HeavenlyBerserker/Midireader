@@ -87,7 +87,7 @@ public final class Metharm {
 		/* Set the start and end of each stream, also the "prev" */
 		while (s != null) {
 			sn = s.sn;
-			s.start = 100000;
+			s.start = 10000000; //s.start = 100000; 
 			s.end = -1;
 			while (sn != null) {
 				if (sn.ontime < s.start) {
