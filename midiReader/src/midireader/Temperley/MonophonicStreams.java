@@ -77,11 +77,10 @@ public class MonophonicStreams {
         notes.addAll(thesenotes);
     }
     
-    
-    ArrayList<String> patterns = new ArrayList();
+
     
     for (int i=0; i<(realend-realstart)/(4000); i++) { 
-        System.out.println(MeasureAnalyzer.getRhythm(notes, i, 250));
+        //System.out.println(MeasureAnalyzer.getRhythm(notes, i, 250));
         
     }
     return notes;

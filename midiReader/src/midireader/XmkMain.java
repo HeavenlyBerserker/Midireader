@@ -13,8 +13,11 @@ import midireader.auxClasses.basicTransformations;
 import midireader.inputHumdrumMelisma.MelismaReader;
 import midireader.inputHumdrumMelisma.ChordAnalyzer;
 import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import javax.sound.midi.MetaMessage;
 
 import javax.sound.midi.MidiEvent;
@@ -30,6 +33,7 @@ import static midireader.inputXmk.xmReader.xmRead;
 import midireader.processingXmk.RhythmChanger2;
 import midireader.processingXmk.syncopalooza;
 
+
 public class XmkMain {
     public static final int NOTE_ON = 0x90;
     public static final int NOTE_OFF = 0x80;
@@ -43,7 +47,22 @@ public class XmkMain {
     public static int lines[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     
     public static void main(String[] args) throws Exception {
-        ProbMelisma.analyzeRag("D:\\Users\\Joel\\Desktop\\Documents\\NetBeansProjects\\Midireader\\midiReader\\input\\InputV1\\canon.notes");
+        
+        List<String> files = new ArrayList<>();
+        Path dir = Paths.get("input\\InputV1\\notefiles");
+        MelismaReader.getFileNames(files, dir);
+        
+        for (int i=0; i<files.size(); i++) {
+            System.out.println(files.get(i));
+            try {
+                ProbMelisma.analyzeRag(files.get(i));
+                System.out.println("Success");
+            }
+            catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("Failure");
+            }
+            
+        }
         
         /*
          syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));
@@ -177,4 +196,5 @@ public class XmkMain {
             determine how frequent, how often chromatic, compare to other genres
         */
     }
+
 }
