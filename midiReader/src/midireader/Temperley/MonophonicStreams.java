@@ -79,8 +79,7 @@ public class MonophonicStreams {
         notes.addAll(thesenotes);
     }
     
-    
-    ArrayList<String> patterns = new ArrayList();
+
     
     //BiHashMap<Integer, Integer, Integer> hash = new BiHashMap<Integer, Integer, Integer>();
     

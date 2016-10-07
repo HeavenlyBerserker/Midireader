@@ -4,9 +4,29 @@ import java.util.ArrayList;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.io.*;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
 import midireader.XmkMain;
 
 public class MelismaReader {
+   
+    public static List<String> getFileNames(List<String> fileNames, Path dir) {
+    try(DirectoryStream<Path> stream = Files.newDirectoryStream(dir)) {
+        for (Path path : stream) {
+            if(path.toFile().isDirectory()) {
+                getFileNames(fileNames, path);
+            } else {
+                fileNames.add(path.toAbsolutePath().toString());
+                //System.out.println(path.getFileName());
+            }
+        }
+    } catch(IOException e) {
+        e.printStackTrace();
+    } 
+    return fileNames;
+} 
     
     public static ArrayList<float[]> readFile(String filename) throws IOException {
         FileInputStream in = null;
@@ -39,4 +59,5 @@ public class MelismaReader {
         }
         return output;
     }
+
 }

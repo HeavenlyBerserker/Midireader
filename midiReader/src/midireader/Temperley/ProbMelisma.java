@@ -75,7 +75,7 @@ public class ProbMelisma {
 
 				noteword = scanner.next();  //)sscanf(line, "%s", noteword);
 				if (!noteword.equals("Note")) {
-					//printf("Bad line found in input: %s", line);
+					//System.out.println("Bad line found in input: " + line);
 					continue;
 				}
 
@@ -107,7 +107,7 @@ public class ProbMelisma {
 
 		Polyph.numnotes = n; //added Polyph.
 
-		if (Globals.verbosity >= 0) {
+		if (Globals.verbosity > 0) {
 			System.out.printf("Creating segments and streams...\n");
 		}
 
