@@ -54,18 +54,20 @@ public class XmkMain {
         List<String> files = new ArrayList<>();
         Path dir = Paths.get("input\\InputV1\\notefiles");
         MelismaReader.getFileNames(files, dir);
-        
+        int successes = 0;
         for (int i=0; i<files.size(); i++) {
             System.out.println(files.get(i));
             try {
                 ProbMelisma.analyzeRag(files.get(i));
                 System.out.println("Success");
+                successes++;
             }
             catch (ArrayIndexOutOfBoundsException e) {
-                System.out.println("Failure");
+                System.out.println(e);
             }
             
         }
+        System.out.println("Files successfully analyzed: "+successes+ "/" +files.size());
         
         /*
          syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));
