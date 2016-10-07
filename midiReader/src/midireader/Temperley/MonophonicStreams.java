@@ -3,6 +3,8 @@ package midireader.Temperley;
 
 import java.util.ArrayList;
 import static midireader.Temperley.Polyph.*;
+import DataStructs.BiHashMap;
+import midireader.XmkMain;
 
 import midireader.processingXmk.MeasureAnalyzer;
 
@@ -80,10 +82,25 @@ public class MonophonicStreams {
     
     ArrayList<String> patterns = new ArrayList();
     
+    //BiHashMap<Integer, Integer, Integer> hash = new BiHashMap<Integer, Integer, Integer>();
+    
     for (int i=0; i<(realend-realstart)/(4000); i++) { 
-        System.out.println(MeasureAnalyzer.getRhythm(notes, i, 250));
-        
+        //System.out.println(MeasureAnalyzer.getRhythm(notes, i, 250));
+        if(i < (realend-realstart)/(4000)-1){
+            int[] arr = key(MeasureAnalyzer.getRhythm(notes, i, 250), MeasureAnalyzer.getRhythm(notes, i+1, 250));
+            //System.out.println(arr[0]); //+ " " + arr[1]);
+            if(!XmkMain.hash.containsKeys(arr[0], arr[1])){
+                XmkMain.hash.put(arr[0], arr[1], 1);
+            }
+            else{
+                int r = XmkMain.hash.get(arr[0], arr[1]);
+                XmkMain.hash.put(arr[0], arr[1], r+1);
+            }
+        }
     }
+    
+    //XmkMain.hash.printMap();
+    
     return notes;
 }
     
@@ -163,5 +180,23 @@ public class MonophonicStreams {
         }
 
         return skyline;
+    }
+    
+    /*-------------------------------------------
+    Hashmap functions
+    -------------------------------------------*/
+    static int[] key(String a, String b) {
+        int ak  = 0 , bk = 0;
+        for(int i = a.length()-1; i >=0; i--){
+            if(a.charAt(i) == 'I'){
+                ak += Math.pow(2,a.length()-1 -i);
+            }
+            if(b.charAt(i) == 'I'){
+                bk += Math.pow(2,a.length()-1 -i);
+            }
+        }
+        
+        int[] keys = {ak,bk};
+        return keys;
     }
 }

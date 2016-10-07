@@ -3,6 +3,7 @@
 package midireader;
 
 
+import DataStructs.BiHashMap;
 import midireader.patternDataProcessing.rhythmFrequency;
 import midireader.processingXmk.RhythmChanger;
 import midireader.processingXmk.MeasureAnalyzer;
@@ -24,12 +25,9 @@ import javax.sound.midi.Sequence;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
-<<<<<<< HEAD
 import midireader.auxClasses.fooCallers;
 import midireader.inputHumdrumMelisma.readMidi;
-=======
 import midireader.Temperley.ProbMelisma;
->>>>>>> c53eda68de92d57eea304bc9e2cdad1886ff703e
 import static midireader.processingHumdrumMelisma.chordMaker.printF;
 import static midireader.inputXmk.xmReader.xmRead;
 import midireader.output.writeNotes;
@@ -47,10 +45,13 @@ public class XmkMain {
     public static float MEASURES;
     public static float MM; //beats per minute from melisma
     public static int lines[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    public static BiHashMap<Integer, Integer, Integer> hash = new BiHashMap<Integer, Integer, Integer>();
     
     public static void main(String[] args) throws Exception {
-        ProbMelisma.analyzeRag("D:\\Users\\Joel\\Desktop\\Documents\\NetBeansProjects\\Midireader\\midiReader\\input\\InputV1\\canon.notes");
+        ProbMelisma.analyzeRag("input/InputV1/canon.notes");
         
+        
+        XmkMain.hash.printMap();
         /*
          syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));
         //input pattern data
