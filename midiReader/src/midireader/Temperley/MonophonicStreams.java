@@ -83,10 +83,10 @@ public class MonophonicStreams {
     
     //BiHashMap<Integer, Integer, Integer> hash = new BiHashMap<Integer, Integer, Integer>();
     
-    for (int i=0; i<(realend-realstart)/(4000); i++) { 
-        //System.out.println(MeasureAnalyzer.getRhythm(notes, i, 250));
-        if(i < (realend-realstart)/(4000)-1){
-            int[] arr = key(MeasureAnalyzer.getRhythm(notes, i, 250), MeasureAnalyzer.getRhythm(notes, i+1, 250));
+    for (int i=0; i<(realend-realstart)/(16*globseglength); i++) { 
+        //System.out.println(MeasureAnalyzer.getRhythm(notes, i, (float)globseglength));
+        if(i < (realend-realstart)/(16*globseglength)-1){
+            int[] arr = key(MeasureAnalyzer.getRhythm(notes, i, (float)globseglength), MeasureAnalyzer.getRhythm(notes, i+1, (float)globseglength));
             //System.out.println(arr[0]); //+ " " + arr[1]);
             if(!XmkMain.hash.containsKeys(arr[0], arr[1])){
                 XmkMain.hash.put(arr[0], arr[1], 1);

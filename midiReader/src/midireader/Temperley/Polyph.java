@@ -16,7 +16,7 @@ static final int  MA = 1000   ;                /* The maximum number of analyses
 static final int MT = 256 ;                   /* The maximum number of transitions for an analysis */
 static final int MC = 4   ;                   /* The maximum number of voices in an analysis in which collisions are allowed
 				   (if the analysis has MC or fewer voices, allow collisions) */
-static final int MS = 10000 ;                  /* The maximum number of segments allowed. (WARNING: Setting this
+static final int MS = 100000 ;                  /* The maximum number of segments allowed. (WARNING: Setting this
 				     number is greater than 1000 may exceed the maximum array
 				     size allowed on some UNIX machines. */
 //int max_voices;
@@ -36,14 +36,15 @@ static int total_duration;
 static int final_timepoint;
 static int segment_beat_level;
 static double seglength;
+static double globseglength;
 
-static note_struct znote[] = new note_struct[10000];     /* Notes as input - not necessarily chronological */
-static note_struct note[] = new note_struct[10000];      /* Notes sorted chronologically */
+static note_struct znote[] = new note_struct[100000];     /* Notes as input - not necessarily chronological */
+static note_struct note[] = new note_struct[100000];      /* Notes sorted chronologically */
 
-static segment_struct segment[] = new segment_struct[MS];        /* An array storing the notes in each segment. */
+static segment_struct segment[] = new segment_struct[MS+100];        /* An array storing the notes in each segment. */
 static int segtotal;              /* total number of segments - 1 */
 
-static int canceled[] = new int[100];    /* This value is 1 for a pitch if another pitch a half-step or whole-step away has occurred more
+static int canceled[] = new int[1000];    /* This value is 1 for a pitch if another pitch a half-step or whole-step away has occurred more
 			   recently than the pitch itself */
 
 static int prov_analysis[] = new int[MAXV+1];
@@ -73,9 +74,9 @@ static int ltnum[] = new int[MA], rtnum[] = new int[MA];                      /*
 
 static int best[][] = new int[MS][MA];                              /* The best prior analysis for each analysis */
 static double global_analysis[][] = new double[MS][MA];
-static int final_[] = new int[MS];
-static int final_ltransition[][] = new int[MS][MAXV];
-static int final_rtransition[][] = new int[MS][MAXV];
+static int final_[] = new int[MS*10];
+static int final_ltransition[][] = new int[MS*10][MAXV];
+static int final_rtransition[][] = new int[MS*10][MAXV];
 static int final_transcard[] = new int[MS];
 
 static Subtactus  subt[][];
@@ -256,16 +257,16 @@ class segment_struct {
 
 	segment_struct()
 	{
-		inote = new int[20];
-		snote = new int[20];
-		column = new int[100];
-		analysis = new int[Polyph.MA][Polyph.MAXV];
+		inote = new int[2000];
+		snote = new int[2000];
+		column = new int[1000];
+		analysis = new int[Polyph.MA][Polyph.MAXV+100];
 		analcard = new int[Polyph.MA];
 		analblack = new int[Polyph.MA];
 		analblue = new int[Polyph.MA];
 		analgrey = new int[Polyph.MA];
 		analscore = new double[Polyph.MA];
-		voice_number = new int[Polyph.MAXV];
+		voice_number = new int[Polyph.MAXV*10];
 	}
 
 };

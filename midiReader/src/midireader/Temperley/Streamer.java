@@ -581,6 +581,7 @@ static void analyze_piece() {
        evaluate transitions again, but only the ones for the chosen analyses of each segment). */
 
     bestscore = -1000000.0;
+    //System.out.println(segtotal);
     for(j=0; j<segment[segtotal].numanal; j++) {
 	if(global_analysis[segtotal][j] > bestscore) {
 	    bestscore=global_analysis[segtotal][j];
@@ -666,8 +667,10 @@ static void assign_voice_numbers() {
 	for(i=0; i<segment[seg].analcard[final_[seg]]; i++) {
 	    set=0;
 	    if (final_rtransition[seg][t] == segment[seg].analysis[final_[seg]][i]) {
+                //System.out.println(seg);
 		while(true) {
-		    if (final_ltransition[seg][t] == segment[seg-1].analysis[final_[seg-1]][j]) {
+                    //error happens when j gets too big - added j > 10
+		    if (j > 10 || final_ltransition[seg][t] == segment[seg-1].analysis[final_[seg-1]][j]) {
 			segment[seg].voice_number[i] = segment[seg-1].voice_number[j];
 			set=1;
 			j++;
@@ -767,6 +770,8 @@ static void  create_streams() {
     create_snotes();
     //print_segments();
     column_analyses();
+    if (segtotal <= 0)
+        return;
     analyze_piece();
     assign_voice_numbers();
 

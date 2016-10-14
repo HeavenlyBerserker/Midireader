@@ -52,7 +52,7 @@ public class XmkMain {
     public static BiHashMap<Integer, Integer, Integer> hash = new BiHashMap<Integer, Integer, Integer>();
     
     public static void main(String[] args) throws Exception {
-
+            
         List<String> files = new ArrayList<>();
         Path dir = Paths.get("input\\InputV1\\notefiles");
         MelismaReader.getFileNames(files, dir);
