@@ -13,20 +13,21 @@ import midireader.XmkMain;
 public class MelismaReader {
    
     public static List<String> getFileNames(List<String> fileNames, Path dir) {
-    try(DirectoryStream<Path> stream = Files.newDirectoryStream(dir)) {
-        for (Path path : stream) {
-            if(path.toFile().isDirectory()) {
-                getFileNames(fileNames, path);
-            } else {
-                fileNames.add(path.toAbsolutePath().toString());
-                //System.out.println(path.getFileName());
+        System.out.println(dir);
+        try(DirectoryStream<Path> stream = Files.newDirectoryStream(dir)) {
+            for (Path path : stream) {
+                if(path.toFile().isDirectory()) {
+                    getFileNames(fileNames, path);
+                } else {
+                    fileNames.add(path.toAbsolutePath().toString());
+                    //System.out.println(path.getFileName());
+                }
             }
-        }
-    } catch(IOException e) {
-        e.printStackTrace();
+        } catch(IOException e) {
+            e.printStackTrace();
+        } 
+        return fileNames;
     } 
-    return fileNames;
-} 
     
     public static ArrayList<float[]> readFile(String filename) throws IOException {
         FileInputStream in = null;

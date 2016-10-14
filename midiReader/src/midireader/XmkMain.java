@@ -54,7 +54,7 @@ public class XmkMain {
     public static void main(String[] args) throws Exception {
             
         List<String> files = new ArrayList<>();
-        Path dir = Paths.get("input\\InputV1\\notefiles");
+        Path dir = Paths.get("input/InputV1/notefiles");
         MelismaReader.getFileNames(files, dir);
         int successes = 0;
         for (int i=0; i<files.size(); i++) {
