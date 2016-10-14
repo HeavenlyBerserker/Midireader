@@ -9,6 +9,9 @@ import static midireader.Temperley.Streamer.*;
 
 import java.io.*;
 import java.util.Scanner;
+import static midireader.Temperley.Globals.piplength;
+import static midireader.Temperley.Polyph.globseglength;
+import static midireader.Temperley.Polyph.segtotal;
 
 public class ProbMelisma {
 
@@ -116,7 +119,9 @@ public class ProbMelisma {
 		create_segments();
 
 		create_streams();
-
+                //System.out.println(globseglength);
+                if (segtotal <= 0) //If there's a song with no notes
+                    return;
                 //display_streams();
 
 		/*
@@ -131,33 +136,36 @@ public class ProbMelisma {
                 
                 MonophonicStreams.selectStreams();
                 
-                //map <String, Map<String, Int>> <-how to make map of maps, first string, second string, tally
-                //  or get guava working and use its table, a 2d map
-                //
-                // import os to read directory and do a loop for each file in directory
-                //glob module - lists files that meet requirements
-                //javac *.java compiles everything in current folder
-                //then java___
+		
+                // Delete the following '/*' to see the full output with X's. Takes ~30 more seconds/song. 
+                
+                // For reference: We needed this in case the song had a pickup so we could start our 16 pip selections at the true start time with 
+                // rests before the first onset.
+                
+                // (There's 2 of the max level beats in each of our 16 pip selections, so we can't assume a pickup is in the first or second half)
+                
+                // I can't find any examples of songs with short pickups so I'm not sure how it assigns the beginning anyway. It might handle them
+                // for us. 
                 
                 /*
+                
 		make_profiles();
 
 		create_pipstreams();
-
+                
 		if (Globals.verbosity >= 0) {
 			System.out.printf("Creating subspans...\n");
 		}
 
 		create_subspans();
                 
-                
+		
 		if (Globals.verbosity >= 0) {
 			System.out.printf("Creating tactus_spans...\n");
 		}
 
 
 		create_tactus_spans();
-                
                 
 		if (Globals.verbosity >= 0) {
 			System.out.printf("Pruning tactus_spans...\n");
@@ -182,6 +190,8 @@ public class ProbMelisma {
 
 		final_meter();
 
+                graphic_display();
+                /*
 		stream_probs();
 
 		if (Globals.verbosity > 0) {

@@ -15,10 +15,10 @@ public class Segment {
 
 	public void reset()
 	{
-		timepoint = new Timepoint[10000];
+		timepoint = new Timepoint[100000];
 	}
 
-	static Timepoint timepoint[] = new Timepoint[10000];
+	static Timepoint timepoint[] = new Timepoint[100000];
 	static int num_timepoints;
 
 	static int myround(int x) {
@@ -228,8 +228,8 @@ public class Segment {
 				last_offtime = note[z].offtime;
 			}
 		}
-
-		if (last_offtime - timepoint[t - 1].time < 300) {
+                //added t>0
+		if (t > 0 && last_offtime - timepoint[t - 1].time < 300) {
 			if (timepoint[t] == null) timepoint[t] = new Timepoint();
 			timepoint[t].time = timepoint[t - 1].time + 300;
 		} else {
@@ -249,6 +249,7 @@ public class Segment {
 	static void create_segments() {
 
 		int z, t, s, local_score, score, interval, prev, seglength, bests=0, best_score, bestp=0, n, asl, nsegs;
+                seglength = 0;
 
 		/* We want to find the best segmentation of the piece into short segments, from 150 to 400 ms. Every event onset must be
 		a segment beginning, but longer IOI's may be divided into multiple segments. We want to choose a segment length
@@ -364,5 +365,6 @@ public class Segment {
 		}
 
 		segtotal = s - 1;
+                globseglength = seglength;
 	}
 }
