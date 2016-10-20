@@ -1,7 +1,7 @@
 
 package midireader.processingXmk;
 
-import com.sun.xml.internal.ws.util.StringUtils;
+
 import java.util.ArrayList;
 import static midireader.XmkMain.MEASURES;
 
