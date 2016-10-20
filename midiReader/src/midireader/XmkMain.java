@@ -3,7 +3,7 @@
 package midireader;
 
 
-import DataStructs.BiHashMap;
+import midireader.DataStructs.BiHashMap;
 import midireader.patternDataProcessing.rhythmFrequency;
 import midireader.processingXmk.RhythmChanger;
 import midireader.processingXmk.MeasureAnalyzer;
@@ -73,6 +73,7 @@ public class XmkMain {
         
         
         hash.printMap();
+        hash.writeToCsv("table");
         /*
          syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));
         //input pattern data
