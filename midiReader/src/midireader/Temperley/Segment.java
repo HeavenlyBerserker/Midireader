@@ -13,7 +13,7 @@ class Timepoint {
 
 public class Segment {
 
-	public void reset()
+	public static void reset()
 	{
 		timepoint = new Timepoint[100000];
 	}

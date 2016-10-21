@@ -144,7 +144,7 @@ static void make_profiles() {
 
     /* Make proximity profile */
 
-    for(i=0; i<100; i++) {
+    for(i=0; i<1000; i++) {//100
 	proximity_profile[i] = (Math.exp( -Math.pow( ((double)(i)-50.0), 2.0) / (2.0 * prox_var))) / (2.51 * Math.sqrt(prox_var));
 	// Use this line to make a flat proximity profile
 	//proximity_profile[i] = 0.1;
@@ -203,7 +203,7 @@ static void make_adjusted_profile(int prev_p, int h,  Snote  sn) {
        (We could have a "range profile" at least for the first note, rather than an even distribution across all 100 pitches...) */
 
     int i, p, range_position, start_position, j, anch, hr;
-    double raw_profile[] = new double[100];
+    double raw_profile[] = new double[1000]; //was 100
     double mass;
 
     if(sn.pitch < 0 || sn.pitch >= 100) {
@@ -212,7 +212,7 @@ static void make_adjusted_profile(int prev_p, int h,  Snote  sn) {
     }
 
     mass = 0.0;
-    for(p=0; p<100; p++) {
+    for(p=0; p<1000; p++) { //100
 	if(prev_p == -1) raw_profile[p] = harmony_profile[((p+24)-h)%12];
 	else {
 	    i = p-prev_p;
@@ -223,7 +223,7 @@ static void make_adjusted_profile(int prev_p, int h,  Snote  sn) {
 	mass += raw_profile[p];
     }
     /* Now normalize the profile values to sum to 1 */
-    for(p=0; p<100; p++) {
+    for(p=0; p<1000; p++) { //100
 	adjusted_profile[p] = raw_profile[p] / mass;
     }
 
@@ -1382,7 +1382,7 @@ static void graphic_display() {
 
     for(p=0; p<num_pips; p++) {
 
-	for(i=0; i<100; i++) 
+	for(i=0; i<1000; i++) //100
             pip[p].row[i]=0;
 	s = streamlist;
 	while(s!=null) {
@@ -1427,7 +1427,7 @@ static void graphic_display() {
 	    for(i=30; i<90; i++) {
 		//if(pip[p].row[i] > 0 && pip[p].row[i] != 100) {
 		if(pip[p].row[i] > 0) {
-		    if(pip[p].row[i] < 100) {
+		    if(pip[p].row[i] < 1000) { //100
 			System.out.printf("%d", pip[p].row[i]);
 			if(pip[p].row[i] > 9) i++;
 		    }
