@@ -1427,7 +1427,7 @@ static void graphic_display() {
 	    for(i=30; i<90; i++) {
 		//if(pip[p].row[i] > 0 && pip[p].row[i] != 100) {
 		if(pip[p].row[i] > 0) {
-		    if(pip[p].row[i] < 1000) { //100
+		    if(pip[p].row[i] < 100) { //100
 			System.out.printf("%d", pip[p].row[i]);
 			if(pip[p].row[i] > 9) i++;
 		    }

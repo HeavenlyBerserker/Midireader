@@ -102,7 +102,7 @@ public class ProbMelisma {
 
 
 		} catch (FileNotFoundException e) {
-
+                    
 			System.out.printf("I can't open that file\n");
 			System.exit(1);
 		} catch (IOException e) {
@@ -125,7 +125,7 @@ public class ProbMelisma {
                 //System.out.println(globseglength);
                 if (segtotal <= 0) //If there's a song with no notes
                     return;
-                display_streams();
+                //display_streams();
 
 		/*
 		printf("Notes as output by streamer:\n");

@@ -148,11 +148,14 @@ public class MonophonicStreams {
             mysky[i] = 0;
             mystream[i] = 0;
         }
-
+        
+        float left = 0;
+        float height = 0;
+        float right = 0;
         for (int i=0; i<numofstreams; i++) {
-            float left = min[i];
-            float height = average[i];
-            float right = max[i];
+            left = min[i];
+            height = average[i];
+            right = max[i];
             for (int j = (int) (left); j < (int) (right); j++) {
                 if (height > mysky[j]) {
                     mysky[j] = height;
@@ -165,7 +168,7 @@ public class MonophonicStreams {
         skyline.add((float)cnt + 1 + 0);
         cnt++;
         while (cnt < size - 1) {
-            while (cnt < size - 1 && mysky[cnt] == mysky[cnt + 1]) {
+            while (cnt < size - 1 && mystream[cnt] == mystream[cnt + 1]) {
                 cnt++;
             }
             //System.out.print(mystream[cnt]+" "+(cnt+1+0)+" ");
