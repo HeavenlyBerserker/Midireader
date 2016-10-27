@@ -441,22 +441,22 @@ public class MidiReader {
         notes = changeSong(notes,patterns,rules);
         
 
-        String filename = "canon_tsroot.txt";
+        String filename = "BethSonata1.1Allegro-tsroot.txt";
         ArrayList<float[]> chordList = new ArrayList();
 
         int[] timeSig = {0,0,0};
         //ArrayList<float[]> chordList = new ArrayList();
-        chordList = ChordAnalyzer.chordNotes(chordList, "canon_tsroot.txt", timeSig);
+        chordList = ChordAnalyzer.chordNotes(chordList, filename, timeSig);
         ArrayList<float[]> chordsWrite = new ArrayList();
         
-        System.out.println("Num " + timeSig[0]);
+        System.out.println("\nNum " + timeSig[0]);
         System.out.println("Den " + timeSig[1]);
         System.out.println("Beat " + timeSig[2]);
         float ts = 4/4 - (float)0.001;
         float speed = 1000;
         chordsWrite = chordMaker.chordMake(chordList, ts, speed);
-        chordsWrite.addAll(notes);
-        
+        //chordsWrite.addAll(notes);
+        //chordMaker.printF(chordsWrite);
         write(chordsWrite);
         
         //System.out.println(MeasureAnalyzer.getOverallSimilarity(notes,7,8,GCD));
