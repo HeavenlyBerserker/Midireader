@@ -15,6 +15,13 @@ import javax.sound.midi.Sequence;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
+import midireader.processingXmk.RhythmChanger;
+import midireader.processingXmk.MeasureAnalyzer;
+import midireader.inputHumdrumMelisma.MelismaReader;
+import midireader.inputHumdrumMelisma.ChordAnalyzer;
+import midireader.processingHumdrumMelisma.chordMaker;
+import midireader.patternDataProcessing.RhythmReader;
+
 
 public class MidiReader {
     public static final int NOTE_ON = 0x90;
@@ -344,7 +351,7 @@ public class MidiReader {
                     break;
                 }
                 //if measure contains the first part of a rule and is similar to 
-                else if (MeasureAnalyzer.rhythmSimilarity(newSequence, (rules.get(j)).substring(0,16)) > 0.8) {
+                else if (midireader.processingXmk.MeasureAnalyzer.rhythmSimilarity(newSequence, (rules.get(j)).substring(0,16)) > 0.8) {
                     String rule = rules.get(j).substring(0,16);
                     int count = newSequence.length() - newSequence.replace("I", "").length(); //count number of I's
                     int count2 = rule.length() - rule.replace("I", "").length();
@@ -423,7 +430,7 @@ public class MidiReader {
         notes = offsetSong(notes,GCD*2);
         notes = gcds(notes);
         
-        notes = melodyChanger.makeMonophonic(notes);
+        //notes = melodyChanger.makeMonophonic(notes);
         
         GCD = 120 ;
         resolution = 240;

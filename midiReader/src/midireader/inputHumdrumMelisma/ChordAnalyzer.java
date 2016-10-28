@@ -143,17 +143,11 @@ public class ChordAnalyzer {
                 
                 if(line.charAt(0) == '=' && Character.isDigit(line.charAt(1))){
                     //if(chrono != 16){
-<<<<<<< HEAD:midiReader/src/midireader/ChordAnalyzer.java
-                        System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
-                    //}
-=======
 //------------------System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
                     //}
                     if(chrono2 != 1){
                        System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
                     }
-                    //System.out.print("\nMeasure " + measureCnt + " Chrono " + chrono2);
->>>>>>> 893b22aa024cc72ce1d458cbfaf505ecef87fe33:midiReader/src/midireader/inputHumdrumMelisma/ChordAnalyzer.java
                     chrono = 0;
                     chrono2 = 0;
                     
@@ -272,20 +266,10 @@ public class ChordAnalyzer {
                         putInArray2(line);
                         putInArray3(line);
                         //printArray(tTable.get(1));
-<<<<<<< HEAD:midiReader/src/midireader/ChordAnalyzer.java
-                        
-=======
-                        //System.out.println();
->>>>>>> 893b22aa024cc72ce1d458cbfaf505ecef87fe33:midiReader/src/midireader/inputHumdrumMelisma/ChordAnalyzer.java
                         //if no prev array
                         if(noteCount == 0){
                             //System.out.println();
                             realTemp = findGreat(table);
-<<<<<<< HEAD:midiReader/src/midireader/ChordAnalyzer.java
-                            realTemp.print();
-=======
-                            //realTemp.print();
->>>>>>> 893b22aa024cc72ce1d458cbfaf505ecef87fe33:midiReader/src/midireader/inputHumdrumMelisma/ChordAnalyzer.java
                             Fractions[] arry = new Fractions[table.size()];
                             if(realTemp.num > 0){
                                 for(int i = 0; i < table.size(); i++){
@@ -729,11 +713,7 @@ public class ChordAnalyzer {
        System.out.println();
     }
     
-<<<<<<< HEAD:midiReader/src/midireader/ChordAnalyzer.java
-    public static void printListFrac(List <Fractions> f){
-       for(int i=0; i < f.size(); i++){
-           System.out.print("[" + f.get(i).num + "/" + f.get(i).den + "]");
-=======
+
     public static void printArray(int[] a){
        for(int i=0; i < a.length; i++){
            System.out.print(a[i] + ", ");
@@ -745,18 +725,13 @@ public class ChordAnalyzer {
     public static void printListFrac(List <Fractions> f){
        for(int i=0; i < f.size(); i++){
            //System.out.print("[" + f.get(i).num + "/" + f.get(i).den + "]");
->>>>>>> 893b22aa024cc72ce1d458cbfaf505ecef87fe33:midiReader/src/midireader/inputHumdrumMelisma/ChordAnalyzer.java
        }
        System.out.println();
     }
     
     public static void printListFrac(Fractions[] f){
        for(int i=0; i < f.length; i++){
-<<<<<<< HEAD:midiReader/src/midireader/ChordAnalyzer.java
            System.out.print("[" + f[i].num + "/" + f[i].den + "]");
-=======
-           //System.out.print("[" + f[i].num + "/" + f[i].den + "]");
->>>>>>> 893b22aa024cc72ce1d458cbfaf505ecef87fe33:midiReader/src/midireader/inputHumdrumMelisma/ChordAnalyzer.java
        }
        System.out.println();
     }
@@ -1157,11 +1132,7 @@ public class ChordAnalyzer {
     public static ArrayList<float[]> chordNotes(ArrayList<float[]> notes, String filename, int[] timeSig){
         readFile(notes, filename);
         //chordMaker.printF(tempoTable);
-<<<<<<< HEAD:midiReader/src/midireader/ChordAnalyzer.java
-        chordMaker.printF(notes);
-=======
-        //chordMaker.printF(notes);
->>>>>>> 893b22aa024cc72ce1d458cbfaf505ecef87fe33:midiReader/src/midireader/inputHumdrumMelisma/ChordAnalyzer.java
+
         timeSig[0] = num;
         timeSig[1] = den;
         timeSig[2] = beats;
