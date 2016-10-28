@@ -193,11 +193,33 @@ public class BiHashMap<K1, K2, V> {
                 bw.write(content.toString());
                 bw.close();
 
-                System.out.println("Done");
+                System.out.println("Files Done");
 
         } catch (IOException e) {
                 e.printStackTrace();
         }
         
+    }
+    
+    public void writeToError(String filename, StringBuilder content) {
+        try {
+
+                File file = new File("output/" +filename + ".txt");
+
+                // if file doesnt exists, then create it
+                if (!file.exists()) {
+                        file.createNewFile();
+                }
+
+                FileWriter fw = new FileWriter(file.getAbsoluteFile());
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write(content.toString());
+                bw.close();
+
+                System.out.println("Exceptions Done");
+
+        } catch (IOException e) {
+                e.printStackTrace();
+        }
     }
 }

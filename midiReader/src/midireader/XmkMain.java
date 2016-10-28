@@ -58,8 +58,12 @@ public class XmkMain {
         Path dir = Paths.get("input/InputV1/notefiles");
         MelismaReader.getFileNames(files, dir);
         int successes = 0;
+        
+        StringBuilder errors = new StringBuilder();
+        errors.append("Error Report"+ "\n");
+        int err = 0;
         for (int i=0; i<files.size(); i++) {
-            System.out.println(files.get(i));
+            System.out.println(i + "/" + files.size() + " Curr file: " + files.get(i));
             try {
                 ProbMelisma.analyzeRag(files.get(i));
                 System.out.println("Success");
@@ -67,13 +71,16 @@ public class XmkMain {
             }
             catch (Exception e) {
                 System.out.println(e);
+                errors.append("------------------Exception " + err + "-------------------\n " + files.get(i) + "\n" + e + "\n");
+                err += 1;
             }
-            
         }
         System.out.println("Files successfully analyzed: "+successes+ "/" +files.size());
+        errors.append("Error count: " + err + "\n");
+        errors.append("Files successfully analyzed: "+successes+ "/" +files.size());
         
-        
-        hash.printMap();
+        hash.writeToError("Exceptions", errors);
+        //hash.printMap();
         hash.writeToCsv("table");
         /*
          syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));
