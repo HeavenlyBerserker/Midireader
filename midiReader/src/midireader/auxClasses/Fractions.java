@@ -126,8 +126,13 @@ package midireader.auxClasses;
                 float num2 = -1;
                 float d = b.num;
                 float e = b.den;
+<<<<<<< HEAD:midiReader/src/midireader/Fractions.java
+ 		if(b.den != 0)num2 = d/e; 
+ 		
+=======
  		if(b.den != 0)num2 = d/e;
                 
+>>>>>>> 893b22aa024cc72ce1d458cbfaf505ecef87fe33:midiReader/src/midireader/auxClasses/Fractions.java
  		return num2;
  	}
         public static boolean bigger(Fractions a, Fractions b)// converts fraction to float

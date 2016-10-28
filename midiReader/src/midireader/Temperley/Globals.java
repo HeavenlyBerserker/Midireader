@@ -79,7 +79,7 @@ static double unanch_nct_cont = .0001;
 static double stream_prob = 0.1;
 static double stream_cont = 0.95;
 
-public void reset()
+static public void reset()
 	{
 
 verbosity = 0;

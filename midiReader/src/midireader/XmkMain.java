@@ -28,6 +28,7 @@ import javax.sound.midi.Sequence;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
+import midireader.Temperley.Globals;
 import midireader.auxClasses.fooCallers;
 import midireader.inputHumdrumMelisma.readMidi;
 import midireader.Temperley.ProbMelisma;
@@ -52,7 +53,7 @@ public class XmkMain {
     public static BiHashMap<Integer, Integer, Integer> hash = new BiHashMap<Integer, Integer, Integer>();
     
     public static void main(String[] args) throws Exception {
-            
+        
         List<String> files = new ArrayList<>();
         Path dir = Paths.get("input/InputV1/notefiles");
         MelismaReader.getFileNames(files, dir);
@@ -64,7 +65,7 @@ public class XmkMain {
                 System.out.println("Success");
                 successes++;
             }
-            catch (ArrayIndexOutOfBoundsException e) {
+            catch (Exception e) {
                 System.out.println(e);
             }
             

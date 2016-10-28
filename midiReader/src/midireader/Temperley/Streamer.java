@@ -19,7 +19,7 @@ static void fill_segments() {
 
     int s, i, n, x, ss, p, cost;
     for (s=0; s<=segtotal; s++) {
-	for (i=0; i<100; i++) {
+	for (i=0; i<1000; i++) { //100
 	    segment[s].column[i]=0;
 	}
     }
@@ -59,7 +59,7 @@ static void fill_segments() {
 	printf("\n");  */
     }
 
-    for(p=0; p<100; p++) {
+    for(p=0; p<1000; p++) { //100
 	canceled[p]=0;
     }
 
@@ -72,7 +72,7 @@ static void fill_segments() {
 	   and see if there are any black squares there; if so, we mark squares at s of the same pitch (if white) as grey. We continue this for
 	   6 squares. */
 
-	for(p=0; p<100; p++) {
+	for(p=0; p<1000; p++) { //1000
 	    if(segment[s].column[p]>0) continue;
 	    cost=0;
 	    for(ss=s-1; ss>=0; ss--) {
@@ -92,7 +92,7 @@ static void fill_segments() {
 	segment[s].numnotes+=n;
 	/* printf("Segment %d numnotes = %d\n", s, segment[s].numnotes);  */   /* numnotes = total number of black plus grey sqs */
 
-	for(p=0; p<100; p++) {
+	for(p=0; p<1000; p++) { //100
 	    if(segment[s].column[p]>=2) {
 		canceled[p+1]=1;
 		canceled[p+2]=1;
@@ -100,7 +100,7 @@ static void fill_segments() {
 		canceled[p-2]=1;
 	    }
 	}
-	for(p=0; p<100; p++) {
+	for(p=0; p<1000; p++) { //100
 	    if(segment[s].column[p]>=2) canceled[p]=0;
 	}
 
@@ -111,7 +111,7 @@ static void fill_segments() {
 	    //printf("max_grey exceeded by %d at seg %d; doing first heuristic\n", segment[s].numnotes-(segment[s].numdark+max_grey), s);
 	    if(verbosity >= 2) System.out.printf("Doing note-canceling heuristic on segment %d (%d-note excess)\n", s, (segment[s].numnotes-segment[s].numdark)-max_grey);
 	    n=0;
-	    for(p=0; p<100; p++) {
+	    for(p=0; p<1000; p++) { //1000
 		if (segment[s].column[p]==1 && segment[s].numnotes-(segment[s].numdark+n) > max_grey) {
 		    if (canceled[p]==1) {
 			segment[s].column[p]=0;
@@ -128,7 +128,7 @@ static void fill_segments() {
 	    //printf("max_grey still exceeded by %d; doing second heuristic\n", segment[s].numnotes-(segment[s].numdark+n+max_grey));
 	    if(verbosity >= 2 ) System.out.printf("max_grey still exceeded by %d; doing second heuristic\n", segment[s].numnotes-(segment[s].numdark+n+max_grey));
 	    i=0;
-	    for(p=0; p<100; p++) {
+	    for(p=0; p<1000; p++) { //100
 		if (segment[s].column[p]==1 && segment[s].numnotes-(segment[s].numdark+n+i) > max_grey) {
 		    segment[s].column[p]=0;
 		    i++;
@@ -143,15 +143,15 @@ static void fill_segments() {
 static void create_snotes() {
 
     int s, i, min, prev, k, newnumnotes, p, lowest;
-    int done[] = new int[100];
+    int done[] = new int[1000]; //100
 
     for (s=0; s<=segtotal; s++) {
 	newnumnotes=0;
 	//printf("Segment %d snotes:\n", s);
-	for(i=0; i<100; i++) done[i]=0;
+	for(i=0; i<1000; i++) done[i]=0; //100
 	for (k=0; k<segment[s].numnotes; k++) {
 	    lowest = -1;
-	    min=100;
+	    min=1000; //100
 	    for (i=0; i<segment[s].numnotes; i++) {
 		p=segment[s].inote[i];
 		if(segment[s].column[p]>0 && p<min && done[i]==0) {
@@ -413,7 +413,7 @@ static double note_end_score(int s, int i, int lt, int j, int rt, int mode) {
 
     /* If (s-1, p) is black or blue and is not covered by the transition, it's the last note of a stream; if (s, p) is grey or white,
        add 1-fp_last_note_cont. */
-    for(p=0; p<100; p++) {
+    for(p=0; p<1000; p++) { //100
 	if(segment[s-1].column[p] >= 2 && segment[s].column[p] < 2) {
 	    covered=0;
 	    for(v=0; v<ltranscard[i][lt]; v++) {
@@ -719,7 +719,7 @@ static void assign_voice_numbers() {
 
 		int prev, twodigit, z, nv, collision, p;
 		String numstring;
-		char display[][] = new char[10000][97];
+		char display[][] = new char[10000][970]; //used to be 97
 
 		System.out.printf("                            C1          C2          C3          C4          C5          C6          C7\n");
 

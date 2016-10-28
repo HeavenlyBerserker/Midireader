@@ -113,11 +113,11 @@ static double tactus_profile[][] = new double[40][40];
 //static double lower_reg_score[] = new double[3];
 //static double init_phase_score[] = new double[5];
 
-static double proximity_profile[] = new double[100];
+static double proximity_profile[] = new double[1000]; //100
 //static double prox_var;
 //static double harmony_profile[] = new double[12];
 
-static double adjusted_profile[] = new double[100];
+static double adjusted_profile[] = new double[1000]; //100
 
 //static double raw_tactus_note_score;
 //static double raw_harm_change;
@@ -135,16 +135,19 @@ static double adjusted_profile[] = new double[100];
 static int first_tactus, last_tactus;
 static int bestd, best_ph;
 
-public void reset()
+public static void reset()
 	{
 
- znote = new note_struct[10000];     /* Notes as input - not necessarily chronological */
- note = new note_struct[10000];      /* Notes sorted chronologically */
+ streamlist = new Stream();
+ noteword = new char[10];
+ 
+ znote = new note_struct[100000];     /* Notes as input - not necessarily chronological */
+ note = new note_struct[100000];      /* Notes sorted chronologically */
 
- segment = new segment_struct[MS];        /* An array storing the notes in each segment. */
+ segment = new segment_struct[MS+100];        /* An array storing the notes in each segment. */
 
 
- canceled = new int[100];    /* This value is 1 for a pitch if another pitch a half-step or whole-step away has occurred more
+ canceled = new int[1000];    /* This value is 1 for a pitch if another pitch a half-step or whole-step away has occurred more
 			   recently than the pitch itself */
 
  prov_analysis = new int[MAXV+1];
@@ -170,9 +173,9 @@ prov_trans = new int[MAXV+1];
 
 best = new int[MS][MA];                              /* The best prior analysis for each analysis */
 global_analysis = new double[MS][MA];
- final_ = new int[MS];
- final_ltransition = new int[MS][MAXV];
- final_rtransition = new int[MS][MAXV];
+final_ = new int[MS*10];
+final_ltransition = new int[MS*10][MAXV];
+final_rtransition = new int[MS*10][MAXV];
  final_transcard = new int[MS];
 
 tp = new int[100000];             /* list of tactus pips: tp[0] = first tactus pip, etc. */
@@ -198,11 +201,11 @@ tp = new int[100000];             /* list of tactus pips: tp[0] = first tactus p
 //static double lower_reg_score[] = new double[3];
 //static double init_phase_score[] = new double[5];
 
-proximity_profile = new double[100];
+proximity_profile = new double[1000]; //100
 //static double prox_var;
 //static double harmony_profile[] = new double[12];
 
- adjusted_profile = new double[100];
+ adjusted_profile = new double[1000]; //100
 
 //static double raw_tactus_note_score;
 //static double raw_harm_change;
@@ -305,7 +308,7 @@ class Pip {
     int besth;
     int ph;
     int final_beatlevel;
-    int row[]= new int[100];
+    int row[]= new int[1000]; //100
 };
 
 class Subtactus {

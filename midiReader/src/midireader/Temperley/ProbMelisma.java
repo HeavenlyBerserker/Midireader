@@ -27,6 +27,9 @@ public class ProbMelisma {
 		char junk[] = new char[10];
 
 		int param_file_specified = 0;
+                Globals.reset();
+                Polyph.reset();
+                Segment.reset();
 
 		Globals.verbosity = 0;   /* set verbosity */ //i added globals.
                 /*
@@ -99,7 +102,7 @@ public class ProbMelisma {
 
 
 		} catch (FileNotFoundException e) {
-
+                    
 			System.out.printf("I can't open that file\n");
 			System.exit(1);
 		} catch (IOException e) {
@@ -147,8 +150,8 @@ public class ProbMelisma {
                 // I can't find any examples of songs with short pickups so I'm not sure how it assigns the beginning anyway. It might handle them
                 // for us. 
                 
-                /*
                 
+                /*
 		make_profiles();
 
 		create_pipstreams();
@@ -193,7 +196,7 @@ public class ProbMelisma {
                 graphic_display();
                 /*
 		stream_probs();
-
+9
 		if (Globals.verbosity > 0) {
 			graphic_display();
 		}
