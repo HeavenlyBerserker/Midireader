@@ -1,0 +1,242 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=38
+     Text = <Kitten On The Keys - Unknown  # M66340>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </music_category: Piano_Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </title: Kitten On The Keys
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </subtitle: 
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_manufacturer: Unknown
+>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = </roll_class: 
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </roll_number: M66340
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </performer: 
+>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </composer: Confrey, Zez
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </lyricist: 
+>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_tempo: 95
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </song_type: 
+>
+Meta Text, type=0x01 (Text Event)  leng=7
+     Text = </key: 
+>
+Meta Text, type=0x01 (Text Event)  leng=9
+     Text = </meter: 
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_copyright: 
+>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_date: 1921
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_city: 
+>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanned_by: Warren Trachtman
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </date_scanned: April 2, 2005
+>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanning_system: MK3 with capstan transport
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </owner: Bill Edwards
+>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = <Roll Template Type Used = Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=99
+     Text = <Conversion to eRoll MIDI made Saturday, April 02, 2005 with WSTco E-Roll converter - www.wstco.com
+>
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = <CIS to ScanImageMIDI converter - Beta Version - March 27, 2005
+>
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = </CIS_embedded_title: Kitten On The Keys Scanned By W.
+>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </File_Type: eRollMIDI file
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </Source_File_Type: CIS
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Processing_History: CIS --> eRollMIDI 
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </CIS_converted_as_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </play_tempo: 95  
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </CIS_file_LPI: 360  
+>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </scanner_processing_type: Mode1 - no encoding
+>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </scanner_horizontal_DPI: 300  
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_offset: 1.150  
+>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </scanner_horizontal_stretch: 1.000  
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </interpreted_file_AverageLPI: 360.000  
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </ActiveTracking: ON 
+>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </Twin_Array_Crossover_Track: 10   
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scan_glitches_merged: 16   
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </specks_removed: 36   
+>
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    147  1
+Note   2529   3019 18
+Note   3198   3261 80
+Note   3199   3264 75
+Note   3305   3369 81
+Note   3308   3369 76
+Note   3310   3370 72
+Note   3313   3373 60
+Note   3413   3476 80
+Note   3413   3476 75
+Note   3519   3585 81
+Note   3522   3585 71
+Note   3522   3585 76
+Note   3526   3589 59
+Note   3629   3820 74
+Note   3629   3820 79
+Note   3736   3798 70
+Note   3736   3799 58
+Note   3839   4007 77
+Note   3839   4008 72
+Note   3945   4008 69
+Note   3948   4011 57
+Note   4051   4114 75
+Note   4052   4117 70
+Note   4158   4222 77
+Note   4158   4223 72
+Note   4161   4224 68
+Note   4164   4227 56
+Note   4269   4330 75
+Note   4269   4335 70
+Note   4379   4441 77
+Note   4379   4441 72
+Note   4379   4442 67
+Note   4382   4445 55
+Note   4485   4682 75
+Note   4488   4683 70
+Note   4594   4658 66
+Note   4597   4661 54
+Note   4699   4920 73
+Note   4702   4923 68
+Note   4805   4869 65
+Note   4808   4872 53
+Note   4914   4974 70
+Note   5019   5080 72
+Note   5020   5080 67
+Note   5022   5082 63
+Note   5023   5085 51
+Note   5126   5188 70
+Note   5126   5188 65
+Note   5232   5291 67
+Note   5232   5291 72
+Note   5232   5294 62
+Note   5236   5297 50
+Note   5335   5452 65
+Note   5335   5505 70
+Note   5445   5507 61
+Note   5447   5511 49
+Note   5549   5717 68
+Note   5551   5717 65
+Note   5655   5717 60
+Note   5658   5720 48
+Note   5761   5820 67
+Note   5864   5929 65
+Note   5864   5929 62
+Note   5867   5930 59
+Note   5870   5935 47
+Note   6076   6947 72
+Note   6079   6948 64
+Note   6080   6144 48
+Note   6294   6355 48
+Note   6297   6358 36
+Note   6508   6573 50
+Note   6511   6576 38
+Note   6724   6788 52
+Note   6727   6794 40
+Note 142520 142692 112
+Note 142521 142692 111
+Note 142521 142692 110
+Note 142521 142694 104
+Note 142521 142694 106
+Note 142526 142694 17
+Note 142526 142694 21
+Note 142526 142695 16
+Note 142526 142695 22
+Note 142526 142698 20
+Note 144933 145080  0

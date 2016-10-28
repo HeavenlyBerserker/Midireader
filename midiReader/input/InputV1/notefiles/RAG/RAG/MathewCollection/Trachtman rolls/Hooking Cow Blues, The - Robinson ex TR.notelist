@@ -1,0 +1,278 @@
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = <Your Name Here>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = <Scanner Info Here>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=97
+     Text = <Conversion to eRoll MIDI made Monday, August 16, 2004 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=72
+     Text = <ScanImageMIDI to PunchMasterMIDI converter - Beta Version - Aug 10, 2004>
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = </scanner_takeup_accel_correction: 0.500  Pct. per foot  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </play_tempo: 70>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </source_file_type: PunchMasterMIDI>
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </title: Hooking Cow Blues>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = </WebRemovalAcceleration: 0.040 PctPerFt.  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = <(a Texas jazz) >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scanner_horizontal_DPI: 300>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </performer: Robinson, J. Russel>
+Meta Text, type=0x01 (Text Event)  leng=69
+     Text = </Skew_Correction: Applied | Track Range = 12.000  Tracks per Group   >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = <Played by J. Russel Robinson >
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_copyright: >
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </scanner_horizontal_offset: 1.170>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanned_by: Warren Trachtman - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = <File Converted : Tuesday, May 13, 2003 >
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </specks_removed: 4201>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </owner: Charles B. Davis - Leesburg, VA>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1917>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 70>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_number: 595>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </scanner_horizontal_stretch: 1.000>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: Hooling Cow Blues Scanned By W.T>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Scanned With Takeup-Spool Scanner >
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </date_scanned: 5/13/2003>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </song_type: >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </lyricist: Williams, Douglass>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </composer: Handy, W.C.>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </roll_class: Word Roll>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </subtitle: (a Texas jazz)>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </punch_step: 0.050 inches  | auto set>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </Source_File_Type: ScanImage MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </scan_glitches_merged: 358>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = <CIS to ScanImageMIDI converter - Beta Version 1 - May 26, 2004 >
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Restoration_Kalman_Filter_Gain: 0.250  >
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </CIS_file_LPI: 220>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=97
+     Text = <Conversion to eRoll MIDI made Tuesday, June 08, 2004 with WSTco E-Roll converter - www.wstco.com >
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = </Processing_History: CIS file -->  ScanImage MIDI file>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=38
+     Text = <Hooking Cow Blues - QRS Word Roll #595>
+Meta Text, type=0x02 (Copyright Notice)  leng=25
+     Text = <commercial use prohibited>
+Meta Text, type=0x06 (Marker)  leng=36
+     Text = <Generic_uniform Roll Type Scan Image>
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note   1999   2195 85
+Note   1999   2413 89
+Note   1999   2413 86
+Note   2108   2231 76
+Note   2108   2413 34
+Note   2144   2413 46
+Note   2144   2485 77
+Note   2396   2594 91
+Note   2396   2811 29
+Note   2541   2739 89
+Note   2541   2739 82
+Note   2541   2846 41
+Note   2541   2846 74
+Note   2541   2846 86
+Note   2829   2990 91
+Note   2829   3278 31
+Note   2938   3063 73
+Note   2938   3242 43
+Note   2974   3099 89
+Note   2974   3099 82
+Note   2974   3242 74
+Note   2974   3242 86
+Note   3228   3423 91
+Note   3228   3605 70
+Note   3262   3605 33
+Note   3371   3675 77
+Note   3371   3675 45
+Note   3371   3675 82
+Note   3371   3675 86
+Note   3659   3856 91
+Note   3659   3965 34
+Note   3768   3893 76
+Note   3804   4074 86
+Note   3804   4074 89
+Note   3804   4074 85
+Note   3804   4108 46
+Note   3804   4253 77
+Note   4094   4253 91
+Note   4094   4434 29
+Note   4164   4434 41
+Note   4237   4507 82
+Note   4237   4507 89
+Note   4237   4507 86
+Note   4237   4543 74
+Note   4490   4831 31
+Note   4490   4831 91
+Note   4597   4722 73
+Note   4597   4940 43
+Note   4634   4831 82
+Note   4634   4831 89
+Note   4634   4831 86
+Note   4634   4940 74
+Note   4923   5155 70
+Note   4923   5192 79
+Note   4923   5192 33
+Note   5068   5336 45
+Note   5211   5336 67
+Note   5248   5373 68
+Note   5284   5409 69
+Note   5320   5554 82
+Note   5320   5699 86
+Note   5320   5733 34
+Note   5320   5913 70
+Note   5465   5842 46
+Note   5717   6094 29
+Note   5753   5878 85
+Note   5898   6166 86
+Note   5898   6166 77
+Note   5898   6239 82
+Note   5898   6239 41
+Note   6114   6565 31
+Note   6331   6456 74
+Note   6331   6599 79
+Note   6331   6599 43
+Note   6583   6708 77
+Note 183865 184425 21
+Note 183865 184425 20
+Note 183865 184425 22
+Note 183865 184425 17
+Note 183865 184425 111
+Note 183865 184425 110
+Note 183865 184425 112
+Note 183865 184425 107
+Note 183865 184425 16
+Note 183902 184425 106
+Note 183902 184425 104
+Note 185496 185547 22
+Note 185496 185547 21

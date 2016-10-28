@@ -1,0 +1,142 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=7
+     Text = < -   # >
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = <Artempo Word Roll #70688>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <The Darktown Strutter's Ball>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = <Fox Trot - Key of C>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = <Shelton Brooks (w&m), 1917>
+Meta Text, type=0x01 (Text Event)  leng=47
+     Text = <Played by Ruby Ward (assisted by Howard Lutter)>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <--->
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <Scan of a player piano roll by Erik York>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = <rob@pianola.co.nz / http://www.pianola.co.nz>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <---Technical Data Follows--->
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </music_category:       Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=51
+     Text = </title:                The Darktown Strutter's Ball>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = </subtitle:             Fox Trot - Key of C>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </roll_manufacturer:    Bennett & White>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </roll_brand:           Artempo Word Roll>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_number:          70688>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_class:           88>
+Meta Text, type=0x01 (Text Event)  leng=62
+     Text = </performer:            Ward, Ruby (assisted by Lutter, Howard)>
+Meta Text, type=0x01 (Text Event)  leng=43
+     Text = </composer:             Shelton Brooks (w&m)>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </composition_date:     1917>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_tempo:           80>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = </song_type:            Foxtrot, Racial Stereotype>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_condition:       Excellent>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_authenticity:    Original>
+Meta Text, type=0x01 (Text Event)  leng=43
+     Text = </roll_copyright:       1917 Leo Feist, Inc.>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </roll_date:            ?>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </roll_city:            Newark, NJ>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </original_price:       $.80>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </date_scanned:         1/05/2011>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </scanned_by:           Erik York>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </owner:                Erik York>
+Meta Text, type=0x01 (Text Event)  leng=58
+     Text = </scanning_system:      MK3 Roll Scanner With Shaft Encoder>
+Meta Text, type=0x01 (Text Event)  leng=60
+     Text = </pianist:              Ruby Ward (assisted by Howard Lutter)>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = <May NOT be EDITED or used for commercial purposes.>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = <Freely made available for NON-commercial purposes>
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0

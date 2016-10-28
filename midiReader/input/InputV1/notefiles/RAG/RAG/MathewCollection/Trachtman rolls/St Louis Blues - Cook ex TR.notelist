@@ -1,0 +1,244 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=45
+     Text = <Saint Louis Blues, The - QRS Word Roll # 4926>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </title: Saint Louis Blues, The>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </roll_class: Word Roll>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 4926>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </performer: Cook, J. Lawrence>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </composer: Handy, W.C.>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 80>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </song_type: Blues Fox Trot>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_copyright: W.C. Handy>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1914>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scanned_by: Warren Trachtman>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </date_scanned: 1/12/05>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </scanning_system: MK3 with Capstan Drive>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </owner: John Bartlett>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=98
+     Text = <Conversion to eRoll MIDI made Friday, January 14, 2005 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=60
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec 24, 2004>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: Saint Louis Blues Scanned By W.T>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </File_Type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 80  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 360  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.150  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scan_glitches_merged: 224   >
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </specks_removed: 195   >
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    156  1
+Note   2312   2756 18
+Note   3014   3137 79
+Note   3014   3137 91
+Note   3015   3139 67
+Note   3017   3139 55
+Note   3245   3373 79
+Note   3246   3373 67
+Note   3246   3373 91
+Note   3248   3375 55
+Note   3360   3568 74
+Note   3360   3571 86
+Note   3362   3573 62
+Note   3362   3575 50
+Note   3589   3709 88
+Note   3589   3712 76
+Note   3590   3712 64
+Note   3590   3714 52
+Note   3700   3767 89
+Note   3701   3768 65
+Note   3701   3768 77
+Note   3703   3768 53
+Note   3931   4221 89
+Note   3931   4225 77
+Note   3932   4225 65
+Note   3934   4225 53
+Note   4264   4390 86
+Note   4265   4390 74
+Note   4267   4392 62
+Note   4267   4393 50
+Note   4381   4450 88
+Note   4381   4451 64
+Note   4381   4451 76
+Note   4384   4453 52
+Note   4612   4904 88
+Note   4615   4906 76
+Note   4615   4907 52
+Note   4615   4907 64
+Note   4951   5017 89
+Note   4951   5021 65
+Note   4953   5018 77
+Note   4953   5021 53
+Note   5062   5104 88
+Note   5064   5106 52
+Note   5064   5106 64
+Note   5064   5106 76
+Note   5118   5185 89
+Note   5120   5187 77
+Note   5121   5187 53
+Note   5121   5187 65
+Note   5173   5240 88
+Note   5173   5243 76
+Note   5175   5245 52
+Note   5175   5245 64
+Note   5284   5500 62
+Note   5284   5526 74
+Note   5284   5643 86
+Note   5287   5501 50
+Note   5631   6981 74
+Note   5631   6982 69
+Note   5634   5850 38
+Note   5634   5850 50
+Note   5634   6337 18
+Note   5634   6982 62
+Note   5634   6982 67
+Note   5634   6982 72
+Note   5981   6190 50
+Note   5982   6190 38
+Note   6318   6531 50
+Note   6318   6532 38
+Note   6662   6868 38
+Note   6662   6868 50
+Note   7000   7214 50
+Note   7000   7215 38
+Note   7340   7553 50
+Note 139003 139198 110
+Note 139003 139200 112
+Note 139006 139200 104
+Note 139006 139200 106
+Note 139006 139200 111
+Note 139009 139200 21
+Note 139009 139201 20
+Note 139009 139201 22
+Note 139009 139203 16
+Note 139010 139198 17
+Note 141203 141359  0

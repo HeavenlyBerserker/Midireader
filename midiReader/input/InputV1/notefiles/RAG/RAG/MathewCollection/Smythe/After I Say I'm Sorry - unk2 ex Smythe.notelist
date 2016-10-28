@@ -1,0 +1,203 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=40
+     Text = <After I Say I'm Sorry - Unknown  # X6002>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </music_category: Piano_Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </title: After I Say I'm Sorry
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </subtitle: 
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_manufacturer: Unknown
+>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = </roll_class: 
+>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </roll_number: X6002
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </performer: 
+>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = </composer: Donaldson, Walter & Lyman, Abe
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </lyricist: 
+>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_tempo: 85
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </song_type: 
+>
+Meta Text, type=0x01 (Text Event)  leng=7
+     Text = </key: 
+>
+Meta Text, type=0x01 (Text Event)  leng=9
+     Text = </meter: 
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_copyright: 
+>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_date: 1926
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_city: 
+>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanned_by: Warren Trachtman
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </date_scanned: April 2, 2005
+>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanning_system: MK3 with capstan transport
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </owner: Terry Smythe
+>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = <Roll Template Type Used = Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=97
+     Text = <Conversion to eRoll MIDI made Sunday, April 03, 2005 with WSTco E-Roll converter - www.wstco.com
+>
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = <CIS to ScanImageMIDI converter - Beta Version - March 27, 2005
+>
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = </CIS_embedded_title: After I Say I'm Sorry Scanned By
+>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </File_Type: eRollMIDI file
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </Source_File_Type: CIS
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Processing_History: CIS --> eRollMIDI 
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </CIS_converted_as_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </play_tempo: 85  
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </CIS_file_LPI: 360  
+>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </scanner_processing_type: Mode1 - no encoding
+>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </scanner_horizontal_DPI: 300  
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_offset: 0.960  
+>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </scanner_horizontal_stretch: 1.000  
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </interpreted_file_AverageLPI: 360.000  
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </ActiveTracking: ON 
+>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </Twin_Array_Crossover_Track: 8   
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scan_glitches_merged: 23   
+>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </specks_removed: 143   
+>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=21
+     Text = <After I Say I'm Sorry>
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    147  1
+Note   2294   2549 18
+Note   2652   3283 79
+Note   2713   2782 81
+Note   2742   2808 82
+Note   2742   3258 43
+Note   2745   3264 50
+Note   2755   3270 59
+Note   2761   3276 71
+Note   2764   3279 74
+Note   2769   3286 83
+Note   3372   3551 43
+Note   3376   3554 50
+Note   3382   3561 59
+Note   3386   3563 67
+Note   3389   3566 71
+Note   3391   3567 74
+Note   3394   3573 79
+Note   3702   3926 50
+Note   3708   3933 59
+Note   3711   3922 43
+Note   3713   3936 67
+Note   3714   3935 62
+Note   3716   3941 71
+Note   3717   3941 74
+Note   4014   4802 43
+Note   4017   4805 49
+Note   4022   4813 58
+Note   4024   4814 61
+Note   4026   4817 67
+Note   4032   4823 73
+Note   4041   4820 70
+Note   4877   4949 62
+Note   4886   4926 74
+Note   4970   5173 43
+Note   4974   5179 50
+Note   4980   5185 59
+Note   4985   5188 67
+Note   4989   5111 71
+Note   4991   5195 74
+Note   4995   5198 79
+Note   5182   5358 39
+Note   5202   5272 71
+Note   5210   5279 83
+Note   5297   5367 55
+Note   5308   5377 70
+Note   5311   5379 73
+Note   5316   5385 79
+Note   5316   5386 82
+Note 173092 173220 17
+Note 173094 173217 21
+Note 173094 173220 22
+Note 173094 173220 20
+Note 173094 173220 16
+Note 173105 173235 104
+Note 173107 173235 106
+Note 173107 173235 113
+Note 173139 173235 111
+Note 173139 173235 112
+Note 173139 173235 110
+Note 175235 175382  0

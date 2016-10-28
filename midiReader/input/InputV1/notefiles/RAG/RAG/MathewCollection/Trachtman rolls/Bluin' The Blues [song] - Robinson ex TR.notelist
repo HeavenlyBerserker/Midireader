@@ -1,0 +1,344 @@
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = <Your Name Here>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = <Scanner Info Here>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=98
+     Text = <Conversion to eRoll MIDI made Tuesday, August 17, 2004 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=72
+     Text = <ScanImageMIDI to PunchMasterMIDI converter - Beta Version - Aug 10, 2004>
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = </scanner_takeup_accel_correction: 0.500  Pct. per foot  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = <Bluin' The Blues >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </play_tempo: 85>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </source_file_type: PunchMasterMIDI>
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </title: Bluin The Blues>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = </WebRemovalAcceleration: 0.040 PctPerFt.  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = <File Converted : Monday, May 26, 2003 >
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = <From the Celebrity Vault >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scanner_horizontal_DPI: 300>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </performer: Robinson, J. Russell>
+Meta Text, type=0x01 (Text Event)  leng=69
+     Text = </Skew_Correction: Applied | Track Range = 12.000  Tracks per Group   >
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </roll_copyright: Leo Feist, Inc. 1918>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </scanner_horizontal_offset: 1.170>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanned_by: Warren Trachtman - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = <Roll Copyright Leo Feist, Inc. 1918 >
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </specks_removed: 4669>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </owner: Charles B. Davis - Leesburg, VA>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1918>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 85>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_number: 754>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </scanner_horizontal_stretch: 1.000>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: Bluin The Blues Scanned By W.Tra>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Scanned With Takeup-Spool Scanner >
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </date_scanned: 5/26/2003>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </song_type: >
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </composer: >
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </roll_class: Word Roll>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </punch_step: 0.047 inches  | auto set>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </Source_File_Type: ScanImage MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </scan_glitches_merged: 222>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = <CIS to ScanImageMIDI converter - Beta Version 1 - May 26, 2004 >
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Restoration_Kalman_Filter_Gain: 0.250  >
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </CIS_file_LPI: 232>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=97
+     Text = <Conversion to eRoll MIDI made Tuesday, June 08, 2004 with WSTco E-Roll converter - www.wstco.com >
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = </Processing_History: CIS file -->  ScanImage MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = <Played by J. Russell Robinson >
+Meta Text, type=0x03 (Sequence/Track Name)  leng=52
+     Text = <Bluin The Blues - QRS Word Roll Q-101 (orig QRS 754)>
+Meta Text, type=0x02 (Copyright Notice)  leng=25
+     Text = <commercial use prohibited>
+Meta Text, type=0x06 (Marker)  leng=36
+     Text = <Generic_uniform Roll Type Scan Image>
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note   1999   2041 85
+Note   1999   2814 82
+Note   1999   2814 77
+Note   1999   2814 86
+Note   2248   2373 98
+Note   2358   2511 94
+Note   2607   2732 91
+Note   2717   2758 89
+Note   2826   2952 89
+Note   2964   3063 91
+Note   3076   3145 85
+Note   3076   3145 84
+Note   3186   3311 86
+Note   3297   3392 70
+Note   3297   3420 82
+Note   3297   4192 65
+Note   3323   3448 71
+Note   3351   3448 72
+Note   3405   3476 73
+Note   3433   4192 74
+Note   3652   3751 85
+Note   3652   3751 86
+Note   3791   3861 82
+Note   4013   4108 79
+Note   4122   4192 77
+Note   4260   4330 77
+Note   4370   4441 79
+Note   4480   4579 73
+Note   4591   4688 74
+Note   4729   4908 70
+Note   4783   5158 53
+Note   4839   4908 65
+Note   4839   4908 74
+Note   4839   4936 77
+Note   4839   5074 62
+Note   4839   5158 58
+Note   5088   5158 61
+Note   5088   5158 67
+Note   5088   5158 79
+Note   5197   5267 74
+Note   5197   5267 70
+Note   5197   5267 65
+Note   5197   5295 77
+Note   5197   5295 62
+Note   5445   5488 61
+Note   5445   5488 79
+Note   5445   5516 67
+Note   5445   5763 47
+Note   5557   5598 55
+Note   5557   5598 74
+Note   5557   5598 71
+Note   5557   5598 65
+Note   5557   5626 62
+Note   5557   5626 77
+Note   5638   5847 55
+Note   5776   5847 79
+Note   5776   5847 67
+Note   5776   5847 61
+Note   5886   5929 77
+Note   5886   5929 62
+Note   5886   5929 65
+Note   5886   5955 47
+Note   5886   6094 68
+Note   5886   6094 56
+Note   5886   6094 74
+Note   5886   6094 71
+Note   5995   6094 47
+Note   6107   6176 79
+Note   6107   6176 62
+Note   6107   6176 67
+Note   6244   6507 65
+Note   6244   6507 75
+Note   6244   6507 63
+Note   6244   6507 48
+Note   6244   6507 69
+Note 151345 151636 106
+Note 151373 151636 110
+Note 151373 151636 104
+Note 151373 151636 111
+Note 151373 151664 20
+Note 151373 151664 107
+Note 151373 151664 112
+Note 151373 151664 16
+Note 151373 151664 17
+Note 151373 151664 21
+Note 151399 151664 22

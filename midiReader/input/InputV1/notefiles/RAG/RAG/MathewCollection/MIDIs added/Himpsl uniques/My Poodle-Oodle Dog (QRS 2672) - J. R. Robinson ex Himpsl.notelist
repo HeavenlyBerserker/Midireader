@@ -1,0 +1,21 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=40
+     Text = <Roll Title                              >
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <Copyright Text Here>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = <FileType: Raw Scan Roll-Image MIDI
+>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = <Your Name Here
+>
+Meta Text, type=0x06 (Marker)  leng=37
+     Text = <Generic Roll Conversion  -  Tempo =80>
+Note   1226   1445 84
+Note 201673 202394 21
+Note 201673 202394 20
+Note 201673 202396 22
+Note 201701 202430 106
+Note 201704 202433 110
+Note 201704 202433 111
+Note 201707 202433 113
+Note 201707 202433 112

@@ -1,0 +1,265 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=44
+     Text = <Think Of Me Little Daddy  - Imperial  # 9915>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </music_category: Piano_Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </title: Think Of Me Little Daddy
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </subtitle: 
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </roll_manufacturer: Imperial
+>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = </roll_class: 
+>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = </roll_number: 9915
+>
+Meta Text, type=0x01 (Text Event)  leng=43
+     Text = </performer: Straight, Charley & Bargy, Roy
+>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </composer: Whitman, Bert
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </lyricist: 
+>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_tempo: 80
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </song_type: 
+>
+Meta Text, type=0x01 (Text Event)  leng=7
+     Text = </key: 
+>
+Meta Text, type=0x01 (Text Event)  leng=9
+     Text = </meter: 
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_copyright: 
+>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_date: 1919
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_city: 
+>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanned_by: Warren Trachtman
+>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </date_scanned: March 20, 2005
+>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanning_system: MK3 with capstan transport
+>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </owner: John Bartlett
+>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = <Roll Template Type Used = Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=97
+     Text = <Conversion to eRoll MIDI made Monday, March 21, 2005 with WSTco E-Roll converter - www.wstco.com
+>
+Meta Text, type=0x01 (Text Event)  leng=64
+     Text = <CIS to ScanImageMIDI converter - Beta Version - March 15b, 2005
+>
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = </CIS_embedded_title: Think Of Me Little Daddy Scanned
+>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </File_Type: eRollMIDI file
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </Source_File_Type: CIS
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Processing_History: CIS --> eRollMIDI 
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </CIS_converted_as_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </play_tempo: 80  
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </CIS_file_LPI: 360  
+>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </scanner_processing_type: Mode1 - no encoding
+>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </scanner_horizontal_DPI: 300  
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_offset: 1.142  
+>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </scanner_horizontal_stretch: 1.000  
+>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </Twin_Array_Crossover_Track: 10   
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scan_glitches_merged: 38   
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </specks_removed: 15   
+>
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    156  1
+Note      0 150782 112
+Note      0 150784 111
+Note      0 150784 106
+Note   2312   2393 82
+Note   2315   2395 70
+Note   2317   2396 66
+Note   2318   2396 54
+Note   2440   2645 84
+Note   2442   2646 72
+Note   2443   2648 67
+Note   2448   2648 55
+Note   2451   2620 39
+Note   2660   2735 85
+Note   2662   2737 69
+Note   2662   2737 73
+Note   2664   2739 57
+Note   2698   2807 36
+Note   2784   2890 86
+Note   2785   2892 82
+Note   2787   2892 74
+Note   2787   2892 76
+Note   2787   2892 79
+Note   2787   2893 70
+Note   2789   2895 62
+Note   2789   2895 64
+Note   2792   2895 52
+Note   2792   2895 58
+Note   2792   2896 43
+Note   3045   3182 36
+Note   3162   3298 82
+Note   3162   3298 86
+Note   3164   3298 79
+Note   3164   3300 74
+Note   3164   3300 76
+Note   3167   3273 64
+Note   3167   3273 58
+Note   3167   3273 62
+Note   3167   3301 70
+Note   3170   3273 52
+Note   3170   3276 43
+Note   3412   3487 85
+Note   3421   3529 36
+Note   3539   3612 82
+Note   3539   3614 79
+Note   3539   3614 86
+Note   3542   3615 70
+Note   3542   3615 74
+Note   3542   3651 62
+Note   3542   3651 64
+Note   3545   3651 58
+Note   3545   3651 52
+Note   3546   3651 43
+Note   3726   4178 88
+Note   3729   4082 84
+Note   3729   4178 79
+Note   3729   4179 76
+Note   3798   3935 36
+Note   3917   4026 70
+Note   3920   4026 64
+Note   3921   4029 58
+Note   3921   4029 52
+Note   3925   4031 43
+Note   4167   4239 84
+Note   4176   4312 36
+Note   4239   4407 43
+Note   4292   4396 86
+Note   4292   4398 79
+Note   4292   4398 82
+Note   4292   4401 76
+Note   4292   4401 74
+Note   4295   4401 70
+Note   4296   4401 64
+Note   4296   4404 62
+Note   4296   4404 58
+Note   4298   4406 52
+Note   5257   5339 66
+Note   5260   5339 54
+Note 149785 150517 110
+Note 149785 150517 109
+Note 149798 150529 20
+Note 150782 151518 112
+Note 150784 151520 111
+Note 150784 151520 106
+Note 150796 151531 21
+Note 152354 152398 64
+Note 152354 152398 63
+Note 152354 152398 78
+Note 152354 152398 77
+Note 152354 152460 68
+Note 152354 152589 74
+Note 152354 152592 72
+Note 152354 152651 62
+Note 152354 152651 76
+Note 152354 152651 52
+Note 152354 152651 70
+Note 152354 152651 50
+Note 152354 152654 56
+Note 152354 152654 66
+Note 152354 152654 58
+Note 152417 152526 54
+Note 152479 152526 67
+Note 152479 152526 59
+Note 152479 152526 73
+Note 152479 152526 63
+Note 152510 152623 68
+Note 152510 152625 60
+Note 152542 152592 53
+Note 152545 152592 55
+Note 152607 152651 73
+Note 152609 152651 67
+Note 152609 152651 59
+Note 152609 152654 63
+Note 152609 152654 64
+Note 154654 154810  0

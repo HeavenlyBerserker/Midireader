@@ -1,0 +1,207 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=33
+     Text = <Twelfth Street Rag  - QRS  # 1188>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </title: Twelfth Street Rag>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_class: >
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 1188>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </performer: Cook, J. Lawrence>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </composer: Bowman, Euday>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 95>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </song_type: >
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </roll_copyright: Jenkins Publishing Co.>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1914>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scanned_by: Warren Trachtman>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </date_scanned: 12/15/04>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </scanning_system: MK3 with Capstan Drive>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </owner: John Bartlett>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=99
+     Text = <Conversion to eRoll MIDI made Sunday, December 19, 2004 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=60
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Nov 19, 2004>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: Twelfth Street Rag Scanned By W.>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </File_Type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 95  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 360  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.170  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scan_glitches_merged: 33   >
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </specks_removed: 2886   >
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    131  1
+Note   2263   2613 18
+Note   2684   2810 86
+Note   2684   2810 91
+Note   2684   2811 83
+Note   2684   2860 79
+Note   2686   2813 71
+Note   2686   2835 67
+Note   2686   2836 77
+Note   2688   2810 74
+Note   2823   2907 90
+Note   2826   2934 78
+Note   2897   3030 91
+Note   2897   3056 85
+Note   2898   3030 82
+Note   2898   3149 76
+Note   2898   3151 73
+Note   2898   3242 79
+Note   2899   3056 67
+Note   2899   3127 70
+Note   3042   3124 93
+Note   3043   3149 81
+Note   3111   3194 86
+Note   3113   3194 91
+Note   3113   3197 83
+Note   3113   3219 77
+Note   3114   3197 71
+Note   3114   3243 67
+Note   3115   3194 74
+Note   3546   3699 65
+Note   3546   3723 79
+Note   3547   3674 67
+Note   3547   3674 74
+Note   3547   3676 71
+Note   3547   3701 62
+Note   3548   3676 59
+Note   3571   3702 55
+Note   3688   3771 66
+Note   3688   3794 78
+Note   3759   3918 73
+Note   3759   3940 79
+Note   3760   3894 67
+Note   3760   3894 70
+Note   3760   3918 55
+Note   3760   3989 58
+Note   3760   3990 64
+Note   3760   4013 61
+Note   3901   3989 81
+Note   3907   3989 69
+Note   3977   4059 65
+Note   3977   4059 67
+Note   3977   4060 71
+Note   3977   4082 62
+Note   3977   4105 79
+Note   3978   4057 74
+Note   3978   4060 55
+Note   3978   4060 59
+Note   4405   4463 67
+Note   4407   4464 43
+Note   4407   4464 59
+Note   4407   4489 50
+Note   4407   4489 55
+Note   4547   4657 67
+Note   4548   4657 59
+Note   4548   4660 43
+Note   4548   4681 50
+Note   4548   4681 55
+Note   4768   4849 67
+Note   4768   4851 59
+Note   4768   4876 55
+Note   4768   4944 43
+Note   4769   4874 50
+Note   4839   5057 51
+Note   4839   5078 57
+Note   4861   5078 69
+Note 106263 106662 17
+Note 106263 106662 21
+Note 106263 106664 16
+Note 106263 106664 22
+Note 106263 106665 20
+Note 106265 106639 104
+Note 106265 106664 111
+Note 106265 106665 112
+Note 106266 106665 106
+Note 106266 106665 110
+Note 106697 107057 104
+Note 109057 109189  0

@@ -1,0 +1,195 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=52
+     Text = <Bill Bailey Won't You Please Come Home - QRS  # 9553>
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </title: Bill Bailey Won't You Please Come Home>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </subtitle: 4-Hand Arrangement>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_class: >
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 9553>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </performer: >
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </composer: Cannon, Hughie>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 75>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </song_type: >
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = </roll_copyright: Morley, Howland & Dresser>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1902>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanned_by: Warren Trachtman - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </date_scanned: 11/22/04>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </scanning_system: MK3 with Capstan Drive>
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </owner: >
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=100
+     Text = <Conversion to eRoll MIDI made Tuesday, November 23, 2004 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=60
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Nov 19, 2004>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: Bill Bailey Scanned By W.Trachtm>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </File_Type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 75  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 360  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.180  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scan_glitches_merged: 36   >
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </specks_removed: 6573   >
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    166  1
+Note   2333   2773 18
+Note   2938   3006 50
+Note   2973   3066 51
+Note   3028   3158 79
+Note   3028   3158 83
+Note   3028   3160 76
+Note   3030   3160 71
+Note   3033   3100 52
+Note   3066   3163 40
+Note   3126   3193 64
+Note   3220   3283 52
+Note   3310   3375 64
+Note   3396   3525 76
+Note   3396   3525 83
+Note   3400   3466 55
+Note   3400   3466 59
+Note   3400   3466 52
+Note   3400   3525 71
+Note   3400   3525 79
+Note   3491   3556 64
+Note   3583   3650 52
+Note   3675   3743 64
+Note   3758   3886 83
+Note   3758   3888 71
+Note   3760   3823 51
+Note   3760   3886 79
+Note   3761   3888 75
+Note   3761   3891 35
+Note   3853   3920 63
+Note   3945   4016 51
+Note   4045   4110 63
+Note   4138   4203 51
+Note   4138   4203 55
+Note   4138   4203 59
+Note   4166   4383 71
+Note   4170   4353 79
+Note   4170   4380 83
+Note   4176   4353 75
+Note   4228   4295 63
+Note   4316   4413 51
+Note   4410   4513 63
+Note   4503   4720 74
+Note   4505   4571 50
+Note   4505   4716 79
+Note   4505   4750 83
+Note   4506   4750 71
+Note   4536   4630 40
+Note   4595   4690 62
+Note   4686   4778 50
+Note   4743   4870 69
+Note   4743   4870 81
+Note   4775   4873 62
+Note   4860   4990 71
+Note   4861   4928 59
+Note   4861   4958 55
+Note   4861   4960 50
+Note   4861   4990 67
+Note   4861   4990 74
+Note   4893   4958 79
+Note   4956   5050 62
+Note   5076   5138 50
+Note   5100   5441 83
+Note   5100   5443 76
+Note   5100   5470 71
+Note   5133   5228 62
+Note   5133   5320 79
+Note   5225   5323 49
+Note   5255   5383 40
+Note   5316   5383 61
+Note   5408   5503 49
+Note   5463   5561 79
+Note   5466   5596 67
+Note   5496   5600 61
+Note   5593   5695 52
+Note 147395 147710 110
+Note 147396 147708 106
+Note 147396 147708 111
+Note 147400 147708 104
+Note 147400 147708 112
+Note 147400 147710 107
+Note 147400 147713 17
+Note 147400 147713 20
+Note 147400 147713 21
+Note 147400 147713 22
+Note 147400 147716 16
+Note 149716 149883  0

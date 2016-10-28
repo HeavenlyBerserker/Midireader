@@ -1,0 +1,206 @@
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=71
+     Text = <Emulator Version = Expression Emulator - Beta Version 1 - July 09, 2006>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = <WSTco Expression Emulation Software>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=47
+     Text = <You Tell Her - I Stutter - QRS Word Roll # 2161>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </title: You Tell Her - I Stutter>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </roll_class: Word Roll>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 2161>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_authenticity: Original>
+Meta Text, type=0x01 (Text Event)  leng=43
+     Text = </performer: Arden, Victor & Kortlander, Max>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </composer: >
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_tempo: 100>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </song_type: Fox Trot>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </roll_copyright: Irving Berlin, Inc.>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1922>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scanned_by: Warren Trachtman>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </date_scanned: Jan. 20, 2008>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = </scanning_system: MK4 with capstan transport>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </printed_image_capture: Grayscale-1>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </owner: Warren Trachtman>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=98
+     Text = <Conversion to eRoll MIDI made Monday, January 21, 2008 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Oct. 15, 2007>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </CIS_embedded_title: You Tell Her - I Stutter>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </source_file_type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </play_tempo: 100  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.205  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </interpreted_file_AverageLPI: 300.000  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </ActiveTracking: ON >
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </Twin_Array_Crossover_Track: 10   >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </scan_glitches_merged: 0   >
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </specks_removed: 4   >
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0   2000 108
+Note   2000   2015 108
+Note   4235   4398 43
+Note   4300   4413 95
+Note   4302   4413 83
+Note   4302   4413 89
+Note   4302   4413 91
+Note   4307   4421 50
+Note   4331   4418 59
+Note   4536   4598 49
+Note   4627   4712 89
+Note   4627   4715 91
+Note   4627   4715 95
+Note   4628   4715 83
+Note   4632   4717 59
+Note   4632   4721 50
+Note   4832   4895 52
+Note   4927   5015 83
+Note   4927   5015 89
+Note   4927   5015 91
+Note   4927   5015 95
+Note   4931   5018 59
+Note   4932   5443 53
+Note   4940   5028 31
+Note   5128   5191 81
+Note   5128   5191 93
+Note   5131   5193 57
+Note   5228   5290 86
+Note   5228   5290 91
+Note   5230   5290 79
+Note   5230   5292 67
+Note   5231   5292 65
+Note   5233   5293 59
+Note   5233   5293 62
+Note   5235   5297 55
+Note   5428   5491 93
+Note   5430   5488 81
+Note   5437   5551 43
+Note   5528   5616 91
+Note   5528   5617 95
+Note   5531   5616 89
+Note   5531   5617 83
+Note   5533   5621 59
+Note   5536   5623 50
+Note   5736   5797 49
+Note   5822   5910 89
+Note   5822   5910 91
+Note   5822   5910 95
+Note   5825   5911 83
+Note   5827   5915 59
+Note   5831   5917 50
+Note   6030   6090 52
+Note   6120   6208 91
+Note   6120   6208 95
+Note   6121   6208 83
+Note   6121   6208 89
+Note   6125   6213 59
+Note   6126   6665 53
+Note   6133   6221 31
+Note   6325   6385 81
+Note   6325   6385 93
+Note   6328   6390 57
+Note   6423   6510 89
+Note   6423   6510 91
+Note   6425   6510 79
+Note   6425   6511 83
+Note   6427   6487 65
+Note   6427   6487 67
+Note   6427   6488 62
+Note   6427   6491 59
+Note   6428   6492 55
+Note   6621   6685 93
+Note   6622   6685 81
+Note   6631   6741 43
+Note   6721   6808 89
+Note 166588 167103 110
+Note 166588 167103 111
+Note 166588 167103 112
+Note 166588 167103 113
+Note 166597 167111 21
+Note 166598 167111 17
+Note 166598 167111 20
+Note 166598 167111 22
+Note 166601 167111 16
+Note 166613 167103 106

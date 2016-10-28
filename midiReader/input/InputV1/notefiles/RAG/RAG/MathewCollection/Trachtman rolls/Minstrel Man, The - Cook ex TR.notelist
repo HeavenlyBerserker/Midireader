@@ -1,0 +1,295 @@
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = <Your Name Here>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = <Scanner Info Here>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = <Roll Template Type Used = Generic_widebridges>
+Meta Text, type=0x01 (Text Event)  leng=98
+     Text = <Conversion to eRoll MIDI made Tuesday, August 17, 2004 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=72
+     Text = <ScanImageMIDI to PunchMasterMIDI converter - Beta Version - Aug 10, 2004>
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = </scanner_takeup_accel_correction: 0.500  Pct. per foot  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </play_tempo: 90>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </source_file_type: PunchMasterMIDI>
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </title: The Minstrel Man>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <File Converted : Saturday, May 24, 2003 >
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = </WebRemovalAcceleration: 0.040 PctPerFt.  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scanner_horizontal_DPI: 300>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </performer: Cook, J. Lawrence>
+Meta Text, type=0x01 (Text Event)  leng=69
+     Text = </Skew_Correction: Applied | Track Range = 12.000  Tracks per Group   >
+Meta Text, type=0x01 (Text Event)  leng=62
+     Text = </roll_copyright: Copyright 6-27-1911 by Stark Music, St. Louis>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </scanner_horizontal_offset: 1.070>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanned_by: Warren Trachtman - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=99
+     Text = <Conversion to eRoll MIDI made Wednesday, June 09, 2004 with WSTco E-Roll converter - www.wstco.com >
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </specks_removed: 4687>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </owner: Charles B. Davis - Leesburg, VA>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1911>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 90>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 9001>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </scanner_horizontal_stretch: 1.000>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: The Minstrel Man Scanned By W.Tr>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Scanned With Takeup-Spool Scanner >
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </date_scanned: 5/24/2003>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </song_type: >
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </composer: >
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_class: >
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </punch_step: 0.042 inches  | auto set>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = <Played by J. Lawrence Cook >
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </Source_File_Type: ScanImage MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=51
+     Text = <Roll Copyright 6-27-1911 by Stark Music, St. Louis >
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </scan_glitches_merged: 345>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = <CIS to ScanImageMIDI converter - Beta Version 1 - May 26, 2004 >
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Restoration_Kalman_Filter_Gain: 0.250  >
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </CIS_file_LPI: 256>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </roll_city: St. Louis>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_type: Generic_widebridges>
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = </Processing_History: CIS file -->  ScanImage MIDI file>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=33
+     Text = <The Minstrel Man - QRS Roll# 9001>
+Meta Text, type=0x02 (Copyright Notice)  leng=25
+     Text = <commercial use prohibited>
+Meta Text, type=0x06 (Marker)  leng=36
+     Text = <Generic_uniform Roll Type Scan Image>
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note   1999   2043 71
+Note   2022   2067 72
+Note   2046   2091 73
+Note   2068   2137 89
+Note   2068   2137 80
+Note   2068   2137 86
+Note   2068   2137 83
+Note   2068   2137 77
+Note   2068   2137 74
+Note   2539   2584 68
+Note   2563   2608 69
+Note   2587   2632 70
+Note   2587   2654 80
+Note   2587   2654 71
+Note   2587   2654 77
+Note   2587   2654 74
+Note   2587   2678 83
+Note   2587   2678 86
+Note   3057   3101 65
+Note   3081   3124 67
+Note   3081   3124 68
+Note   3103   3171 69
+Note   3103   3171 84
+Note   3103   3171 72
+Note   3103   3171 81
+Note   3103   3171 77
+Note   3575   3620 60
+Note   3598   3643 62
+Note   3622   3665 64
+Note   3646   3759 69
+Note   3646   3759 77
+Note   3646   3759 72
+Note   3646   3759 81
+Note   3646   3831 65
+Note   3856   3925 64
+Note   3950   4113 62
+Note   4140   4207 60
+Note   4233   4325 48
+Note   4233   4325 72
+Note   4233   4325 84
+Note   4233   4325 81
+Note   4233   4325 77
+Note   4421   4490 80
+Note   4421   4490 56
+Note   4421   4490 68
+Note   4516   4584 81
+Note   4516   4584 69
+Note   4516   4584 57
+Note   4681   4724 81
+Note   4705   4936 58
+Note   4705   4960 70
+Note   4705   4960 82
+Note   4963   5032 55
+Note   4963   5032 67
+Note   4963   5032 79
+Note   5057   5220 52
+Note   5057   5220 64
+Note   5057   5244 76
+Note   5244   5313 50
+Note   5244   5313 62
+Note   5244   5313 74
+Note   5339   5431 48
+Note   5339   5431 72
+Note   5339   5431 60
+Note   5504   5573 35
+Note   5598   5665 36
+Note   5598   6113 68
+Note   5598   6113 64
+Note   5598   6113 58
+Note   5762   5855 48
+Note   6046   6113 48
+Note   6140   6303 36
+Note   6140   6303 69
+Note   6140   6303 57
+Note   6400   6491 41
+Note 136345 136508 17
+Note 136345 136508 20
+Note 136345 136508 22
+Note 136345 136508 21
+Note 136345 136508 111
+Note 136345 136508 104
+Note 136345 136508 16
+Note 136345 136696 107
+Note 136345 136696 110
+Note 136345 136696 112
+Note 136345 136720 106
+Note 136558 136696 22
+Note 136558 136696 21
+Note 136558 136696 20
+Note 136558 136696 16
+Note 136558 136696 17
+Note 136558 136696 111
+Note 136558 136696 104

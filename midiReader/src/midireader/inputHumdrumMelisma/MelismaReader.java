@@ -19,7 +19,8 @@ public class MelismaReader {
                 if(path.toFile().isDirectory()) {
                     getFileNames(fileNames, path);
                 } else {
-                    fileNames.add(path.toAbsolutePath().toString());
+                    if(path.toAbsolutePath().toString().contains(".notelist"))
+                        fileNames.add(path.toAbsolutePath().toString());
                     //System.out.println(path.getFileName());
                 }
             }

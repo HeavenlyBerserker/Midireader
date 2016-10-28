@@ -1,0 +1,27 @@
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=67
+     Text = <"The Lily Rag", Charles Thompson (Arranged by Artie Matthews), 1914>
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=10 c2=63
+Meta event, unrecognized, type=0x21 leng=1
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=10 c2=63
+Meta event, unrecognized, type=0x21 leng=1
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=10 c2=63
+Meta event, unrecognized, type=0x21 leng=1
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=10 c2=63
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=54
+     Text = <By Charles Thompson (Arranged by Artie Matthews), 1914>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=53
+     Text = <Sequenced 21/7 1996 by Oleg Mezjuev, J\0xffffffe4rf\0xffffffe4lla, Sweden>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=31
+     Text = <oleg.mezjuev@mailbox.swipnet.se>

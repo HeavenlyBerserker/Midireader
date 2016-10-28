@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>deviantART::403 Forbidden</title>
+<meta name="verify-v1" content="xHYJW0cEtRdhAicVqe2GPsC8jdR8UR5Ofwl/fIDPPe8=" />
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<meta name="copyright" content="Copyright 2008 deviantART" />
+<style type="text/css">
+html, body {
+    color:#ccd7cc;
+    background:#728776;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+body {
+    text-align:center;
+    font-size:11pt;
+    margin-top:0;
+    padding-top:50px;
+}
+strong {
+    color:#eaf2ee;
+}
+h1 {
+    font-size:30px;
+    font-family:Trebuchet,Verdana,Arial,Helvetica,sans-serif;
+}
+a {
+    color:#eaf2ee;
+}
+p {
+    max-width:88ex;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.4;
+}
+* html p {
+    width:88ex;
+}
+#drebox {
+    font-size:9pt;
+    position:absolute;
+    top:32px;
+    right:18px;
+    z-index:190;
+}
+</style>
+<link href="http://s.deviantart.com/icons/favicon.ico" rel="icon"/>
+<![if ! IE]>
+<link href="http://i.deviantart.com/icons/favicon.png" rel="shortcut icon"/>
+<![endif]>
+<link href="http://s.deviantart.com/minish/widgets/apple-touch-icon-lg.png" rel="apple-touch-icon"/>
+</head>
+<body id="deviantART" class="error">
+    <img src="http://s.deviantart.com/minish/main/fella-frb.png" width="423" height="400" alt=""/>
+    <h1>Forbidden</h1>
+    <p>You don't have permission to access this page.<br/>
+    Please consult <a href="http://help.deviantart.com/">our help library</a> if you need any assistance.</p>
+    <a id="deviantART-loves-you"/>
+</body>
+</html>

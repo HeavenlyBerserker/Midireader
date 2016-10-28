@@ -1,0 +1,597 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=30
+     Text = <1915 Rag - 88 Note Roll #20503>
+Meta Text, type=0x02 (Copyright Notice)  leng=25
+     Text = <commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </File_Type: Emulated MIDI file
+>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = <Roll Emulation Type Used = Generic
+>
+Meta Text, type=0x01 (Text Event)  leng=87
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com
+>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = <Your Name Here
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = <Scanner Info Here
+>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = <Roll Template Type Used = Generic_widebridges
+>
+Meta Text, type=0x01 (Text Event)  leng=99
+     Text = <Conversion to eRoll MIDI made Tuesday, August 17, 2004 with WSTco E-Roll converter - www.wstco.com
+>
+Meta Text, type=0x01 (Text Event)  leng=73
+     Text = <ScanImageMIDI to PunchMasterMIDI converter - Beta Version - Aug 10, 2004
+>
+Meta Text, type=0x01 (Text Event)  leng=64
+     Text = </scanner_takeup_accel_correction: 0.500  Pct. per foot  APPLIED
+>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </play_tempo: 60
+>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </source_file_type: PunchMasterMIDI
+>
+Meta Text, type=0x01 (Text Event)  leng=9
+     Text = </meter: 
+>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </title: 1915 Rag
+>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </roll_manufacturer: Eighty Eight Note
+>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = </WebRemovalAcceleration: 0.040 PctPerFt.  APPLIED
+>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </scanner_processing_type: Mode1 - no encoding
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scanner_horizontal_DPI: 300
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </performer: 
+>
+Meta Text, type=0x01 (Text Event)  leng=70
+     Text = </Skew_Correction: Applied | Track Range = 12.000  Tracks per Group   
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_copyright: 
+>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </scanner_horizontal_offset: 1.180
+>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </scanned_by: Warren Trachtman - www.wstco.com
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <File Converted : Tuesday, May 13, 2003 
+>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </specks_removed: 3543
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </owner: Charles B. Davis - Leesburg, VA
+>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_date: 1913
+>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_tempo: 60
+>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </roll_number: 20503
+>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_stretch: 1.000
+>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: 1915 Rag Scanned By W.Trachtman
+>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = <Scanned With Takeup-Spool Scanner 
+>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </date_scanned: 5/13/2003
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </song_type: Fox Trot
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </lyricist: 
+>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </composer: Tierney, Harry Austin
+>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = </roll_class: 
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </subtitle: 
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </music_category: Piano_Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </punch_step: 0.042 inches  | auto set
+>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Source_File_Type: ScanImage MIDI file
+>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </scan_glitches_merged: 301
+>
+Meta Text, type=0x01 (Text Event)  leng=7
+     Text = </key: 
+>
+Meta Text, type=0x01 (Text Event)  leng=64
+     Text = <CIS to ScanImageMIDI converter - Beta Version 1 - May 26, 2004 
+>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = <Music by Harry Austin Tierney - 1913 
+>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = </Restoration_Kalman_Filter_Gain: 0.250  
+>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = </CIS_file_LPI: 220
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_city: 
+>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_type: Generic_widebridges
+>
+Meta Text, type=0x01 (Text Event)  leng=98
+     Text = <Conversion to eRoll MIDI made Tuesday, June 08, 2004 with WSTco E-Roll converter - www.wstco.com 
+>
+Meta Text, type=0x01 (Text Event)  leng=55
+     Text = </Processing_History: CIS file -->  ScanImage MIDI file
+>
+Meta Text, type=0x06 (Marker)  leng=36
+     Text = <Generic_uniform Roll Type Scan Image>
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0 179566 108
+Note      0 179566 114
+Note      0 179566 113
+Note      0 180964 105
+Note      0 183683 100
+Note   2000   2100 74
+Note   2000   2100 80
+Note   2000   2135 70
+Note   2000   2135 82
+Note   2000   2135 94
+Note   2033   2135 92
+Note   2208   2972 80
+Note   2208   2972 68
+Note   2243   2972 92
+Note   2279   2972 70
+Note   2312   2972 74
+Note   2312   2972 94
+Note   2312   2972 82
+Note   2591   2833 34
+Note   2591   2833 58
+Note   2591   2833 46
+Note   2870   3566 60
+Note   2870   3600 36
+Note   2870   3600 48
+Note   3185   3287 80
+Note   3185   3322 92
+Note   3185   3322 94
+Note   3185   3322 70
+Note   3185   3322 74
+Note   3185   3322 82
+Note   3395   4158 68
+Note   3395   4158 80
+Note   3429   4158 92
+Note   3464   4158 82
+Note   3464   4158 94
+Note   3464   4158 70
+Note   3500   4158 74
+Note   3779   4056 37
+Note   3779   4056 49
+Note   3779   4056 61
+Note   4058   4787 38
+Note   4058   4820 62
+Note   4058   4820 50
+Note   4372   4472 80
+Note   4372   4472 74
+Note   4372   4508 94
+Note   4372   4508 92
+Note   4372   4508 82
+Note   4372   4508 70
+Note   4581   4752 68
+Note   4581   4752 80
+Note   4616   4787 92
+Note   4650   4787 70
+Note   4685   4787 82
+Note   4685   4787 94
+Note   4685   4787 74
+Note   4895   5066 80
+Note   4895   5100 68
+Note   4929   5100 92
+Note   4964   5100 70
+Note   4964   5135 51
+Note   5000   5100 39
+Note   5000   5100 82
+Note   5000   5100 74
+Note   5000   5100 94
+Note   5000   5135 63
+Note   5208   5341 68
+Note   5208   5377 80
+Note   5243   5412 92
+Note   5277   5377 82
+Note   5277   5377 70
+Note   5277   5412 40
+Note   5277   5412 94
+Note   5277   5412 64
+Note   5277   5412 52
+Note   5312   5377 74
+Note   5485   5620 80
+Note   5485   5656 68
+Note   5554   5656 70
+Note   5589   5656 74
+Note 179533 180366 111
+Note 179566 180333 114
+Note 179566 180333 112
+Note 179566 180333 110
+Note 179566 180333 108
+Note 179566 180333 109
+Note 179566 180333 107
+Note 179566 180366 113
+Note 180231 180856 82
+Note 180266 180402 94
+Note 180266 180925 70
+Note 180300 180541 106
+Note 180300 180820 46
+Note 180300 180995 58
+Note 180370 180683 34
+Note 180475 180856 94
+Note 180616 180960 106
+Note 180754 180925 34
+Note 180858 181379 45
+Note 180929 181412 81
+Note 180929 181412 69
+Note 180964 181412 93
+Note 180964 181412 57
+Note 180964 181554 105
+Note 180995 181554 33
+Note 181416 181972 44
+Note 181452 182008 92
+Note 181452 182008 80
+Note 181487 181972 68
+Note 181487 182008 56
+Note 181556 182041 104
+Note 181556 182041 32
+Note 182012 182531 43
+Note 182012 182566 67
+Note 182012 182566 31
+Note 182012 182600 79
+Note 182012 182668 55
+Note 182043 182600 103
+Note 182043 182600 91
+Note 182500 182914 30
+Note 182566 183054 90
+Note 182566 183089 42
+Note 182637 183089 102
+Note 182637 183124 66
+Note 182637 183124 78
+Note 182672 183156 54
+Note 182987 183089 30
+Note 183091 183612 41
+Note 183091 183679 29
+Note 183124 183577 89
+Note 183160 183679 65
+Note 183160 183679 53
+Note 183160 183714 77
+Note 183195 183612 101
+Note 183650 184204 64
+Note 183650 184239 40
+Note 183683 184135 52
+Note 183683 184204 76
+Note 183683 184204 100
+Note 183683 184239 88
+Note 183718 184239 28
+Note 184172 184695 51
+Note 184208 184762 63
+Note 184243 184762 99
+Note 184243 184762 87
+Note 184243 184797 27
+Note 184279 184762 75
+Note 184279 184797 39
+Note 184766 185252 50
+Note 184766 185287 98
+Note 184766 185287 62
+Note 184802 185287 26
+Note 184802 185287 74
+Note 184802 185287 86
+Note 184802 185393 38
+Note 185291 185775 49
+Note 185291 185810 85
+Note 185291 185916 25
+Note 185327 185810 73
+Note 185327 185845 97
+Note 185327 185845 61
+Note 185395 185916 37
+Note 185814 186333 48
+Note 185849 186472 60
+Note 185883 186404 84
+Note 185883 186404 24
+Note 185918 186439 36
+Note 185918 186439 72
+Note 185954 186472 96
+Note 186406 186929 47
+Note 186441 186929 71
+Note 186441 186962 59
+Note 186477 186962 35
+Note 186477 186995 83
+Note 186477 187102 23
+Note 186547 186962 95
+Note 186897 187627 16
+Note 186897 187627 15
+Note 186929 187591 20
+Note 186929 187591 21
+Note 186929 187591 19
+Note 186929 187627 22
+Note 186929 187627 17

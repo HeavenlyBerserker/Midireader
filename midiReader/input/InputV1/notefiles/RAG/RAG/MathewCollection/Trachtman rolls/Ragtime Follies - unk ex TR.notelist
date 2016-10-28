@@ -1,0 +1,190 @@
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=71
+     Text = <Emulator Version = Expression Emulator - Beta Version 1 - July 09, 2006>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = <WSTco Expression Emulation Software>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=36
+     Text = <Ragtime Follies - Golden Age  # 1016>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </title: Ragtime Follies>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </subtitle: (Rag Supreme)>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </roll_manufacturer: Golden Age>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_class: >
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 1016>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </performer: >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </composer: Arnold, May Olive>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 90>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </song_type: >
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_copyright: >
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1909>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scanned_by: Warren Trachtman>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </date_scanned: October 11, 2006>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = </scanning_system: MK3 with capstan transport>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </owner: Warren Trachtman>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=100
+     Text = <Conversion to eRoll MIDI made Saturday, October 14, 2006 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec. 26, 2005>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </CIS_embedded_title: Ragtime Follies>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </source_file_type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 90  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 360  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.125  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </interpreted_file_AverageLPI: 360.000  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </ActiveTracking: ON >
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </Twin_Array_Crossover_Track: 10   >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scan_glitches_merged: 26   >
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </specks_removed: 10615   >
+Parameter, chan=1 c1=120 c2=0
+Note   1999   2211 72
+Note   2013   2219 76
+Note   2030   2211 79
+Note   2052   2141 97
+Note   2054   2220 84
+Note   2141   2222 96
+Note   2197   2361 83
+Note   2199   2363 95
+Note   2336   2508 82
+Note   2338   2511 94
+Note   2483   2784 79
+Note   2483   2795 91
+Note   2769   2924 76
+Note   2769   2936 88
+Note   2899   3062 74
+Note   2904   3073 86
+Note   3047   3205 73
+Note   3048   3208 85
+Note   3184   3343 84
+Note   3186   3343 72
+Note   3316   3473 71
+Note   3319   3484 83
+Note   3449   3616 70
+Note   3449   3619 82
+Note   3593   3901 67
+Note   3595   3904 79
+Note   3879   4044 64
+Note   3879   4045 76
+Note   4022   4181 74
+Note   4022   4187 62
+Note   4155   4322 61
+Note   4166   4323 73
+Note   4302   4599 72
+Note   4302   4601 84
+Note   4302   4605 36
+Note   4305   4599 48
+Note   4305   4599 60
+Note   4579   4899 62
+Note   4581   4897 38
+Note   4581   4904 86
+Note   4586   4888 50
+Note   4587   4891 74
+Note   4865   5165 40
+Note   4866   5166 52
+Note   4869   5169 64
+Note   4869   5169 76
+Note   4872   5172 88
+Note   5136   5449 67
+Note   5143   5445 43
+Note   5143   5447 55
+Note   5148   5449 79
+Note   5148   5452 91
+Note   5422   5890 48
+Note   5426   6016 60
+Note   5427   5893 72
+Note   5427   5902 84
+Note   5429   5906 96
+Note   5990   6477 36
+Note   5990   6581 24
+Note   5993   6469 48
+Note   5997   6405 72
+Note   5997   6423 76
+Note   5997   6440 79
+Note   5997   6458 82
+Note   5997   6474 84
+Note   5997   6484 96
+Note   6502   6723 72
+Note   6513   6723 76
+Note   6530   6726 79
+Note   6538   6868 36
+Note   6549   6870 48
+Note   6556   6726 84
+Note   6556   6737 96
+Note   6701   6877 83
+Note   6704   6879 95
+Note 125649 126554 23
+Note 126047 126519 15
+Note 126108 126554 19
+Note 126147 126558 108
+Note 126148 126542 112
+Note 126148 126563 107
+Note 126162 126519 104
+Note 126199 126526 106
+Note 126204 126523 105
+Note 126327 126480 16
+Note 126413 126537 17
+Note 126413 126551 21
+Note 126413 126554 20
+Note 126413 126560 22
+Note 126423 126533 109
+Note 126423 126551 110
+Note 126423 126551 114
+Note 126424 126573 113

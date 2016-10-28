@@ -1,0 +1,24 @@
+Meta event, sequencer-specific, type=0x03 leng=3155936
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=50
+     Text = <"The Swedish Gnome Rag", William M. Shockley, 1996>
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=0 c2=0
+Meta event, unrecognized, type=0x21 leng=1
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=0 c2=0
+Meta event, unrecognized, type=0x21 leng=1
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=0 c2=0
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=22
+     Text = <By William M. Shockley>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=68
+     Text = <Sequenced in October 1996 by William M. Shockley, Riverside, CA, USA>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=15
+     Text = <shockley@pe.net>

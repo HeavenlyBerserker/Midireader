@@ -1,0 +1,10 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=15
+     Text = <\0x083\0xffffffc0_^]M\0xffffffcbEU\0xffffff8b\0xffffffec\0xffffff81\0xffffffec\0xffffff8e>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=2
+     Text = <\0xffffffec\0xffffff8e>
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=125
+Meta Text, type=0x03 (Sequence/Track Name)  leng=2
+     Text = <\0xffffffec\0xffffff8e>
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=127

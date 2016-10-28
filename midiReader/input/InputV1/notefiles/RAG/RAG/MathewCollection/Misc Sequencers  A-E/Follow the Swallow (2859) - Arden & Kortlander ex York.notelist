@@ -1,0 +1,310 @@
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=71
+     Text = <Emulator Version = Expression Emulator - Beta Version 1 - July 05, 2006>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=41
+     Text = <Follow the Swallow - QRS Word Roll # 2859>
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </music_category: Piano_Roll : Classical>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </title: Follow the Swallow>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </roll_class: Word Roll>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 2859>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_authenticity: Original>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = </performer: Victor Arden & Max Kortlander>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </composer: Rose-Dixon-Henderson>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 90>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </song_type: Fox Trot>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=47
+     Text = </roll_copyright: 1924 by Jerome H. Remick & Co.>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_date: >
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </scanned_by: Erik York>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </date_scanned: 11/29/08>
+Meta Text, type=0x01 (Text Event)  leng=51
+     Text = </scanning_system: mk3 roll scanner c/o Robert Perry>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </owner: Erik York>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = <Roll in excellent condition- no damage>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=99
+     Text = <Conversion to eRoll MIDI made Sunday, November 30, 2008 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec. 10, 2006>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title:                                 >
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </source_file_type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 96  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 410  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.200  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </interpreted_file_AverageLPI: 410.000  >
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = </scanner_takeup_accel_correction: 0.400  Pct. per foot  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </ActiveTracking: ON >
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </Twin_Array_Crossover_Track: 10   >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scan_glitches_merged: 138   >
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </specks_removed: 111   >
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note   8000   9154 51
+Note   8005   9154 67
+Note   8026   9153 55
+Note   8029   9157 70
+Note   8053   9153 58
+Note   8059   9158 75
+Note   8080   9157 63
+Note   8084   9217 79
+Note   9223  10459 53
+Note   9252  10460 56
+Note   9255  10463 68
+Note   9276  10459 58
+Note   9279  10460 70
+Note   9305  10460 62
+Note   9308  10460 74
+Note   9311  10466 80
+Note   9332  10460 65
+Note  10466  10533 39
+Note  10570  10778 58
+Note  10570  11542 55
+Note  10572  10630 70
+Note  10574  10631 75
+Note  10575  10634 82
+Note  10575  10634 79
+Note  10848  10929 79
+Note  10864  11339 58
+Note  10867  10927 63
+Note  10868  10925 67
+Note  10868  10928 70
+Note  10871  10929 75
+Note  11071  11291 70
+Note  11074  11295 79
+Note  11074  11346 75
+Note  11075  11347 82
+Note  11165  11231 27
+Note  11385  11424 70
+Note  11388  11427 79
+Note  11484  11544 58
+Note  11486  11546 67
+Note  11486  11787 63
+Note  11489  11548 70
+Note  11489  11792 75
+Note  11492  11713 82
+Note  11492  11713 79
+Note  11494  11798 87
+Note  11691  11757 46
+Note  11800  12029 62
+Note  11800  12618 56
+Note  11803  12032 67
+Note  11805  11873 79
+Note  11807  11871 82
+Note  11809  11873 86
+Note  11812  11878 91
+Note  12122  12187 62
+Note  12122  12187 58
+Note  12125  12619 67
+Note  12128  12304 79
+Note  12128  12304 82
+Note  12131  12307 86
+Note  12134  12309 91
+Note  12346  12412 78
+Note  12351  12419 90
+Note  12437  12503 34
+Note  12453  12516 82
+Note  12453  12626 79
+Note  12455  12626 86
+Note  12457  12630 91
+Note  12666  12710 82
+Note  12671  12746 94
+Note  12774  12834 58
+Note  12774  12837 56
+Note  12776  12837 62
+Note  12777  12944 67
+Note  12779  12949 79
+Note  12781  12947 82
+Note 207968 208278 21
+Note 207971 208279 17
+Note 207971 208279 20
+Note 207971 208279 22
+Note 207971 208279 16
+Note 207986 208289 106
+Note 207986 208289 111
+Note 207986 208289 112
+Note 207989 208289 113
+Note 208042 208289 110

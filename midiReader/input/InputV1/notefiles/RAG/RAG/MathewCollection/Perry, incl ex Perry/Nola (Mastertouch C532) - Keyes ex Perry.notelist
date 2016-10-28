@@ -1,0 +1,81 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=17
+     Text = <Nola MT532 -   # >
+Meta Text, type=0x02 (Copyright Notice)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Mastertouch Hand Played Roll #C532>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <Nola>
+Meta Text, type=0x01 (Text Event)  leng=1
+     Text = <->
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = <Arndt, 1915>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = <Played by Lettie Keyes>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <--->
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=43
+     Text = <Scan of a player piano roll by Robert Perry>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = <rob@pianola.co.nz / http://www.pianola.co.nz>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <---Technical Data Follows--->
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </music_category:       Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </title:                Nola>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </subtitle:             ->
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </roll_manufacturer:    Mastertouch>
+Meta Text, type=0x01 (Text Event)  leng=51
+     Text = </roll_brand:           Mastertouch Hand Played Roll>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_number:          C532>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_class:           88>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </performer:            Keyes, Lettie>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </composer:             Arndt>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </composition_date:     1915>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_tempo:           65-70>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </song_type:            Ragtime, Novelty>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_condition:       Excellent>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_authenticity:    Original>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </roll_copyright:       ->
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </roll_date:            ?>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </roll_city:            Sydney, Australia>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </original_price:       ?>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </date_scanned:         2011-06-27>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanned_by:           Robert Perry>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </owner:                Robert Perry>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = </scanning_system:      MK4 Bicolour with Direct Drive Capstan>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </notes:                Modern cutting.>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </pianist:              Lettie Keyes>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = <May NOT be EDITED or used for commercial purposes.>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = <Freely made available for NON-commercial purposes>
+Parameter, chan=1 c1=120 c2=0

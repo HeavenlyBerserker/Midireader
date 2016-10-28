@@ -1,0 +1,45 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=41
+     Text = <Chilton_Rag.ume via MM/1 OS-9 UltiMusE-K.>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <Chilton Rag, begun 1977/5/11>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Copyright (c) 1978 by Mike Knudsen>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = <Set for PC Gen MIDI>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = <Lengthened "chicks">
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = <AND other fixes and improvements.>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <Shows off all four Swing levels in Trio!>
+Meta Text, type=0x04 (Instrument Name)  leng=20
+     Text = <Patch000=Piano Grand>
+Meta Text, type=0x04 (Instrument Name)  leng=24
+     Text = <Patch003=HonkyTonk Piano>
+Meta Text, type=0x04 (Instrument Name)  leng=22
+     Text = <Patch032=Acoustic Bass>
+Meta Text, type=0x04 (Instrument Name)  leng=21
+     Text = <Patch001=Piano Bright>
+Program, chan=1 program=0
+Program, chan=2 program=0
+Program, chan=3 program=3
+Program, chan=4 program=32
+Program, chan=1 program=1
+Program, chan=2 program=1
+Program, chan=1 program=3
+Program, chan=2 program=3
+Program, chan=2 program=3
+Program, chan=1 program=3
+Program, chan=1 program=0
+Program, chan=2 program=0
+Program, chan=1 program=3
+Program, chan=2 program=0
+Program, chan=1 program=3
+Program, chan=1 program=0
+Program, chan=4 program=0
+Program, chan=4 program=32
+Program, chan=1 program=3
+Program, chan=1 program=0
+Program, chan=4 program=0
+Program, chan=4 program=32
+Arbitrary bytes, leng=2

@@ -1,0 +1,97 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=7
+     Text = < -   # >
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <QRS Autograph Word Roll #884>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = <Alexander's Band Is Back In Dixieland>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = <Albert Gumble, 1919>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = <Played by Max Kortlander>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <--->
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <Scan of a player piano roll by Erik York>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = <rob@pianola.co.nz / http://www.pianola.co.nz>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <---Technical Data Follows--->
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </music_category:       Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=60
+     Text = </title:                Alexander's Band Is Back In Dixieland>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </roll_manufacturer:    QRS>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </roll_brand:           QRS Autograph Word Roll>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </roll_number:          884>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_class:           88>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </performer:            Kortlander, Max>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </composer:             Albert Gumble>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </lyricist:             Jack Yellen>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </composition_date:     1919>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_tempo:           80>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </song_type:            Foxtrot, Ragtime>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_condition:       Excellent>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_authenticity:    Original>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = </roll_copyright:       1919 Jerome H. Remick & Co.>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </roll_date:            September 1919>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </roll_city:            Chicago, Ill>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </original_price:       $1.00>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </date_scanned:         12/2/2010>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </scanned_by:           Erik York>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </owner:                Erik York>
+Meta Text, type=0x01 (Text Event)  leng=58
+     Text = </scanning_system:      MK3 Roll Scanner With Shaft Encoder>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </pianist:              Max Kortlander>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = <May NOT be EDITED or used for commercial purposes.>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = <Freely made available for NON-commercial purposes>
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0

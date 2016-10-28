@@ -1,0 +1,104 @@
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=71
+     Text = <Emulator Version = Expression Emulator - Beta Version 1 - July 09, 2006>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = <WSTco Expression Emulation Software>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=32
+     Text = <Chinese Blues - Diamond  # 17363>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </music_category: Piano_Roll >
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </title: Chinese Blues >
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </subtitle:  >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_type: Generic_uniform >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_manufacturer: Diamond >
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = </roll_class:  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </roll_number: 17363 >
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </performer:  >
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = </composer: Gardner >
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </lyricist:  >
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_tempo: 80 >
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </song_type: One-step >
+Meta Text, type=0x01 (Text Event)  leng=7
+     Text = </key:  >
+Meta Text, type=0x01 (Text Event)  leng=9
+     Text = </meter:  >
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_copyright:  >
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_date: 1915 >
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_city:  >
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanned_by: Warren Trachtman >
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </date_scanned: October 11, 2006 >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanning_system: MK3 with capstan transport >
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </owner: Warren Trachtman >
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = <Roll Template Type Used = Generic_uniform >
+Meta Text, type=0x01 (Text Event)  leng=102
+     Text = <Conversion to eRoll MIDI made Wednesday, October 11, 2006 with WSTco E-Roll converter - www.wstco.com >
+Meta Text, type=0x01 (Text Event)  leng=62
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec. 26, 2005 >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </CIS_embedded_title: Chinese Blues >
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </source_file_type: eRollMIDI file >
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </Source_File_Type: CIS >
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Processing_History: CIS --> eRollMIDI  >
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </CIS_converted_as_type: Generic_uniform >
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </play_tempo: 80   >
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </CIS_file_LPI: 360   >
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </scanner_processing_type: Mode1 - no encoding >
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </scanner_horizontal_DPI: 300   >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_offset: 1.050   >
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </scanner_horizontal_stretch: 1.000   >
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </interpreted_file_AverageLPI: 360.000   >
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </ActiveTracking: ON  >
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </Twin_Array_Crossover_Track: 9    >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scan_glitches_merged: 16    >
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </specks_removed: 1298    >
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0

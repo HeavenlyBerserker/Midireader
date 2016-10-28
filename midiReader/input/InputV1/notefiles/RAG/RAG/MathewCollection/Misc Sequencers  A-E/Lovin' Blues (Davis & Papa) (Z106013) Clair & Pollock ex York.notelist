@@ -1,0 +1,79 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=7
+     Text = < -   # >
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <Rythmodik Song Roll #Z106013>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = <Lovin' Blues>
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = <Fox Trot>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = <Joe Davis & Frank Papa (w & m), 1920>
+Meta Text, type=0x01 (Text Event)  leng=52
+     Text = <Played by Herbert Clair (assisted by Muriel Pollock)>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <--->
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <Scan of a player piano roll by Erik York>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = <rob@pianola.co.nz / http://www.pianola.co.nz>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <---Technical Data Follows--->
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </music_category:       Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </title:                Lovin' Blues>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </subtitle:             Fox Trot>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_manufacturer:    Rythmodik>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = </roll_brand:           Rythmodik Song Roll>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </roll_number:          Z106013>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_class:           88>
+Meta Text, type=0x01 (Text Event)  leng=67
+     Text = </performer:            Clair, Herbert (assisted by Pollock, Muriel)>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </composer:             Joe Davis & Frank Papa (w & m)>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </composition_date:     1920>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_tempo:           90>
+Meta Text, type=0x01 (Text Event)  leng=52
+     Text = </song_type:            Foxtrot, Blues, Blues Foxtrot>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_condition:       Excellent>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_authenticity:    Original>
+Meta Text, type=0x01 (Text Event)  leng=55
+     Text = </roll_copyright:       1920 Pace & Handy Music Co. Inc.>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_date:            May 1920>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </roll_city:            Belleville, NJ>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </original_price:       $1.25>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </date_scanned:         12/9/2010>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </scanned_by:           Erik York>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </owner:                Erik York>
+Meta Text, type=0x01 (Text Event)  leng=58
+     Text = </scanning_system:      MK3 Roll Scanner With Shaft Encoder>
+Meta Text, type=0x01 (Text Event)  leng=65
+     Text = </pianist:              Herbert Clair (assisted by Muriel Pollock)>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = <May NOT be EDITED or used for commercial purposes.>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = <Freely made available for NON-commercial purposes>

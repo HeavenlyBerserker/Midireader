@@ -1,0 +1,193 @@
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=71
+     Text = <Emulator Version = Expression Emulator - Beta Version 1 - July 05, 2006>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = <Your Name Here>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=50
+     Text = <The Grass Is Always Greener - QRS Word Roll # 2773>
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </music_category: Piano_Roll : Classical>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </title: The Grass Is Always Greener>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </roll_class: Word Roll>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 2773>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_authenticity: Original>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </performer: Arden & Kortlander>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </composer: Richard A. Whiting>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </lyricist: Raymond B. Egan>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 90>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </song_type: Fox Trot>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </roll_copyright: Jerome H. Remick & Co., 1924>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_date: >
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_city: New York City>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </scanned_by: Erik York>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </date_scanned: 11/27/08>
+Meta Text, type=0x01 (Text Event)  leng=51
+     Text = </scanning_system: mk3 roll scanner c/o Robert Perry>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </owner: Karl Edwards>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = <Roll In Excellent Condition - No Damage>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=101
+     Text = <Conversion to eRoll MIDI made Thursday, November 27, 2008 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec. 10, 2006>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title:                                 >
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </source_file_type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 76  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 495  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.200  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </interpreted_file_AverageLPI: 495.000  >
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = </scanner_takeup_accel_correction: 0.650  Pct. per foot  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </ActiveTracking: ON >
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </Twin_Array_Crossover_Track: 10   >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scan_glitches_merged: 24   >
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </specks_removed: 218   >
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note   1999   2190 67
+Note   1999   2192 79
+Note   2203   2294 69
+Note   2203   2296 81
+Note   2277   2314 49
+Note   2302   3299 43
+Note   2302   3299 50
+Note   2304   3299 59
+Note   2305   2496 79
+Note   2305   2523 71
+Note   2305   2523 74
+Note   2307   2523 83
+Note   2611   2675 71
+Note   2611   2675 74
+Note   2611   2675 79
+Note   2611   2675 83
+Note   2916   2983 71
+Note   2916   2983 74
+Note   2916   2983 79
+Note   2916   2985 83
+Note   3235   3299 74
+Note   3238   3299 71
+Note   3238   3299 79
+Note   3238   3300 83
+Note   3534   3575 49
+Note   3562   4641 43
+Note   3562   4641 50
+Note   3565   3786 74
+Note   3565   3786 79
+Note   3565   4643 59
+Note   3567   3786 83
+Note   3567   3810 71
+Note   3874   3939 74
+Note   3874   3939 79
+Note   3874   3940 83
+Note   3878   3940 86
+Note   4190   4644 74
+Note   4190   4644 79
+Note   4192   4595 83
+Note   4192   4646 86
+Note   4710   4753 71
+Note   4713   4754 83
+Note   4787   4827 44
+Note   4814   5809 38
+Note   4815   5036 71
+Note   4815   5807 45
+Note   4815   5809 54
+Note   4817   5036 74
+Note   4817   5037 78
+Note   4817   5037 83
+Note   5124   5187 72
+Note   5124   5187 69
+Note   5124   5189 78
+Note   5124   5189 81
+Note   5430   5498 72
+Note   5432   5498 69
+Note   5432   5499 78
+Note   5432   5499 81
+Note   5746   5810 69
+Note   5746   5810 72
+Note   5746   5810 81
+Note   5746   5812 78
+Note   6036   6078 44
+Note   6064   7049 45
+Note   6064   7101 38
+Note   6067   6894 72
+Note   6067   7049 54
+Note   6069   6894 69
+Note   6069   6896 78
+Note   6069   6896 81
+Note   6985   7259 74
+Note   6985   7259 81
+Note   6985   7259 78
+Note   6985   7263 86
+Note   7189   7330 36
+Note 246855 247157 16
+Note 246855 247157 17
+Note 246856 247131 22
+Note 246856 247157 20
+Note 246869 247151 106
+Note 246869 247152 111
+Note 246871 247175 112
+Note 246873 247175 110
+Note 246878 247157 21

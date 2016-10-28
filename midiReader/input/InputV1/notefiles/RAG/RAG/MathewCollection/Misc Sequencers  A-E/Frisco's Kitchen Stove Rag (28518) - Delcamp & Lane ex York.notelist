@@ -1,0 +1,77 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=7
+     Text = < -   # >
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = <Republic Singing Record #28518>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = <Frisco Kitchen Stove Rag>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = <Jimmy Morgan, 1918>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Played by J. Milton Delcamp & Victor Lane>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <--->
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <Scan of a player piano roll by Erik York>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = <rob@pianola.co.nz / http://www.pianola.co.nz>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <---Technical Data Follows--->
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </music_category:       Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=47
+     Text = </title:                Frisco Kitchen Stove Rag>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_manufacturer:    Republic>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </roll_brand:           Republic Singing Record>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_number:          28518>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_class:           88>
+Meta Text, type=0x01 (Text Event)  leng=56
+     Text = </performer:            Delcamp, J. Milton & Lane, Victor>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </composer:             Jimmy Morgan>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = </lyricist:             C. Francis Reisner>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </composition_date:     1918>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_tempo:           80-90>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </song_type:            Jazz Foxtrot>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_condition:       Excellent>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_authenticity:    Original>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = </roll_copyright:       1918 M Witmark & Sons>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </roll_date:            ?>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </roll_city:            New York, NY>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </original_price:       $1.00>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </date_scanned:         11/28/2010>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </scanned_by:           Erik York>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </owner:                Erik York>
+Meta Text, type=0x01 (Text Event)  leng=58
+     Text = </scanning_system:      MK3 Roll Scanner With Shaft Encoder>
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = </pianist:              J. Milton Delcamp & Victor Lane>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = <May NOT be EDITED or used for commercial purposes.>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = <Freely made available for NON-commercial purposes>

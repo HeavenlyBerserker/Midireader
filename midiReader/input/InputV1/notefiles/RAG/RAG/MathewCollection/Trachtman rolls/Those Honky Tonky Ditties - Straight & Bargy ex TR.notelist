@@ -1,0 +1,362 @@
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = <Your Name Here>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = <Scanner Info Here>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=99
+     Text = <Conversion to eRoll MIDI made Saturday, August 21, 2004 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=72
+     Text = <ScanImageMIDI to PunchMasterMIDI converter - Beta Version - Aug 10, 2004>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Aug 17, 2004 >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </play_tempo: 80>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </source_file_type: PunchMasterMIDI>
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </title: Those Honky Tonky Ditties>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_manufacturer: Imperial>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = </WebRemovalAcceleration: 0.040 PctPerFt.  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scanner_horizontal_DPI: 300>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = </performer: Straight, Charley and Bargy, Roy>
+Meta Text, type=0x01 (Text Event)  leng=69
+     Text = </Skew_Correction: Applied | Track Range = 12.000  Tracks per Group   >
+Meta Text, type=0x01 (Text Event)  leng=79
+     Text = </roll_copyright: Arrangement Copyrighted 1919 by Imperial Player Piano Roll Co.>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </scanner_horizontal_offset: 1.180>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = <Scanned With Capstan Scanner >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanned_by: Warren Trachtman - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </specks_removed: 279>
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </owner: >
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1919>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 80>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 9969>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </scanner_horizontal_stretch: 1.000>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: Those Honky Tonk Ditties Scanned>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </date_scanned: 2/23/2004>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </song_type: Fox Trot>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </composer: Kahn and Straight>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_class: >
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </punch_step: 0.049 inches  | auto set>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </Source_File_Type: ScanImage MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </scan_glitches_merged: 41>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Restoration_Kalman_Filter_Gain: 0.250  >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </CIS_file_LPI: 367>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=100
+     Text = <Conversion to eRoll MIDI made Saturday, August 21, 2004 with WSTco E-Roll converter - www.wstco.com >
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = </Processing_History: CIS file -->  ScanImage MIDI file>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=45
+     Text = <Those Honky Tonky Ditties  - Imperial  # 9969>
+Meta Text, type=0x02 (Copyright Notice)  leng=25
+     Text = <commercial use prohibited>
+Meta Text, type=0x04 (Instrument Name)  leng=36
+     Text = <Generic_uniform Roll Type Scan Image>
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0 184518 111
+Note      0 184518 106
+Note   2000   2228 81
+Note   2000   2228 69
+Note   2000   2228 57
+Note   2243   2320 56
+Note   2243   2320 68
+Note   2243   2320 80
+Note   2367   2442 81
+Note   2367   2442 69
+Note   2367   2442 57
+Note   2367   2442 79
+Note   2367   2442 73
+Note   2367   2442 67
+Note   2367   2442 61
+Note   2367   2442 76
+Note   2367   2748 40
+Note   2367   2748 33
+Note   2610   2687 58
+Note   2610   2687 70
+Note   2734   2809 57
+Note   2734   2809 61
+Note   2734   2809 83
+Note   2734   2809 76
+Note   2734   2809 71
+Note   2734   2809 79
+Note   2978   3053 68
+Note   2978   3053 56
+Note   3100   3175 67
+Note   3100   3175 81
+Note   3100   3175 69
+Note   3100   3175 79
+Note   3100   3175 57
+Note   3100   3175 61
+Note   3100   3175 40
+Note   3100   3175 33
+Note   3100   3175 85
+Note   3100   3175 73
+Note   3345   3420 58
+Note   3345   3420 70
+Note   3467   3543 57
+Note   3467   3543 67
+Note   3467   3543 74
+Note   3467   3543 61
+Note   3467   3543 69
+Note   3467   3543 81
+Note   3467   3543 86
+Note   3467   3543 79
+Note   3467   3850 33
+Note   3467   3850 40
+Note   3712   3787 78
+Note   3712   3787 68
+Note   3712   3787 87
+Note   3712   3787 75
+Note   3712   3787 56
+Note   3834   3910 69
+Note   3834   3910 76
+Note   3834   3910 79
+Note   3834   3910 85
+Note   3834   3910 57
+Note   3834   3910 67
+Note   3834   3910 88
+Note   3834   3910 61
+Note   4079   4156 58
+Note   4079   4156 70
+Note   4079   4431 74
+Note   4079   4431 79
+Note   4079   4431 86
+Note   4079   4431 82
+Note   4203   4278 69
+Note   4203   4278 40
+Note   4203   4278 33
+Note   4203   4278 67
+Note   4203   4278 57
+Note   4203   4278 62
+Note   4446   4521 80
+Note   4446   4521 68
+Note 183540 184198 20
+Note 183540 184259 110
+Note 183540 184259 109
+Note 184518 185237 106
+Note 184518 185237 21
+Note 184518 185237 112
+Note 184518 185237 111
+Note 185743 185789 63
+Note 185743 185789 78
+Note 185743 185789 77
+Note 185743 185789 64
+Note 185743 185849 68
+Note 185743 185971 74
+Note 185743 185971 72
+Note 185743 186032 70
+Note 185743 186032 66
+Note 185743 186032 76
+Note 185743 186032 58
+Note 185743 186032 62
+Note 185743 186032 50
+Note 185743 186032 52
+Note 185743 186032 56
+Note 185804 185909 54
+Note 185867 185909 73
+Note 185867 185909 63
+Note 185867 185909 67
+Note 185867 185909 59
+Note 185896 186001 60
+Note 185896 186001 68
+Note 185926 185971 55
+Note 185926 185971 53
+Note 185987 186032 59
+Note 185987 186032 63
+Note 185987 186032 67
+Note 185987 186032 73
+Note 185987 186032 64
+Note 189295 189521 63
+Note 189356 189400 65
+Note 189356 189400 64
+Note 189507 189553 64
+Note 189539 189643 65
+Note 189600 189643 63
+Note 189628 189673 64
+Note 190150 190193 70
+Note 190150 190193 58
+Note 190150 190193 66
+Note 190150 190193 69
+Note 190150 190193 57
+Note 190150 190193 61
+Note 190150 190193 62
+Note 190150 190315 67
+Note 190150 190376 65
+Note 190210 190437 59
+Note 190210 190437 71
+Note 190210 190437 63
+Note 190271 190315 58
+Note 190271 190315 62
+Note 190271 190315 70
+Note 190271 190315 66
+Note 190271 190437 57
+Note 190271 190437 61
+Note 190271 190437 69
+Note 190392 190437 62
+Note 190392 190437 67
+Note 190392 190437 70
+Note 190392 190437 66
+Note 190392 190437 58

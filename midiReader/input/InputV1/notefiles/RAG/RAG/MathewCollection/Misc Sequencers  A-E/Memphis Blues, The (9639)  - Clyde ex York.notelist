@@ -1,0 +1,125 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=7
+     Text = < -   # >
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = <Imperial SongRecord #9639>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = <The Memphis Blues>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = <W. C. Handy, 1912>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = <Played by Jack Clyde>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <--->
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <Scan of a player piano roll by Erik York>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = <rob@pianola.co.nz / http://www.pianola.co.nz>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <---Technical Data Follows--->
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </music_category:       Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </title:                The Memphis Blues>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_manufacturer:    Imperial>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = </roll_brand:           Imperial SongRecord>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_number:          9639>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_class:           88>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </performer:            Clyde, Jack>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </composer:             W. C. Handy>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </lyricist:             George A. Norton>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </composition_date:     1912>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_tempo:           75>
+Meta Text, type=0x01 (Text Event)  leng=43
+     Text = </song_type:            Blues, Blues Foxtrot>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_condition:       Excellent>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_authenticity:    Original>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </roll_copyright:       1912 W. C. Handy>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </roll_date:            ?>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </roll_city:            Chicago, Ill>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </original_price:       $.85>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </date_scanned:         12/2/2010>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </scanned_by:           Erik York>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </owner:                Erik York>
+Meta Text, type=0x01 (Text Event)  leng=58
+     Text = </scanning_system:      MK3 Roll Scanner With Shaft Encoder>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </pianist:              Jack Clyde>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = <May NOT be EDITED or used for commercial purposes.>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = <Freely made available for NON-commercial purposes>
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0

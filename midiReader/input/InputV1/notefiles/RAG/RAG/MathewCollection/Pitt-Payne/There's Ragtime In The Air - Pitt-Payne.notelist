@@ -1,0 +1,59 @@
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=5
+     Text = <piano>
+Parameter, chan=1 c1=0 c2=0
+Parameter, chan=1 c1=32 c2=1
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=120
+Parameter, chan=1 c1=10 c2=110
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=5
+     Text = <piano>
+Parameter, chan=2 c1=0 c2=0
+Parameter, chan=2 c1=32 c2=1
+Program, chan=2 program=0
+Parameter, chan=2 c1=7 c2=120
+Parameter, chan=2 c1=10 c2=80
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=5
+     Text = <piano>
+Parameter, chan=3 c1=0 c2=0
+Parameter, chan=3 c1=32 c2=1
+Program, chan=3 program=0
+Parameter, chan=3 c1=7 c2=120
+Parameter, chan=3 c1=10 c2=50
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=5
+     Text = <piano>
+Parameter, chan=4 c1=0 c2=0
+Parameter, chan=4 c1=32 c2=1
+Program, chan=4 program=0
+Parameter, chan=4 c1=7 c2=120
+Parameter, chan=4 c1=10 c2=25
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=1
+     Text = <*>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=34
+     Text = <There's A Corner Up In Heaven 1921>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=30
+     Text = <Words & Music by Irving Berlin>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=40
+     Text = <\0xffffffa9 MCMXXI by Irving Berlin Inc.  New York>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=1
+     Text = <*>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=49
+     Text = <sequence & karaoke by James Pitt-Payne, London UK>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=35
+     Text = <on Sunday 22 October 2006 at 3.14pm>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=33
+     Text = <in association with Doug Grierson>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=1
+     Text = <*>

@@ -1,0 +1,180 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=37
+     Text = <Georgia Grind  - QRS Word Roll # 3629>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </title: Georgia Grind>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </roll_class: Word Roll>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 3629>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </performer: Cook, J. Lawrence>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </composer: Dabney, Ford>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 65>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </song_type: Blues Fox Trot>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </roll_copyright: Bud Allen Music Co.>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1915>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scanned_by: Warren Trachtman>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </date_scanned: 1/10/05>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </scanning_system: MK3 with Capstan Drive>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </owner: John Bartlett>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=99
+     Text = <Conversion to eRoll MIDI made Tuesday, January 11, 2005 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=60
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec 24, 2004>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: Georgia Grind Scanned By W.Trach>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </File_Type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 65  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 360  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.160  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scan_glitches_merged: 31   >
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </specks_removed: 46   >
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    192  1
+Note   2384   2753 18
+Note   2686   2749 42
+Note   2692   2749 30
+Note   2724   2824 43
+Note   2767   2865 31
+Note   3028   4021 46
+Note   3032   4023 34
+Note   4115   4288 51
+Note   4121   4292 39
+Note   4267   4440 53
+Note   4271   4444 41
+Note   4423   4596 55
+Note   4424   4599 43
+Note   4576   4949 46
+Note   4578   4948 58
+Note   5046   5217 54
+Note   5046   5219 42
+Note   5198   5371 53
+Note   5199   5373 41
+Note   5348   5644 51
+Note   5355   5648 39
+Note   5815   5994 51
+Note   5824   5998 39
+Note   5974   6263 53
+Note   5974   6263 41
+Note   6436   6532 53
+Note   6436   7190 54
+Note   6436   7194 42
+Note   6440   6536 41
+Note   7205   7301 55
+Note   7205   7307 43
+Note   7363   7655 51
+Note   7369   7659 39
+Note   7673   7773 46
+Note   7676   7773 34
+Note   7828   8121 48
+Note   7832   8121 36
+Note   8288   9042 54
+Note   8290   8386 53
+Note   8290   9044 42
+Note   8292   8388 41
+Note   9059   9155 55
+Note   9061   9159 43
+Note   9213   9311 51
+Note   9217   9315 39
+Note   9523   9888 51
+Note   9523   9888 63
+Note   9984  10044 72
+Note   9984  10153 60
+Note  10142  10232 67
+Note  10142  10232 72
+Note  10142  10232 75
+Note  10142  10234 63
+Note  10144  10546 36
+Note  10148  10546 48
+Note  10448  10542 75
+Note  10448  10544 63
+Note  10598  10696 74
+Note  10601  10699 62
+Note  10601  10699 65
+Note  10601  10699 71
+Note  10601  11013 50
+Note  10603  11017 38
+Note  10913  11007 74
+Note  10913  11013 62
+Note  11065  11167 63
+Note  11065  11474 51
+Note  11067  11161 60
+Note  11067  11163 67
+Note  11067  11163 72
+Note  11071  11480 39
+Note  11378  11471 60
+Note  11378  11474 72
+Note  11528  11624 70
+Note 265449 266132 112
+Note 265451 266128 111
+Note 265451 266132 113
+Note 265455 266132 110
+Note 265455 266134 106
+Note 265467 266147 20
+Note 265467 266147 21
+Note 265467 266147 22
+Note 265468 266147 16
+Note 265468 266147 17
+Note 268147 268340  0

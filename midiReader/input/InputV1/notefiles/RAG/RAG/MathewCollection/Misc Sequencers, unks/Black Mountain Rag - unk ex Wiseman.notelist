@@ -1,0 +1,32 @@
+Meta Text, type=0x06 (Marker)  leng=18
+     Text = <Black Mountain Rag>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=6
+     Text = <guitar>
+Program, chan=1 program=25
+Parameter, chan=1 c1=7 c2=120
+Parameter, chan=1 c1=10 c2=40
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=8
+     Text = <mandolin>
+Program, chan=2 program=105
+Parameter, chan=2 c1=7 c2=70
+Parameter, chan=2 c1=10 c2=50
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=4
+     Text = <bass>
+Program, chan=3 program=32
+Parameter, chan=3 c1=7 c2=110
+Parameter, chan=3 c1=10 c2=70
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=6
+     Text = <fiddle>
+Program, chan=4 program=110
+Parameter, chan=4 c1=7 c2=120
+Parameter, chan=4 c1=10 c2=80
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=5
+     Text = <banjo>
+Program, chan=6 program=105
+Parameter, chan=6 c1=7 c2=120
+Parameter, chan=6 c1=10 c2=60

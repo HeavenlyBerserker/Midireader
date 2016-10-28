@@ -1,0 +1,240 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=51
+     Text = <Cute Little Wigglin Dance, The - Golden Age  # 1199>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </title: Cute Little Wigglin Dance, The>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </roll_manufacturer: Golden Age>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_class: >
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 1199>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </performer: Wendling, Pete>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </composer: Von Tilzer, Harry>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </lyricist: Bryan, Vincent>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 85>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </song_type: >
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_copyright: >
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1917>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scanned_by: Warren Trachtman>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </date_scanned: March 25, 2005>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = </scanning_system: MK3 with capstan transport>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </owner: John Bartlett>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=98
+     Text = <Conversion to eRoll MIDI made Saturday, March 26, 2005 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=62
+     Text = <CIS to ScanImageMIDI converter - Beta Version - March 23, 2005>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: Cute Little Wigglin Dance Scanne>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </File_Type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 85  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 360  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.120  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </ActiveTracking: ON >
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </Twin_Array_Crossover_Track: 10   >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scan_glitches_merged: 21   >
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </specks_removed: 6557   >
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    147  1
+Note      0   2480 100
+Note      0   2541 101
+Note   2294   2385 97
+Note   2311   2385 85
+Note   2316   2388 73
+Note   2395   2467 99
+Note   2397   2469 87
+Note   2399   2470 75
+Note   2480   2569 100
+Note   2482   2554 88
+Note   2483   2570 76
+Note   2541   2616 101
+Note   2566   2652 89
+Note   2569   2655 77
+Note   2897   2973 101
+Note   2923   2994 89
+Note   2926   3013 77
+Note   3139   3227 100
+Note   3157   3229 88
+Note   3160   3247 76
+Note   3260   3379 89
+Note   3261   3380 77
+Note   3267   3361 101
+Note   3492   3583 99
+Note   3495   3583 87
+Note   3514   3585 75
+Note   3611   3701 97
+Note   3613   3702 85
+Note   3614   3704 73
+Note   3855   3944 94
+Note   3855   3947 82
+Note   3876   3948 70
+Note   3977   4064 92
+Note   3980   4064 77
+Note   3980   4066 73
+Note   3980   4066 80
+Note   3982   4067 68
+Note   4214   4286 94
+Note   4216   4286 82
+Note   4219   4305 70
+Note   4332   4402 92
+Note   4335   4404 73
+Note   4335   4404 77
+Note   4335   4404 80
+Note   4336   4405 68
+Note   4551   4639 89
+Note   4554   4639 77
+Note   4670   4760 94
+Note   4672   4758 82
+Note   4673   4758 74
+Note   4674   4758 70
+Note   4688   4758 68
+Note   4689   4760 65
+Note   4904   4995 96
+Note   4905   4995 84
+Note   4907   4997 72
+Note   5027   5114 94
+Note   5044   5114 82
+Note   5047   5114 70
+Note   5047   5116 58
+Note   5047   5116 65
+Note   5270   5355 92
+Note   5272   5355 80
+Note   5273   5358 68
+Note   5289   5358 56
+Note   5385   5594 94
+Note   5388   5576 85
+Note   5389   5594 63
+Note   5389   5594 82
+Note   5389   5613 67
+Note   5391   5595 55
+Note   5436   5802 18
+Note   5744   5814 73
+Note   5744   5814 79
+Note 131491 132067 21
+Note 131491 132070 16
+Note 131491 132070 17
+Note 131492 132067 22
+Note 131497 132064 19
+Note 131498 132061 20
+Note 131502 132079 106
+Note 131502 132079 107
+Note 131502 132082 111
+Note 131502 132082 112
+Note 131508 132073 109
+Note 131508 132073 110
+Note 134082 134229  0

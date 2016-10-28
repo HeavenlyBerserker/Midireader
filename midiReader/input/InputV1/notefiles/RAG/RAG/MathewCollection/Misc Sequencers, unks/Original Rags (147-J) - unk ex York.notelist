@@ -1,0 +1,72 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=45
+     Text = <Original Rags - Chase & Baker 65 note # 147-J>
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = <#147-J>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = <Original Rags>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = <Scott Joplin & Charles N. Daniels (arr), 1899>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = <Arranged Roll - Uncredited Arranger>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <--->
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <Scan of a player piano roll by Erik York>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = <rob@pianola.co.nz / http://www.pianola.co.nz>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <---Technical Data Follows--->
+Meta Text, type=0x01 (Text Event)  leng=43
+     Text = </music_category:       Piano_Roll : Ragtime>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </title:                Original Rags>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </roll_manufacturer:    Chase & Baker>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_number:          147-J>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_class:           65>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </performer:            ? (Uncredited Arranger)>
+Meta Text, type=0x01 (Text Event)  leng=62
+     Text = </composer:             Scott Joplin & Charles N. Daniels (arr)>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </composition_date:     1899>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_tempo:           70>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = </song_type:            Ragtime, Rag, Twostep>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_condition:       Excellent>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_authenticity:    Original>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </roll_copyright:       1899 Carl Hoffman>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </roll_city:            Buffalo, NY>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </original_price:       ?>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </date_scanned:         5/21/2009>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </scanned_by:           Erik York>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </owner:                Erik York>
+Meta Text, type=0x01 (Text Event)  leng=58
+     Text = </scanning_system:      MK3 Roll Scanner With Shaft Encoder>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </pianist:              ? (Uncredited Arranger)>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = <May NOT be EDITED or used for commercial purposes.>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = <Freely made available for NON-commercial purposes>
+Parameter, chan=1 c1=120 c2=0

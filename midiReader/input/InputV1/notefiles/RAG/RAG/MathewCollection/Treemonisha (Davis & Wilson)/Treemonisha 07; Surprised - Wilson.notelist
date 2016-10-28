@@ -1,0 +1,182 @@
+Program, chan=1 program=1
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <on\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <on\0x00>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <on\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <on\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <on\0x00>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <on\0x00>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <on\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <on\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <off\0x00>
+Note      0    227 81
+Note      0    227 54
+Note    227    454 78
+Note    227    454 57
+Note    454    681 75
+Note    454    681 60
+Note    681    909 72
+Note    681    909 63
+Note    909   1818 69
+Note    909   1818 66
+Note   1818   2272 69
+Note   1818   2272 66
+Note   2272   2727 72
+Note   2272   2727 63
+Note   2727   3636 75
+Note   2727   3636 60
+Note   3636   3863 78
+Note   3636   3863 51
+Note   3863   4090 75
+Note   3863   4090 54
+Note   4090   4318 72
+Note   4090   4318 57
+Note   4318   4545 69
+Note   4318   4545 60
+Note   4545   5454 66
+Note   4545   5454 63
+Note   5454   5909 66
+Note   5454   5909 63
+Note   5909   6363 69
+Note   5909   6363 60
+Note   6363   6818 72
+Note   6363   6818 57
+Note   6818   7045 72
+Note   7045   7272 74
+Note   7272   7272 75
+Note   7272   7727 75
+Note   7272   7727 84
+Note   7272   7727 69
+Note   7727   8181 66
+Note   8181   8636 66
+Note   8181   8636 81
+Note   8181   8636 72
+Note   8636   9090 69
+Note   9090   9545 78
+Note   9090   9545 69
+Note   9090   9545 63
+Note   9090  10454 72
+Note   9999  10454 75
+Note   9999  10454 66
+Note   9999  10454 60
+Note  10454  10909 72
+Note  10909  10909 72
+Note  10909  11363 72
+Note  10909  11363 63
+Note  10909  11363 57
+Note  11818  12121 69
+Note  11818  12272 72
+Note  11818  12272 64
+Note  11818  12272 57
+Note  12121  12424 71
+Note  12424  12727 72
+Note  12727  13181 71
+Note  12727  13181 65
+Note  12727  13181 62
+Note  12727  13181 56
+Note  12727  13636 74
+Note  13181  13636 71
+Note  13181  14090 65
+Note  13181  14090 62
+Note  13181  14090 56
+Note  13636  14090 71
+Note  14090  14545 74
+Note  14090  14545 65
+Note  14090  14545 68
+Note  14090  14545 59
+Note  14545  14545 68
+Note  14545  14999 68
+Note  14545  14999 74
+Note  14545  14999 65
+Note  14545  14999 59
+Note  14999  15454 71
+Note  14999  15454 59
+Note  14999  15909 68
+Note  15454  15909 71
+Note  15454  15909 59
+Note  15909  15909 71
+Note  15909  16136 71
+Note  15909  16136 65
+Note  15909  16136 62
+Note  15909  16136 56
+Note  16136  16136 71
+Note  16136  16363 71
+Note  16136  16363 65
+Note  16136  16363 62
+Note  16136  16363 56
+Note  16363  16363 71
+Note  16363  16590 74
+Note  16363  16590 47
+Note  16363  16590 71
+Note  16363  17045 65
+Note  16363  17045 56
+Note  16363  17727 62
+Note  16590  16818 71
+Note  16590  16818 50
+Note  16818  17045 68
+Note  16818  17045 53
+Note  17045  17272 65
+Note  17045  17272 56
+Note  17272  17727 71
+Note  17272  17727 65
+Note  17272  17727 56
+Note  17272  18181 74
+Note  17727  17727 71
+Note  17727  18181 71
+Note  17727  18181 65
+Note  17727  18181 62
+Note  17727  18181 56
+Note  18181  18181 72
+Note  18181  18181 69
+Note  18181  18181 64
+Note  18181  18181 57
+Note  18181  18181 57
+Note  18181  19090 57
+Note  18181  20909 72
+Note  18181  20909 69
+Note  18181  20909 64
+Note  18181  20909 60
+Note  19090  19090 52
+Note  19090  19545 52
+Note  19545  19545 48
+Note  19545  19999 48
+Note  19999  19999 45
+Note  19999  20909 45

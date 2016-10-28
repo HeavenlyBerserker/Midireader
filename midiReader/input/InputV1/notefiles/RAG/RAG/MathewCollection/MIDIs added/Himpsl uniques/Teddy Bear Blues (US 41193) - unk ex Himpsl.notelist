@@ -1,0 +1,221 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=17
+     Text = <Roll Title -   # >
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </music_category: Piano_Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = </title: Roll Title
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </subtitle: 
+>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </roll_type: Fail-Safe
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </roll_manufacturer: 
+>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = </roll_class: 
+>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_number: 
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </performer: 
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </composer: 
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </lyricist: 
+>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_tempo: 80
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </song_type: 
+>
+Meta Text, type=0x01 (Text Event)  leng=7
+     Text = </key: 
+>
+Meta Text, type=0x01 (Text Event)  leng=9
+     Text = </meter: 
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_copyright: 
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_date: 
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_city: 
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scanned_by: Frank L. Himpsl
+>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </date_scanned: February 29, 2012
+>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = </scanning_system: Type Of Scanning System
+>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </owner: Frank L. Himpsl
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = <Roll Template Type Used = Fail-Safe
+>
+Meta Text, type=0x01 (Text Event)  leng=95
+     Text = <Conversion to eRoll MIDI made Sunday, May 27, 2012 with WSTco E-Roll converter - www.wstco.com
+>
+Meta Text, type=0x01 (Text Event)  leng=67
+     Text = <CIS to ScanImageMIDI converter - Beta Version - September 12, 2004
+>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </CIS_embedded_title: Roll Title
+>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </File_Type: eRollMIDI file
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </Source_File_Type: CIS
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Processing_History: CIS --> eRollMIDI 
+>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </CIS_converted_as_type: Fail-Safe
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </play_tempo: 80  
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </CIS_file_LPI: 209  
+>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </scanner_processing_type: Mode1 - no encoding
+>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </scanner_horizontal_DPI: 300  
+>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </scanner_horizontal_offset: -0.925  
+>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </scanner_horizontal_stretch: 1.000  
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scan_glitches_merged: 27   
+>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </specks_removed: 8032   
+>
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0 168323 112
+Note      0 168326 109
+Note   2575   2891 70
+Note   2578   2895 77
+Note   2578   2895 86
+Note   2581   2898 94
+Note   2585   2900 92
+Note   2735   2900 96
+Note   2993   3338 67
+Note   3000   3346 76
+Note   3003   3286 94
+Note   3003   3346 85
+Note   3005   3350 97
+Note   3423   3525 94
+Note   3561   3876 67
+Note   3570   3886 76
+Note   3573   3886 85
+Note   3576   3890 96
+Note   3988   4121 77
+Note   3988   4271 68
+Note   3991   4125 94
+Note   3991   4125 86
+Note   3995   4160 92
+Note   4260   4365 84
+Note   4410   4515 86
+Note   4668   4983 64
+Note   4671   4983 55
+Note   4675   4990 73
+Note   4678   4993 84
+Note   4680   4993 79
+Note   5091   5168 82
+Note   5238   5618 64
+Note   5241   5618 73
+Note   5241   5646 55
+Note   5245   5621 84
+Note   5248   5621 79
+Note   5663   5800 82
+Note   5663   5800 74
+Note   5663   5918 56
+Note   5663   5918 65
+Note   5666   5803 80
+Note   5936   6041 72
+Note   6086   6221 74
+Note   6348   6811 46
+Note   6351   6785 67
+Note   6351   6785 61
+Note   6351   6785 52
+Note   6358   6795 72
+Note   6780   6910 70
+Note   6916   7140 46
+Note   6916   7143 52
+Note   6920   7143 61
+Note   6920   7143 67
+Note   7196   7301 72
+Note   7335   7861 46
+Note   7335   7863 53
+Note   7338   7863 62
+Note   7346   7870 68
+Note   7346   7870 70
+Note   7751   7858 34
+Note   8180   8795 62
+Note   8180   8795 58
+Note   8183   8798 82
+Note   8183   8801 80
+Note   8183   8801 74
+Note   8183   8808 70
+Note   8186   8801 77
+Note   8186   8801 68
+Note   8868   9123 39
+Note   9025   9785 55
+Note   9296   9370 75
+Note   9300   9374 87
+Note   9443   9516 67
+Note   9443   9516 58
+Note   9448   9554 84
+Note   9448   9554 72
+Note   9708   9873 44
+Note   9716   9940 82
+Note   9720   9971 70
+Note   9858  10263 56
+Note   9863   9943 78
+Note   9870   9943 77
+Note  10125  10378 45
+Note  10138  10361 78
+Note  10138  10421 77
+Note  10141  10425 87
+Note  10556  10633 84
+Note 168316 168610 111
+Note 168320 168613 106
+Note 168320 168613 110
+Note 168323 168613 112
+Note 168326 168620 109
+Note 168330 168626 20
+Note 168333 168626 21
+Note 168333 168630 22
+Note 169245 169290 65
+Note 169245 169290 64
+Note 169245 169290 54
+Note 169245 169290 60
+Note 169245 169293 57
+Note 169248 169293 71
+Note 169248 169293 70

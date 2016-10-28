@@ -1,0 +1,312 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=27
+     Text = <Fastep  - Harmony  # 110693>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </music_category: Piano_Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </title: Fastep
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </subtitle: 
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_manufacturer: Harmony
+>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = </roll_class: 
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </roll_number: 110693
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </performer: 
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </composer: Straight, Charley
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </lyricist: 
+>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_tempo: 60
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </song_type: One Step
+>
+Meta Text, type=0x01 (Text Event)  leng=7
+     Text = </key: 
+>
+Meta Text, type=0x01 (Text Event)  leng=9
+     Text = </meter: 
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_copyright: 
+>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_date: 1918
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_city: 
+>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanned_by: Warren Trachtman
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </date_scanned: 2/19/05
+>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = </scanning_system: MK3 with Capstan Drive
+>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </owner: John Bartlett
+>
+Meta Text, type=0x01 (Text Event)  leng=75
+     Text = <Notice: Changed Tempo to 85 from Marked 60 - Marked tempo clearly too slow
+>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = <Roll Template Type Used = Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=100
+     Text = <Conversion to eRoll MIDI made Sunday, February 20, 2005 with WSTco E-Roll converter - www.wstco.com
+>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec 24, 2004
+>
+Meta Text, type=0x01 (Text Event)  leng=51
+     Text = </CIS_embedded_title: Fastep Scanned By W.Trachtman
+>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </File_Type: eRollMIDI file
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </Source_File_Type: CIS
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Processing_History: CIS --> eRollMIDI 
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </CIS_converted_as_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </play_tempo: 60  
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </CIS_file_LPI: 360  
+>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </scanner_processing_type: Mode1 - no encoding
+>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </scanner_horizontal_DPI: 300  
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_offset: 1.116  
+>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </scanner_horizontal_stretch: 1.000  
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scan_glitches_merged: 15   
+>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </specks_removed: 5   
+>
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    147  1
+Note      0 200341 111
+Note      0 200341 112
+Note      0 200345 106
+Note   1705   2595 75
+Note   1705   2632 69
+Note   1707   2541 65
+Note   1823   1889 77
+Note   1941   2007 79
+Note   2055   2127 80
+Note   2169   2242 81
+Note   2289   2474 90
+Note   2291   2474 87
+Note   2527   2595 81
+Note   2647   2713 89
+Note   2648   2716 85
+Note   2649   3282 73
+Note   2649   3283 70
+Note   2654   3283 65
+Note   2885   2955 81
+Note   3007   3072 87
+Note   3007   3073 84
+Note   3267   3341 81
+Note   3360   3429 85
+Note   3360   3429 82
+Note   3360   3430 73
+Note   3360   3433 70
+Note   3364   3433 65
+Note   3598   4492 73
+Note   3599   4526 67
+Note   3601   4438 63
+Note   3716   3782 75
+Note   3830   3901 77
+Note   3951   4017 78
+Note   4070   4136 79
+Note   4183   4433 85
+Note   4183   4433 89
+Note   4452   4524 79
+Note   4536   4605 87
+Note   4539   4605 84
+Note   4542   5169 63
+Note   4542   5169 68
+Note   4542   5169 72
+Note   4777   4845 79
+Note   4894   4966 85
+Note   4894   4966 82
+Note   5157   5224 79
+Note   5247   5311 84
+Note   5248   5313 80
+Note   5249   5313 72
+Note   5249   5316 68
+Note   5251   5316 63
+Note   5488   6414 69
+Note   5488   6414 75
+Note   5489   6330 65
+Note   5610   5673 77
+Note   5727   5794 79
+Note   5841   5911 80
+Note   5960   6027 81
+Note   6074   6324 90
+Note   6076   6324 87
+Note   6341   6413 81
+Note   6429   6498 89
+Note   6429   6499 85
+Note   6433   7029 73
+Note   6433   7030 70
+Note   6433   7032 65
+Note   6664   6733 81
+Note   6780   6851 87
+Note   6780   6851 84
+Note   7017   7088 81
+Note   7133   7205 85
+Note   7135   7207 82
+Note   7136   7208 73
+Note   7136   7208 70
+Note   7139   7210 65
+Note   7369   7436 87
+Note   7483   7551 89
+Note 199389 200074 110
+Note 199389 200074 109
+Note 199441 200121 20
+Note 200341 201029 111
+Note 200341 201029 112
+Note 200345 201030 106
+Note 200389 200730 21
+Note 200860 201080 21
+Note 202551 202771 69
+Note 202554 202591 70
+Note 202554 202592 61
+Note 202554 202771 60
+Note 202554 202771 67
+Note 202554 202771 64
+Note 202555 202592 62
+Note 202583 202739 71
+Note 202610 202649 66
+Note 202642 202683 61
+Note 202669 202713 65
+Note 202730 202771 70
+Note 202732 202771 61
+Note 202732 202771 62
+Note 204919 204957 64
+Note 204919 205073 63
+Note 205063 205105 64
+Note 205092 205195 65
+Note 205154 205195 63
+Note 205186 205230 64
+Note 206751 206792 69
+Note 206751 206792 66
+Note 206751 206794 65
+Note 206751 206794 70
+Note 206751 206794 62
+Note 206751 206916 63
+Note 206751 206977 61
+Note 206751 207039 59
+Note 206751 207041 57
+Note 206752 206795 58
+Note 206752 207041 55
+Note 206752 207041 53
+Note 206782 207007 71
+Note 206813 206977 67
+Note 206870 206916 65
+Note 206871 206913 70
+Note 206871 206914 66
+Note 206874 206916 62
+Note 206996 207036 70
+Note 206996 207036 69
+Note 206996 207036 66
+Note 206998 207039 58
+Note 206998 207039 62
+Note 206998 207039 63
+Note 206998 207039 65
+Note 208452 208599  0

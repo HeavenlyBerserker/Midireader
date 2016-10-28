@@ -1,0 +1,351 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=46
+     Text = <When You Wore A Tulip - QRS Autograph # 100155>
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </title: When You Wore A Tulip>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </subtitle: (And I Wore A Big Red Rose)>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </roll_class: Autograph>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </roll_number: 100155>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </performer: Straight, Charley>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </composer: Mahoney & Wenrich>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 85>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </song_type: One Step>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_copyright: >
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1916>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanned_by: Warren Trachtman - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </date_scanned: 11/17/04>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </scanning_system: MK3 with Capstan Drive>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </owner: Charles B. Davis>
+Meta Text, type=0x01 (Text Event)  leng=43
+     Text = <Scanned From Recut - Collectors Clasics #58>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=102
+     Text = <Conversion to eRoll MIDI made Wednesday, November 17, 2004 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=60
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Oct 31, 2004>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: When You Wore A Tulip Scanned By>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </File_Type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 85  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 360  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.190  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scan_glitches_merged: 51   >
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </specks_removed: 12   >
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    147  1
+Note      0 198854 105
+Note      0 198855 109
+Note      0 198866 111
+Note      0 198866 107
+Note      0 198876 108
+Note      0 198876 106
+Note      0 198877 112
+Note   2294   2444 43
+Note   2314   2442 50
+Note   2347   2454 59
+Note   2352   2410 74
+Note   2352   2411 71
+Note   2354   2410 67
+Note   2354   2410 79
+Note   2589   2658 59
+Note   2589   2863 86
+Note   2591   2667 55
+Note   2594   2667 62
+Note   2594   2667 65
+Note   2599   2658 74
+Note   2835   2913 83
+Note   2836   2911 79
+Note   2836   2913 74
+Note   2836   2964 50
+Note   2839   2967 38
+Note   3069   3152 65
+Note   3074   3152 59
+Note   3074   3164 83
+Note   3076   3152 55
+Note   3079   3152 62
+Note   3085   3167 85
+Note   3086   3152 79
+Note   3088   3152 73
+Note   3292   3444 43
+Note   3323   3442 50
+Note   3352   3423 74
+Note   3352   3432 79
+Note   3352   3432 83
+Note   3352   3461 59
+Note   3361   3432 86
+Note   3582   3664 55
+Note   3589   3667 75
+Note   3589   3667 65
+Note   3591   3667 59
+Note   3591   3667 62
+Note   3599   3876 87
+Note   3817   3907 55
+Note   3824   3907 83
+Note   3826   3895 43
+Note   3826   3895 79
+Note   3826   3905 75
+Note   3951   4049 86
+Note   4064   4130 53
+Note   4064   4141 79
+Note   4072   4130 74
+Note   4073   4142 41
+Note   4073   4152 83
+Note   4247   4354 79
+Note   4307   4466 52
+Note   4307   4469 40
+Note   4319   4394 67
+Note   4541   4617 55
+Note   4541   4617 58
+Note   4541   4617 64
+Note   4542   4616 60
+Note   4549   4608 72
+Note   4549   4829 84
+Note   4782   4869 82
+Note   4785   4858 79
+Note   4785   4858 76
+Note   4785   4911 48
+Note   4785   4914 36
+Note   4792   4858 72
+Note   4936   5045 83
+Note   5047   5123 58
+Note   5047   5123 60
+Note   5047   5135 64
+Note   5049   5135 55
+Note   5055   5138 71
+Note   5057   5123 76
+Note   5057   5123 79
+Note 198829 200891 18
+Note 198854 198986 113
+Note 198854 200902 105
+Note 198854 200902 110
+Note 198855 198986 109
+Note 198866 198976 16
+Note 198866 198986 111
+Note 198866 200899 107
+Note 198876 200882 17
+Note 198876 200902 106
+Note 198876 200902 108
+Note 198877 199058 20
+Note 198877 200902 112
+Note 198880 200879 21
+Note 198888 200882 22
+Note 198888 200896 19
+Note 198895 200396 23
+Note 198896 200417 24
+Note 199017 199058 16
+Note 199027 199069 111
+Note 199029 199069 109
+Note 199030 199069 113
+Note 199101 199142 16
+Note 199101 199142 20
+Note 199111 199152 109
+Note 199114 199149 113
+Note 199114 199152 111
+Note 199182 199223 16
+Note 199185 199223 20
+Note 199191 199233 109
+Note 199194 199233 111
+Note 199196 199233 113
+Note 199261 199304 16
+Note 199264 199304 20
+Note 199274 199314 109
+Note 199276 199314 111
+Note 199276 199314 113
+Note 199344 199383 16
+Note 199344 199383 20
+Note 199355 199394 113
+Note 199358 199394 109
+Note 199358 199394 111
+Note 199427 199467 16
+Note 199429 199469 20
+Note 199439 199479 109
+Note 199439 199479 111
+Note 199439 199479 113
+Note 199508 199546 16
+Note 199510 199549 20
+Note 199520 199560 109
+Note 199523 199560 113
+Note 199523 199561 111
+Note 199589 199630 16
+Note 199591 199630 20
+Note 199599 199642 109
+Note 199601 199642 111
+Note 199602 199642 113
+Note 199671 199711 16
+Note 199673 199711 20
+Note 199682 199721 109
+Note 199682 199721 111
+Note 199682 199721 113
+Note 199751 199791 16
+Note 199752 199791 20
+Note 199761 199802 109
+Note 199761 199804 111
+Note 199763 199802 113
+Note 199833 199873 16
+Note 199835 199873 20
+Note 199844 199885 111
+Note 199846 199883 113
+Note 199848 199885 109
+Note 199917 199957 16
+Note 199917 199957 20
+Note 199927 199969 109
+Note 199929 199969 111
+Note 199929 199969 113
+Note 200002 200044 16
+Note 200005 200044 20
+Note 200013 200054 109
+Note 200013 200054 111
+Note 200014 200054 113
+Note 200088 200129 16
+Note 200088 200129 20
+Note 200098 200138 109
+Note 200099 200138 113
+Note 200101 200138 111
+Note 200171 200208 20
+Note 200171 200211 16
+Note 200177 200219 109
+Note 200182 200219 111
+Note 200182 200219 113
+Note 200251 200291 16
+Note 200252 200291 20
+Note 200260 200299 109
+Note 200263 200299 113
+Note 200263 200302 111
+Note 200333 200373 16
+Note 200335 200373 20
+Note 200344 200383 109
+Note 200344 200383 111
+Note 200348 200383 113
+Note 200414 200455 20
+Note 200414 200457 16
+Note 200424 200466 109
+Note 200426 200466 111
+Note 200427 200466 113
+Note 200496 200538 16
+Note 200496 200538 20
+Note 200505 200549 111
+Note 200508 200549 109
+Note 200510 200546 113
+Note 200579 200619 16
+Note 200579 200620 20
+Note 200589 200630 109
+Note 200589 200630 111
+Note 200591 200630 113
+Note 200657 200699 16
+Note 200660 200699 20
+Note 200670 200711 109
+Note 200671 200711 111
+Note 200673 200708 113
+Note 200738 200779 16
+Note 200741 200780 20
+Note 200751 200792 109
+Note 200751 200792 111
+Note 200752 200792 113
+Note 200820 200863 20
+Note 200820 200864 16
+Note 200835 200873 109
+Note 200835 200873 111
+Note 200839 200873 113
+Note 202902 203049  0

@@ -1,0 +1,322 @@
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=59
+     Text = <Scanning and Conversion by Warren Trachtman - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = <Scanner Info Here>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=99
+     Text = <Conversion to eRoll MIDI made Saturday, August 21, 2004 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=72
+     Text = <ScanImageMIDI to PunchMasterMIDI converter - Beta Version - Aug 10, 2004>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Aug 17, 2004 >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </play_tempo: 80>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </source_file_type: PunchMasterMIDI>
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </title: Shine On Harvest Moon>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </roll_manufacturer: Paramount>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = </WebRemovalAcceleration: 0.040 PctPerFt.  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scanner_horizontal_DPI: 300>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </performer: >
+Meta Text, type=0x01 (Text Event)  leng=69
+     Text = </Skew_Correction: Applied | Track Range = 12.000  Tracks per Group   >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </roll_copyright: copyright Remick Music Corp.>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </scanner_horizontal_offset: 1.230>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = <Scanned With Capstan Scanner >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanned_by: Warren Trachtman - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </specks_removed: 274>
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </owner: >
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1903>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 80>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 5846>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </scanner_horizontal_stretch: 1.000>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: Shine On Harvest Moon Scanned By>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </date_scanned: 11/25/2003>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </song_type: Fox Trot>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </lyricist: Norworth, Jack>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = </composer: Bayes, Nora  and Norworth, Jack>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_class: >
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </punch_step: 0.049 inches  | auto set>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </Source_File_Type: ScanImage MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </scan_glitches_merged: 48>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Restoration_Kalman_Filter_Gain: 0.250  >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </CIS_file_LPI: 367>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=100
+     Text = <Conversion to eRoll MIDI made Saturday, August 21, 2004 with WSTco E-Roll converter - www.wstco.com >
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = </Processing_History: CIS file -->  ScanImage MIDI file>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=41
+     Text = <Shine On Harvest Moon - Paramount  # 5846>
+Meta Text, type=0x02 (Copyright Notice)  leng=25
+     Text = <commercial use prohibited>
+Meta Text, type=0x04 (Instrument Name)  leng=36
+     Text = <Generic_uniform Roll Type Scan Image>
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note   2000   2471 19
+Note   3131   3298 92
+Note   3131   3482 84
+Note   3131   3482 88
+Note   3131   3512 96
+Note   3131   4368 68
+Note   3131   4368 64
+Note   3162   4368 74
+Note   3498   3604 86
+Note   3498   3789 92
+Note   3498   3818 83
+Note   3498   3850 95
+Note   3498   3850 52
+Note   3865   4034 86
+Note   3865   4062 80
+Note   3865   4185 90
+Note   3865   4215 78
+Note   3865   4215 59
+Note   4232   4368 80
+Note   4232   4368 88
+Note   4232   4368 52
+Note   4232   4368 76
+Note   4232   4368 86
+Note   4600   4765 91
+Note   4600   4796 85
+Note   4600   4918 95
+Note   4600   4950 57
+Note   4600   4950 83
+Note   4600   5103 64
+Note   4600   5103 73
+Note   4600   5103 67
+Note   4965   5103 91
+Note   4965   5103 52
+Note   4965   5103 85
+Note   4965   5103 93
+Note   4965   5103 81
+Note   5332   5470 90
+Note   5332   5653 83
+Note   5332   5684 86
+Note   5332   5715 95
+Note   5332   6568 72
+Note   5332   6568 62
+Note   5332   6568 66
+Note   5700   5837 84
+Note   5700   5990 81
+Note   5700   6021 90
+Note   5700   6021 93
+Note   5700   6051 50
+Note   6068   6234 84
+Note   6068   6295 78
+Note   6068   6417 76
+Note   6068   6417 88
+Note   6068   6448 57
+Note   6434   6540 50
+Note   6434   6568 84
+Note   6434   6568 86
+Note   6434   6600 78
+Note   6434   6600 74
+Note   6800   6937 89
+Note   6800   6937 83
+Note   6800   7151 81
+Note   6800   7181 93
+Note   6800   7212 55
+Note   6800   7273 62
+Note   6800   7304 65
+Note   6800   7304 71
+Note   7167   7304 89
+Note   7167   7304 83
+Note   7167   7304 91
+Note   7167   7304 79
+Note   7167   7334 50
+Note   7534   7701 88
+Note   7534   7823 84
+Note   7534   7854 81
+Note   7534   7854 93
+Note 159523 159904 106
+Note 159523 159904 109
+Note 159523 159904 110
+Note 159523 159904 111
+Note 159554 159904 16
+Note 159554 159904 17
+Note 159554 159904 20
+Note 159554 159904 22
+Note 159554 159904 21
+Note 159584 159904 112
+Note 160840 160884 81
+Note 160840 160884 59
+Note 160840 160884 79
+Note 160840 160884 49
+Note 160840 160884 61
+Note 160840 160884 51
+Note 160840 160884 72
+Note 160868 160914 83
+Note 160868 160914 63
+Note 160868 160914 47
+Note 160868 160914 52
+Note 160868 160914 57
+Note 160868 160914 77
+Note 160931 160975 72
+Note 160931 160975 53
+Note 160960 161006 77
+Note 160960 161006 57
+Note 160960 161006 83
+Note 160960 161006 63
+Note 161021 161065 53
+Note 161021 161065 72
+Note 161053 161096 77
+Note 161053 161096 57
+Note 161053 161096 83
+Note 161053 161096 63
+Note 161082 161126 71
+Note 161082 161126 67
+Note 161082 161126 78
+Note 161082 161126 73
+Note 161082 161126 69
+Note 161112 161156 80
+Note 161112 161156 62
+Note 161112 161156 60
+Note 161112 161156 72
+Note 161112 161156 53
+Note 161112 161156 58
+Note 161112 161156 47
+Note 161112 161156 82
+Note 161143 161187 57
+Note 161143 161187 77
+Note 161143 161187 51
+Note 161143 161187 63
+Note 161143 161187 49
+Note 161143 161187 68
+Note 161203 161248 69
+Note 161203 161248 72
+Note 161203 161248 47
+Note 161234 161278 57
+Note 161234 161278 63
+Note 161234 161278 77
+Note 161264 161309 70
+Note 161295 161340 72
+Note 161295 161340 47
+Note 161325 161368 63
+Note 161325 161368 77
+Note 161325 161368 57
+Note 161325 161368 83
+Note 161325 161368 71
+Note 161385 161429 61
+Note 161385 161429 79
+Note 161385 161429 72
+Note 161385 161429 47
+Note 161385 161429 53
+Note 161385 161429 49
+Note 161385 161429 59
+Note 161385 161429 81
+Note 161385 161429 51

@@ -1,0 +1,27 @@
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=64
+     Text = <"Memories of a Missouri Confederate", David Thomas Roberts, 1989>
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=10 c2=63
+Meta event, unrecognized, type=0x21 leng=1
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=10 c2=63
+Meta event, unrecognized, type=0x21 leng=1
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=10 c2=63
+Meta event, unrecognized, type=0x21 leng=1
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=10 c2=63
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=29
+     Text = <By David Thomas Roberts, 1989>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=52
+     Text = <Sequenced 9/9 1996 by Oleg Mezjuev, J\0xffffffe4rf\0xffffffe4lla, Sweden>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=31
+     Text = <oleg.mezjuev@mailbox.swipnet.se>

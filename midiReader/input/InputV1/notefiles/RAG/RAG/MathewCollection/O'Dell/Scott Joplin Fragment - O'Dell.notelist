@@ -1,0 +1,309 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=22
+     Text = <Page of music found on>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Parameter, chan=1 c1=91 c2=55
+Parameter, chan=1 c1=93 c2=1
+Parameter, chan=1 c1=64 c2=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=21
+     Text = <the photograph titled>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=22
+     Text = <"Joplin's Piano" given>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=19
+     Text = <to Brun Campbell by>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=22
+     Text = <Lottie Joplin in 1947.>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=23
+     Text = <Page 2 of unknown song.>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=23
+     Text = <Music believed to be by>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=25
+     Text = <Scott Joplin, circa 1914.>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=2
+     Text = <-->
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=16
+     Text = <MIDI arrangement>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=13
+     Text = <by Ron O'Dell>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=15
+     Text = <4 December 1998>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=32
+     Text = <www.armory.com/~keeper/midi.html>
+Meta event, unrecognized, type=0x21 leng=1
+Meta event, unrecognized, type=0x20 leng=1
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=64
+Program, chan=1 program=0
+Note   1818   2068 61
+Note   1818   2068 67
+Note   1818   2382 58
+Note   1818   3318 53
+Note   2045   2389 65
+Note   2045   2389 62
+Note   2499   2999 60
+Note   2499   2999 57
+Note   2954   3204 56
+Note   2954   3204 62
+Note   3181   3431 57
+Note   3181   3431 60
+Note   3636   4011 58
+Note   3636   5136 48
+Note   3636   5136 72
+Note   3636   5136 84
+Note   3863   4113 55
+Note   3863   4113 64
+Note   4090   4340 57
+Note   4090   4340 65
+Note   4318   4818 58
+Note   4318   4818 67
+Note   4318   5227 64
+Note   4772   5022 60
+Note   4772   5022 69
+Note   4999   5249 58
+Note   4999   5249 67
+Note   5454   5704 72
+Note   5454   5704 84
+Note   5454   5829 53
+Note   5454   6954 41
+Note   5681   5931 65
+Note   5681   5931 57
+Note   5681   7045 77
+Note   5909   6159 67
+Note   5909   6159 58
+Note   6136   6636 69
+Note   6136   6636 60
+Note   6136   7045 65
+Note   6590   6840 68
+Note   6590   6840 59
+Note   6590   6840 62
+Note   6818   7068 69
+Note   6818   7068 60
+Note   6818   7068 63
+Note   7045   7232 75
+Note   7272   7460 70
+Note   7272   7460 62
+Note   7272   7460 74
+Note   7272   7647 34
+Note   7272   7647 46
+Note   7499   7687 73
+Note   7499   7687 61
+Note   7727   7914 62
+Note   7727   7914 70
+Note   7727   7914 74
+Note   7727   7977 58
+Note   7727   7977 53
+Note   7954   8329 70
+Note   7954   8329 77
+Note   7954   8329 65
+Note   8181   8556 38
+Note   8181   8556 50
+Note   8409   8596 79
+Note   8409   8596 67
+Note   8636   8969 65
+Note   8636   8969 70
+Note   8636   8969 77
+Note   8636   8969 49
+Note   8636   8969 37
+Note   9090   9278 65
+Note   9090   9422 69
+Note   9090   9840 48
+Note   9090   9840 36
+Note   9318   9661 65
+Note   9545   9795 60
+Note   9545   9795 57
+Note   9545   9795 53
+Note   9545   9795 69
+Note   9772   9960 72
+Note   9999  10374 35
+Note   9999  10374 47
+Note   9999  10374 65
+Note   9999  10374 68
+Note   9999  10374 74
+Note  10454  10787 36
+Note  10454  10787 48
+Note  10454  10787 65
+Note  10454  10787 69
+Note  10454  10787 72
+Note  10909  11659 59
+Note  10909  11695 50
+Note  11136  11701 65
+Note  11363  11696 43
+Note  11818  12568 58
+Note  11818  12568 48
+Note  12045  12545 67
+Note  12045  12610 64
+Note  12272  12606 36
+Note  12499  12687 69
+Note  12727  13102 48
+Note  12727  13477 41
+Note  12727  13477 57
+Note  12727  13477 65
+Note  13181  13431 48
+Note  13409  13606 53
+Note  13636  14011 69
+Note  13636  14011 67
+Note  13636  14011 61
+Note  13636  14011 39
+Note  13636  14011 51
+Note  14090  14424 73
+Note  14090  14424 69
+Note  14090  14424 67
+Note  14090  14424 33
+Note  14090  14424 45
+Note  14318  14505 76
+Note  14545  14795 77
+Note  14545  14878 69
+Note  14545  14920 38
+Note  14545  14920 50
+Note  14545  14920 65
+Note  14772  15022 74
+Note  14999  15249 65
+Note  14999  15249 57
+Note  14999  15249 53
+Note  14999  15249 50
+Note  15227  15727 62
+Note  15227  15792 69
+Note  15454  15829 53
+Note  15454  15829 41
+Note  15681  15931 64
+Note  15909  16159 65
+Note  15909  16242 38
+Note  15909  16242 50
+Note  15909  16242 69
+Note  16136  16323 62
+Note  16363  17113 43
+Note  16363  17113 70
+Note  16363  17113 64
+Note  16363  17113 62
+Note  16590  16924 46
+Note  16818  17068 50
+Note  17045  17232 52
+Note  17272  18022 45
+Note  17272  18022 61
+Note  17272  18022 64
+Note  17272  18022 69
+Note  17499  17833 49
+Note  17727  17977 52
+Note  17954  18142 57
+Note  18181  18431 77
+Note  18181  18515 69
+Note  18181  18556 65
+Note  18181  18556 38
+Note  18181  18556 50
+Note  18409  18659 74
+Note  18636  18886 65
+Note  18636  18886 57
+Note  18636  18886 53
+Note  18636  18886 50
+Note  18863  19363 62
+Note  18863  19428 69
+Note  19090  19465 53
+Note  19090  19465 41
+Note  19318  19568 64
+Note  19545  19795 65
+Note  19545  19878 38
+Note  19545  19878 50
+Note  19545  19878 69
+Note  19772  19960 62
+Note  19999  20331 61
+Note  19999  20331 52
+Note  19999  20749 43
+Note  19999  20749 70
+Note  20227  20477 53
+Note  20227  20477 62
+Note  20454  20704 55
+Note  20454  20704 64
+Note  20681  20869 61
+Note  20681  20869 52
+Note  20909  21284 53
+Note  20909  21302 62
+Note  20909  21659 41
+Note  20909  21659 69
+Note  21136  21323 77
+Note  21136  21386 74
+Note  21363  21551 77
+Note  21363  21613 53
+Note  21363  21613 57
+Note  21363  21613 62
+Note  21363  21613 81
+Note  21590  21778 77
+Note  21590  21778 86
+Note  21818  22068 73
+Note  21818  22151 57
+Note  21818  22151 45
+Note  21818  22193 69
+Note  22045  22295 74
+Note  22272  22522 76
+Note  22272  22606 55
+Note  22272  22606 43
+Note  22272  22647 69
+Note  22499  22687 73
+Note  22727  22977 74
+Note  22727  23060 53
+Note  22727  23060 41
+Note  22727  23102 69
+Note  22954  23204 76
+Note  23181  23369 69
+Note  23181  23431 77
+Note  23181  23515 50
+Note  23181  23515 38
+Note  23409  23596 69
+Note  23409  23596 65

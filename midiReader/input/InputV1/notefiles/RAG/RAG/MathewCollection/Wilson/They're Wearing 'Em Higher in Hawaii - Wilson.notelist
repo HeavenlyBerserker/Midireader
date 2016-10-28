@@ -1,0 +1,2964 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=36
+     Text = <They're Wearing 'Em Higher in Hawaii>
+Meta Text, type=0x02 (Copyright Notice)  leng=44
+     Text = <Copyright \0xffffffa9 1916 by Shapiro, Bernstein & Co.>
+Meta Text, type=0x01 (Text Event)  leng=43
+     Text = <Music: Halsey K. Mohr; Lyrics: Joe Goodwin
+>
+Meta Text, type=0x01 (Text Event)  leng=57
+     Text = <Sequenced 10/98 by Paul F. Wilson on NoteWorthy Composer
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <www.geocities.com/~pfwilson
+>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = <pwilson@methodist.edu
+>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=11
+     Text = <Vocal Track>
+Program, chan=3 program=52
+Parameter, chan=3 c1=7 c2=127
+Parameter, chan=3 c1=10 c2=64
+Program, chan=3 program=0
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <Hen>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ry >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <Mey>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <was >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <a >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <buy>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <er, >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <buy>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ing >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <La>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <dies >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <Wear, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <He >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <took >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <a >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <fli>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <to >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Ha>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <wai>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <i, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <stud>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ied >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <fash>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <ions >
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <there, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <One >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <day >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <Mey>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <got >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <a >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <wi>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <re, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <"Hur>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ry >
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <back," >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <it >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <read, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <He >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <wrote >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <"I'm >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <bus>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <y, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <I'm >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <get>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <ting >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <diz>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <zy, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <the >
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <styles >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <here >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <turn >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <my >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <head, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <You'd >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <say >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <the >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <same >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <if >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <you >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <were >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <here >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <with >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <me: >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <For >
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <they're >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <wear>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ing >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <'em >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <high>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <in >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Ha>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <wai>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <i, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <High>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <er, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <high>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <er, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <high>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <er, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <high>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <in >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Ha>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <wai>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <i >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <The >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <beau>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <ti>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ful >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <beach >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <at >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <Wai>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <ki>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ki >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <is >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <not >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <the >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <on>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ly >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <pret>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ty >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <sight >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <that >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <you >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <can >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <see, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <In >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Ha>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <wai>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <i >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <the >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <maid>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ens >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <there >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <are >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <fly>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <er, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <They >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <sim>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ply >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <sway >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <your >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <heart >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <a>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <way, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Hu>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <la >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <maids >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <are >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <al>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <ways >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <full >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <of >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <pep, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <All >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <the >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <old >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <men >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <have >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <to >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <watch >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <their >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <step, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <For >
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <they're >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <wear>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ing >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <them >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <high>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <in >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Ha>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <wai>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <i, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <They're >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <go>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ing >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <up, >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <go>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ing >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <up >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ev'>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ry >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <day." >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <Mey>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <er's >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <boss >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <was >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ver>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <y >
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <cross, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <and >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <start>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ed >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <on >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <his >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <way, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <He >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <took >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <a >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <trip >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <up>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <on >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <a >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <ship >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <for >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <Hon>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <o>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <lu>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <lu >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <Bay, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <He >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <found >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <Mey>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <in >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Ha>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <wai>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <i, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <weav>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ing >
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <skirts >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <of >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <hay, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <When >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <Mey>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <taught >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <him >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <the >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <fev>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <caught >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <him, >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <he >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <said >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <"I'm >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <going >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <to >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <stay, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <I'll >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <move >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <my >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <of>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <fice >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <o>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ver >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <here >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <to>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <day: >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <For >
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <they're >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <wear>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ing >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <'em >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <high>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <in >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Ha>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <wai>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <i, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <High>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <er, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <high>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <er, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <high>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <er, >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <high>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <in >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Ha>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <wai>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <i >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <The >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <beau>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <ti>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ful >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <beach >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <at >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <Wai>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <ki>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ki >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <is >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <not >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <the >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <on>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ly >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <pret>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ty >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <sight >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <that >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <you >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <can >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <see, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <In >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Ha>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <wai>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <i >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <the >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <maid>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ens >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <there >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <are >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <fly>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <er, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <They >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <sim>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ply >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <sway >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <your >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <heart >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <a>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <way, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <When >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <you >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <see >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <them >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <dance >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <the >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <way >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <they >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <do, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <You >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <won't >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <care >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <just >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <what >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <be>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <comes >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <of >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <you, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <For >
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <they're >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <wear>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ing >
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <them >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <high>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <er >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <in >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Ha>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <wai>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <i, >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <They're >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <go>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ing >
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <up, >
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <go>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ing >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <up >
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ev'>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <ry >
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <day." >
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=36
+     Text = <They're Wearing 'Em Higher in Hawaii>
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=127
+Parameter, chan=1 c1=10 c2=127
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=42
+     Text = <Music: Halsey K. Mohr; Lyrics: Joe Goodwin>
+Program, chan=2 program=0
+Parameter, chan=2 c1=7 c2=127
+Parameter, chan=2 c1=10 c2=64
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=44
+     Text = <Copyright \0xffffffa9 1916 by Shapiro, Bernstein & Co.>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=56
+     Text = <Sequenced 10/98 by Paul F. Wilson on NoteWorthy Composer>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=27
+     Text = <www.geocities.com/~pfwilson>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=21
+     Text = <pwilson@methodist.edu>
+Note      0    272 63
+Note    272    539 65
+Note    545    812 67
+Note    545    812 63
+Note    545    812 58
+Note    545   1000 51
+Note    545   1000 39
+Note    818   1085 70
+Note    818   1085 58
+Note    818   1085 63
+Note    818   1085 67
+Note   1090   1357 67
+Note   1090   1357 63
+Note   1090   1357 58
+Note   1090   1545 46
+Note   1090   1545 34
+Note   1363   1903 70
+Note   1363   1903 58
+Note   1363   1903 63
+Note   1363   1903 67
+Note   1636   2090 51
+Note   1636   2090 39
+Note   1909   2176 72
+Note   1909   2176 60
+Note   1909   2176 63
+Note   1909   2176 67
+Note   2181   2448 75
+Note   2181   2448 69
+Note   2181   2448 63
+Note   2181   2636 54
+Note   2181   2636 42
+Note   2454   2721 72
+Note   2454   2721 69
+Note   2454   2721 63
+Note   2727   3181 74
+Note   2727   3181 62
+Note   2727   3181 53
+Note   2727   3181 41
+Note   3000   3267 68
+Note   3000   3267 70
+Note   3272   4085 70
+Note   3272   3727 46
+Note   3272   3727 34
+Note   3545   3812 68
+Note   3545   3812 62
+Note   3818   4272 53
+Note   3818   4272 41
+Note   4090   4357 69
+Note   4090   4357 62
+Note   4363   4630 70
+Note   4363   4630 68
+Note   4363   4630 62
+Note   4363   4767 46
+Note   4363   4767 34
+Note   4636   4903 71
+Note   4636   4903 68
+Note   4636   4903 62
+Note   4772   5176 41
+Note   4840   5176 48
+Note   4909   5176 72
+Note   4909   5176 69
+Note   4909   5176 63
+Note   4909   5176 57
+Note   5454   5721 75
+Note   5454   5721 69
+Note   5454   5721 63
+Note   5727   5994 72
+Note   5727   5994 69
+Note   5727   5994 63
+Note   5863   6267 46
+Note   5931   6267 50
+Note   6000   6267 74
+Note   6000   6267 62
+Note   6000   6267 68
+Note   6000   6267 70
+Note   6000   6267 56
+Note   6545   6812 75
+Note   6545   6812 68
+Note   6545   6812 63
+Note   6545   6948 46
+Note   6545   6948 34
+Note   6818   7085 77
+Note   6818   7085 65
+Note   6954   7357 39
+Note   7022   7357 46
+Note   7090   7357 75
+Note   7090   7357 67
+Note   7090   7357 63
+Note   7090   7357 55
+Note   7363   7494 70
+Note   7363   7494 58
+Note   7500   7630 72
+Note   7500   7630 60
+Note   7636   7903 70
+Note   7636   7903 58
+Note   7909   8176 79
+Note   7909   8176 74
+Note   7909   8176 68
+Note   7909   8176 58
+Note   7909   8176 46
+Note   8181   8448 75
+Note   8181   8448 67
+Note   8181   8448 58
+Note   8181   8448 51
+Note   8590   8994 39
+Note   8659   8994 46
+Note   8727   8994 75
+Note   8727   8994 63
+Note   8727   8994 67
+Note   8727   8994 70
+Note   8727   8994 55
+Note   9272   9539 63
+Note   9272   9539 58
+Note   9272   9539 55
+Note   9272   9727 51
+Note   9272   9727 39
+Note   9545   9812 65
+Note   9545   9812 58
+Note   9545   9812 53
+Note   9818  10085 67
+Note   9818  10085 58
+Note   9818  10085 55
+Note   9818  10272 46
+Note   9818  10272 34
+Note  10090  10357 68
+Note  10090  10357 56
+Note  10363  10630 58
+Note  10363  11318 70
+Note  10363  10818 53
+Note  10363  10818 41
+Note  10636  10903 68
+Note  10636  10903 62
+Note  10636  10903 60
+Note  10909  11176 67
+Note  10909  11176 62
+Note  10909  11176 58
+Note  10909  11363 46
+Note  10909  11363 34
+Note  11181  11448 56
+Note  11181  11448 62
+Note  11181  11448 65
+Note  11454  11721 63
+Note  11454  11721 58
+Note  11454  11721 55
+Note  11454  11909 51
+Note  11454  11909 39
+Note  11727  11994 65
+Note  11727  11994 58
+Note  11727  11994 53
+Note  12000  12267 67
+Note  12000  12267 58
+Note  12000  12267 55
+Note  12000  12454 46
+Note  12000  12454 34
+Note  12272  12539 68
+Note  12272  12539 56
+Note  12545  12812 58
+Note  12545  13500 70
+Note  12545  13000 53
+Note  12545  13000 41
+Note  12818  13085 68
+Note  12818  13085 62
+Note  12818  13085 60
+Note  13090  13357 67
+Note  13090  13357 62
+Note  13090  13357 58
+Note  13090  13545 46
+Note  13090  13545 34
+Note  13363  13630 56
+Note  13363  13630 62
+Note  13363  13630 65
+Note  13636  13903 63
+Note  13636  13903 63
+Note  13636  13903 58
+Note  13636  13903 55
+Note  13636  14090 51
+Note  13636  14090 39
+Note  13909  14176 65
+Note  13909  14176 65
+Note  13909  14176 58
+Note  13909  14176 53
+Note  14181  14448 67
+Note  14181  14448 67
+Note  14181  14448 55
+Note  14181  14448 58
+Note  14181  14448 63
+Note  14181  14636 46
+Note  14181  14636 34
+Note  14454  14721 70
+Note  14454  14721 70
+Note  14454  14721 58
+Note  14454  14721 63
+Note  14454  14721 67
+Note  14727  14994 75
+Note  14727  14994 75
+Note  14727  14994 63
+Note  14727  14994 67
+Note  14727  14994 70
+Note  14727  15181 51
+Note  14727  15181 39
+Note  15000  15267 72
+Note  15000  15267 72
+Note  15000  15267 60
+Note  15000  15267 63
+Note  15000  15267 67
+Note  15272  15539 74
+Note  15272  15539 74
+Note  15272  15539 62
+Note  15272  15539 67
+Note  15272  15539 70
+Note  15272  15727 46
+Note  15272  15727 34
+Note  15545  15812 70
+Note  15545  15812 70
+Note  15545  15812 58
+Note  15545  15812 63
+Note  15545  15812 67
+Note  15818  16085 72
+Note  15818  16085 72
+Note  15818  16085 60
+Note  15818  16085 63
+Note  15818  16085 67
+Note  15818  16272 51
+Note  15818  16272 39
+Note  16090  16357 67
+Note  16090  16357 67
+Note  16090  16357 63
+Note  16090  16357 58
+Note  16363  16630 67
+Note  16363  16630 67
+Note  16363  16630 63
+Note  16363  16630 58
+Note  16363  16818 46
+Note  16363  16818 34
+Note  16636  16903 66
+Note  16636  16903 66
+Note  16636  16903 63
+Note  16636  16903 57
+Note  16909  17636 67
+Note  16909  17636 67
+Note  16909  17636 63
+Note  16909  17636 58
+Note  16909  17176 51
+Note  16909  17176 39
+Note  17181  17448 46
+Note  17181  17448 34
+Note  17454  17721 48
+Note  17454  17721 36
+Note  17727  17994 65
+Note  17727  17994 65
+Note  17727  17994 58
+Note  17727  17994 56
+Note  17727  17994 50
+Note  17727  17994 38
+Note  18000  18267 63
+Note  18000  18267 63
+Note  18000  18267 58
+Note  18000  18267 55
+Note  18000  18454 51
+Note  18000  18454 39
+Note  18272  18539 65
+Note  18272  18539 65
+Note  18272  18539 58
+Note  18272  18539 53
+Note  18545  18812 67
+Note  18545  18812 67
+Note  18545  18812 58
+Note  18545  18812 55
+Note  18545  19000 46
+Note  18545  19000 34
+Note  18818  19085 70
+Note  18818  19085 70
+Note  18818  19085 58
+Note  18818  19085 63
+Note  18818  19085 67
+Note  19090  19357 75
+Note  19090  19357 75
+Note  19090  19357 63
+Note  19090  19357 67
+Note  19090  19357 70
+Note  19090  19545 51
+Note  19090  19545 39
+Note  19363  19630 72
+Note  19363  19630 72
+Note  19363  19630 60
+Note  19363  19630 63
+Note  19363  19630 67
+Note  19636  19903 74
+Note  19636  19903 74
+Note  19636  19903 62
+Note  19636  19903 67
+Note  19636  19903 70
+Note  19636  20090 55
+Note  19636  20090 43
+Note  19909  20176 70
+Note  19909  20176 70
+Note  19909  20176 67
+Note  19909  20176 62
+Note  20181  20448 72
+Note  20181  20448 72
+Note  20181  20448 69
+Note  20181  20448 63
+Note  20181  20448 53
+Note  20181  20448 41
+Note  20454  20721 74
+Note  20454  20721 74
+Note  20454  20721 69
+Note  20454  20721 63
+Note  20454  20721 57
+Note  20454  20721 53
+Note  20727  20994 72
+Note  20727  20994 72
+Note  20727  20994 69
+Note  20727  20994 63
+Note  20727  20994 53
+Note  20727  20994 41
+Note  21000  21267 65
+Note  21000  21267 65
+Note  21000  21267 63
+Note  21000  21267 57
+Note  21000  21267 53
+Note  21272  22227 70
+Note  21272  22227 70
+Note  21272  22227 68
+Note  21272  22227 62
+Note  21272  21539 58
+Note  21272  21539 46
+Note  21545  21812 56
+Note  21545  21812 44
+Note  21818  22085 55
+Note  21818  22085 43
+Note  22090  22357 53
+Note  22090  22357 41
+Note  22363  22630 63
+Note  22363  22630 63
+Note  22363  22630 58
+Note  22363  22630 55
+Note  22363  22818 51
+Note  22363  22818 39
+Note  22636  22903 65
+Note  22636  22903 65
+Note  22636  22903 58
+Note  22636  22903 53
+Note  22909  23176 67
+Note  22909  23176 67
+Note  22909  23176 55
+Note  22909  23176 58
+Note  22909  23176 63
+Note  22909  23363 46
+Note  22909  23363 34
+Note  23181  23448 70
+Note  23181  23448 70
+Note  23181  23448 58
+Note  23181  23448 63
+Note  23181  23448 67
+Note  23454  23721 75
+Note  23454  23721 75
+Note  23454  23721 63
+Note  23454  23721 67
+Note  23454  23721 70
+Note  23454  23909 51
+Note  23454  23909 39
+Note  23727  23994 72
+Note  23727  23994 72
+Note  23727  23994 60
+Note  23727  23994 63
+Note  23727  23994 67
+Note  24000  24267 74
+Note  24000  24267 74
+Note  24000  24267 62
+Note  24000  24267 67
+Note  24000  24267 70
+Note  24000  24454 46
+Note  24000  24454 34
+Note  24272  24539 70
+Note  24272  24539 70
+Note  24272  24539 58
+Note  24272  24539 63
+Note  24272  24539 67
+Note  24545  24812 72
+Note  24545  24812 72
+Note  24545  24812 60
+Note  24545  24812 63
+Note  24545  24812 67
+Note  24545  25000 51
+Note  24545  25000 39
+Note  24818  25085 67
+Note  24818  25085 67
+Note  24818  25085 63
+Note  24818  25085 58
+Note  25090  25357 67
+Note  25090  25357 67
+Note  25090  25357 63
+Note  25090  25357 58
+Note  25090  25545 46
+Note  25090  25545 34
+Note  25363  25630 66
+Note  25363  25630 66
+Note  25363  25630 63
+Note  25363  25630 57
+Note  25636  26363 67
+Note  25636  26363 67
+Note  25636  26090 51
+Note  25636  26090 39
+Note  25909  26039 63
+Note  25909  26039 58
+Note  26045  26176 63
+Note  26045  26176 58
+Note  26181  26448 63
+Note  26181  26448 58
+Note  26181  26636 46
+Note  26181  26636 34
+Note  26454  26721 66
+Note  26454  26721 66
+Note  26454  26721 63
+Note  26454  26721 58
+Note  26727  26994 65
+Note  26727  26994 65
+Note  26727  26994 63
+Note  26727  26994 57
+Note  26727  26994 48
+Note  26727  26994 36
+Note  27000  27130 65
+Note  27000  27130 65
+Note  27000  27267 53
+Note  27136  27403 65
+Note  27136  27403 65
+Note  27136  27403 63
+Note  27136  27403 57
+Note  27272  27539 41
+Note  27409  27539 67
+Note  27409  27539 67
+Note  27545  27812 69
+Note  27545  27812 69
+Note  27545  27812 63
+Note  27545  27812 57
+Note  27545  27812 53
+Note  27818  28085 70
+Note  27818  28085 70
+Note  27818  28085 65
+Note  27818  28085 62
+Note  27818  28085 46
+Note  28090  28221 70
+Note  28090  28221 70
+Note  28090  28357 53
+Note  28227  28494 70
+Note  28227  28494 70
+Note  28227  28494 65
+Note  28227  28494 62
+Note  28363  28630 41
+Note  28500  28630 72
+Note  28500  28630 72
+Note  28636  28903 74
+Note  28636  28903 74
+Note  28636  28903 65
+Note  28636  28903 62
+Note  28636  28903 53
+Note  28909  29176 75
+Note  28909  29176 75
+Note  28909  29176 69
+Note  28909  29176 67
+Note  28909  29176 48
+Note  29181  29448 75
+Note  29181  29448 75
+Note  29181  29448 69
+Note  29181  29448 67
+Note  29181  29448 53
+Note  29454  29721 74
+Note  29454  29721 74
+Note  29454  29721 69
+Note  29454  29721 65
+Note  29454  29721 41
+Note  29727  29994 72
+Note  29727  29994 72
+Note  29727  29994 69
+Note  29727  29994 63
+Note  29727  29994 53
+Note  30000  30727 70
+Note  30000  30545 70
+Note  30000  30545 62
+Note  30000  30403 58
+Note  30000  30403 46
+Note  30409  30812 46
+Note  30477  30812 53
+Note  30545  30812 82
+Note  30545  30812 70
+Note  30545  30812 74
+Note  30545  30812 77
+Note  30545  30812 62
+Note  30818  31085 72
+Note  30818  31085 72
+Note  31090  31357 74
+Note  31090  31357 74
+Note  31090  31545 68
+Note  31090  31545 65
+Note  31090  33136 58
+Note  31363  31630 75
+Note  31363  31630 75
+Note  31636  31903 72
+Note  31636  31903 72
+Note  31636  32090 67
+Note  31636  32090 63
+Note  31909  32176 74
+Note  31909  32176 74
+Note  32181  32448 70
+Note  32181  32448 70
+Note  32181  32636 65
+Note  32181  32636 62
+Note  32454  32721 72
+Note  32454  32721 72
+Note  32727  32994 68
+Note  32727  32994 68
+Note  32727  33181 63
+Note  32727  33181 60
+Note  33000  33267 65
+Note  33000  33267 65
+Note  33272  34630 70
+Note  33272  33727 62
+Note  33272  34630 70
+Note  33272  33727 56
+Note  33272  34630 46
+Note  33818  34272 64
+Note  33818  34272 61
+Note  33818  34272 55
+Note  34363  34630 65
+Note  34363  34630 62
+Note  34363  34630 56
+Note  34909  35176 63
+Note  34909  35176 63
+Note  35181  35448 65
+Note  35181  35448 65
+Note  35454  35721 67
+Note  35454  35721 67
+Note  35454  35721 63
+Note  35454  35721 58
+Note  35454  35909 51
+Note  35454  35909 39
+Note  35727  35994 70
+Note  35727  35994 70
+Note  35727  35994 58
+Note  35727  35994 63
+Note  35727  35994 67
+Note  36000  36267 67
+Note  36000  36267 67
+Note  36000  36267 63
+Note  36000  36267 58
+Note  36000  36454 46
+Note  36000  36454 34
+Note  36272  36812 70
+Note  36272  36812 70
+Note  36272  36812 58
+Note  36272  36812 63
+Note  36272  36812 67
+Note  36545  37000 51
+Note  36545  37000 39
+Note  36818  37085 72
+Note  36818  37085 72
+Note  36818  37085 60
+Note  36818  37085 63
+Note  36818  37085 67
+Note  37090  37357 75
+Note  37090  37357 75
+Note  37090  37357 69
+Note  37090  37357 63
+Note  37090  37545 54
+Note  37090  37545 42
+Note  37363  37630 72
+Note  37363  37630 72
+Note  37363  37630 69
+Note  37363  37630 63
+Note  37636  38090 74
+Note  37636  38090 74
+Note  37636  38090 62
+Note  37636  38090 53
+Note  37636  38090 41
+Note  37909  38176 68
+Note  37909  38176 70
+Note  38181  39181 70
+Note  38181  39181 70
+Note  38181  38636 46
+Note  38181  38636 34
+Note  38454  38721 68
+Note  38454  38721 62
+Note  38727  39181 53
+Note  38727  39181 41
+Note  39000  39267 68
+Note  39000  39267 62
+Note  39272  39539 75
+Note  39272  39539 75
+Note  39272  39539 68
+Note  39272  39539 63
+Note  39272  39727 46
+Note  39272  39727 34
+Note  39545  39812 72
+Note  39545  39812 72
+Note  39545  39812 68
+Note  39545  39812 63
+Note  39818  40085 74
+Note  39818  40085 74
+Note  39818  40085 68
+Note  39818  40085 62
+Note  39818  40085 53
+Note  39818  40085 41
+Note  40090  40357 70
+Note  40090  40357 70
+Note  40090  40357 68
+Note  40090  40357 62
+Note  40090  40357 58
+Note  40090  40357 56
+Note  40363  40630 72
+Note  40363  40630 72
+Note  40363  40630 68
+Note  40363  40630 62
+Note  40363  40630 46
+Note  40636  40903 68
+Note  40636  40903 68
+Note  40636  40903 62
+Note  40636  40903 58
+Note  40636  40903 56
+Note  40909  41176 70
+Note  40909  41176 70
+Note  40909  41176 67
+Note  40909  41176 50
+Note  41181  41448 67
+Note  41181  41448 67
+Note  41181  41448 62
+Note  41181  41448 58
+Note  41181  41448 56
+Note  41454  41721 68
+Note  41454  41721 68
+Note  41454  41721 65
+Note  41454  41721 46
+Note  41727  41994 65
+Note  41727  41994 65
+Note  41727  41994 62
+Note  41727  41994 58
+Note  41727  41994 56
+Note  42000  42454 67
+Note  42000  42454 67
+Note  42000  42454 51
+Note  42000  42454 39
+Note  42272  42539 63
+Note  42272  42539 58
+Note  42545  43545 70
+Note  42545  42818 63
+Note  42545  43545 70
+Note  42545  43545 67
+Note  42545  43000 46
+Note  42545  43000 34
+Note  42818  43090 62
+Note  43090  43545 61
+Note  43090  43357 51
+Note  43090  43357 39
+Note  43363  43630 55
+Note  43363  43630 51
+Note  43636  44090 67
+Note  43636  44090 67
+Note  43636  44090 61
+Note  43636  43903 51
+Note  43636  43903 39
+Note  43909  44176 55
+Note  43909  44176 51
+Note  44181  44448 68
+Note  44181  44448 68
+Note  44181  44448 63
+Note  44181  44448 60
+Note  44181  44636 56
+Note  44181  44636 44
+Note  44454  44721 70
+Note  44454  44721 70
+Note  44454  44721 63
+Note  44454  44721 58
+Note  44727  44994 72
+Note  44727  44994 72
+Note  44727  44994 60
+Note  44727  44994 63
+Note  44727  44994 68
+Note  44727  45181 51
+Note  44727  45181 39
+Note  45000  45727 75
+Note  45000  45539 72
+Note  45000  45539 68
+Note  45000  45812 75
+Note  45000  45812 63
+Note  45272  45727 56
+Note  45272  45727 44
+Note  45545  45812 72
+Note  45545  45812 68
+Note  45818  46272 72
+Note  45818  46272 72
+Note  45818  46272 60
+Note  45818  46272 51
+Note  45818  46272 39
+Note  46090  46357 63
+Note  46090  46357 68
+Note  46363  46630 70
+Note  46363  46630 70
+Note  46363  46630 67
+Note  46363  46630 58
+Note  46363  46818 51
+Note  46363  46818 39
+Note  46636  47090 75
+Note  46636  47090 75
+Note  46636  47090 63
+Note  46636  47090 67
+Note  46636  47090 70
+Note  46909  47363 46
+Note  46909  47363 34
+Note  47181  48181 67
+Note  47181  47721 63
+Note  47181  47721 58
+Note  47181  48267 67
+Note  47181  48267 55
+Note  47454  47909 51
+Note  47454  47909 39
+Note  47727  47857 63
+Note  47727  47857 58
+Note  47863  47994 63
+Note  47863  47994 58
+Note  48000  48267 63
+Note  48000  48267 58
+Note  48000  48454 46
+Note  48000  48454 34
+Note  48272  48539 70
+Note  48272  48539 70
+Note  48272  48539 58
+Note  48272  48539 63
+Note  48272  48539 67
+Note  48545  48812 75
+Note  48545  48812 75
+Note  48545  48812 63
+Note  48545  48812 67
+Note  48545  48812 72
+Note  48545  49000 48
+Note  48545  49000 36
+Note  48818  49085 74
+Note  48818  49085 74
+Note  48818  49085 62
+Note  49090  49357 75
+Note  49090  49357 75
+Note  49090  49357 63
+Note  49090  49357 67
+Note  49090  49357 72
+Note  49090  49545 55
+Note  49090  49545 43
+Note  49363  49630 74
+Note  49363  49630 74
+Note  49363  49630 62
+Note  49636  49903 72
+Note  49636  49903 72
+Note  49636  49903 70
+Note  49636  49903 60
+Note  49636  50090 54
+Note  49636  50090 42
+Note  49909  50176 74
+Note  49909  50176 74
+Note  49909  50176 70
+Note  49909  50176 62
+Note  50181  50448 75
+Note  50181  50448 75
+Note  50181  50448 70
+Note  50181  50448 63
+Note  50181  50636 54
+Note  50181  50636 42
+Note  50454  50721 72
+Note  50454  50721 72
+Note  50454  50721 70
+Note  50454  50721 63
+Note  50727  50994 74
+Note  50727  50994 74
+Note  50727  50994 69
+Note  50727  50994 65
+Note  50727  50994 53
+Note  50727  50994 41
+Note  51000  51454 72
+Note  51000  51454 72
+Note  51000  51454 69
+Note  51000  51454 63
+Note  51000  51454 53
+Note  51000  51454 41
+Note  51545  52272 70
+Note  51545  52272 70
+Note  51545  52272 68
+Note  51545  52272 62
+Note  51545  52085 58
+Note  51545  52085 46
+Note  52090  52358 56
+Note  52090  52358 44
+Note  52363  52630 63
+Note  52363  52636 63
+Note  52363  52636 60
+Note  52363  52630 55
+Note  52363  52630 43
+Note  52636  52903 65
+Note  52636  52903 65
+Note  52636  52903 62
+Note  52636  52903 53
+Note  52636  52903 41
+Note  52909  53176 67
+Note  52909  53176 67
+Note  52909  53176 63
+Note  52909  53176 58
+Note  52909  53363 51
+Note  52909  53363 39
+Note  53181  53448 70
+Note  53181  53448 70
+Note  53181  53448 58
+Note  53181  53448 63
+Note  53181  53448 67
+Note  53454  53721 67
+Note  53454  53721 67
+Note  53454  53721 63
+Note  53454  53721 58
+Note  53454  53909 46
+Note  53454  53909 34
+Note  53727  54267 70
+Note  53727  54267 70
+Note  53727  54267 58
+Note  53727  54267 63
+Note  53727  54267 67
+Note  54000  54454 51
+Note  54000  54454 39
+Note  54272  54539 72
+Note  54272  54539 72
+Note  54272  54539 60
+Note  54272  54539 63
+Note  54272  54539 67
+Note  54545  54812 75
+Note  54545  54812 75
+Note  54545  54812 69
+Note  54545  54812 63
+Note  54545  55000 54
+Note  54545  55000 42
+Note  54818  55085 72
+Note  54818  55085 72
+Note  54818  55085 69
+Note  54818  55085 63
+Note  55090  55545 74
+Note  55090  55545 74
+Note  55090  55545 62
+Note  55090  55545 53
+Note  55090  55545 41
+Note  55363  55630 68
+Note  55363  55630 70
+Note  55636  56448 70
+Note  55636  56448 70
+Note  55636  56090 46
+Note  55636  56090 34
+Note  55909  56176 68
+Note  55909  56176 62
+Note  56181  56636 53
+Note  56181  56636 41
+Note  56454  56721 70
+Note  56454  56721 70
+Note  56454  56721 68
+Note  56454  56721 62
+Note  56727  56994 72
+Note  56727  56994 72
+Note  56727  56994 68
+Note  56727  56994 63
+Note  56727  57181 46
+Note  56727  57181 34
+Note  57000  57267 73
+Note  57000  57267 73
+Note  57000  57267 67
+Note  57000  57267 64
+Note  57272  57727 74
+Note  57272  57727 74
+Note  57272  57727 68
+Note  57272  57727 65
+Note  57272  57539 53
+Note  57272  57539 41
+Note  57545  57812 58
+Note  57545  57812 56
+Note  57818  58272 72
+Note  57818  58272 72
+Note  57818  58272 68
+Note  57818  58272 63
+Note  57818  58085 46
+Note  58090  58358 58
+Note  58090  58358 56
+Note  58363  58818 70
+Note  58363  58818 70
+Note  58363  58818 65
+Note  58363  58818 62
+Note  58363  58630 46
+Note  58636  58903 58
+Note  58636  58903 56
+Note  58909  59363 68
+Note  58909  59181 62
+Note  58909  59363 68
+Note  58909  59363 53
+Note  58909  59363 41
+Note  59181  59448 60
+Note  59454  60812 67
+Note  59454  59721 59
+Note  59454  60812 67
+Note  59454  59721 55
+Note  59454  60812 43
+Note  59727  59994 59
+Note  59727  59994 50
+Note  60000  60267 60
+Note  60000  60267 51
+Note  60272  60539 61
+Note  60272  60539 52
+Note  60545  60812 62
+Note  60545  60812 53
+Note  60818  61358 43
+Note  60886  61358 67
+Note  60886  61358 50
+Note  60954  61358 71
+Note  61022  61358 74
+Note  61090  61358 79
+Note  61090  61358 59
+Note  61636  62090 72
+Note  61636  62090 72
+Note  61636  62090 67
+Note  61636  62090 63
+Note  61636  61903 36
+Note  61909  62176 48
+Note  62181  62636 72
+Note  62181  62636 72
+Note  62181  62636 67
+Note  62181  62636 63
+Note  62181  62448 36
+Note  62454  62721 48
+Note  62727  63181 74
+Note  62727  63181 74
+Note  62727  63181 67
+Note  62727  63181 63
+Note  62727  62994 36
+Note  63000  63267 48
+Note  63272  63727 74
+Note  63272  63727 74
+Note  63272  63727 67
+Note  63272  63727 63
+Note  63272  63539 36
+Note  63545  63812 48
+Note  63818  64085 72
+Note  63818  64085 72
+Note  63818  64085 67
+Note  63818  64085 63
+Note  63818  64085 36
+Note  64090  64358 74
+Note  64090  64358 74
+Note  64090  64358 67
+Note  64090  64358 63
+Note  64090  64358 48
+Note  64363  64630 72
+Note  64363  64630 72
+Note  64363  64630 67
+Note  64363  64630 63
+Note  64363  64630 36
+Note  64636  64903 70
+Note  64636  64903 70
+Note  64636  64903 67
+Note  64636  64903 63
+Note  64636  64903 48
+Note  64909  65863 67
+Note  64909  65863 67
+Note  64909  65863 65
+Note  64909  65863 59
+Note  64909  65176 55
+Note  64909  65176 43
+Note  65181  65448 53
+Note  65181  65448 41
+Note  65454  65721 51
+Note  65454  65721 39
+Note  65727  65994 50
+Note  65727  65994 38
+Note  66000  66454 72
+Note  66000  66454 72
+Note  66000  66454 67
+Note  66000  66454 63
+Note  66000  66267 36
+Note  66272  66539 48
+Note  66545  67000 72
+Note  66545  67000 72
+Note  66545  67000 67
+Note  66545  67000 63
+Note  66545  66812 36
+Note  66818  67085 48
+Note  67090  67545 74
+Note  67090  67545 74
+Note  67090  67545 67
+Note  67090  67545 63
+Note  67090  67358 36
+Note  67363  67630 48
+Note  67636  68090 74
+Note  67636  68090 74
+Note  67636  68090 67
+Note  67636  68090 63
+Note  67636  67903 36
+Note  67909  68176 48
+Note  68181  68448 72
+Note  68181  68448 72
+Note  68181  68448 67
+Note  68181  68448 63
+Note  68181  68448 36
+Note  68454  68721 74
+Note  68454  68721 74
+Note  68454  68721 67
+Note  68454  68721 63
+Note  68454  68721 48
+Note  68727  68994 72
+Note  68727  68994 72
+Note  68727  68994 67
+Note  68727  68994 63
+Note  68727  68994 36
+Note  69000  69267 70
+Note  69000  69267 70
+Note  69000  69267 67
+Note  69000  69267 63
+Note  69000  69267 48
+Note  69272  69727 67
+Note  69272  69727 67
+Note  69272  69727 63
+Note  69272  69727 60
+Note  69272  69727 48
+Note  69272  69727 36
+Note  69818  70085 63
+Note  69818  70085 63
+Note  69818  70272 57
+Note  69818  70272 47
+Note  69818  70272 35
+Note  70090  70358 65
+Note  70090  70358 65
+Note  70363  70630 67
+Note  70363  70630 67
+Note  70363  70630 63
+Note  70363  70630 58
+Note  70363  70818 46
+Note  70363  70818 34
+Note  70636  70903 70
+Note  70636  70903 70
+Note  70636  70903 58
+Note  70636  70903 63
+Note  70636  70903 67
+Note  70909  71176 67
+Note  70909  71176 67
+Note  70909  71176 63
+Note  70909  71176 58
+Note  70909  71363 46
+Note  70909  71363 34
+Note  71181  71721 70
+Note  71181  71721 70
+Note  71181  71721 58
+Note  71181  71721 63
+Note  71181  71721 67
+Note  71454  71909 51
+Note  71454  71909 39
+Note  71727  71994 72
+Note  71727  71994 72
+Note  71727  71994 60
+Note  71727  71994 63
+Note  71727  71994 67
+Note  72000  72267 75
+Note  72000  72267 75
+Note  72000  72267 69
+Note  72000  72267 63
+Note  72000  72454 54
+Note  72000  72454 42
+Note  72272  72539 72
+Note  72272  72539 72
+Note  72272  72539 69
+Note  72272  72539 63
+Note  72545  73000 74
+Note  72545  73000 74
+Note  72545  73000 62
+Note  72545  73000 53
+Note  72545  73000 41
+Note  72818  73085 68
+Note  72818  73085 70
+Note  73090  73903 70
+Note  73090  73903 70
+Note  73090  73545 46
+Note  73090  73545 34
+Note  73363  73630 68
+Note  73363  73630 62
+Note  73636  74090 53
+Note  73636  74090 41
+Note  73909  74176 69
+Note  73909  74176 69
+Note  73909  74176 62
+Note  74181  74448 70
+Note  74181  74448 70
+Note  74181  74448 68
+Note  74181  74448 62
+Note  74181  74585 46
+Note  74181  74585 34
+Note  74454  74721 71
+Note  74454  74721 71
+Note  74454  74721 69
+Note  74454  74721 62
+Note  74590  74994 41
+Note  74659  74994 48
+Note  74727  74994 72
+Note  74727  74994 72
+Note  74727  74994 69
+Note  74727  74994 63
+Note  74727  74994 57
+Note  75272  75539 75
+Note  75272  75545 75
+Note  75272  75545 69
+Note  75272  75545 63
+Note  75545  75812 72
+Note  75545  75812 72
+Note  75545  75812 69
+Note  75545  75812 63
+Note  75818  76085 74
+Note  75818  76085 74
+Note  75818  76085 62
+Note  75818  76085 68
+Note  75818  76085 70
+Note  75818  76085 56
+Note  75818  76085 46
+Note  76363  76630 75
+Note  76363  76636 75
+Note  76363  76636 68
+Note  76363  76636 63
+Note  76363  76767 46
+Note  76363  76767 34
+Note  76636  76903 77
+Note  76636  76903 77
+Note  76636  76903 65
+Note  76772  77176 39
+Note  76840  77176 46
+Note  76909  77863 75
+Note  76909  77727 67
+Note  76909  77863 63
+Note  76909  77863 75
+Note  76909  77176 55
+Note  77181  77318 70
+Note  77318  77448 72
+Note  77454  77721 70
+Note  77454  77721 61
+Note  77454  77721 52
+Note  77454  77721 40
+Note  77727  77863 67
+Note  77727  77994 61
+Note  77727  77994 52
+Note  77727  77994 40
+Note  78000  78454 70
+Note  78000  78454 68
+Note  78000  78454 62
+Note  78000  78454 53
+Note  78000  78454 41
+Note  78545  79000 46
+Note  78545  79000 34
+Note  79090  79358 63
+Note  79090  79358 58
+Note  79090  79358 55
+Note  79090  79545 51
+Note  79090  79545 39
+Note  79363  79630 65
+Note  79363  79630 58
+Note  79363  79630 53
+Note  79636  79903 67
+Note  79636  79903 58
+Note  79636  79903 55
+Note  79636  80090 46
+Note  79636  80090 34
+Note  79909  80176 68
+Note  79909  80176 56
+Note  80181  80448 58
+Note  80181  81136 70
+Note  80181  80636 53
+Note  80181  80636 41
+Note  80454  80721 68
+Note  80454  80721 62
+Note  80454  80721 60
+Note  80727  80994 67
+Note  80727  80994 62
+Note  80727  80994 58
+Note  80727  81181 46
+Note  80727  81181 34
+Note  81000  81267 56
+Note  81000  81267 62
+Note  81000  81267 65
+Note  81272  81539 63
+Note  81272  81539 58
+Note  81272  81539 55
+Note  81272  81727 51
+Note  81272  81727 39
+Note  81545  81812 65
+Note  81545  81812 58
+Note  81545  81812 53
+Note  81818  82085 67
+Note  81818  82085 58
+Note  81818  82085 55
+Note  81818  82272 46
+Note  81818  82272 34
+Note  82090  82358 68
+Note  82090  82358 56
+Note  82363  82630 58
+Note  82363  83318 70
+Note  82363  82818 53
+Note  82363  82818 41
+Note  82636  82903 68
+Note  82636  82903 62
+Note  82636  82903 60
+Note  82909  83176 67
+Note  82909  83176 62
+Note  82909  83176 58
+Note  82909  83363 46
+Note  82909  83363 34
+Note  83181  83448 56
+Note  83181  83448 62
+Note  83181  83448 65
+Note  83454  83721 63
+Note  83454  83721 63
+Note  83454  83721 58
+Note  83454  83721 55
+Note  83454  83909 51
+Note  83454  83909 39
+Note  83727  83994 65
+Note  83727  83994 65
+Note  83727  83994 58
+Note  83727  83994 53
+Note  84000  84267 67
+Note  84000  84267 67
+Note  84000  84267 55
+Note  84000  84267 58
+Note  84000  84267 63
+Note  84000  84454 46
+Note  84000  84454 34
+Note  84272  84539 70
+Note  84272  84539 70
+Note  84272  84539 58
+Note  84272  84539 63
+Note  84272  84539 67
+Note  84545  84812 75
+Note  84545  84812 75
+Note  84545  84812 63
+Note  84545  84812 67
+Note  84545  84812 70
+Note  84545  85000 51
+Note  84545  85000 39
+Note  84818  85085 72
+Note  84818  85085 72
+Note  84818  85085 60
+Note  84818  85085 63
+Note  84818  85085 67
+Note  85090  85358 74
+Note  85090  85358 74
+Note  85090  85358 62
+Note  85090  85358 67
+Note  85090  85358 70
+Note  85090  85545 46
+Note  85090  85545 34
+Note  85363  85630 70
+Note  85363  85630 70
+Note  85363  85630 58
+Note  85363  85630 63
+Note  85363  85630 67
+Note  85636  85903 72
+Note  85636  85903 72
+Note  85636  85903 60
+Note  85636  85903 63
+Note  85636  85903 67
+Note  85636  86090 51
+Note  85636  86090 39
+Note  85909  86176 67
+Note  85909  86176 67
+Note  85909  86176 63
+Note  85909  86176 58
+Note  86181  86448 67
+Note  86181  86448 67
+Note  86181  86448 63
+Note  86181  86448 58
+Note  86181  86636 46
+Note  86181  86636 34
+Note  86454  86721 66
+Note  86454  86721 66
+Note  86454  86721 63
+Note  86454  86721 57
+Note  86727  87454 67
+Note  86727  87454 67
+Note  86727  87454 63
+Note  86727  87454 58
+Note  86727  86994 51
+Note  86727  86994 39
+Note  87000  87267 46
+Note  87000  87267 34
+Note  87272  87539 48
+Note  87272  87539 36
+Note  87545  87812 65
+Note  87545  87812 65
+Note  87545  87812 58
+Note  87545  87812 56
+Note  87545  87812 50
+Note  87545  87812 38
+Note  87818  88085 63
+Note  87818  88085 63
+Note  87818  88085 58
+Note  87818  88085 55
+Note  87818  88272 51
+Note  87818  88272 39
+Note  88090  88358 65
+Note  88090  88358 65
+Note  88090  88358 58
+Note  88090  88358 53
+Note  88363  88630 67
+Note  88363  88630 67
+Note  88363  88630 58
+Note  88363  88630 55
+Note  88363  88818 46
+Note  88363  88818 34
+Note  88636  88903 70
+Note  88636  88903 70
+Note  88636  88903 58
+Note  88636  88903 63
+Note  88636  88903 67
+Note  88909  89176 75
+Note  88909  89176 75
+Note  88909  89176 63
+Note  88909  89176 67
+Note  88909  89176 70
+Note  88909  89363 51
+Note  88909  89363 39
+Note  89181  89448 72
+Note  89181  89448 72
+Note  89181  89448 60
+Note  89181  89448 63
+Note  89181  89448 67
+Note  89454  89721 74
+Note  89454  89721 74
+Note  89454  89721 62
+Note  89454  89721 67
+Note  89454  89721 70
+Note  89454  89909 55
+Note  89454  89909 43
+Note  89727  89994 70
+Note  89727  89994 70
+Note  89727  89994 67
+Note  89727  89994 62
+Note  90000  90267 72
+Note  90000  90267 72
+Note  90000  90267 69
+Note  90000  90267 63
+Note  90000  90267 53
+Note  90000  90267 41
+Note  90272  90539 74
+Note  90272  90539 74
+Note  90272  90539 69
+Note  90272  90539 63
+Note  90272  90539 57
+Note  90272  90539 53
+Note  90545  90812 72
+Note  90545  90812 72
+Note  90545  90812 69
+Note  90545  90812 63
+Note  90545  90812 53
+Note  90545  90812 41
+Note  90818  91085 65
+Note  90818  91085 65
+Note  90818  91085 63
+Note  90818  91085 57
+Note  90818  91085 53
+Note  91090  92045 70
+Note  91090  92045 70
+Note  91090  92045 68
+Note  91090  92045 62
+Note  91090  91358 58
+Note  91090  91358 46
+Note  91363  91630 56
+Note  91363  91630 44
+Note  91636  91903 55
+Note  91636  91903 43
+Note  91909  92176 53
+Note  91909  92176 41
+Note  92181  92448 63
+Note  92181  92448 63
+Note  92181  92448 58
+Note  92181  92448 55
+Note  92181  92636 51
+Note  92181  92636 39
+Note  92454  92721 65
+Note  92454  92721 65
+Note  92454  92721 58
+Note  92454  92721 53
+Note  92727  92994 67
+Note  92727  92994 67
+Note  92727  92994 55
+Note  92727  92994 58
+Note  92727  92994 63
+Note  92727  93181 46
+Note  92727  93181 34
+Note  93000  93267 70
+Note  93000  93267 70
+Note  93000  93267 58
+Note  93000  93267 63
+Note  93000  93267 67
+Note  93272  93539 75
+Note  93272  93539 75
+Note  93272  93539 63
+Note  93272  93539 67
+Note  93272  93539 70
+Note  93272  93727 51
+Note  93272  93727 39
+Note  93545  93812 72
+Note  93545  93812 72
+Note  93545  93812 60
+Note  93545  93812 63
+Note  93545  93812 67
+Note  93818  94085 74
+Note  93818  94085 74
+Note  93818  94085 62
+Note  93818  94085 67
+Note  93818  94085 70
+Note  93818  94272 46
+Note  93818  94272 34
+Note  94090  94358 70
+Note  94090  94358 70
+Note  94090  94358 58
+Note  94090  94358 63
+Note  94090  94358 67
+Note  94363  94630 72
+Note  94363  94630 72
+Note  94363  94630 60
+Note  94363  94630 63
+Note  94363  94630 67
+Note  94363  94818 51
+Note  94363  94818 39
+Note  94636  94903 67
+Note  94636  94903 67
+Note  94636  94903 63
+Note  94636  94903 58
+Note  94909  95176 67
+Note  94909  95176 67
+Note  94909  95176 63
+Note  94909  95176 58
+Note  94909  95363 46
+Note  94909  95363 34
+Note  95181  95448 66
+Note  95181  95448 66
+Note  95181  95448 63
+Note  95181  95448 57
+Note  95454  96181 67
+Note  95454  96181 67
+Note  95454  95909 51
+Note  95454  95909 39
+Note  95727  95858 63
+Note  95727  95858 58
+Note  95863  95994 63
+Note  95863  95994 58
+Note  96000  96267 63
+Note  96000  96267 58
+Note  96000  96454 46
+Note  96000  96454 34
+Note  96272  96539 66
+Note  96272  96539 66
+Note  96272  96539 63
+Note  96272  96539 58
+Note  96545  96812 65
+Note  96545  96812 65
+Note  96545  96812 63
+Note  96545  96812 57
+Note  96545  96812 48
+Note  96545  96812 36
+Note  96818  96948 65
+Note  96818  96948 65
+Note  96818  97085 53
+Note  96954  97221 65
+Note  96954  97221 65
+Note  96954  97221 63
+Note  96954  97221 57
+Note  97090  97358 41
+Note  97227  97358 67
+Note  97227  97358 67
+Note  97363  97630 69
+Note  97363  97630 69
+Note  97363  97630 63
+Note  97363  97630 57
+Note  97363  97630 53
+Note  97636  97903 70
+Note  97636  97903 70
+Note  97636  97903 65
+Note  97636  97903 62
+Note  97636  97903 46
+Note  97909  98039 70
+Note  97909  98039 70
+Note  97909  98176 53
+Note  98045  98312 70
+Note  98045  98312 70
+Note  98045  98312 65
+Note  98045  98312 62
+Note  98181  98448 41
+Note  98318  98448 72
+Note  98318  98448 72
+Note  98454  98721 74
+Note  98454  98721 74
+Note  98454  98721 65
+Note  98454  98721 62
+Note  98454  98721 53
+Note  98727  98994 75
+Note  98727  98994 75
+Note  98727  98994 69
+Note  98727  98994 67
+Note  98727  98994 48
+Note  99000  99267 75
+Note  99000  99267 75
+Note  99000  99267 69
+Note  99000  99267 67
+Note  99000  99267 53
+Note  99272  99539 74
+Note  99272  99539 74
+Note  99272  99539 69
+Note  99272  99539 65
+Note  99272  99539 41
+Note  99545  99812 72
+Note  99545  99812 72
+Note  99545  99812 69
+Note  99545  99812 63
+Note  99545  99812 53
+Note  99818 100545 70
+Note  99818 100363 70
+Note  99818 100363 62
+Note  99818 100221 58
+Note  99818 100221 46
+Note 100227 100630 46
+Note 100295 100630 53
+Note 100363 100630 82
+Note 100363 100630 70
+Note 100363 100630 74
+Note 100363 100630 77
+Note 100363 100630 62
+Note 100636 100903 72
+Note 100636 100903 72
+Note 100909 101176 74
+Note 100909 101176 74
+Note 100909 101363 68
+Note 100909 101363 65
+Note 100909 102954 58
+Note 101181 101448 75
+Note 101181 101448 75
+Note 101454 101721 72
+Note 101454 101721 72
+Note 101454 101909 67
+Note 101454 101909 63
+Note 101727 101994 74
+Note 101727 101994 74
+Note 102000 102267 70
+Note 102000 102267 70
+Note 102000 102454 65
+Note 102000 102454 62
+Note 102272 102539 72
+Note 102272 102539 72
+Note 102545 102812 68
+Note 102545 102812 68
+Note 102545 103000 63
+Note 102545 103000 60
+Note 102818 103085 65
+Note 102818 103085 65
+Note 103090 104448 70
+Note 103090 103545 62
+Note 103090 104448 70
+Note 103090 103545 56
+Note 103090 104448 46
+Note 103636 104090 64
+Note 103636 104090 61
+Note 103636 104090 55
+Note 104181 104448 65
+Note 104181 104448 62
+Note 104181 104448 56
+Note 104727 104994 63
+Note 104727 104994 63
+Note 105000 105267 65
+Note 105000 105267 65
+Note 105272 105539 67
+Note 105272 105539 67
+Note 105272 105539 63
+Note 105272 105539 58
+Note 105272 105727 51
+Note 105272 105727 39
+Note 105545 105812 70
+Note 105545 105812 70
+Note 105545 105812 58
+Note 105545 105812 63
+Note 105545 105812 67
+Note 105818 106085 67
+Note 105818 106085 67
+Note 105818 106085 63
+Note 105818 106085 58
+Note 105818 106272 46
+Note 105818 106272 34
+Note 106090 106630 70
+Note 106090 106630 70
+Note 106090 106630 58
+Note 106090 106630 63
+Note 106090 106630 67
+Note 106363 106818 51
+Note 106363 106818 39
+Note 106636 106903 72
+Note 106636 106903 72
+Note 106636 106903 60
+Note 106636 106903 63
+Note 106636 106903 67
+Note 106909 107176 75
+Note 106909 107176 75
+Note 106909 107176 69
+Note 106909 107176 63
+Note 106909 107363 54
+Note 106909 107363 42
+Note 107181 107448 72
+Note 107181 107448 72
+Note 107181 107448 69
+Note 107181 107448 63
+Note 107454 107909 74
+Note 107454 107909 74
+Note 107454 107909 62
+Note 107454 107909 53
+Note 107454 107909 41
+Note 107727 107994 68
+Note 107727 107994 70
+Note 108000 109000 70
+Note 108000 109000 70
+Note 108000 108454 46
+Note 108000 108454 34
+Note 108272 108539 68
+Note 108272 108539 62
+Note 108545 109000 53
+Note 108545 109000 41
+Note 108818 109085 68
+Note 108818 109085 62
+Note 109090 109358 75
+Note 109090 109358 75
+Note 109090 109358 68
+Note 109090 109358 63
+Note 109090 109545 46
+Note 109090 109545 34
+Note 109363 109630 72
+Note 109363 109630 72
+Note 109363 109630 68
+Note 109363 109630 63
+Note 109636 109903 74
+Note 109636 109903 74
+Note 109636 109903 68
+Note 109636 109903 62
+Note 109636 109903 53
+Note 109636 109903 41
+Note 109909 110176 70
+Note 109909 110176 70
+Note 109909 110176 68
+Note 109909 110176 62
+Note 109909 110176 58
+Note 109909 110176 56
+Note 110181 110448 72
+Note 110181 110448 72
+Note 110181 110448 68
+Note 110181 110448 62
+Note 110181 110448 46
+Note 110454 110721 68
+Note 110454 110721 68
+Note 110454 110721 62
+Note 110454 110721 58
+Note 110454 110721 56
+Note 110727 110994 70
+Note 110727 110994 70
+Note 110727 110994 67
+Note 110727 110994 50
+Note 111000 111267 67
+Note 111000 111267 67
+Note 111000 111267 62
+Note 111000 111267 58
+Note 111000 111267 56
+Note 111272 111539 68
+Note 111272 111539 68
+Note 111272 111539 65
+Note 111272 111539 46
+Note 111545 111812 65
+Note 111545 111812 65
+Note 111545 111812 62
+Note 111545 111812 58
+Note 111545 111812 56
+Note 111818 112272 67
+Note 111818 112272 67
+Note 111818 112272 51
+Note 111818 112272 39
+Note 112090 112358 63
+Note 112090 112358 58
+Note 112363 113363 70
+Note 112363 112636 63
+Note 112363 113363 70
+Note 112363 113363 67
+Note 112363 112818 46
+Note 112363 112818 34
+Note 112636 112909 62
+Note 112909 113363 61
+Note 112909 113176 51
+Note 112909 113176 39
+Note 113181 113448 55
+Note 113181 113448 51
+Note 113454 113909 67
+Note 113454 113909 67
+Note 113454 113909 61
+Note 113454 113721 51
+Note 113454 113721 39
+Note 113727 113994 55
+Note 113727 113994 51
+Note 114000 114267 68
+Note 114000 114267 68
+Note 114000 114267 63
+Note 114000 114267 60
+Note 114000 114454 56
+Note 114000 114454 44
+Note 114272 114539 70
+Note 114272 114539 70
+Note 114272 114539 63
+Note 114272 114539 58
+Note 114545 114812 72
+Note 114545 114812 72
+Note 114545 114812 60
+Note 114545 114812 63
+Note 114545 114812 68
+Note 114545 115000 51
+Note 114545 115000 39
+Note 114818 115545 75
+Note 114818 115358 72
+Note 114818 115358 68
+Note 114818 115630 75
+Note 114818 115630 63
+Note 115091 115545 56
+Note 115091 115545 44
+Note 115363 115630 72
+Note 115363 115630 68
+Note 115636 116091 72
+Note 115636 116091 72
+Note 115636 116091 60
+Note 115636 116091 51
+Note 115636 116091 39
+Note 115909 116176 63
+Note 115909 116176 68
+Note 116181 116448 70
+Note 116181 116448 70
+Note 116181 116448 67
+Note 116181 116448 58
+Note 116181 116636 51
+Note 116181 116636 39
+Note 116454 116909 75
+Note 116454 116909 75
+Note 116454 116909 63
+Note 116454 116909 67
+Note 116454 116909 70
+Note 116727 117181 46
+Note 116727 117181 34
+Note 117000 118000 67
+Note 117000 117539 63
+Note 117000 117539 58
+Note 117000 118085 67
+Note 117000 118085 55
+Note 117272 117727 51
+Note 117272 117727 39
+Note 117545 117676 63
+Note 117545 117676 58
+Note 117681 117812 63
+Note 117681 117812 58
+Note 117818 118085 63
+Note 117818 118085 58
+Note 117818 118272 46
+Note 117818 118272 34
+Note 118091 118358 70
+Note 118091 118358 70
+Note 118091 118358 58
+Note 118091 118358 63
+Note 118091 118358 67
+Note 118363 118630 75
+Note 118363 118630 75
+Note 118363 118630 63
+Note 118363 118630 67
+Note 118363 118630 72
+Note 118363 118818 48
+Note 118363 118818 36
+Note 118636 118903 74
+Note 118636 118903 74
+Note 118636 118903 62
+Note 118909 119176 75
+Note 118909 119176 75
+Note 118909 119176 63
+Note 118909 119176 67
+Note 118909 119176 72
+Note 118909 119363 55
+Note 118909 119363 43
+Note 119181 119448 74
+Note 119181 119448 74
+Note 119181 119448 62
+Note 119454 119721 72
+Note 119454 119721 72
+Note 119454 119721 70
+Note 119454 119721 60
+Note 119454 119909 54
+Note 119454 119909 42
+Note 119727 119994 74
+Note 119727 119994 74
+Note 119727 119994 70
+Note 119727 119994 62
+Note 120000 120267 75
+Note 120000 120267 75
+Note 120000 120267 70
+Note 120000 120267 63
+Note 120000 120454 54
+Note 120000 120454 42
+Note 120272 120539 72
+Note 120272 120539 72
+Note 120272 120539 70
+Note 120272 120539 63
+Note 120545 120812 74
+Note 120545 120812 74
+Note 120545 120812 69
+Note 120545 120812 65
+Note 120545 120812 53
+Note 120545 120812 41
+Note 120818 121272 72
+Note 120818 121272 72
+Note 120818 121272 69
+Note 120818 121272 63
+Note 120818 121272 53
+Note 120818 121272 41
+Note 121363 122091 70
+Note 121363 122091 70
+Note 121363 122091 68
+Note 121363 122091 62
+Note 121363 121903 58
+Note 121363 121903 46
+Note 121909 122176 56
+Note 121909 122176 44
+Note 122181 122448 63
+Note 122181 122454 63
+Note 122181 122454 60
+Note 122181 122448 55
+Note 122181 122448 43
+Note 122454 122721 65
+Note 122454 122721 65
+Note 122454 122721 62
+Note 122454 122721 53
+Note 122454 122721 41
+Note 122727 122994 67
+Note 122727 122994 67
+Note 122727 122994 63
+Note 122727 122994 58
+Note 122727 123181 51
+Note 122727 123181 39
+Note 123000 123267 70
+Note 123000 123267 70
+Note 123000 123267 58
+Note 123000 123267 63
+Note 123000 123267 67
+Note 123272 123539 67
+Note 123272 123539 67
+Note 123272 123539 63
+Note 123272 123539 58
+Note 123272 123727 46
+Note 123272 123727 34
+Note 123545 124085 70
+Note 123545 124085 70
+Note 123545 124085 58
+Note 123545 124085 63
+Note 123545 124085 67
+Note 123818 124272 51
+Note 123818 124272 39
+Note 124091 124358 72
+Note 124091 124358 72
+Note 124091 124358 60
+Note 124091 124358 63
+Note 124091 124358 67
+Note 124363 124630 75
+Note 124363 124630 75
+Note 124363 124630 69
+Note 124363 124630 63
+Note 124363 124818 54
+Note 124363 124818 42
+Note 124636 124903 72
+Note 124636 124903 72
+Note 124636 124903 69
+Note 124636 124903 63
+Note 124909 125363 74
+Note 124909 125363 74
+Note 124909 125363 62
+Note 124909 125363 53
+Note 124909 125363 41
+Note 125181 125448 68
+Note 125181 125448 70
+Note 125454 126267 70
+Note 125454 126267 70
+Note 125454 125909 46
+Note 125454 125909 34
+Note 125727 125994 68
+Note 125727 125994 62
+Note 126000 126454 53
+Note 126000 126454 41
+Note 126272 126539 70
+Note 126272 126539 70
+Note 126272 126539 68
+Note 126272 126539 62
+Note 126545 126812 72
+Note 126545 126812 72
+Note 126545 126812 68
+Note 126545 126812 63
+Note 126545 127000 46
+Note 126545 127000 34
+Note 126818 127085 73
+Note 126818 127085 73
+Note 126818 127085 67
+Note 126818 127085 64
+Note 127091 127545 74
+Note 127091 127545 74
+Note 127091 127545 68
+Note 127091 127545 65
+Note 127091 127358 53
+Note 127091 127358 41
+Note 127363 127630 58
+Note 127363 127630 56
+Note 127636 128091 72
+Note 127636 128091 72
+Note 127636 128091 68
+Note 127636 128091 63
+Note 127636 127903 46
+Note 127909 128176 58
+Note 127909 128176 56
+Note 128181 128636 70
+Note 128181 128636 70
+Note 128181 128636 65
+Note 128181 128636 62
+Note 128181 128448 46
+Note 128454 128721 58
+Note 128454 128721 56
+Note 128727 129181 68
+Note 128727 129000 62
+Note 128727 129181 68
+Note 128727 129181 53
+Note 128727 129181 41
+Note 129000 129267 60
+Note 129272 130630 67
+Note 129272 129539 59
+Note 129272 130630 67
+Note 129272 129539 55
+Note 129272 130630 43
+Note 129545 129812 59
+Note 129545 129812 50
+Note 129818 130085 60
+Note 129818 130085 51
+Note 130091 130358 61
+Note 130091 130358 52
+Note 130363 130630 62
+Note 130363 130630 53
+Note 130636 131176 43
+Note 130704 131176 67
+Note 130704 131176 50
+Note 130772 131176 71
+Note 130841 131176 74
+Note 130909 131176 79
+Note 130909 131176 59
+Note 131454 131909 72
+Note 131454 131909 72
+Note 131454 131909 67
+Note 131454 131909 63
+Note 131454 131721 36
+Note 131727 131994 48
+Note 132000 132454 72
+Note 132000 132454 72
+Note 132000 132454 67
+Note 132000 132454 63
+Note 132000 132267 36
+Note 132272 132539 48
+Note 132545 133000 74
+Note 132545 133000 74
+Note 132545 133000 67
+Note 132545 133000 63
+Note 132545 132812 36
+Note 132818 133085 48
+Note 133091 133545 74
+Note 133091 133545 74
+Note 133091 133545 67
+Note 133091 133545 63
+Note 133091 133358 36
+Note 133363 133630 48
+Note 133636 133903 72
+Note 133636 133903 72
+Note 133636 133903 67
+Note 133636 133903 63
+Note 133636 133903 36
+Note 133909 134176 74
+Note 133909 134176 74
+Note 133909 134176 67
+Note 133909 134176 63
+Note 133909 134176 48
+Note 134181 134448 72
+Note 134181 134448 72
+Note 134181 134448 67
+Note 134181 134448 63
+Note 134181 134448 36
+Note 134454 134721 70
+Note 134454 134721 70
+Note 134454 134721 67
+Note 134454 134721 63
+Note 134454 134721 48
+Note 134727 135681 67
+Note 134727 135681 67
+Note 134727 135681 65
+Note 134727 135681 59
+Note 134727 134994 55
+Note 134727 134994 43
+Note 135000 135267 53
+Note 135000 135267 41
+Note 135272 135539 51
+Note 135272 135539 39
+Note 135545 135812 50
+Note 135545 135812 38
+Note 135818 136272 72
+Note 135818 136272 72
+Note 135818 136272 67
+Note 135818 136272 63
+Note 135818 136085 36
+Note 136091 136358 48
+Note 136363 136818 72
+Note 136363 136818 72
+Note 136363 136818 67
+Note 136363 136818 63
+Note 136363 136630 36
+Note 136636 136903 48
+Note 136909 137363 74
+Note 136909 137363 74
+Note 136909 137363 67
+Note 136909 137363 63
+Note 136909 137176 36
+Note 137181 137448 48
+Note 137454 137909 74
+Note 137454 137909 74
+Note 137454 137909 67
+Note 137454 137909 63
+Note 137454 137721 36
+Note 137727 137994 48
+Note 138000 138267 72
+Note 138000 138267 72
+Note 138000 138267 67
+Note 138000 138267 63
+Note 138000 138267 36
+Note 138272 138539 74
+Note 138272 138539 74
+Note 138272 138539 67
+Note 138272 138539 63
+Note 138272 138539 48
+Note 138545 138812 72
+Note 138545 138812 72
+Note 138545 138812 67
+Note 138545 138812 63
+Note 138545 138812 36
+Note 138818 139085 70
+Note 138818 139085 70
+Note 138818 139085 67
+Note 138818 139085 63
+Note 138818 139085 48
+Note 139091 139545 67
+Note 139091 139545 67
+Note 139091 139545 63
+Note 139091 139545 60
+Note 139091 139545 48
+Note 139091 139545 36
+Note 139636 139903 63
+Note 139636 139903 63
+Note 139636 140091 57
+Note 139636 140091 47
+Note 139636 140091 35
+Note 139909 140176 65
+Note 139909 140176 65
+Note 140181 140448 67
+Note 140181 140448 67
+Note 140181 140448 63
+Note 140181 140448 58
+Note 140181 140636 46
+Note 140181 140636 34
+Note 140454 140721 70
+Note 140454 140721 70
+Note 140454 140721 58
+Note 140454 140721 63
+Note 140454 140721 67
+Note 140727 140994 67
+Note 140727 140994 67
+Note 140727 140994 63
+Note 140727 140994 58
+Note 140727 141181 46
+Note 140727 141181 34
+Note 141000 141539 70
+Note 141000 141539 70
+Note 141000 141539 58
+Note 141000 141539 63
+Note 141000 141539 67
+Note 141272 141727 51
+Note 141272 141727 39
+Note 141545 141812 72
+Note 141545 141812 72
+Note 141545 141812 60
+Note 141545 141812 63
+Note 141545 141812 67
+Note 141818 142085 75
+Note 141818 142085 75
+Note 141818 142085 69
+Note 141818 142085 63
+Note 141818 142272 54
+Note 141818 142272 42
+Note 142091 142358 72
+Note 142091 142358 72
+Note 142091 142358 69
+Note 142091 142358 63
+Note 142363 142818 74
+Note 142363 142818 74
+Note 142363 142818 62
+Note 142363 142818 53
+Note 142363 142818 41
+Note 142636 142903 68
+Note 142636 142903 70
+Note 142909 143721 70
+Note 142909 143721 70
+Note 142909 143363 46
+Note 142909 143363 34
+Note 143181 143448 68
+Note 143181 143448 62
+Note 143454 143909 53
+Note 143454 143909 41
+Note 143727 143994 69
+Note 143727 143994 69
+Note 143727 143994 62
+Note 144000 144267 70
+Note 144000 144267 70
+Note 144000 144267 68
+Note 144000 144267 62
+Note 144000 144403 46
+Note 144000 144403 34
+Note 144272 144539 71
+Note 144272 144539 71
+Note 144272 144539 69
+Note 144272 144539 62
+Note 144409 144812 41
+Note 144477 144812 48
+Note 144545 144812 72
+Note 144545 144812 72
+Note 144545 144812 69
+Note 144545 144812 63
+Note 144545 144812 57
+Note 145091 145358 75
+Note 145091 145363 75
+Note 145091 145363 69
+Note 145091 145363 63
+Note 145363 145630 72
+Note 145363 145630 72
+Note 145363 145630 69
+Note 145363 145630 63
+Note 145636 145903 74
+Note 145636 145903 74
+Note 145636 145903 62
+Note 145636 145903 68
+Note 145636 145903 70
+Note 145636 145903 56
+Note 145636 145903 46
+Note 146181 146448 75
+Note 146181 146454 75
+Note 146181 146454 68
+Note 146181 146454 63
+Note 146181 146585 46
+Note 146181 146585 34
+Note 146454 146721 77
+Note 146454 146721 77
+Note 146454 146721 65
+Note 146591 146994 39
+Note 146659 146994 46
+Note 146727 148085 75
+Note 146727 146994 75
+Note 146727 146994 67
+Note 146727 146994 63
+Note 146727 146994 55
+Note 147000 147136 70
+Note 147000 147130 58
+Note 147136 147267 72
+Note 147136 147267 60
+Note 147272 147539 70
+Note 147272 147539 58
+Note 147545 147812 79
+Note 147545 147812 74
+Note 147545 147812 68
+Note 147545 147812 58
+Note 147545 147812 46
+Note 147818 148085 75
+Note 147818 148085 67
+Note 147818 148085 58
+Note 147818 148085 51
+Note 148363 148630 99
+Note 148363 148630 87
+Note 148363 148630 91
+Note 148363 148630 94
+Note 148363 148630 39
+Note 148363 148630 27

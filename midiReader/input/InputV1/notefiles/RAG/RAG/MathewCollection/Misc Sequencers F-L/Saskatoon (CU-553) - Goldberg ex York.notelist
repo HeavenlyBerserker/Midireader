@@ -1,0 +1,217 @@
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=71
+     Text = <Emulator Version = Expression Emulator - Beta Version 1 - July 05, 2006>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=32
+     Text = <Saskatoon - QRS 88 Note # CU-553>
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </music_category: Piano_Roll : Ragtime>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </title: Saskatoon>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </subtitle: (Rag)>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_manufacturer: QRS>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </roll_class: 88 Note>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </roll_number: CU-553>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </roll_authenticity: Recut of QRS 32016>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </performer: Played by Phil Goldberg>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </composer: >
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 70>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = </song_type: Ragtime>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_copyright: >
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_date: >
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </scanned_by: Erik York>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </date_scanned: 05/07/2009>
+Meta Text, type=0x01 (Text Event)  leng=51
+     Text = </scanning_system: mk3 roll scanner c/o Robert Perry>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </owner: Karl Edwards>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = <Roll in excellent condition - no damage>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=102
+     Text = <Conversion to eRoll MIDI made Wednesday, February 10, 2010 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec. 10, 2006>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title:                                 >
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </source_file_type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 70  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 487  >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </scanner_processing_type: Shaft Encoder>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.200  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 0.999  >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </interpreted_file_AverageLPI: 379.601  >
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = </scanner_takeup_accel_correction: 0.390  Pct. per foot  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </ActiveTracking: ON >
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </Twin_Array_Crossover_Track: 10   >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scan_glitches_merged: 736   >
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </specks_removed: 230   >
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note   2999   3078 36
+Note   3010   3119 48
+Note   3133   3212 38
+Note   3148   3221 53
+Note   3271   3349 40
+Note   3285   3357 57
+Note   3287   3358 60
+Note   3405   3489 41
+Note   3417   3457 53
+Note   3549   3626 43
+Note   3560   3703 53
+Note   3687   3764 45
+Note   3696   3767 57
+Note   3819   3896 46
+Note   3830   3903 60
+Note   3832   3908 65
+Note   3955   4030 48
+Note   3960   3999 57
+Note   4089   4166 50
+Note   4096   4235 57
+Note   4228   4299 52
+Note   4232   4303 60
+Note   4358   4426 53
+Note   4362   4433 65
+Note   4366   4437 69
+Note   4489   4528 60
+Note   4489   4560 55
+Note   4624   4698 57
+Note   4626   4764 60
+Note   4758   4824 58
+Note   4758   4828 65
+Note   4883   4955 60
+Note   4892   4960 69
+Note   4896   4960 72
+Note   5014   5087 62
+Note   5019   5087 65
+Note   5128   5271 37
+Note   5137   5276 49
+Note   5141   5280 53
+Note   5274   5417 54
+Note   5403   5542 53
+Note   5407   5546 56
+Note   5410   5549 61
+Note   5414   5560 77
+Note   5417   5560 73
+Note   5417   5562 80
+Note   5424   5566 85
+Note   5542   5676 58
+Note   5657   5796 32
+Note   5664   5803 44
+Note   5671   5812 59
+Note   5810   5949 61
+Note   5935   6067 53
+Note   5935   6078 63
+Note   5939   6073 56
+Note   5942   6080 71
+Note   5946   6083 77
+Note   5946   6085 80
+Note   5953   6085 83
+Note   6073   6210 65
+Note   6185   6330 37
+Note   6191   6333 49
+Note   6203   6346 66
+Note   6337   6478 65
+Note   6341   6616 73
+Note   6342   6482 77
+Note   6342   6485 80
+Note   6346   6623 85
+Note   6466   6605 53
+Note   6467   6605 56
+Note   6469   6608 63
+Note   6605   6683 71
+Note   6608   6649 77
+Note   6608   6651 80
+Note   6612   6689 83
+Note 143510 143744 20
+Note 143515 143744 16
+Note 143515 143744 17
+Note 143517 143744 21
+Note 143517 143748 22
+Note 143557 143753 104
+Note 143558 143755 106
+Note 143558 143757 110
+Note 143558 143785 107
+Note 143558 143787 111
+Note 143558 143789 112

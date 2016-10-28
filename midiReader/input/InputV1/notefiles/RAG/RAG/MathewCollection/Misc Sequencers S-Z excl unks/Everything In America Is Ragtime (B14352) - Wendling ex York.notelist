@@ -1,0 +1,81 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=7
+     Text = < -   # >
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <Rythmodik Music Roll #B14352>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = <Everything In America Is Ragtime>
+Meta Text, type=0x01 (Text Event)  leng=43
+     Text = <"Stop, Look, Listen" - Fox-Trot For Dancing>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = <Irving Berlin, 1915>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = <Played by Pete Wendling>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <--->
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <Scan of a player piano roll by Erik York>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = <rob@pianola.co.nz / http://www.pianola.co.nz>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <---Technical Data Follows--->
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </music_category:       Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=55
+     Text = </title:                Everything In America Is Ragtime>
+Meta Text, type=0x01 (Text Event)  leng=66
+     Text = </subtitle:             "Stop, Look, Listen" - Fox-Trot For Dancing>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_manufacturer:    Rythmodik>
+Meta Text, type=0x01 (Text Event)  leng=43
+     Text = </roll_brand:           Rythmodik Music Roll>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </roll_number:          B14352>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_class:           88>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </performer:            Wendling, Pete>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </composer:             Irving Berlin>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </lyricist:             Irving Berlin>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </composition_date:     1915>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_tempo:           50>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </song_type:            Foxtrot, Song, Onestep>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_condition:       Excellent>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_authenticity:    Original>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </roll_copyright:       1915 Irving Berlin Inc.>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </roll_date:            ?>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </roll_city:            New York, NY>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </original_price:       $.35>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </date_scanned:         12/2/2010>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </scanned_by:           Erik York>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </owner:                Erik York>
+Meta Text, type=0x01 (Text Event)  leng=58
+     Text = </scanning_system:      MK3 Roll Scanner With Shaft Encoder>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </pianist:              Pete Wendling>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = <May NOT be EDITED or used for commercial purposes.>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = <Freely made available for NON-commercial purposes>

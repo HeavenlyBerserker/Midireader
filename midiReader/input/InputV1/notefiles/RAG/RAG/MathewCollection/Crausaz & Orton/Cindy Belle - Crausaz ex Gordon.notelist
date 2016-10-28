@@ -1,0 +1,10 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=11
+     Text = <cindymid.pc>
+Meta Text, type=0x04 (Instrument Name)  leng=8
+     Text = <Staff:0 >
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=7
+     Text = <Track 2>
+Meta Text, type=0x04 (Instrument Name)  leng=8
+     Text = <Staff:1 >
+Program, chan=1 program=0

@@ -1,0 +1,290 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=27
+     Text = <Nola - QRS Word Roll # 3411>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </music_category: Piano_Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=14
+     Text = </title: Nola 
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </subtitle: 
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </roll_manufacturer: QRS
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_class: Word Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = </roll_number: 3411
+>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </performer: Milne, Frank
+>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </composer: Arndt, Felix
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </lyricist: 
+>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_tempo: 70
+>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </song_type: Rhythm Song
+>
+Meta Text, type=0x01 (Text Event)  leng=7
+     Text = </key: 
+>
+Meta Text, type=0x01 (Text Event)  leng=9
+     Text = </meter: 
+>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </roll_copyright: Sam Fox Pub. Co.
+>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_date: 1916
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_city: 
+>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanned_by: Warren Trachtman
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </date_scanned: 1/12/05
+>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = </scanning_system: MK3 with Capstan Drive
+>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </owner: John Bartlett
+>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = <Roll Template Type Used = Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=102
+     Text = <Conversion to eRoll MIDI made Wednesday, January 12, 2005 with WSTco E-Roll converter - www.wstco.com
+>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec 24, 2004
+>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = </CIS_embedded_title: Nola Scanned By W.Trachtman
+>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </File_Type: eRollMIDI file
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </Source_File_Type: CIS
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Processing_History: CIS --> eRollMIDI 
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </CIS_converted_as_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </play_tempo: 70  
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </CIS_file_LPI: 360  
+>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </scanner_processing_type: Mode1 - no encoding
+>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </scanner_horizontal_DPI: 300  
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_offset: 1.140  
+>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </scanner_horizontal_stretch: 1.000  
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scan_glitches_merged: 17   
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </specks_removed: 51   
+>
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    178  1
+Note   2357   3242 18
+Note   3175   3280 74
+Note   3180   3966 66
+Note   3180   3966 60
+Note   3182   3967 50
+Note   3305   3407 76
+Note   3430   3537 74
+Note   3560   3671 69
+Note   3823   3928 74
+Note   3953   4060 73
+Note   3953   4748 65
+Note   3957   4751 59
+Note   3960   4757 49
+Note   4082   4185 74
+Note   4210   4316 73
+Note   4339   4450 68
+Note   4610   4716 73
+Note   4739   4842 72
+Note   4739   5528 64
+Note   4739   5528 58
+Note   4744   5532 48
+Note   4864   4971 74
+Note   4998   5103 72
+Note   5128   5235 67
+Note   5387   5489 72
+Note   5514   5623 71
+Note   5516   6305 63
+Note   5517   6307 57
+Note   5519   6310 47
+Note   5646   5753 73
+Note   5751   5966 18
+Note   5775   5882 71
+Note   5907   6016 66
+Note   6167   6275 71
+Note   6292   7864 62
+Note   6296   6403 70
+Note   6296   7867 56
+Note   6298   7871 46
+Note   6425   6500 65
+Note   6553   6626 74
+Note   6685   6760 70
+Note   6816   6889 77
+Note   6942   7016 74
+Note   7071   7146 82
+Note   7200   7275 77
+Note   7333   7410 86
+Note   7466   7575 82
+Note   7478   7587 34
+Note   7853   7960 69
+Note   7855   9417 61
+Note   7857   9414 55
+Note   7858   9260 45
+Note   7985   8060 64
+Note   8114   8192 73
+Note   8246   8319 69
+Note   8373   8444 76
+Note   8501   8578 73
+Note   8628   8703 81
+Note   8762   8835 76
+Note   8887   8964 85
+Note   9017   9123 81
+Note   9028   9137 33
+Note   9310   9519 38
+Note   9339   9546 62
+Note   9371   9514 66
+Note   9376   9517 45
+Note   9405   9514 69
+Note   9432   9542 74
+Note   9532   9641 76
+Note   9533   9642 64
+Note   9542   9858 18
+Note   9662   9707 78
+Note   9664   9778 66
+Note   9792   9869 83
+Note 181032 181235 113
+Note 181032 181235 112
+Note 181032 181235 104
+Note 181032 181235 110
+Note 181032 181239 106
+Note 181035 181239 21
+Note 181035 181242 22
+Note 181035 181242 20
+Note 181035 181242 17
+Note 181035 181271 111
+Note 181037 181242 16
+Note 183271 183450  0

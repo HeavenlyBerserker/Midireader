@@ -1,0 +1,286 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=32
+     Text = <Mammy O' Mine - Imperial  # 9786>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </title: Mammy O' Mine>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_manufacturer: Imperial>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_class: >
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 9786>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </performer: Jones, Clarence>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </composer: Tracey & Pinckard>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 80>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </song_type: >
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_copyright: >
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1919>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scanned_by: Warren Trachtman>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </date_scanned: March 20, 2005>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = </scanning_system: MK3 with capstan transport>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </owner: John Bartlett>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=96
+     Text = <Conversion to eRoll MIDI made Monday, March 21, 2005 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = <CIS to ScanImageMIDI converter - Beta Version - March 15b, 2005>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: Mammy O Mine Scanned By W.Tracht>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </File_Type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 80  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 360  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.142  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </Twin_Array_Crossover_Track: 10   >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scan_glitches_merged: 11   >
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </specks_removed: 7   >
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    156  1
+Note      0 136282 109
+Note      0 137289 111
+Note      0 137289 112
+Note      0 137292 106
+Note   2312   2387 84
+Note   2314   2387 80
+Note   2321   2395 72
+Note   2332   2531 51
+Note   2335   3104 44
+Note   2520   2720 53
+Note   2692   3265 84
+Note   2692   3270 80
+Note   2698   3273 75
+Note   2700   3275 72
+Note   2707   2906 56
+Note   2895   3464 60
+Note   3437   3798 85
+Note   3442   3707 80
+Note   3446   3806 73
+Note   3451   3810 64
+Note   3817   4957 84
+Note   3820   4960 80
+Note   3826   4965 72
+Note   3829   4248 63
+Note   4020   4101 48
+Note   4204   4593 60
+Note   4398   4478 44
+Note   4582   4942 56
+Note   4776   4854 43
+Note   4957   5317 55
+Note   5153   5228 39
+Note   5320   5367 82
+Note   5323   5368 78
+Note   5326   5371 70
+Note   5332   6507 54
+Note   5509   5557 80
+Note   5510   5557 78
+Note   5514   5560 68
+Note   5696   5743 82
+Note   5700   5746 78
+Note   5703   5750 70
+Note   5704   5750 66
+Note   5707   5751 63
+Note   5707   5754 56
+Note   5707   5754 60
+Note   5885   6335 84
+Note   5889   6248 78
+Note   5892   6340 72
+Note   6095   6515 32
+Note   6354   6464 82
+Note   6357   6465 78
+Note   6359   6467 70
+Note   6450   6712 80
+Note   6454   6504 66
+Note   6454   6717 72
+Note   6457   6504 63
+Note   6457   6504 60
+Note   6457   6717 68
+Note   6460   6507 56
+Note   6746   6890 40
+Note   6828   6875 82
+Note   6832   6879 74
+Note   6835   6882 70
+Note   6842   7576 52
+Note   7020   7067 80
+Note   7023   7067 74
+Note   7025   7071 68
+Note   7204   7251 82
+Note   7210   7257 74
+Note   7212   7259 70
+Note   7214   7260 62
+Note   7215   7260 59
+Note   7215   7262 56
+Note   7395   7848 83
+Note   7400   7851 71
+Note   7860   7907 82
+Note   7864   7910 70
+Note   7967   8012 63
+Note 136282 137020 110
+Note 136282 137020 109
+Note 136296 136848 20
+Note 136989 137035 20
+Note 137289 138026 111
+Note 137289 138026 112
+Note 137292 138028 106
+Note 137306 138040 21
+Note 138929 138973 77
+Note 138929 138976 78
+Note 138929 139228 76
+Note 138931 138978 64
+Note 138931 139039 68
+Note 138931 139165 72
+Note 138931 139165 74
+Note 138931 139228 50
+Note 138931 139228 58
+Note 138931 139228 66
+Note 138931 139228 70
+Note 138932 138978 63
+Note 138932 139228 56
+Note 138932 139228 62
+Note 138932 139229 52
+Note 138995 139103 54
+Note 139054 139101 73
+Note 139056 139101 59
+Note 139056 139101 67
+Note 139056 139103 63
+Note 139085 139192 68
+Note 139087 139192 60
+Note 139121 139165 55
+Note 139121 139167 53
+Note 139181 139228 73
+Note 139182 139228 59
+Note 139182 139228 63
+Note 139182 139228 64
+Note 139182 139228 67
+Note 141156 141201 63
+Note 141156 141329 61
+Note 141157 141201 62
+Note 141317 141360 62
+Note 141345 141454 63
+Note 141407 141453 61
+Note 141442 141485 62
+Note 141812 141857 55
+Note 141812 141982 69
+Note 141812 142045 67
+Note 141814 141859 56
+Note 141814 141859 64
+Note 141814 141859 68
+Note 141814 141921 59
+Note 141843 142079 65
+Note 141845 142079 63
+Note 141876 142110 57
+Note 141937 141982 56
+Note 141937 141984 60
+Note 141937 141984 64
+Note 141937 141984 68
+Note 141937 142110 55
+Note 141998 142110 61
+Note 142064 142110 56
+Note 142064 142110 59
+Note 142064 142110 69
+Note 142067 142110 60
+Note 142067 142110 68
+Note 142067 142114 64
+Note 144114 144270  0

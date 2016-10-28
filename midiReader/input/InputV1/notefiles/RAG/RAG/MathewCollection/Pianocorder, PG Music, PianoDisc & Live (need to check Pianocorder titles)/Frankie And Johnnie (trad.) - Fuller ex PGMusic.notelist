@@ -1,0 +1,20 @@
+SMPTE, hour=96 minute=0 second=0 frame=0 fract-frame=0
+Meta event, sequencer-specific, type=0x7e leng=3155936
+Meta event, sequencer-specific, type=0x7e leng=3155936
+Meta event, sequencer-specific, type=0x7e leng=3155936
+Meta event, sequencer-specific, type=0x7e leng=3155936
+Meta event, sequencer-specific, type=0x7e leng=3155936
+Meta event, sequencer-specific, type=0x7e leng=3155936
+Meta event, sequencer-specific, type=0x5c leng=3155936
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=4
+     Text = <Bass>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=5
+     Text = <Drums>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=5
+     Text = <Piano>
+Parameter, chan=3 c1=64 c2=0
+Meta Text, type=0x05 (Lyric)  leng=11
+     Text = <4 Bar Intro>

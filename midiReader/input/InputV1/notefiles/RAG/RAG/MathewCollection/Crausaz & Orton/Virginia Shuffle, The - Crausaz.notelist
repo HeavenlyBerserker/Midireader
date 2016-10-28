@@ -1,0 +1,204 @@
+Meta Text, type=0x02 (Copyright Notice)  leng=41
+     Text = <Midi (c) August 14, 2008, by Rob Crausaz.>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=67
+     Text = <[The Virginia Shuffle/Lowell/1901/Midi seq. in 2008 by Rob Crausaz]>
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = <Title: The Virginia Shuffle>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = <Subtitle: "Two-Step">
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = <Composer: G. L. Lowell>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = <Copyright: 1901 by the publishers (see below)>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = <Publisher: The S. Brainard's Sons Co.>
+Meta Text, type=0x01 (Text Event)  leng=64
+     Text = <Location: (probably) 20  E. 17th Street, New York, New York, USA>
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = <Note: This is only the first 13 measures of this piece>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <(and the last measure's right hand part >
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = <is unintelligible at the end). >
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = <These 13 measures were part of an ad found>
+Meta Text, type=0x01 (Text Event)  leng=62
+     Text = <on the back of a later printing of Krell's "Mississippi Rag." >
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <The ad had the opening measures for 8 different piano pieces >
+Meta Text, type=0x01 (Text Event)  leng=65
+     Text = <(this was the 7th). A scan of this printing of "Mississippi Rag" >
+Meta Text, type=0x01 (Text Event)  leng=51
+     Text = <can be found at the IN Harmony website which is at:>
+Meta Text, type=0x01 (Text Event)  leng=67
+     Text = <http://brie.dlib.indiana.edu:8080/inharmenduserinterface/welcome.do>
+Note      0    333 69
+Note      0    333 45
+Note    333    666 52
+Note    333    666 57
+Note    333    666 60
+Note    333    999 69
+Note    666    999 40
+Note    999   1333 71
+Note    999   1333 52
+Note    999   1333 57
+Note    999   1333 60
+Note   1333   1499 72
+Note   1333   1666 45
+Note   1499   1833 69
+Note   1666   1999 52
+Note   1666   1999 57
+Note   1666   1999 60
+Note   1833   1999 69
+Note   1999   2166 72
+Note   1999   2333 45
+Note   2166   2333 69
+Note   2333   2499 72
+Note   2333   2666 52
+Note   2333   2666 57
+Note   2333   2666 60
+Note   2499   2666 69
+Note   2666   2999 65
+Note   2666   2999 69
+Note   2666   2999 74
+Note   2666   2999 50
+Note   2999   3333 53
+Note   2999   3333 57
+Note   2999   3333 62
+Note   2999   3666 74
+Note   3333   3666 45
+Note   3666   3999 76
+Note   3666   3999 53
+Note   3666   3999 57
+Note   3666   3999 62
+Note   3999   4166 77
+Note   3999   4333 50
+Note   4166   4499 74
+Note   4333   4666 53
+Note   4333   4666 57
+Note   4333   4666 62
+Note   4499   4666 74
+Note   4666   4833 77
+Note   4666   4999 50
+Note   4833   4999 74
+Note   4999   5166 77
+Note   4999   5333 53
+Note   4999   5333 57
+Note   4999   5333 62
+Note   5166   5333 74
+Note   5333   5666 64
+Note   5333   5666 68
+Note   5333   5666 76
+Note   5333   5666 52
+Note   5333   5666 56
+Note   5333   5666 59
+Note   5666   6333 64
+Note   5666   6333 40
+Note   5666   6333 52
+Note   6333   6666 64
+Note   6333   6666 40
+Note   6333   6666 52
+Note   6666   7333 65
+Note   6666   7333 41
+Note   6666   7333 53
+Note   7333   7999 64
+Note   7333   7999 40
+Note   7333   7999 52
+Note   7999   8333 68
+Note   7999   8333 71
+Note   7999   8333 76
+Note   7999   8333 40
+Note   7999   8333 52
+Note   8333   8999 68
+Note   8333   8999 71
+Note   8333   8999 76
+Note   8333   8999 40
+Note   8333   8999 52
+Note   8999   9333 69
+Note   8999   9333 71
+Note   8999   9333 77
+Note   8999   9333 38
+Note   8999   9333 50
+Note   9333   9999 68
+Note   9333   9999 71
+Note   9333   9999 76
+Note   9333   9999 40
+Note   9333   9999 52
+Note   9999  10666 74
+Note   9999  10666 76
+Note   9999  10666 80
+Note   9999  10666 52
+Note   9999  10666 59
+Note   9999  10666 64
+Note  10666  10999 69
+Note  10666  10999 72
+Note  10666  10999 81
+Note  10666  10999 45
+Note  10666  10999 57
+Note  10999  11333 52
+Note  10999  11333 57
+Note  10999  11333 60
+Note  10999  11666 69
+Note  11333  11666 40
+Note  11666  11999 71
+Note  11666  11999 52
+Note  11666  11999 57
+Note  11666  11999 60
+Note  11999  12166 72
+Note  11999  12333 45
+Note  12166  12499 69
+Note  12333  12666 52
+Note  12333  12666 57
+Note  12333  12666 60
+Note  12499  12666 69
+Note  12666  12833 72
+Note  12666  12999 45
+Note  12833  12999 69
+Note  12999  13166 72
+Note  12999  13333 52
+Note  12999  13333 57
+Note  12999  13333 60
+Note  13166  13333 69
+Note  13333  13666 65
+Note  13333  13666 69
+Note  13333  13666 74
+Note  13333  13666 50
+Note  13666  13999 53
+Note  13666  13999 57
+Note  13666  13999 62
+Note  13666  14333 74
+Note  13999  14333 45
+Note  14333  14666 76
+Note  14333  14666 53
+Note  14333  14666 57
+Note  14333  14666 62
+Note  14666  14833 77
+Note  14666  14999 50
+Note  14833  15166 74
+Note  14999  15333 53
+Note  14999  15333 57
+Note  14999  15333 62
+Note  15166  15333 74
+Note  15333  15499 77
+Note  15333  15666 50
+Note  15499  15666 74
+Note  15666  15833 77
+Note  15666  15999 53
+Note  15666  15999 57
+Note  15666  15999 62
+Note  15833  15999 74
+Note  15999  16166 77
+Note  15999  16333 55
+Note  16166  16499 81
+Note  16333  16666 57
+Note  16333  16666 60
+Note  16333  16666 65
+Note  16499  16666 77
+Note  16666  16833 74
+Note  16666  16999 56
+Note  16833  17166 77
+Note  16999  17333 57
+Note  16999  17333 60
+Note  16999  17333 65
+Note  19999  20020  8

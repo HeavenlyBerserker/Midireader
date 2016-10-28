@@ -1,0 +1,193 @@
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=71
+     Text = <Emulator Version = Expression Emulator - Beta Version 1 - July 05, 2006>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=46
+     Text = <Baby Face - Imperial Word Roll 88 note # 06209>
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </music_category: Piano_Roll : Classical>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </title: Baby Face>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_manufacturer: Imperial>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </roll_class: Word Roll 88 note>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = </roll_number: 06209>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_authenticity: Original>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </performer: Arranged roll>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </composer: >
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 80>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </song_type: Fox Trot>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_copyright: >
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_date: >
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </scanned_by: Erik York>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </date_scanned: 1/04/09>
+Meta Text, type=0x01 (Text Event)  leng=51
+     Text = </scanning_system: mk3 roll scanner c/o Robert Perry>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </owner: Erik York>
+Meta Text, type=0x01 (Text Event)  leng=57
+     Text = <Roll in bad condition - heavy waterdamage and mold damage>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=98
+     Text = <Conversion to eRoll MIDI made Monday, January 05, 2009 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec. 10, 2006>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title:                                 >
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </source_file_type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 77  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 495  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.200  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </interpreted_file_AverageLPI: 495.000  >
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = </scanner_takeup_accel_correction: 1.050  Pct. per foot  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </ActiveTracking: ON >
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </Twin_Array_Crossover_Track: 10   >
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scan_glitches_merged: 5240   >
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </specks_removed: 6150   >
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note   7999   8124 21
+Note   7999   8126 20
+Note   8001   8076 19
+Note   8215   8482 78
+Note   8215   8498 83
+Note   8217   8485 75
+Note   8217   8553 76
+Note   8219   8485 72
+Note   8219   8558 71
+Note   8387   8418 20
+Note   8415   8446 19
+Note   8493   8551 82
+Note   8498   8551 77
+Note   8498   8556 74
+Note   8498   8556 73
+Note   8673   8780 85
+Note   8779   9038 80
+Note   8779   9042 75
+Note   8780   9042 76
+Note   8784   9043 72
+Note   8784   9045 69
+Note   8784   9116 71
+Note   9051   9113 78
+Note   9055   9113 74
+Note   9055   9113 73
+Note   9058   9116 70
+Note   9061   9118 67
+Note   9355   9607 80
+Note   9358   9610 75
+Note   9358   9610 76
+Note   9358   9615 69
+Note   9360   9607 81
+Note   9360   9612 72
+Note   9363   9683 71
+Note   9620   9663 79
+Note   9620   9675 78
+Note   9620   9678 73
+Note   9620   9680 74
+Note   9624   9683 67
+Note   9811   9925 82
+Note   9814   9925 83
+Note   9922  10189 77
+Note   9922  10261 76
+Note   9925  10191 69
+Note   9925  10191 72
+Note   9925  10194 65
+Note   9925  10262 71
+Note   9928  10266 64
+Note  10206  10262 67
+Note  10495  10764 77
+Note  10499  10767 69
+Note  10499  10839 76
+Note  10501  10769 72
+Note  10501  10769 65
+Note  10514  10840 71
+Note  10780  10840 67
+Note  10782  10844 64
+Note  10977  11058 79
+Note  11074  11337 74
+Note  11074  11340 69
+Note  11077  11342 62
+Note  11079  11342 65
+Note  11352  11412 72
+Note  11355  11412 67
+Note  11355  11413 64
+Note  11357  11413 60
+Note  11642  11905 71
+Note  11644  11907 59
+Note  11646  11905 65
+Note  11646  11907 62
+Note  11649  12201 60
+Note  11917  12198 57
+Note  11917  12198 69
+Note  11918  12199 64
+Note  12207  12663 55
+Note 170193 170318 16
+Note 170193 170319 20
+Note 170193 170319 17
+Note 170196 170319 21
+Note 170196 170319 22
+Note 170236 170347 104
+Note 170236 170347 106
+Note 170238 170348 111
+Note 170238 170348 110
+Note 170240 170348 113
+Note 170240 170348 112

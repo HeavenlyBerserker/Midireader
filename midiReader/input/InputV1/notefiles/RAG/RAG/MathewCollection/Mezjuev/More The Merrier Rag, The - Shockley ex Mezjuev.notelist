@@ -1,0 +1,31 @@
+Meta event, sequencer-specific, type=0x03 leng=3155936
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=6
+     Text = <Treble>
+Program, chan=1 program=0
+Parameter, chan=1 c1=0 c2=0
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=4
+     Text = <Bass>
+Program, chan=1 program=0
+Parameter, chan=1 c1=0 c2=0
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=7
+     Text = <New Age>
+Program, chan=3 program=88
+Parameter, chan=3 c1=0 c2=0
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=6
+     Text = <Rhythm>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=53
+     Text = <"The More the Merrier Rag", William M. Shockley, 1996>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=28
+     Text = <By William M. Shockley, 1996>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=52
+     Text = <Sequenced by William M. Shockley, Riverside, CA, USA>
+Meta event, unrecognized, type=0x21 leng=1
+Meta Text, type=0x03 (Sequence/Track Name)  leng=15
+     Text = <shockley@pe.net>

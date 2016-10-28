@@ -1,0 +1,321 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=41
+     Text = <Twelfth Street Rag - QRS Word Roll # 1188>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </music_category: Piano_Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </title: Twelfth Street Rag
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </subtitle: 
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=24
+     Text = </roll_manufacturer: QRS
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </roll_class: Word Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = </roll_number: 1188
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </performer: Kortlander, Max
+>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </composer: Bowman, Euday
+>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </lyricist: 
+>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_tempo: 80
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </song_type: Fox Trot
+>
+Meta Text, type=0x01 (Text Event)  leng=7
+     Text = </key: 
+>
+Meta Text, type=0x01 (Text Event)  leng=9
+     Text = </meter: 
+>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = </roll_copyright: J.W.Jenkins Sons Music Co.
+>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_date: 1919
+>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_city: 
+>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanned_by: Warren Trachtman
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </date_scanned: 1/14/05
+>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = </scanning_system: MK3 with Capstan Drive
+>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </owner: John Bartlett
+>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = <Scanned from Re-Release : Q-167
+>
+Meta Text, type=0x01 (Text Event)  leng=42
+     Text = <Roll Template Type Used = Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=99
+     Text = <Conversion to eRoll MIDI made Friday, January 14, 2005 with WSTco E-Roll converter - www.wstco.com
+>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec 24, 2004
+>
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = </CIS_embedded_title: Twelfth Street Rag Scanned By W.
+>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </File_Type: eRollMIDI file
+>
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </Source_File_Type: CIS
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </Processing_History: CIS --> eRollMIDI 
+>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </CIS_converted_as_type: Generic_uniform
+>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </play_tempo: 80  
+>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </CIS_file_LPI: 360  
+>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </scanner_processing_type: Mode1 - no encoding
+>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </scanner_horizontal_DPI: 300  
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_offset: 1.130  
+>
+Meta Text, type=0x01 (Text Event)  leng=37
+     Text = </scanner_horizontal_stretch: 1.000  
+>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scan_glitches_merged: 147   
+>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </specks_removed: 15427   
+>
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    156  1
+Note   2312   3426 18
+Note   3407   3485 91
+Note   3482   3543 93
+Note   3540   3582 95
+Note   3576   3629 96
+Note   3578   3631 76
+Note   3578   3631 84
+Note   3578   3631 79
+Note   3578   3631 88
+Note   3579   3634 72
+Note   3843   3939 93
+Note   4015   4079 86
+Note   4015   4082 91
+Note   4278   4340 87
+Note   4390   4453 88
+Note   4393   4453 84
+Note   4645   4707 84
+Note   4759   4821 76
+Note   4759   4825 81
+Note   4935   4996 79
+Note   4990   5056 81
+Note   5045   5098 83
+Note   5114   5181 84
+Note   5114   5181 76
+Note   5115   5181 72
+Note   5118   5181 60
+Note   5118   5181 67
+Note   5118   5181 64
+Note   5350   5415 81
+Note   5475   5534 79
+Note   5475   5534 74
+Note   5737   5803 75
+Note   5857   5923 76
+Note   5859   5925 72
+Note   6121   6187 72
+Note   6234   6287 64
+Note   6239   6287 69
+Note   6501   6556 67
+Note   6615   6681 66
+Note   6615   6681 54
+Note   6615   6681 69
+Note   6615   6681 57
+Note   6615   6681 60
+Note   6615   6681 63
+Note   6615   6681 72
+Note   6615   6681 75
+Note   6862   6940 74
+Note   6993   7060 72
+Note   7246   7310 69
+Note   7246   7310 72
+Note   7246   7310 57
+Note   7246   7310 63
+Note   7246   7310 54
+Note   7246   7310 75
+Note   7248   7310 60
+Note   7248   7312 66
+Note   7731   7787 54
+Note   7732   7787 63
+Note   7732   7787 60
+Note   7732   7790 72
+Note   7732   7790 57
+Note   7734   7790 69
+Note   7734   7790 66
+Note   8109   8431 65
+Note   8109   8431 71
+Note   8109   8431 59
+Note   8109   8431 74
+Note   8109   8431 55
+Note   8110   8431 67
+Note   8110   8431 62
+Note   8110   8431 53
+Note   8237   8781 18
+Note   8862   9131 71
+Note   8862   9131 65
+Note 246770 247243 111
+Note 246770 247243 112
+Note 246770 247246 110
+Note 246771 247217 104
+Note 246771 247246 107
+Note 246775 247217 106
+Note 246778 247248 17
+Note 246778 247250 20
+Note 246778 247250 21
+Note 246778 247250 22
+Note 246778 247250 16
+Note 258337 258493  0

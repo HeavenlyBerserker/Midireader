@@ -1,0 +1,271 @@
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </File_Type: Emulated MIDI file>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = <Roll Emulation Type Used = Generic>
+Meta Text, type=0x01 (Text Event)  leng=86
+     Text = <Emulation created using WSTco expression track interpretation software - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=71
+     Text = <Emulator Version = Expression Emulator - Beta Version 1 - July 05, 2006>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=62
+     Text = <Don't Tell Your Monkey Man - Imperial 88 Note Word Roll # 9850>
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </music_category: Piano_Roll : Blues>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </title: Don't Tell Your Monkey Man>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_manufacturer: Imperial>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </roll_class: 88 Note Word Roll>
+Meta Text, type=0x01 (Text Event)  leng=18
+     Text = </roll_number: 9850>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_authenticity: Original>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </performer: Clarence Jones>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </composer: Johnson & Koehler>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 75>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </song_type: Blues>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_copyright: >
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_date: >
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </scanned_by: Erik York>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </date_scanned: 5/23/09>
+Meta Text, type=0x01 (Text Event)  leng=51
+     Text = </scanning_system: mk3 roll scanner c/o Robert Perry>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </owner: Erik York>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = <Roll in good condition - some left edge repair>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=96
+     Text = <Conversion to eRoll MIDI made Saturday, May 23, 2009 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec. 10, 2006>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title:                                 >
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </source_file_type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 60  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 495  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.200  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </interpreted_file_AverageLPI: 495.000  >
+Meta Text, type=0x01 (Text Event)  leng=63
+     Text = </scanner_takeup_accel_correction: 0.420  Pct. per foot  APPLIED>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </ActiveTracking: ON >
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </Twin_Array_Crossover_Track: 10   >
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scan_glitches_merged: 2176   >
+Meta Text, type=0x01 (Text Event)  leng=23
+     Text = </specks_removed: 134   >
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0 198487 106
+Note      0 198487 112
+Note      0 198487 111
+Note   8000   8083 39
+Note   8004   8087 46
+Note   8012   8095 67
+Note   8014   8064 75
+Note   8014   8100 79
+Note   8147   8233 68
+Note   8149   8197 75
+Note   8149   8237 80
+Note   8168   8252 39
+Note   8172   8260 47
+Note   8277   8362 48
+Note   8285   8368 69
+Note   8287   8337 75
+Note   8287   8370 81
+Note   8375   8845 39
+Note   8414   8845 49
+Note   8425   8508 70
+Note   8425   8510 75
+Note   8425   8510 79
+Note   8429   8512 82
+Note   8702   8920 58
+Note   8706   8922 75
+Note   8706   8925 72
+Note   8706   8925 79
+Note   8710   8927 84
+Note   8839   8920 63
+Note   8839   8920 61
+Note   8841   8920 67
+Note   9108   9262 39
+Note   9116   9412 70
+Note   9118   9414 75
+Note   9118   9414 79
+Note   9120   9416 82
+Note   9214   9335 46
+Note   9254   9437 55
+Note   9535   9620 70
+Note   9535   9622 75
+Note   9535   9622 79
+Note   9537   9622 82
+Note   9591   9745 41
+Note   9631   9745 48
+Note   9668   9747 57
+Note   9672   9752 72
+Note   9672   9752 77
+Note   9674   9752 81
+Note   9674   9754 84
+Note   9945  10170 60
+Note   9950  10268 75
+Note   9952  10270 81
+Note   9952  10272 87
+Note  10081  10170 65
+Note  10083  10170 69
+Note  10083  10174 72
+Note  10354  10920 46
+Note  10362  10662 80
+Note  10362  10795 74
+Note  10362  10800 82
+Note  10362  10800 86
+Note  10493  10925 56
+Note  10779  10864 72
+Note  10779  10954 65
+Note  10785  10829 80
+Note  10787  10866 84
+Note  10906  10989 58
+Note  10908  10991 62
+Note  10908  10993 68
+Note  10908  10993 70
+Note  10912  10995 80
+Note  10912  10995 82
+Note  11150  11233 68
+Note  11220  11306 69
+Note  11258  11343 70
+Note  11295  11372 71
+Note  11327  11372 75
+Note  11329  11372 79
+Note 197402 198187 20
+Note 197416 198216 109
+Note 197416 198216 110
+Note 198470 199235 21
+Note 198487 199239 106
+Note 198487 199239 112
+Note 198487 199241 111
+Note 200018 200322 50
+Note 200022 200072 63
+Note 200022 200072 64
+Note 200022 200072 77
+Note 200022 200072 78
+Note 200022 200143 68
+Note 200022 200266 74
+Note 200022 200266 72
+Note 200022 200322 56
+Note 200022 200322 70
+Note 200022 200322 76
+Note 200022 200322 52
+Note 200022 200322 66
+Note 200022 200322 58
+Note 200022 200322 62
+Note 200102 200210 54
+Note 200162 200210 59
+Note 200162 200212 63
+Note 200162 200212 67
+Note 200162 200212 73
+Note 200197 200289 60
+Note 200200 200291 68
+Note 200216 200266 53
+Note 200216 200266 55
+Note 200275 200322 67
+Note 200275 200322 73
+Note 200275 200322 63
+Note 200275 200322 59
+Note 200275 200322 64

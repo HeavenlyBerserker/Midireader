@@ -1,0 +1,228 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=37
+     Text = <Kangaroo Hop, The - Harmony  # 110943>
+Meta Text, type=0x02 (Copyright Notice)  leng=59
+     Text = <MIDI copyrighted by WSTco, Inc. - commercial use prohibited>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </music_category: Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </title: Kangaroo Hop, The>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </subtitle: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_manufacturer: Harmony>
+Meta Text, type=0x01 (Text Event)  leng=13
+     Text = </roll_class: >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </roll_number: 110943>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </performer: >
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </composer: Morris, Melville>
+Meta Text, type=0x01 (Text Event)  leng=11
+     Text = </lyricist: >
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = </roll_tempo: 60>
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </song_type: Fox Trot>
+Meta Text, type=0x01 (Text Event)  leng=6
+     Text = </key: >
+Meta Text, type=0x01 (Text Event)  leng=8
+     Text = </meter: >
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </roll_copyright: >
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = </roll_date: 1915>
+Meta Text, type=0x01 (Text Event)  leng=12
+     Text = </roll_city: >
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </scanned_by: Warren Trachtman>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </date_scanned: 2/22/05>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = </scanning_system: MK3 with Capstan Drive>
+Meta Text, type=0x01 (Text Event)  leng=21
+     Text = </owner: John Bartlett>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=41
+     Text = <Roll Template Type Used = Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=100
+     Text = <Conversion to eRoll MIDI made Tuesday, February 22, 2005 with WSTco E-Roll converter - www.wstco.com>
+Meta Text, type=0x01 (Text Event)  leng=60
+     Text = <CIS to ScanImageMIDI converter - Beta Version - Dec 24, 2004>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = </CIS_embedded_title: Kangaroo Hop Scanned By W.Tracht>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </File_Type: eRollMIDI file>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </Source_File_Type: CIS>
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </Processing_History: CIS --> eRollMIDI >
+Meta Text, type=0x01 (Text Event)  leng=39
+     Text = </CIS_converted_as_type: Generic_uniform>
+Meta Text, type=0x01 (Text Event)  leng=17
+     Text = </play_tempo: 60  >
+Meta Text, type=0x01 (Text Event)  leng=20
+     Text = </CIS_file_LPI: 360  >
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </scanner_processing_type: Mode1 - no encoding>
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = </scanner_horizontal_DPI: 300  >
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </scanner_horizontal_offset: 1.136  >
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanner_horizontal_stretch: 1.000  >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </scan_glitches_merged: 10   >
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = </specks_removed: 31   >
+Program, chan=1 program=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=64 c2=127
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=120 c2=0
+Note      0    208  1
+Note      0 158497 109
+Note      0 159808 112
+Note      0 159810 106
+Note      0 159810 111
+Note   2416   2683 93
+Note   2422   2685 81
+Note   2462   2683 90
+Note   2708   2812 89
+Note   2708   2812 92
+Note   2712   2816 80
+Note   2800   3068 69
+Note   2831   3275 90
+Note   2831   3275 93
+Note   2835   3104 81
+Note   2841   3956 66
+Note   2845   3958 62
+Note   2845   3960 57
+Note   3254   3537 81
+Note   3256   3539 78
+Note   3258   3541 69
+Note   3562   3654 80
+Note   3564   3654 77
+Note   3566   3658 68
+Note   3683   4122 81
+Note   3683   4125 78
+Note   3687   3958 69
+Note   4104   4206 66
+Note   4104   4206 69
+Note   4106   4208 57
+Note   4400   4502 65
+Note   4400   4502 68
+Note   4404   4502 56
+Note   4527   4752 69
+Note   4527   4754 66
+Note   4533   4756 57
+Note   4825   4920 65
+Note   4825   4920 68
+Note   4829   4922 56
+Note   4943   5172 66
+Note   4943   5172 69
+Note   4945   5175 57
+Note   5241   5339 65
+Note   5241   5341 68
+Note   5245   5341 56
+Note   5366   5795 66
+Note   5366   5797 69
+Note   5366   5800 57
+Note   5787   7312 50
+Note   5793   6654 38
+Note   5925   7793 18
+Note   6195   6470 76
+Note   6195   6475 70
+Note   6200   6470 74
+Note   6200   6475 64
+Note   6200   6479 58
+Note   6204   6477 62
+Note   6622   7304 76
+Note   6625   7304 74
+Note   6625   7308 70
+Note   6625   7310 64
+Note   6627   7310 62
+Note   6629   7312 58
+Note   7454   7554 76
+Note   7454   7558 70
+Note   7456   7558 74
+Note   7458   7562 58
+Note   7458   7562 62
+Note   7458   7564 50
+Note   7883   8987 76
+Note   7883   8987 81
+Note   7887   8329 61
+Note   7887   8991 69
+Note   7887   8991 73
+Note   7891   8329 57
+Note   7893   8331 49
+Note   8310   8750 45
+Note   8314   8754 33
+Note   8731   9164 52
+Note 158497 159495 110
+Note 158497 159497 109
+Note 158522 159525 20
+Note 159808 160783 112
+Note 159810 160783 111
+Note 159810 160783 106
+Note 159835 160810 21
+Note 160987 161304 66
+Note 160991 161054 60
+Note 160991 161054 61
+Note 160991 161054 69
+Note 160991 161304 68
+Note 160991 161308 59
+Note 160991 161308 63
+Note 161037 161262 70
+Note 161079 161137 65
+Note 161125 161185 60
+Note 161164 161224 64
+Note 161245 161304 69
+Note 161245 161308 60
+Note 161247 161308 61
+Note 165312 165372 65
+Note 165312 165714 64
+Note 165312 165714 66
+Note 165652 165712 65
+Note 166904 166962 72
+Note 166904 166964 73
+Note 166908 166964 64
+Note 166908 166966 61
+Note 166908 166966 65
+Note 166908 167137 69
+Note 166908 167308 56
+Note 166908 167308 58
+Note 166908 167308 62
+Note 166908 167310 60
+Note 166950 167268 74
+Note 166991 167054 70
+Note 166991 167304 68
+Note 166991 167308 66
+Note 167075 167133 73
+Note 167079 167137 65
+Note 167079 167304 64
+Note 167245 167304 73
+Note 167247 167304 72
+Note 167247 167308 61
+Note 167247 167308 65
+Note 169310 169518  0

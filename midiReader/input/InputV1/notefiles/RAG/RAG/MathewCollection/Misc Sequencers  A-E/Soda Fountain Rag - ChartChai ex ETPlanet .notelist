@@ -1,0 +1,95 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=32
+     Text = <Duke Ellington-Soda Fountain Rag>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=33
+     Text = <http://members.tripod.com/jeridu/>
+Meta Text, type=0x02 (Copyright Notice)  leng=52
+     Text = <Sequenced by ChartChai MeeSangNin (jeridu@yahoo.com)>
+Meta Text, type=0x01 (Text Event)  leng=53
+     Text = <This file is compatible with GM and Roland GS system.>
+Meta Text, type=0x01 (Text Event)  leng=52
+     Text = <Should sound best on a Roland SoundCanvas SC-88 Pro.>
+Meta Text, type=0x01 (Text Event)  leng=54
+     Text = <Sequenced by ChartChai MeeSangNin (jeridu@yahoo.com).
+>
+Sysex, leng=6
+Sysex, leng=11
+Sysex, leng=11
+Sysex, leng=11
+Meta Text, type=0x03 (Sequence/Track Name)  leng=32
+     Text = <Duke Ellington-Soda Fountain Rag>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = <Sequenced by ChartChai MeeSangNin>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = <jeridu@yahoo.com>
+Sysex, leng=42
+Sysex, leng=36
+Sysex, leng=27
+Sysex, leng=37
+Meta Text, type=0x03 (Sequence/Track Name)  leng=33
+     Text = <Sequenced by ChartChai MeeSangNin>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=16
+     Text = <jeridu@yahoo.com>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=33
+     Text = <http://members.tripod.com/jeridu/>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=20
+     Text = <Revision: April 2000>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=28
+     Text = <<><><><><><><><><><><><><><>>
+Parameter, chan=1 c1=1 c2=0
+Parameter, chan=1 c1=0 c2=0
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=1 c1=32 c2=3
+Program, chan=1 program=1
+Parameter, chan=1 c1=7 c2=111
+Parameter, chan=1 c1=10 c2=78
+Parameter, chan=1 c1=11 c2=114
+Parameter, chan=1 c1=0 c2=0
+Parameter, chan=1 c1=32 c2=0
+Program, chan=1 program=1
+Pitchbend, chan=1 msb=0 lsb=64
+Parameter, chan=1 c1=91 c2=70
+Parameter, chan=1 c1=0 c2=0
+Parameter, chan=1 c1=32 c2=3
+Program, chan=1 program=1
+Parameter, chan=1 c1=93 c2=0
+Parameter, chan=1 c1=94 c2=0
+Parameter, chan=2 c1=1 c2=0
+Parameter, chan=2 c1=64 c2=0
+Parameter, chan=2 c1=0 c2=0
+Parameter, chan=2 c1=32 c2=1
+Parameter, chan=2 c1=11 c2=114
+Program, chan=2 program=0
+Parameter, chan=2 c1=7 c2=94
+Parameter, chan=2 c1=10 c2=40
+Pitchbend, chan=2 msb=0 lsb=64
+Parameter, chan=2 c1=91 c2=70
+Parameter, chan=2 c1=93 c2=0
+Parameter, chan=2 c1=94 c2=0
+Parameter, chan=2 c1=0 c2=0
+Parameter, chan=2 c1=32 c2=0
+Program, chan=2 program=0
+Parameter, chan=2 c1=0 c2=0
+Parameter, chan=2 c1=32 c2=1
+Program, chan=2 program=0
+Parameter, chan=3 c1=99 c2=1
+Parameter, chan=3 c1=98 c2=100
+Parameter, chan=3 c1=6 c2=74
+Parameter, chan=3 c1=38 c2=0
+Parameter, chan=3 c1=1 c2=0
+Parameter, chan=3 c1=0 c2=0
+Parameter, chan=3 c1=32 c2=2
+Program, chan=3 program=32
+Parameter, chan=3 c1=7 c2=99
+Parameter, chan=3 c1=10 c2=64
+Parameter, chan=3 c1=64 c2=0
+Parameter, chan=3 c1=11 c2=114
+Pitchbend, chan=3 msb=0 lsb=64
+Parameter, chan=3 c1=91 c2=40
+Parameter, chan=3 c1=93 c2=0
+Parameter, chan=3 c1=94 c2=0
+Parameter, chan=3 c1=0 c2=0
+Parameter, chan=3 c1=32 c2=0
+Program, chan=3 program=32
+Parameter, chan=3 c1=0 c2=0
+Parameter, chan=3 c1=32 c2=2
+Program, chan=3 program=32

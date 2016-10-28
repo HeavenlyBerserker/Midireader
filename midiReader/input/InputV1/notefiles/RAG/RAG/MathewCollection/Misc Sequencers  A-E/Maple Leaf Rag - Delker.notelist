@@ -1,0 +1,8 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=14
+     Text = <Maple Leaf Rag>
+Program, chan=1 program=0
+Parameter, chan=1 c1=7 c2=127
+Meta Text, type=0x03 (Sequence/Track Name)  leng=15
+     Text = <by Scott Joplin>
+Program, chan=2 program=0
+Parameter, chan=2 c1=7 c2=127

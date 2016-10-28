@@ -1,0 +1,391 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=39
+     Text = <HelloBluebird VS13989 HildaMyers -   # >
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <Vocalstyle Song Roll #13989
+>
+Meta Text, type=0x01 (Text Event)  leng=15
+     Text = <Hello Bluebird
+>
+Meta Text, type=0x01 (Text Event)  leng=9
+     Text = <Fox Trot
+>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = <Cliff Friend, 1926
+>
+Meta Text, type=0x01 (Text Event)  leng=22
+     Text = <Played by Hilda Myers
+>
+Meta Text, type=0x01 (Text Event)  leng=4
+     Text = <---
+>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = <Scan of a player piano roll by Robert Perry
+>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = <rob@pianola.co.nz / http://www.pianola.co.nz
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = <---Technical Data Follows---
+>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </music_category:       Piano_Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </title:                Hello Bluebird
+>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </subtitle:             Fox Trot
+>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </roll_manufacturer:    Vocalstyle
+>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = </roll_brand:           Vocalstyle Song Roll
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </roll_number:          13989
+>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </roll_class:           88
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </performer:            Myers, Hilda
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </composer:             Cliff Friend
+>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </composition_date:     1926
+>
+Meta Text, type=0x01 (Text Event)  leng=26
+     Text = </roll_tempo:           90
+>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </song_type:            Foxtrot
+>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </roll_condition:       Excellent
+>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_authenticity:    Original
+>
+Meta Text, type=0x01 (Text Event)  leng=52
+     Text = </roll_copyright:       1926, Jerome H. Remick & Co.
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </roll_date:            January 1927
+>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = </roll_city:            Cincinnati, OH
+>
+Meta Text, type=0x01 (Text Event)  leng=29
+     Text = </original_price:       $1.00
+>
+Meta Text, type=0x01 (Text Event)  leng=34
+     Text = </date_scanned:         2010-02-25
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </scanned_by:           Robert Perry
+>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </owner:                Robert Perry
+>
+Meta Text, type=0x01 (Text Event)  leng=62
+     Text = </scanning_system:      MK4 Bicolour with Direct Drive Capstan
+>
+Meta Text, type=0x01 (Text Event)  leng=91
+     Text = </notes:                Hilda's last roll, released 1-27 (Vocalstyle ceased ops that month)
+>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </pianist:              Hilda Myers
+>
+Meta Text, type=0x01 (Text Event)  leng=51
+     Text = <May NOT be EDITED or used for commercial purposes.
+>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = <Freely made available for NON-commercial purposes
+>
+Note   2663   2730 43
+Note   2663   2733 50
+Note   2666   2819 79
+Note   2666   2819 83
+Note   2666   2819 74
+Note   2666   2822 86
+Note   2666   2952 62
+Note   2668   3575 59
+Note   2852   2952 82
+Note   2855   2955 78
+Note   2966   3065 67
+Note   2968   3065 71
+Note   2991   3090 64
+Note   2994   3062 62
+Note   2994   3123 79
+Note   2994   3123 83
+Note   2994   3123 88
+Note   2994   3123 76
+Note   3198   3268 64
+Note   3227   3301 90
+Note   3227   3327 87
+Note   3330   3402 38
+Note   3333   3488 95
+Note   3336   3656 71
+Note   3337   3491 83
+Note   3337   3493 86
+Note   3337   3493 91
+Note   3558   3825 83
+Note   3668   3737 55
+Note   3668   3961 62
+Note   3669   3825 79
+Note   3669   3825 74
+Note   3669   3825 86
+Note   3670   3963 59
+Note   3886   3961 82
+Note   3886   4015 43
+Note   3890   3962 78
+Note   3972   4100 79
+Note   3998   4070 50
+Note   3998   4177 64
+Note   4000   4100 76
+Note   4000   4100 83
+Note   4000   4100 88
+Note   4001   4537 59
+Note   4216   4425 95
+Note   4220   4429 91
+Note   4220   4429 86
+Note   4220   4429 83
+Note   4330   4400 64
+Note   4331   4402 67
+Note   4331   4680 71
+Note   4518   4619 47
+Note   4520   4736 74
+Note   4520   4736 86
+Note   4520   4761 83
+Note   4523   4761 79
+Note   4662   4847 62
+Note   4663   4908 59
+Note   4886   4958 47
+Note   4888   4961 64
+Note   4888   4962 88
+Note   4890   4962 76
+Note   4995   5094 95
+Note   5000   5098 86
+Note   5000   5098 83
+Note   5000   5098 91
+Note   5000   5291 71
+Note   5001   5209 59
+Note   5190   5288 45
+Note   5218   5430 88
+Note   5325   5454 85
+Note   5327   5400 52
+Note   5327   5458 93
+Note   5327   5458 81
+Note   5327   5565 61
+Note 195136 195432 62
+Note 195139 196014 59
+Note 195351 195477 43
+Note 195359 195433 78
+Note 195359 195433 82
+Note 195394 195438 110
+Note 195461 195533 50
+Note 195463 195593 64
+Note 195469 195569 83
+Note 195469 195569 76
+Note 195469 195569 79
+Note 195469 195570 88
+Note 195686 195898 95
+Note 195687 195898 83
+Note 195687 195901 91
+Note 195689 195901 86
+Note 195791 195836 64
+Note 195793 195868 67
+Note 195795 196155 71
+Note 195993 196090 47
+Note 196001 196212 74
+Note 196001 196240 79
+Note 196002 196212 86
+Note 196002 196240 83
+Note 196136 196318 62
+Note 196139 196377 59
+Note 196351 196426 47
+Note 196355 196400 64
+Note 196361 196433 76
+Note 196361 196434 88
+Note 196468 196568 95
+Note 196468 196570 83
+Note 196468 196680 59
+Note 196468 196761 71
+Note 196470 196570 86
+Note 196470 196572 91
+Note 196655 196726 45
+Note 196688 196902 88
+Note 196794 196866 52
+Note 196797 196925 85
+Note 196798 197034 61
+Note 196800 196926 81
+Note 196800 197063 69
+Note 196802 196926 93
+Note 197020 197204 91
+Note 197125 197198 64
+Note 197125 197254 85
+Note 197126 197198 57
+Note 197126 197257 95
+Note 197126 197702 61
+Note 197129 197201 67
+Note 197129 197258 83
+Note 197129 197258 88
+Note 197129 197394 71
+Note 197452 197530 40
+Note 197461 197590 88
+Note 197462 197591 97
+Note 197462 197591 91
+Note 197462 197591 100
+Note 197462 197761 76
+Note 197794 197868 64
+Note 197794 197948 85
+Note 197795 197868 67
+Note 197795 197868 57
+Note 197795 197951 81
+Note 197795 198116 61
+Note 197798 197951 93
+Note 197798 197951 88
+Note 197798 198062 69
+Note 197987 198084 45
+Note 198018 198230 91
+Note 198123 198227 85
+Note 198126 198227 95
+Note 198126 198695 55
+Note 198127 198230 83
+Note 198127 198394 71
+Note 198430 198500 64
+Note 198432 198530 67
+Note 198455 198530 61
+Note 198455 198530 57
+Note 198455 198530 91
+Note 198455 198530 97
+Note 198455 198555 88
+Note 198458 198530 100
+Note 198458 198532 76
+Note 198580 198597 114
+Note 198675 198718 45
+Note 198676 198857 93
+Note 198676 198857 88
+Note 198676 198857 81
+Note 198702 198855 85
+Note 198784 199050 55
+Note 198786 198966 69
+Note 199002 199047 95
+Note 199007 199080 71
+Note 199007 199080 83
+Note 199119 199162 64
+Note 199119 199190 95
+Note 199122 199193 88
+Note 199122 199194 92
+Note 199122 199194 100
+Note 199122 199194 59
+Note 199122 199194 68
+Note 199122 199194 76
+Note 199122 199450 56
+Note 199345 199413 42
+Note 199348 199558 93
+Note 199350 199558 96
+Note 199350 199558 98
+Note 199350 199559 90
+Note 199350 199559 86
+Note 199425 200051 54
+Note 199458 199698 74
+Note 199458 199698 62
+Note 199682 199864 86
+Note 199764 199862 66
+Note 199765 199864 62
+Note 199791 199864 81
+Note 199791 199864 74
+Note 199791 199864 78
+Note 199791 199865 57
+Note 199793 199865 60
+Note 200009 200080 45
+Note 200009 200523 84
+Note 200009 200527 88
+Note 200009 200527 81
+Note 200012 200472 76
+Note 200012 200527 78
+Note 200116 200683 54
+Note 200119 200416 64
+Note 200451 200525 66
+Note 200451 200527 62
+Note 200452 200497 57
+Note 200455 200527 60
+Note 200668 200770 38
+Note 200777 200852 95
+Note 200777 201352 54
+Note 200780 200826 64
+Note 200782 200852 88
+Note 200782 200852 45
+Note 200782 200852 100
+Note 200782 200854 91
+Note 200783 200854 76
+Note 201008 201108 94
+Note 201008 201522 90
+Note 201091 201522 74
+Note 201118 201188 66
+Note 201118 201520 93
+Note 201118 201520 98
+Note 201118 201522 86
+Note 201118 201523 62
+Note 201119 201190 57
+Note 201119 201191 60
+Note 201338 201440 38
+Note 201450 202094 54
+Note 201452 201494 45
+Note 201776 201904 95
+Note 201779 201854 66
+Note 201779 201905 90
+Note 201779 201905 83
+Note 201782 201854 62
+Note 201782 201905 86
+Note 201782 202072 71
+Note 201784 202020 59
+Note 202000 202208 43
+Note 202109 202208 50
+Note 202109 202452 86
+Note 202109 202452 83
+Note 202109 202452 79
+Note 202109 202452 91
+Note 202111 202209 67
+Note 202114 202212 59
+Note 202432 202657 44
+Note 202436 202479 51
+Note 202437 202538 66
+Note 202440 202569 70
+Note 202440 202572 60
+Note 202523 202630 51
+Note 202673 202744 60
+Note 202673 202744 70
+Note 202777 202907 45
+Note 202777 202907 52
+Note 202779 202907 67
+Note 202779 202909 71
+Note 202779 202937 61
+Note 203109 203265 54
+Note 203112 203268 66
+Note 203115 203243 74
+Note 203115 203243 70
+Note 203115 203268 50
+Note 203115 203268 62
+Note 203116 203270 58
+Note 203445 203686 79
+Note 203445 203686 50
+Note 203445 203686 55
+Note 203445 203687 74
+Note 203448 203687 67
+Note 203448 203687 71
+Note 203450 203689 59
+Note 203775 203986 82
+Note 203776 203986 38
+Note 203777 203987 86
+Note 203777 203987 78
+Note 203777 203990 72
+Note 204112 204330 79
+Note 204112 204332 91
+Note 204112 204358 83
+Note 204112 204358 31
+Note 204112 204358 86

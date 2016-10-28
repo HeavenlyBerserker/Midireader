@@ -1,0 +1,7 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=23
+     Text = <Acoustic Grand Piano RH>
+Program, chan=1 program=0
+Meta Text, type=0x03 (Sequence/Track Name)  leng=23
+     Text = <Acoustic Grand Piano LH>
+Program, chan=2 program=0
+Parameter, chan=2 c1=10 c2=32

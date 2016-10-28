@@ -1,0 +1,1139 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=8
+     Text = <Piano LH>
+Meta Text, type=0x01 (Text Event)  leng=93
+     Text = <Setup: MIDI copyright 2000 by rreublin@bellsouth.net & parlorsongs.com. All rights reserved.\0x00>
+Meta Text, type=0x01 (Text Event)  leng=126
+     Text = <Notice: Removal of the above copyright information is a violation of copyright law. Please respect our rights and contact us.\0x00>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=5
+     Text = <Voice>
+Meta event, unrecognized, type=0x62 leng=65
+Sysex, leng=6
+Meta Text, type=0x03 (Sequence/Track Name)  leng=8
+     Text = <Piano RH>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=5
+     Text = <SETUP>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <When\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <the\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <gray\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <shad -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <ows\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <night,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <creep,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <Comes\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <And\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <a\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <the\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <world\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <beau -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <is\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <ti -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <a -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <ful\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <sleep,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <light,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <In\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <And\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <the\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <the\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <still\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <sun -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <of\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <shine\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <that\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <the\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <night,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <beams,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <Finds\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <Ba -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <a\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <by\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <creeps\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <ba -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <by\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <down\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <in\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <a\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=9
+     Text = <dreams.\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=9
+     Text = <flight.\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <Mam -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <First\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ma\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <she\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <looks\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <looks\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <all\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <in\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <to\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <a -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <see,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <round,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <With -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <Where\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <her\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <out\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <dar -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <mak -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <ling\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <ing\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <can\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <a\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <sound;\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <be;\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <She\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <The\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <finds\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <ba -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <by\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <her\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <tod -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <ba -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <by\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <dles\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <up\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <still\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <to\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <in\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <her\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <the\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <tel\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <slumb\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <er\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <e -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <deep,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <phone,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <A\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <And\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <whis -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <whis -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <p'ring\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <pers\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <in\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <while\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <she's\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <a\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ba\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <fast\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <by\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <a -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <sleep:\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <tone:\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <"Hel -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <lo\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <Cen -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <tral\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <give\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <me\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <No\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <Man's\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <Land,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <My\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <dad -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <dy's\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <there,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <my\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <mam -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ma\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <told\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = < -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <me;\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <She\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <tip -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <toed\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <off\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <to\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <bed,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <Af -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <ter\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <my\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=9
+     Text = <pray'rs\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <were\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <said,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <Don't\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <ring\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <when\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <you\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <get\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <my\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <num\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <ber,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <Or\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <you'll\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <dis -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <turb\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <mam -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <ma's\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <slum\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <ber.\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <I'm\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <a -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <fraid\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <to\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <stand\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <here\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <at\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <the\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=9
+     Text = <'phone,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <'Cause\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <I'm\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <a -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <lone,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <So\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <won't\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <you\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <hur -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <ry;\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <I\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <want\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <to\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <know\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <why\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <mam -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <ma\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <starts\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <to\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <weep,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <When\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <I\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <say,\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <"now\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <I\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <lay\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <me\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <down\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <to\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=9
+     Text = <sleep;"\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <Hel -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <lo\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <Cen -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <tral\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=6
+     Text = <give\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <me\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <No\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <Man's\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=8
+     Text = <Land."\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=9
+     Text = <Through\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=5
+     Text = <the\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <cur -\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=7
+     Text = <tains\0x00\0x00>
+Meta Text, type=0x05 (Lyric)  leng=4
+     Text = <of\0x00\0x00>
+Program, chan=1 program=1
+Parameter, chan=1 c1=7 c2=115
+Parameter, chan=1 c1=10 c2=105
+Parameter, chan=1 c1=93 c2=0
+Parameter, chan=3 c1=10 c2=31
+Parameter, chan=1 c1=39 c2=99
+Parameter, chan=1 c1=40 c2=7
+Parameter, chan=1 c1=39 c2=81
+Parameter, chan=1 c1=39 c2=80
+Parameter, chan=1 c1=40 c2=3
+Parameter, chan=1 c1=39 c2=97
+Parameter, chan=1 c1=7 c2=83
+Parameter, chan=1 c1=7 c2=86
+Parameter, chan=4 c1=7 c2=88
+Parameter, chan=1 c1=7 c2=89
+Parameter, chan=1 c1=7 c2=90
+Parameter, chan=1 c1=7 c2=93
+Parameter, chan=1 c1=7 c2=94
+Parameter, chan=1 c1=7 c2=95
+Parameter, chan=1 c1=7 c2=99
+Parameter, chan=1 c1=7 c2=100
+Parameter, chan=1 c1=7 c2=105
+Parameter, chan=1 c1=40 c2=2
+Parameter, chan=1 c1=40 c2=14
+Parameter, chan=1 c1=40 c2=12
+Parameter, chan=1 c1=40 c2=7
+Parameter, chan=1 c1=49 c2=0
+Parameter, chan=1 c1=49 c2=40
+Parameter, chan=1 c1=49 c2=0
+Parameter, chan=1 c1=50 c2=47
+Parameter, chan=1 c1=50 c2=43
+Parameter, chan=1 c1=50 c2=38
+Parameter, chan=1 c1=50 c2=43
+Parameter, chan=1 c1=50 c2=2
+Parameter, chan=1 c1=50 c2=37
+Parameter, chan=1 c1=50 c2=81
+Parameter, chan=1 c1=50 c2=82
+Parameter, chan=1 c1=50 c2=91
+Parameter, chan=1 c1=50 c2=84
+Parameter, chan=1 c1=50 c2=75
+Parameter, chan=1 c1=50 c2=73
+Parameter, chan=1 c1=50 c2=74
+Parameter, chan=1 c1=50 c2=86
+Parameter, chan=1 c1=50 c2=2
+Parameter, chan=1 c1=49 c2=11
+Parameter, chan=1 c1=50 c2=2
+Parameter, chan=1 c1=50 c2=19
+Parameter, chan=1 c1=50 c2=27
+Parameter, chan=1 c1=50 c2=27
+Parameter, chan=1 c1=50 c2=25
+Parameter, chan=1 c1=50 c2=15
+Parameter, chan=1 c1=50 c2=20
+Parameter, chan=1 c1=50 c2=18
+Parameter, chan=1 c1=50 c2=18
+Parameter, chan=1 c1=50 c2=19
+Parameter, chan=1 c1=50 c2=2
+Parameter, chan=1 c1=50 c2=52
+Parameter, chan=1 c1=50 c2=75
+Parameter, chan=1 c1=50 c2=69
+Parameter, chan=1 c1=50 c2=74
+Parameter, chan=1 c1=50 c2=67
+Parameter, chan=1 c1=50 c2=84
+Parameter, chan=1 c1=50 c2=70
+Parameter, chan=1 c1=50 c2=2
+Parameter, chan=1 c1=50 c2=35
+Parameter, chan=1 c1=50 c2=16
+Parameter, chan=1 c1=50 c2=2
+Parameter, chan=1 c1=50 c2=52
+Parameter, chan=1 c1=50 c2=71
+Parameter, chan=1 c1=50 c2=87
+Parameter, chan=1 c1=50 c2=68
+Parameter, chan=1 c1=50 c2=78
+Parameter, chan=1 c1=50 c2=75
+Parameter, chan=1 c1=50 c2=80
+Parameter, chan=1 c1=50 c2=2
+Parameter, chan=1 c1=50 c2=67
+Parameter, chan=1 c1=50 c2=80
+Parameter, chan=1 c1=50 c2=70
+Parameter, chan=1 c1=50 c2=2
+Parameter, chan=1 c1=50 c2=50
+Parameter, chan=1 c1=50 c2=67
+Parameter, chan=1 c1=50 c2=84
+Parameter, chan=1 c1=50 c2=78
+Parameter, chan=1 c1=50 c2=81
+Parameter, chan=1 c1=50 c2=84
+Parameter, chan=1 c1=50 c2=53
+Parameter, chan=1 c1=50 c2=81
+Parameter, chan=1 c1=50 c2=80
+Parameter, chan=1 c1=50 c2=73
+Parameter, chan=1 c1=50 c2=85
+Parameter, chan=1 c1=50 c2=16
+Parameter, chan=1 c1=50 c2=69
+Parameter, chan=1 c1=50 c2=81
+Parameter, chan=1 c1=50 c2=79
+Parameter, chan=1 c1=49 c2=0
+Parameter, chan=4 c1=91 c2=73
+Parameter, chan=4 c1=93 c2=0
+Parameter, chan=2 c1=39 c2=109
+Program, chan=2 program=1
+Parameter, chan=2 c1=10 c2=105
+Parameter, chan=2 c1=0 c2=0
+Parameter, chan=2 c1=40 c2=15
+Parameter, chan=2 c1=40 c2=8
+Parameter, chan=2 c1=39 c2=89
+Parameter, chan=2 c1=64 c2=0
+Parameter, chan=2 c1=39 c2=80
+Parameter, chan=2 c1=40 c2=8
+Parameter, chan=1 c1=7 c2=81
+Parameter, chan=1 c1=7 c2=82
+Parameter, chan=4 c1=7 c2=82
+Parameter, chan=4 c1=7 c2=85
+Parameter, chan=1 c1=7 c2=85
+Parameter, chan=1 c1=7 c2=87
+Parameter, chan=2 c1=39 c2=78
+Parameter, chan=4 c1=7 c2=96
+Parameter, chan=1 c1=7 c2=102
+Parameter, chan=1 c1=7 c2=104
+Parameter, chan=1 c1=7 c2=107
+Parameter, chan=1 c1=7 c2=108
+Parameter, chan=4 c1=7 c2=112
+Parameter, chan=2 c1=40 c2=12
+Parameter, chan=2 c1=40 c2=4
+Parameter, chan=2 c1=40 c2=15
+Parameter, chan=2 c1=40 c2=19
+Parameter, chan=2 c1=49 c2=0
+Parameter, chan=2 c1=49 c2=40
+Parameter, chan=2 c1=49 c2=0
+Parameter, chan=2 c1=50 c2=47
+Parameter, chan=2 c1=50 c2=43
+Parameter, chan=2 c1=50 c2=38
+Parameter, chan=2 c1=50 c2=43
+Parameter, chan=2 c1=50 c2=2
+Parameter, chan=2 c1=50 c2=37
+Parameter, chan=2 c1=50 c2=81
+Parameter, chan=2 c1=50 c2=82
+Parameter, chan=2 c1=50 c2=91
+Parameter, chan=2 c1=50 c2=84
+Parameter, chan=2 c1=50 c2=75
+Parameter, chan=2 c1=50 c2=73
+Parameter, chan=2 c1=50 c2=74
+Parameter, chan=2 c1=50 c2=86
+Parameter, chan=2 c1=50 c2=2
+Parameter, chan=2 c1=49 c2=11
+Parameter, chan=2 c1=50 c2=2
+Parameter, chan=2 c1=50 c2=19
+Parameter, chan=2 c1=50 c2=27
+Parameter, chan=2 c1=50 c2=27
+Parameter, chan=2 c1=50 c2=25
+Parameter, chan=2 c1=50 c2=15
+Parameter, chan=2 c1=50 c2=20
+Parameter, chan=2 c1=50 c2=18
+Parameter, chan=2 c1=50 c2=18
+Parameter, chan=2 c1=50 c2=19
+Parameter, chan=2 c1=50 c2=2
+Parameter, chan=2 c1=50 c2=52
+Parameter, chan=2 c1=50 c2=75
+Parameter, chan=2 c1=50 c2=69
+Parameter, chan=2 c1=50 c2=74
+Parameter, chan=2 c1=50 c2=67
+Parameter, chan=2 c1=50 c2=84
+Parameter, chan=2 c1=50 c2=70
+Parameter, chan=2 c1=50 c2=2
+Parameter, chan=2 c1=50 c2=35
+Parameter, chan=2 c1=50 c2=16
+Parameter, chan=2 c1=50 c2=2
+Parameter, chan=2 c1=50 c2=52
+Parameter, chan=2 c1=50 c2=71
+Parameter, chan=2 c1=50 c2=87
+Parameter, chan=2 c1=50 c2=68
+Parameter, chan=2 c1=50 c2=78
+Parameter, chan=2 c1=50 c2=75
+Parameter, chan=2 c1=50 c2=80
+Parameter, chan=2 c1=50 c2=2
+Parameter, chan=2 c1=50 c2=67
+Parameter, chan=2 c1=50 c2=80
+Parameter, chan=2 c1=50 c2=70
+Parameter, chan=2 c1=50 c2=2
+Parameter, chan=2 c1=50 c2=50
+Parameter, chan=2 c1=50 c2=67
+Parameter, chan=2 c1=50 c2=84
+Parameter, chan=2 c1=50 c2=78
+Parameter, chan=2 c1=50 c2=81
+Parameter, chan=2 c1=50 c2=84
+Parameter, chan=2 c1=50 c2=53
+Parameter, chan=2 c1=50 c2=81
+Parameter, chan=2 c1=50 c2=80
+Parameter, chan=2 c1=50 c2=73
+Parameter, chan=2 c1=50 c2=85
+Parameter, chan=2 c1=50 c2=16
+Parameter, chan=2 c1=50 c2=69
+Parameter, chan=2 c1=50 c2=81
+Parameter, chan=2 c1=50 c2=79
+Parameter, chan=2 c1=49 c2=0
+Parameter, chan=1 c1=11 c2=127
+Parameter, chan=3 c1=91 c2=60
+Parameter, chan=3 c1=32 c2=0
+Program, chan=3 program=1
+Parameter, chan=2 c1=32 c2=0
+Parameter, chan=5 c1=91 c2=59
+Parameter, chan=3 c1=0 c2=0
+Parameter, chan=3 c1=39 c2=105
+Parameter, chan=3 c1=40 c2=16
+Parameter, chan=3 c1=40 c2=20
+Parameter, chan=3 c1=39 c2=89
+Parameter, chan=3 c1=39 c2=81
+Parameter, chan=3 c1=40 c2=1
+Parameter, chan=4 c1=7 c2=89
+Parameter, chan=4 c1=7 c2=97
+Parameter, chan=4 c1=7 c2=100
+Parameter, chan=3 c1=39 c2=64
+Parameter, chan=4 c1=7 c2=104
+Parameter, chan=1 c1=7 c2=112
+Parameter, chan=3 c1=40 c2=9
+Parameter, chan=3 c1=39 c2=64
+Parameter, chan=3 c1=40 c2=18
+Parameter, chan=3 c1=39 c2=78
+Parameter, chan=3 c1=49 c2=0
+Parameter, chan=3 c1=49 c2=40
+Parameter, chan=3 c1=49 c2=0
+Parameter, chan=3 c1=50 c2=47
+Parameter, chan=3 c1=50 c2=43
+Parameter, chan=3 c1=50 c2=38
+Parameter, chan=3 c1=50 c2=43
+Parameter, chan=3 c1=50 c2=2
+Parameter, chan=3 c1=50 c2=37
+Parameter, chan=3 c1=50 c2=81
+Parameter, chan=3 c1=50 c2=82
+Parameter, chan=3 c1=50 c2=91
+Parameter, chan=3 c1=50 c2=84
+Parameter, chan=3 c1=50 c2=75
+Parameter, chan=3 c1=50 c2=73
+Parameter, chan=3 c1=50 c2=74
+Parameter, chan=3 c1=50 c2=86
+Parameter, chan=3 c1=50 c2=2
+Parameter, chan=3 c1=49 c2=11
+Parameter, chan=3 c1=50 c2=2
+Parameter, chan=3 c1=50 c2=19
+Parameter, chan=3 c1=50 c2=27
+Parameter, chan=3 c1=50 c2=27
+Parameter, chan=3 c1=50 c2=25
+Parameter, chan=3 c1=50 c2=15
+Parameter, chan=3 c1=50 c2=20
+Parameter, chan=3 c1=50 c2=18
+Parameter, chan=3 c1=50 c2=18
+Parameter, chan=3 c1=50 c2=19
+Parameter, chan=3 c1=50 c2=2
+Parameter, chan=3 c1=50 c2=52
+Parameter, chan=3 c1=50 c2=75
+Parameter, chan=3 c1=50 c2=69
+Parameter, chan=3 c1=50 c2=74
+Parameter, chan=3 c1=50 c2=67
+Parameter, chan=3 c1=50 c2=84
+Parameter, chan=3 c1=50 c2=70
+Parameter, chan=3 c1=50 c2=2
+Parameter, chan=3 c1=50 c2=35
+Parameter, chan=3 c1=50 c2=16
+Parameter, chan=3 c1=50 c2=2
+Parameter, chan=3 c1=50 c2=52
+Parameter, chan=3 c1=50 c2=71
+Parameter, chan=3 c1=50 c2=87
+Parameter, chan=3 c1=50 c2=68
+Parameter, chan=3 c1=50 c2=78
+Parameter, chan=3 c1=50 c2=75
+Parameter, chan=3 c1=50 c2=80
+Parameter, chan=3 c1=50 c2=2
+Parameter, chan=3 c1=50 c2=67
+Parameter, chan=3 c1=50 c2=80
+Parameter, chan=3 c1=50 c2=70
+Parameter, chan=3 c1=50 c2=2
+Parameter, chan=3 c1=50 c2=50
+Parameter, chan=3 c1=50 c2=67
+Parameter, chan=3 c1=50 c2=84
+Parameter, chan=3 c1=50 c2=78
+Parameter, chan=3 c1=50 c2=81
+Parameter, chan=3 c1=50 c2=84
+Parameter, chan=3 c1=50 c2=53
+Parameter, chan=3 c1=50 c2=81
+Parameter, chan=3 c1=50 c2=80
+Parameter, chan=3 c1=50 c2=73
+Parameter, chan=3 c1=50 c2=85
+Parameter, chan=3 c1=50 c2=16
+Parameter, chan=3 c1=50 c2=69
+Parameter, chan=3 c1=50 c2=81
+Parameter, chan=3 c1=50 c2=79
+Parameter, chan=3 c1=49 c2=0
+Program, chan=4 program=1
+Parameter, chan=4 c1=7 c2=115
+Parameter, chan=4 c1=10 c2=105
+Parameter, chan=4 c1=11 c2=127
+Parameter, chan=4 c1=39 c2=100
+Parameter, chan=4 c1=40 c2=25
+Parameter, chan=4 c1=39 c2=64
+Parameter, chan=4 c1=64 c2=0
+Parameter, chan=4 c1=39 c2=87
+Parameter, chan=4 c1=39 c2=64
+Parameter, chan=4 c1=40 c2=18
+Parameter, chan=1 c1=7 c2=80
+Parameter, chan=4 c1=7 c2=81
+Parameter, chan=4 c1=7 c2=83
+Parameter, chan=4 c1=7 c2=84
+Parameter, chan=1 c1=7 c2=84
+Parameter, chan=4 c1=7 c2=87
+Parameter, chan=4 c1=7 c2=98
+Parameter, chan=4 c1=7 c2=102
+Parameter, chan=1 c1=7 c2=103
+Parameter, chan=4 c1=7 c2=103
+Parameter, chan=4 c1=7 c2=105
+Parameter, chan=4 c1=7 c2=106
+Parameter, chan=1 c1=7 c2=106
+Parameter, chan=4 c1=7 c2=107
+Parameter, chan=4 c1=7 c2=109
+Parameter, chan=1 c1=7 c2=109
+Parameter, chan=4 c1=7 c2=111
+Parameter, chan=4 c1=39 c2=114
+Parameter, chan=4 c1=40 c2=14
+Parameter, chan=4 c1=39 c2=112
+Parameter, chan=4 c1=39 c2=115
+Parameter, chan=4 c1=40 c2=3
+Parameter, chan=4 c1=49 c2=0
+Parameter, chan=4 c1=49 c2=40
+Parameter, chan=4 c1=49 c2=0
+Parameter, chan=4 c1=50 c2=47
+Parameter, chan=4 c1=50 c2=43
+Parameter, chan=4 c1=50 c2=38
+Parameter, chan=4 c1=50 c2=43
+Parameter, chan=4 c1=50 c2=2
+Parameter, chan=4 c1=50 c2=37
+Parameter, chan=4 c1=50 c2=81
+Parameter, chan=4 c1=50 c2=82
+Parameter, chan=4 c1=50 c2=91
+Parameter, chan=4 c1=50 c2=84
+Parameter, chan=4 c1=50 c2=75
+Parameter, chan=4 c1=50 c2=73
+Parameter, chan=4 c1=50 c2=74
+Parameter, chan=4 c1=50 c2=86
+Parameter, chan=4 c1=50 c2=2
+Parameter, chan=4 c1=49 c2=11
+Parameter, chan=4 c1=50 c2=2
+Parameter, chan=4 c1=50 c2=19
+Parameter, chan=4 c1=50 c2=27
+Parameter, chan=4 c1=50 c2=27
+Parameter, chan=4 c1=50 c2=25
+Parameter, chan=4 c1=50 c2=15
+Parameter, chan=4 c1=50 c2=20
+Parameter, chan=4 c1=50 c2=18
+Parameter, chan=4 c1=50 c2=18
+Parameter, chan=4 c1=50 c2=19
+Parameter, chan=4 c1=50 c2=2
+Parameter, chan=4 c1=50 c2=52
+Parameter, chan=4 c1=50 c2=75
+Parameter, chan=4 c1=50 c2=69
+Parameter, chan=4 c1=50 c2=74
+Parameter, chan=4 c1=50 c2=67
+Parameter, chan=4 c1=50 c2=84
+Parameter, chan=4 c1=50 c2=70
+Parameter, chan=4 c1=50 c2=2
+Parameter, chan=4 c1=50 c2=35
+Parameter, chan=4 c1=50 c2=16
+Parameter, chan=4 c1=50 c2=2
+Parameter, chan=4 c1=50 c2=52
+Parameter, chan=4 c1=50 c2=71
+Parameter, chan=4 c1=50 c2=87
+Parameter, chan=4 c1=50 c2=68
+Parameter, chan=4 c1=50 c2=78
+Parameter, chan=4 c1=50 c2=75
+Parameter, chan=4 c1=50 c2=80
+Parameter, chan=4 c1=50 c2=2
+Parameter, chan=4 c1=50 c2=67
+Parameter, chan=4 c1=50 c2=80
+Parameter, chan=4 c1=50 c2=70
+Parameter, chan=4 c1=50 c2=2
+Parameter, chan=4 c1=50 c2=50
+Parameter, chan=4 c1=50 c2=67
+Parameter, chan=4 c1=50 c2=84
+Parameter, chan=4 c1=50 c2=78
+Parameter, chan=4 c1=50 c2=81
+Parameter, chan=4 c1=50 c2=84
+Parameter, chan=4 c1=50 c2=53
+Parameter, chan=4 c1=50 c2=81
+Parameter, chan=4 c1=50 c2=80
+Parameter, chan=4 c1=50 c2=73
+Parameter, chan=4 c1=50 c2=85
+Parameter, chan=4 c1=50 c2=16
+Parameter, chan=4 c1=50 c2=69
+Parameter, chan=4 c1=50 c2=81
+Parameter, chan=4 c1=50 c2=79
+Parameter, chan=4 c1=49 c2=0
+Parameter, chan=5 c1=10 c2=105
+Parameter, chan=5 c1=0 c2=0
+Parameter, chan=5 c1=32 c2=0
+Program, chan=5 program=1
+Parameter, chan=6 c1=10 c2=31
+Parameter, chan=5 c1=39 c2=105
+Parameter, chan=5 c1=40 c2=18
+Parameter, chan=5 c1=40 c2=73
+Parameter, chan=5 c1=64 c2=0
+Parameter, chan=5 c1=39 c2=77
+Parameter, chan=5 c1=39 c2=114
+Parameter, chan=5 c1=40 c2=4
+Parameter, chan=4 c1=7 c2=80
+Parameter, chan=1 c1=7 c2=88
+Parameter, chan=1 c1=7 c2=91
+Parameter, chan=4 c1=7 c2=91
+Parameter, chan=4 c1=7 c2=92
+Parameter, chan=4 c1=7 c2=95
+Parameter, chan=1 c1=7 c2=98
+Parameter, chan=4 c1=7 c2=99
+Parameter, chan=1 c1=7 c2=101
+Parameter, chan=4 c1=7 c2=101
+Parameter, chan=4 c1=7 c2=108
+Parameter, chan=1 c1=7 c2=110
+Parameter, chan=5 c1=40 c2=5
+Parameter, chan=5 c1=39 c2=64
+Parameter, chan=5 c1=40 c2=1
+Parameter, chan=5 c1=40 c2=15
+Parameter, chan=5 c1=40 c2=15
+Parameter, chan=5 c1=49 c2=0
+Parameter, chan=5 c1=49 c2=40
+Parameter, chan=5 c1=49 c2=0
+Parameter, chan=5 c1=50 c2=47
+Parameter, chan=5 c1=50 c2=43
+Parameter, chan=5 c1=50 c2=38
+Parameter, chan=5 c1=50 c2=43
+Parameter, chan=5 c1=50 c2=2
+Parameter, chan=5 c1=50 c2=37
+Parameter, chan=5 c1=50 c2=81
+Parameter, chan=5 c1=50 c2=82
+Parameter, chan=5 c1=50 c2=91
+Parameter, chan=5 c1=50 c2=84
+Parameter, chan=5 c1=50 c2=75
+Parameter, chan=5 c1=50 c2=73
+Parameter, chan=5 c1=50 c2=74
+Parameter, chan=5 c1=50 c2=86
+Parameter, chan=5 c1=50 c2=2
+Parameter, chan=5 c1=49 c2=11
+Parameter, chan=5 c1=50 c2=2
+Parameter, chan=5 c1=50 c2=19
+Parameter, chan=5 c1=50 c2=27
+Parameter, chan=5 c1=50 c2=27
+Parameter, chan=5 c1=50 c2=25
+Parameter, chan=5 c1=50 c2=15
+Parameter, chan=5 c1=50 c2=20
+Parameter, chan=5 c1=50 c2=18
+Parameter, chan=5 c1=50 c2=18
+Parameter, chan=5 c1=50 c2=19
+Parameter, chan=5 c1=50 c2=2
+Parameter, chan=5 c1=50 c2=52
+Parameter, chan=5 c1=50 c2=75
+Parameter, chan=5 c1=50 c2=69
+Parameter, chan=5 c1=50 c2=74
+Parameter, chan=5 c1=50 c2=67
+Parameter, chan=5 c1=50 c2=84
+Parameter, chan=5 c1=50 c2=70
+Parameter, chan=5 c1=50 c2=2
+Parameter, chan=5 c1=50 c2=35
+Parameter, chan=5 c1=50 c2=16
+Parameter, chan=5 c1=50 c2=2
+Parameter, chan=5 c1=50 c2=52
+Parameter, chan=5 c1=50 c2=71
+Parameter, chan=5 c1=50 c2=87
+Parameter, chan=5 c1=50 c2=68
+Parameter, chan=5 c1=50 c2=78
+Parameter, chan=5 c1=50 c2=75
+Parameter, chan=5 c1=50 c2=80
+Parameter, chan=5 c1=50 c2=2
+Parameter, chan=5 c1=50 c2=67
+Parameter, chan=5 c1=50 c2=80
+Parameter, chan=5 c1=50 c2=70
+Parameter, chan=5 c1=50 c2=2
+Parameter, chan=5 c1=50 c2=50
+Parameter, chan=5 c1=50 c2=67
+Parameter, chan=5 c1=50 c2=84
+Parameter, chan=5 c1=50 c2=78
+Parameter, chan=5 c1=50 c2=81
+Parameter, chan=5 c1=50 c2=84
+Parameter, chan=5 c1=50 c2=53
+Parameter, chan=5 c1=50 c2=81
+Parameter, chan=5 c1=50 c2=80
+Parameter, chan=5 c1=50 c2=73
+Parameter, chan=5 c1=50 c2=85
+Parameter, chan=5 c1=50 c2=16
+Parameter, chan=5 c1=50 c2=69
+Parameter, chan=5 c1=50 c2=81
+Parameter, chan=5 c1=50 c2=79
+Parameter, chan=5 c1=49 c2=0
+Parameter, chan=1 c1=91 c2=73
+Parameter, chan=6 c1=32 c2=0
+Program, chan=6 program=1
+Parameter, chan=6 c1=91 c2=60
+Parameter, chan=6 c1=0 c2=0
+Parameter, chan=2 c1=91 c2=59
+Parameter, chan=6 c1=39 c2=64
+Parameter, chan=6 c1=40 c2=9
+Parameter, chan=6 c1=39 c2=64
+Parameter, chan=1 c1=64 c2=0
+Parameter, chan=6 c1=39 c2=82
+Parameter, chan=6 c1=40 c2=9
+Parameter, chan=6 c1=39 c2=64
+Parameter, chan=4 c1=7 c2=86
+Parameter, chan=4 c1=7 c2=90
+Parameter, chan=1 c1=7 c2=92
+Parameter, chan=4 c1=7 c2=93
+Parameter, chan=4 c1=7 c2=94
+Parameter, chan=1 c1=7 c2=96
+Parameter, chan=1 c1=7 c2=97
+Parameter, chan=4 c1=7 c2=110
+Parameter, chan=1 c1=7 c2=111
+Parameter, chan=6 c1=40 c2=21
+Parameter, chan=6 c1=40 c2=1
+Parameter, chan=6 c1=40 c2=18
+Parameter, chan=6 c1=40 c2=14
+Parameter, chan=6 c1=40 c2=13
+Parameter, chan=6 c1=49 c2=0
+Parameter, chan=6 c1=49 c2=40
+Parameter, chan=6 c1=49 c2=0
+Parameter, chan=6 c1=50 c2=47
+Parameter, chan=6 c1=50 c2=43
+Parameter, chan=6 c1=50 c2=38
+Parameter, chan=6 c1=50 c2=43
+Parameter, chan=6 c1=50 c2=2
+Parameter, chan=6 c1=50 c2=37
+Parameter, chan=6 c1=50 c2=81
+Parameter, chan=6 c1=50 c2=82
+Parameter, chan=6 c1=50 c2=91
+Parameter, chan=6 c1=50 c2=84
+Parameter, chan=6 c1=50 c2=75
+Parameter, chan=6 c1=50 c2=73
+Parameter, chan=6 c1=50 c2=74
+Parameter, chan=6 c1=50 c2=86
+Parameter, chan=6 c1=50 c2=2
+Parameter, chan=6 c1=49 c2=11
+Parameter, chan=6 c1=50 c2=2
+Parameter, chan=6 c1=50 c2=19
+Parameter, chan=6 c1=50 c2=27
+Parameter, chan=6 c1=50 c2=27
+Parameter, chan=6 c1=50 c2=25
+Parameter, chan=6 c1=50 c2=15
+Parameter, chan=6 c1=50 c2=20
+Parameter, chan=6 c1=50 c2=18
+Parameter, chan=6 c1=50 c2=18
+Parameter, chan=6 c1=50 c2=19
+Parameter, chan=6 c1=50 c2=2
+Parameter, chan=6 c1=50 c2=52
+Parameter, chan=6 c1=50 c2=75
+Parameter, chan=6 c1=50 c2=69
+Parameter, chan=6 c1=50 c2=74
+Parameter, chan=6 c1=50 c2=67
+Parameter, chan=6 c1=50 c2=84
+Parameter, chan=6 c1=50 c2=70
+Parameter, chan=6 c1=50 c2=2
+Parameter, chan=6 c1=50 c2=35
+Parameter, chan=6 c1=50 c2=16
+Parameter, chan=6 c1=50 c2=2
+Parameter, chan=6 c1=50 c2=52
+Parameter, chan=6 c1=50 c2=71
+Parameter, chan=6 c1=50 c2=87
+Parameter, chan=6 c1=50 c2=68
+Parameter, chan=6 c1=50 c2=78
+Parameter, chan=6 c1=50 c2=75
+Parameter, chan=6 c1=50 c2=80
+Parameter, chan=6 c1=50 c2=2
+Parameter, chan=6 c1=50 c2=67
+Parameter, chan=6 c1=50 c2=80
+Parameter, chan=6 c1=50 c2=70
+Parameter, chan=6 c1=50 c2=2
+Parameter, chan=6 c1=50 c2=50
+Parameter, chan=6 c1=50 c2=67
+Parameter, chan=6 c1=50 c2=84
+Parameter, chan=6 c1=50 c2=78
+Parameter, chan=6 c1=50 c2=81
+Parameter, chan=6 c1=50 c2=84
+Parameter, chan=6 c1=50 c2=53
+Parameter, chan=6 c1=50 c2=81
+Parameter, chan=6 c1=50 c2=80
+Parameter, chan=6 c1=50 c2=73
+Parameter, chan=6 c1=50 c2=85
+Parameter, chan=6 c1=50 c2=16
+Parameter, chan=6 c1=50 c2=69
+Parameter, chan=6 c1=50 c2=81
+Parameter, chan=6 c1=50 c2=79
+Parameter, chan=6 c1=49 c2=0
+Note      0 107746 122
+Note      1 107559 124
+Note   1714   9450 41
+Note   2571   4285 50
+Note   3428   4285 38
+Note   3857   4243 54
+Note   4285  18068 38
+Note   4285  32718 50
+Note   5142   6864 48
+Note   5571   8545 57
+Note   6434   6822 53
+Note   6864  22377 48
+Note   7726  11604 60
+Note   9235  11993 57
+Note   9450  62045 41
+Note  11604  12661 60
+Note  12035  12424 45
+Note  13758  17594 45
+Note  15051  15482 60
+Note  15482  18498 60
+Note  15482  35498 64
+Note  17206  12035 45
+Note  18068  21042 38
+Note  18498  18887 60
+Note  19792  20180 43
+Note  20438  20653 65
+Note  20653  34399 65
+Note  22377  22765 48
+Note  28409  29271 48
+Note  28409  42499 36
+Note  29271 107090 35
+Note  30133  30561 43
+Note  32718  33107 50
+Note  33149  33537 55
+Note  33580  34011 55
+Note  34011  34441 56
+Note  34011  34637 62
+Note  34011  46466 71
+Note  34441  39079 57
+Note  34441  86649 72
+Note  36165  36601 43
+Note  39079  86213 57
+Note  39574  40566 62
+Note  40137  41062 43
+Note  40566  41013 62
+Note  41062  41508 43
+Note  42053  57775 48
+Note  43044  43491 43
+Note  44036  44483 42
+Note  44532  75215 69
+Note  45027  51967 47
+Note  46020  46466 42
+Note  47011   2529 40
+Note  47011  62974 52
+Note  47506  89190 51
+Note  48002  59522 50
+Note  48993  71501 43
+Note  51967  52415 47
+Note  53950  54677 62
+Note  53950  69016 47
+Note  54700  71959 62
+Note  55921  57687 33
+Note  55921  57687 45
+Note  57775  73335 48
+Note  58661  59438 49
+Note  59522  78835 50
+Note  60807  96945 67
+Note  63064  63903 45
+Note  65857  66697 38
+Note  67299  69273 65
+Note  67840  68358 45
+Note  69016  76085 47
+Note  69583  79796 65
+Note  69852   3857 54
+Note  71086   5529 36
+Note  72005  73840 43
+Note  72464  82502 55
+Note  72922  91458 64
+Note  73840  74253 43
+Note  75215  94874 69
+Note  77505  77918 52
+Note  79339  83921 43
+Note  79796  94416 65
+Note  82089   5100 43
+Note  82089  86670 74
+Note  83005  83418 48
+Note  83921  96464 43
+Note  84380  90334 48
+Note  84838  85251 38
+Note  85755  93498 41
+Note  86213  86626 57
+Note  86670  90334 74
+Note  88733  88940 49
+Note  88961  89169 50
+Note  89190  89398 51
+Note  90334  91251 48
+Note  90334 107668 74
+Note  91251 102847 48
+Note  92627  93040 55
+Note  93544  31848 52
+Note  93544  33149 55
+Note  95170   4029 66
+Note  95939   2571 50
+Note  96464  96945 43
+Note  99249   2100 53
+Note  99249  34011 71
+Note  99249  99696 56
+Note 100240 100687 54
+Note 100736 101190 43
+Note 102026  34011 62
+Note 102847 103359 48
+Note 105203 105743 55
+Note 106482 106941 48
+Note 106561 106941 79
+Note 106996 107004 110
+Note 107012 107019 115
+Note 107090 107098 35
+Note 107105 107113 28
+Note 107184 107191 74
+Note 107199 107207 83
+Note 107277 107285 97
+Note 107293 107301 87
+Note 107371 107379 74
+Note 107387 107394 124
+Note 107465 107473 28
+Note 107480 107488 14
+Note 107559 107566 124
+Note 107574 107582 15
+Note 107652 107660 24
+Note 107668 107676 74
+Note 107746 107754 122
+Note 107762 107769 11
+Note 107840 107848 125
+Note 107855 107863 25
+Note 107934 107941 13
+Note 107949 107957 25

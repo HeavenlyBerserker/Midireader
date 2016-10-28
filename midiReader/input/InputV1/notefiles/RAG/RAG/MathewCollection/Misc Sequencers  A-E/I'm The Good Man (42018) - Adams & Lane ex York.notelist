@@ -1,0 +1,79 @@
+Meta Text, type=0x03 (Sequence/Track Name)  leng=7
+     Text = < -   # >
+Meta Text, type=0x02 (Copyright Notice)  leng=19
+     Text = <copyright info here>
+Program, chan=1 program=0
+Meta Text, type=0x01 (Text Event)  leng=30
+     Text = <Republic Singing Record #42018>
+Meta Text, type=0x01 (Text Event)  leng=38
+     Text = <I'm The Good Man That Was Hard To Find>
+Meta Text, type=0x01 (Text Event)  leng=19
+     Text = <Al Piantadosi, 1920>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = <Played by Cal Adams & Victor Lane>
+Meta Text, type=0x01 (Text Event)  leng=3
+     Text = <--->
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=40
+     Text = <Scan of a player piano roll by Erik York>
+Meta Text, type=0x01 (Text Event)  leng=44
+     Text = <rob@pianola.co.nz / http://www.pianola.co.nz>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = <---Technical Data Follows--->
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </music_category:       Piano_Roll>
+Meta Text, type=0x01 (Text Event)  leng=61
+     Text = </title:                I'm The Good Man That Was Hard To Find>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_manufacturer:    Republic>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </roll_brand:           Republic Singing Record>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </roll_number:          42018>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_class:           88>
+Meta Text, type=0x01 (Text Event)  leng=48
+     Text = </performer:            Adams, Cal & Lane, Victor>
+Meta Text, type=0x01 (Text Event)  leng=36
+     Text = </composer:             Al Piantadosi>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </lyricist:             Bud Green>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </composition_date:     1920>
+Meta Text, type=0x01 (Text Event)  leng=25
+     Text = </roll_tempo:           75>
+Meta Text, type=0x01 (Text Event)  leng=45
+     Text = </song_type:            Onestep, Novelty, Love>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </roll_condition:       Excellent>
+Meta Text, type=0x01 (Text Event)  leng=31
+     Text = </roll_authenticity:    Original>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </roll_copyright:       1920 McCarthy & Fischer>
+Meta Text, type=0x01 (Text Event)  leng=27
+     Text = </roll_date:            1920>
+Meta Text, type=0x01 (Text Event)  leng=35
+     Text = </roll_city:            New York, NY>
+Meta Text, type=0x01 (Text Event)  leng=28
+     Text = </original_price:       $1.00>
+Meta Text, type=0x01 (Text Event)  leng=33
+     Text = </date_scanned:         11/28/2010>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </scanned_by:           Erik York>
+Meta Text, type=0x01 (Text Event)  leng=32
+     Text = </owner:                Erik York>
+Meta Text, type=0x01 (Text Event)  leng=58
+     Text = </scanning_system:      MK3 Roll Scanner With Shaft Encoder>
+Meta Text, type=0x01 (Text Event)  leng=84
+     Text = </notes:                Follow-up song to "A Good Man Is Hard To Find" by Eddie Green>
+Meta Text, type=0x01 (Text Event)  leng=46
+     Text = </pianist:              Cal Adams & Victor Lane>
+Meta Text, type=0x01 (Text Event)  leng=0
+     Text = <>
+Meta Text, type=0x01 (Text Event)  leng=50
+     Text = <May NOT be EDITED or used for commercial purposes.>
+Meta Text, type=0x01 (Text Event)  leng=49
+     Text = <Freely made available for NON-commercial purposes>

@@ -1,0 +1,342 @@
+Meta Text, type=0x02 (Copyright Notice)  leng=42
+     Text = <(c) Copyright Jan Willem van Dormolen 1998>
+Meta Text, type=0x01 (Text Event)  leng=16
+     Text = <Levi Jackson Rag>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=7
+     Text = <1e stem>
+Meta Text, type=0x04 (Instrument Name)  leng=9
+     Text = <Accordeon>
+Program, chan=1 program=21
+Parameter, chan=1 c1=7 c2=127
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <G>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <D7>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <G>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Bb>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Am>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <D7>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <G>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <C>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <G>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <E>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <A7>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <D7>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <G>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <G7>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <C>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <Am>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <E>
+Meta Text, type=0x05 (Lyric)  leng=3
+     Text = <C#m>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <E7>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <A7>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <D>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <D7>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <G>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <E7>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <A7>
+Meta Text, type=0x05 (Lyric)  leng=2
+     Text = <D7>
+Meta Text, type=0x05 (Lyric)  leng=1
+     Text = <G>
+Meta Text, type=0x03 (Sequence/Track Name)  leng=12
+     Text = <Auto baslijn>
+Meta Text, type=0x04 (Instrument Name)  leng=16
+     Text = <Contrabas (pizz)>
+Program, chan=5 program=32
+Parameter, chan=5 c1=7 c2=127
+Meta Text, type=0x03 (Sequence/Track Name)  leng=14
+     Text = <Auto akkoorden>
+Meta Text, type=0x04 (Instrument Name)  leng=14
+     Text = <Gitaar (nylon)>
+Program, chan=3 program=24
+Parameter, chan=3 c1=7 c2=127
+Note      0    258 74
+Note    260    519 76
+Note    521    780 78
+Note    782   1302 79
+Note    782   1302 55
+Note   1304   1823 74
+Note   1304   1823 59
+Note   1304   1823 50
+Note   1304   1823 55
+Note   1826   1954 76
+Note   1826   2345 55
+Note   1956   2084 74
+Note   2086   2215 71
+Note   2217   2476 74
+Note   2347   2867 50
+Note   2347   2867 54
+Note   2347   2867 57
+Note   2347   2867 48
+Note   2347   2867 50
+Note   2478   2606 71
+Note   2608   2867 69
+Note   2869   3910 67
+Note   2869   3389 55
+Note   3391   3910 59
+Note   3391   3910 50
+Note   3391   3910 55
+Note   3913   4954 62
+Note   3913   4432 55
+Note   4434   4954 59
+Note   4434   4954 50
+Note   4434   4954 55
+Note   4956   5476 65
+Note   4956   5476 58
+Note   5478   5997 70
+Note   5478   5997 50
+Note   5478   5997 53
+Note   5478   5997 58
+Note   5999   6128 74
+Note   5999   6519 58
+Note   6130   6258 77
+Note   6260   6389 79
+Note   6391   6649 77
+Note   6521   7041 50
+Note   6521   7041 53
+Note   6521   7041 58
+Note   6652   6780 74
+Note   6782   7041 72
+Note   7043   8084 74
+Note   7043   7563 57
+Note   7565   8084 48
+Note   7565   8084 52
+Note   7565   8084 57
+Note   8086   8606 76
+Note   8086   8606 50
+Note   8608   9128 78
+Note   8608   9128 54
+Note   8608   9128 57
+Note   8608   9128 48
+Note   8608   9128 50
+Note   9130   9649 79
+Note   9130   9649 55
+Note   9652  10171 74
+Note   9652  10171 59
+Note   9652  10171 50
+Note   9652  10171 55
+Note  10173  10302 76
+Note  10173  10693 55
+Note  10304  10432 74
+Note  10434  10563 71
+Note  10565  10823 74
+Note  10695  11215 59
+Note  10695  11215 50
+Note  10695  11215 55
+Note  10826  10954 71
+Note  10956  11215 69
+Note  11217  12258 67
+Note  11217  11736 48
+Note  11739  12258 52
+Note  11739  12258 55
+Note  11739  12258 48
+Note  12260  13041 64
+Note  12260  12780 48
+Note  12782  13302 52
+Note  12782  13302 55
+Note  12782  13302 48
+Note  13043  13302 63
+Note  13304  13823 62
+Note  13304  13823 55
+Note  13826  14345 74
+Note  13826  14345 52
+Note  13826  14345 56
+Note  13826  14345 59
+Note  13826  14345 52
+Note  14347  14476 71
+Note  14347  14867 57
+Note  14478  14606 67
+Note  14608  14736 69
+Note  14739  14997 70
+Note  14869  15389 50
+Note  14869  15389 54
+Note  14869  15389 57
+Note  14869  15389 48
+Note  14869  15389 50
+Note  14999  15128 67
+Note  15130  15389 69
+Note  15391  16693 67
+Note  15391  15910 55
+Note  15913  16432 59
+Note  15913  16432 50
+Note  15913  16432 55
+Note  16434  16954 55
+Note  16695  16826 67
+Note  16956  17086 66
+Note  16956  17476 59
+Note  16956  17476 50
+Note  16956  17476 53
+Note  16956  17476 55
+Note  17217  17347 65
+Note  17478  17606 64
+Note  17478  17997 48
+Note  17608  17736 67
+Note  17739  17867 69
+Note  17869  17997 60
+Note  17999  18128 64
+Note  17999  18519 52
+Note  17999  18519 55
+Note  17999  18519 48
+Note  18130  18258 67
+Note  18260  18389 64
+Note  18391  18519 67
+Note  18521  18649 69
+Note  18521  19041 48
+Note  18652  18780 60
+Note  18782  18910 64
+Note  18913  19041 67
+Note  19043  19171 64
+Note  19043  19563 52
+Note  19043  19563 55
+Note  19043  19563 48
+Note  19173  19302 67
+Note  19304  19432 69
+Note  19434  19563 72
+Note  19565  19823 76
+Note  19565  20084 57
+Note  19826  19954 76
+Note  19956  20215 76
+Note  20086  20606 48
+Note  20086  20606 52
+Note  20086  20606 57
+Note  20217  20345 74
+Note  20347  20606 72
+Note  20608  21649 69
+Note  20608  21128 57
+Note  21130  21649 48
+Note  21130  21649 52
+Note  21130  21649 57
+Note  21652  21780 68
+Note  21652  22171 52
+Note  21782  21910 71
+Note  21913  22041 73
+Note  22043  22171 64
+Note  22173  22302 68
+Note  22173  22693 56
+Note  22173  22693 59
+Note  22173  22693 52
+Note  22304  22432 71
+Note  22434  22563 68
+Note  22565  22693 71
+Note  22695  22823 73
+Note  22695  23215 52
+Note  22826  22954 64
+Note  22956  23084 68
+Note  23086  23215 71
+Note  23217  23345 68
+Note  23217  23736 56
+Note  23217  23736 59
+Note  23217  23736 52
+Note  23347  23476 71
+Note  23478  23606 73
+Note  23608  23736 76
+Note  23739  23997 80
+Note  23739  24258 49
+Note  23999  24128 80
+Note  24130  24389 80
+Note  24260  24780 52
+Note  24260  24780 56
+Note  24260  24780 49
+Note  24391  24519 78
+Note  24521  24780 76
+Note  24782  25823 73
+Note  24782  25302 49
+Note  25304  25823 52
+Note  25304  25823 56
+Note  25304  25823 49
+Note  25826  26084 80
+Note  25826  26345 52
+Note  26086  26215 80
+Note  26217  26476 80
+Note  26347  26867 56
+Note  26347  26867 59
+Note  26347  26867 50
+Note  26347  26867 52
+Note  26478  26606 78
+Note  26608  26867 76
+Note  26869  27128 79
+Note  26869  27389 57
+Note  27130  27258 79
+Note  27260  27519 79
+Note  27391  27910 49
+Note  27391  27910 52
+Note  27391  27910 55
+Note  27391  27910 57
+Note  27521  27649 78
+Note  27652  27910 76
+Note  27913  28171 78
+Note  27913  28432 50
+Note  28173  28302 78
+Note  28304  28563 78
+Note  28434  28954 54
+Note  28434  28954 57
+Note  28434  28954 50
+Note  28565  28693 76
+Note  28695  28823 74
+Note  28826  28954 76
+Note  28956  29084 78
+Note  28956  29476 50
+Note  29086  29215 81
+Note  29217  29345 78
+Note  29347  29476 76
+Note  29478  29606 74
+Note  29478  29997 54
+Note  29478  29997 57
+Note  29478  29997 48
+Note  29478  29997 50
+Note  29608  29736 76
+Note  29739  29867 78
+Note  29869  29997 81
+Note  29999  30128 83
+Note  29999  30519 55
+Note  30130  30258 81
+Note  30260  30389 78
+Note  30391  30649 76
+Note  30521  31041 52
+Note  30521  31041 56
+Note  30521  31041 59
+Note  30521  31041 50
+Note  30521  31041 52
+Note  30652  30780 74
+Note  30782  31041 71
+Note  31043  31171 76
+Note  31043  31563 57
+Note  31173  31302 74
+Note  31304  31432 71
+Note  31434  31693 69
+Note  31565  32084 50
+Note  31565  32084 54
+Note  31565  32084 57
+Note  31565  32084 48
+Note  31565  32084 50
+Note  31695  31823 67
+Note  31826  32084 64
+Note  32086  33128 67
+Note  32086  32606 55
+Note  32608  33128 59
+Note  32608  33128 50
+Note  32608  33128 55
