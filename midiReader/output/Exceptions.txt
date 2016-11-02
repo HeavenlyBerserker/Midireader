@@ -3,13 +3,7 @@ Error Report
  /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/Strenuous Life, The - Wilson.notelist
 java.lang.NullPointerException
 ------------------Exception 1-------------------
- /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/LVBSonata3_tsroot.txt
-java.lang.NullPointerException
-------------------Exception 2-------------------
- /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/JSB_Toccata_and_fugue_in_D_Minortsroot.txt
-java.lang.NullPointerException
-------------------Exception 3-------------------
  /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/A-Parrot-Tefe - Bogatko ex Roache.notelist
 java.lang.ArrayIndexOutOfBoundsException: 1000
-Error count: 4
-Files successfully analyzed: 18/22
+Error count: 2
+Files successfully analyzed: 14/16

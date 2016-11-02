@@ -147,38 +147,6 @@ public class BiHashMap<K1, K2, V> {
             }
         }
         
-        Iterator lt = mMap.entrySet().iterator();
-        while (lt.hasNext()) {
-            Map.Entry m = (Map.Entry)lt.next();
-            
-            //System.out.println(m.getKey() + ": ");
-            Map<K2, V> map2 = (Map<K2, V>)m.getValue();
-            Iterator lt2 = map2.entrySet().iterator();
-            //content += "\n" + (int)m.getKey() + ",";
-            content.append("\n");
-            content.append((int)m.getKey());
-            content.append(",");
-            
-            int lastkey = 0;
-            int keydiff = 0;
-            while (lt2.hasNext()) {
-                Map.Entry pair = (Map.Entry)lt2.next();
-                //System.out.println("\t" + pair.getKey() + " = " + pair.getValue());
-                keydiff = columns.indexOf((int)pair.getKey()) - lastkey;
-                lastkey = columns.indexOf((int)pair.getKey()) + 1;
-                for(int y = 0; y < keydiff; y++){
-                    content.append("0,");
-                }
-                content.append((int)pair.getValue());
-                content.append(",");
-            }
-            
-            //if(lastkey == 0) lastkey = 1;
-            for(int y = 0; y < columns.size()- lastkey; y++){
-                content.append("0,");
-            }
-        }
-        
          try {
 
                 File file = new File("output/" +filename + ".csv");
@@ -189,8 +157,48 @@ public class BiHashMap<K1, K2, V> {
                 }
 
                 FileWriter fw = new FileWriter(file.getAbsoluteFile());
-                BufferedWriter bw = new BufferedWriter(fw);
-                bw.write(content.toString());
+                BufferedWriter bw1 = new BufferedWriter(fw);
+                bw1.write(content.toString());
+                bw1.close();
+                FileWriter fw2 = new FileWriter(file.getAbsoluteFile(), true);
+                BufferedWriter bw = new BufferedWriter(fw2);
+                content.delete(0, content.length());
+                
+                Iterator lt = mMap.entrySet().iterator();
+                while (lt.hasNext()) {
+                    Map.Entry m = (Map.Entry)lt.next();
+
+                    //System.out.println(m.getKey() + ": ");
+                    Map<K2, V> map2 = (Map<K2, V>)m.getValue();
+                    Iterator lt2 = map2.entrySet().iterator();
+                    //content += "\n" + (int)m.getKey() + ",";
+                    content.append("\n");
+                    content.append((int)m.getKey());
+                    content.append(",");
+
+                    int lastkey = 0;
+                    int keydiff = 0;
+                    while (lt2.hasNext()) {
+                        Map.Entry pair = (Map.Entry)lt2.next();
+                        //System.out.println("\t" + pair.getKey() + " = " + pair.getValue());
+                        keydiff = columns.indexOf((int)pair.getKey()) - lastkey;
+                        lastkey = columns.indexOf((int)pair.getKey()) + 1;
+                        for(int y = 0; y < keydiff; y++){
+                            content.append("0,");
+                        }
+                        content.append((int)pair.getValue());
+                        content.append(",");
+                    }
+
+                    //if(lastkey == 0) lastkey = 1;
+                    for(int y = 0; y < columns.size()- lastkey; y++){
+                        content.append("0,");
+                    }
+                    
+                    bw.write(content.toString());
+                    content.delete(0, content.length());
+                }
+                
                 bw.close();
 
                 System.out.println("Files Done");
