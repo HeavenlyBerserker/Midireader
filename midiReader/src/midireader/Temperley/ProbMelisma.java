@@ -65,7 +65,12 @@ public class ProbMelisma {
 				System.exit(1);
 			}
 
-			n = 0;
+                        Polyph.znote[n] = new note_struct(); //phantom note
+                        Polyph.znote[n].ontime = 0;
+                        Polyph.znote[n].offtime = 1;
+                        Polyph.znote[n].pitch = 24;
+                        
+			n = 1; //n=0 for no phantom note
 			while ((line = in_file.readLine()) != null) {  //while (fgets(line, sizeof(line), in_file) !=NULL) {            /* read in Notes */
 				if (line.charAt(0) == '\n' || line.charAt(0) == '%') {
 					continue;
