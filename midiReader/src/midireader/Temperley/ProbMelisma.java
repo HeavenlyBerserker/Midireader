@@ -15,7 +15,7 @@ import static midireader.Temperley.Polyph.segtotal;
 
 public class ProbMelisma {
 
-	public static void analyzeRag(String input_file) {
+	public static void analyzeRag(String input_file, int[] temp) {
 		int n = 0, j;
 		Snote sn;
 		Stream s;
@@ -137,7 +137,7 @@ public class ProbMelisma {
 
 		//print_streams(Polyph.streamlist, -1, -1, 1);
                 
-                MonophonicStreams.selectStreams();
+                MonophonicStreams.selectStreams(temp);
                 
 		
                 // Delete the following '/*' to see the full output with X's. Takes ~30 more seconds/song. 

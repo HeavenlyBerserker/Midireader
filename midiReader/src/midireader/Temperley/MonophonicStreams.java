@@ -10,7 +10,7 @@ import midireader.processingXmk.MeasureAnalyzer;
 
 public class MonophonicStreams {
     
-    static ArrayList<float[]> selectStreams( ) { //runs skyline algorithm on the Temperley note streams by their average pitch
+    static ArrayList<float[]> selectStreams(int [] temp) { //runs skyline algorithm on the Temperley note streams by their average pitch
 
     float[] min = new float[(int) 1000];
     float[] max = new float[(int) 1000];
@@ -79,7 +79,7 @@ public class MonophonicStreams {
         notes.addAll(thesenotes);
     }
     
-
+    int zamt = 0;
     
     //BiHashMap<Integer, Integer, Integer> hash = new BiHashMap<Integer, Integer, Integer>();
     
@@ -88,6 +88,9 @@ public class MonophonicStreams {
         if(i < (realend-realstart)/(16*globseglength)-1){
             int[] arr = key(MeasureAnalyzer.getRhythm(notes, i, (float)globseglength), MeasureAnalyzer.getRhythm(notes, i+1, (float)globseglength));
             //System.out.println(MeasureAnalyzer.getRhythm(notes, i, (float)globseglength) + " " + MeasureAnalyzer.getRhythm(notes, i+1, (float)globseglength) + " " + arr[0] + " " + arr[1]);
+            if(arr[0] == 0 && arr[1] == 0){
+                zamt++;
+            }
             if(!XmkMain.hash.containsKeys(arr[0], arr[1])){
                 XmkMain.hash.put(arr[0], arr[1], 1);
             }
@@ -97,6 +100,7 @@ public class MonophonicStreams {
             }
         }
     }
+    temp[0] = zamt;
     //System.out.println("###########################################################################");
     
     //XmkMain.hash.printMap();

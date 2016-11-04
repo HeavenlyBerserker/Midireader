@@ -1,9 +1,9 @@
 Error Report
 ------------------Exception 0-------------------
- /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/Strenuous Life, The - Wilson.notelist
+ /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/TestFiles/Strenuous Life, The - Wilson.notelist
 java.lang.NullPointerException
 ------------------Exception 1-------------------
- /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/A-Parrot-Tefe - Bogatko ex Roache.notelist
+ /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/TestFiles/A-Parrot-Tefe - Bogatko ex Roache.notelist
 java.lang.ArrayIndexOutOfBoundsException: 1000
 Error count: 2
 Files successfully analyzed: 14/16

@@ -180,20 +180,22 @@ public class BiHashMap<K1, K2, V> {
                     int keydiff = 0;
                     while (lt2.hasNext()) {
                         Map.Entry pair = (Map.Entry)lt2.next();
-                        //System.out.println("\t" + pair.getKey() + " = " + pair.getValue());
+                        /*
                         keydiff = columns.indexOf((int)pair.getKey()) - lastkey;
                         lastkey = columns.indexOf((int)pair.getKey()) + 1;
                         for(int y = 0; y < keydiff; y++){
                             content.append("0,");
-                        }
-                        content.append((int)pair.getValue());
+                        }*/
+                        String n = pair.getKey() + " (" +(int)pair.getValue() + ")";
+                        content.append(n);
                         content.append(",");
                     }
 
                     //if(lastkey == 0) lastkey = 1;
+                    /*
                     for(int y = 0; y < columns.size()- lastkey; y++){
                         content.append("0,");
-                    }
+                    }*/
                     
                     bw.write(content.toString());
                     content.delete(0, content.length());
@@ -209,7 +211,7 @@ public class BiHashMap<K1, K2, V> {
         
     }
     
-    public void writeToError(String filename, StringBuilder content) {
+    public void writeToError(String filename, StringBuilder content, String PrintContent) {
         try {
 
                 File file = new File("output/" +filename + ".txt");
@@ -224,7 +226,7 @@ public class BiHashMap<K1, K2, V> {
                 bw.write(content.toString());
                 bw.close();
 
-                System.out.println("Exceptions Done");
+                System.out.println(PrintContent);
 
         } catch (IOException e) {
                 e.printStackTrace();

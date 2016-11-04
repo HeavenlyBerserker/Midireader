@@ -59,13 +59,28 @@ public class XmkMain {
         MelismaReader.getFileNames(files, dir);
         int successes = 0;
         
+        //Zeroes analysis
+        StringBuilder zeroes = new StringBuilder();
+        int[] zamt = new int[files.size()];
+        int zamtcnt = 0;
+        int[] temp = new int[1];
+        for(int i=0; i<zamt.length; i++){
+            zamt[i] = 0;
+        }
+        
+        //Error report
         StringBuilder errors = new StringBuilder();
         errors.append("Error Report"+ "\n");
         int err = 0;
+        
         for (int i=0; i<files.size(); i++) {
             System.out.println(i + "/" + files.size() + " Curr file: " + files.get(i));
             try {
-                ProbMelisma.analyzeRag(files.get(i));
+                ProbMelisma.analyzeRag(files.get(i), temp);
+                if(temp[0] > 0){
+                    zamtcnt++;
+                    zamt[i] = temp[0];
+                }
                 System.out.println("Success");
                 successes++;
             }
@@ -75,11 +90,24 @@ public class XmkMain {
                 err += 1;
             }
         }
+        
+        //Error report
         System.out.println("Files successfully analyzed: "+successes+ "/" +files.size());
         errors.append("Error count: " + err + "\n");
         errors.append("Files successfully analyzed: "+successes+ "/" +files.size());
         
-        hash.writeToError("Exceptions", errors);
+        //Zeroes analysis
+        zeroes.append("Files with zeroes count: " + zamtcnt + "\n");
+        for(int i=0; i<zamt.length; i++){
+            if(zamt[i] > 0){
+                zeroes.append("[" + zamt[i] + "] " + files.get(i) + "\n");
+            }
+        }
+        zeroes.append("Files successfully analyzed: "+successes+ "/" +files.size());
+        
+        
+        hash.writeToError("Exceptions", errors, "Exceptions Done");
+        hash.writeToError("Zeroes", zeroes, "Zeroes Done");
         //hash.printMap();
         hash.writeToCsv("table");
         /*
