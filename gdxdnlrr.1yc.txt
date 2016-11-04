@@ -1,0 +1,183 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is behind 'origin/master' by 8 commits, and can be fast-forwarded.
+#   (use "git pull" to update your local branch)
+#
+# Changes to be committed:
+#	modified:   midiReader/build/built-jar.properties
+#	new file:   midiReader/build/classes/midireader/ChordAnalyzer.class
+#	modified:   midiReader/build/classes/midireader/DataStructs/BiHashMap.class
+#	new file:   midiReader/build/classes/midireader/Fractions.class
+#	new file:   midiReader/build/classes/midireader/MidiReader.class
+#	modified:   midiReader/build/classes/midireader/Temperley/MonophonicStreams.class
+#	modified:   midiReader/build/classes/midireader/XmkMain.class
+#	modified:   midiReader/build/classes/midireader/inputHumdrumMelisma/ChordAnalyzer.class
+#	modified:   midiReader/build/classes/midireader/inputHumdrumMelisma/MelismaReader.class
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/.dropbox
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/Icon
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Altamira Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Altamira Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/At A Georgia Campmeeting - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/At A Georgia Campmeeting - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Auto Mechanics - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Auto Mechanics - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Bee Caves Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Bee Caves Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Big Daddy Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Big Daddy Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Bubble Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Bubble Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Cannon Ball, The - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Cannon Ball, The - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Dixie Dimples (Scott) - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Dixie Dimples (Scott) - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Down The Road Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Down The Road Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Dulce Serenade - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Dulce Serenade - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Eldorado - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Eldorado - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Entertainer's Rag, The (Roberts) - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Entertainer's Rag, The (Roberts) - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Entertainer, The (Joplin) - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Entertainer, The (Joplin) - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Filly Rag, The - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Filly Rag, The - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Flotsam Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Flotsam Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Flying Circus Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Flying Circus Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Friendship Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Friendship Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Georgia Giggle, The - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Georgia Giggle, The - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Hill Country Flyer - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Hill Country Flyer - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Java Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Java Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Lantana Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Lantana Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Leven Forty-Five From The Hotel - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Leven Forty-Five From The Hotel - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Little Baby Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Little Baby Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Magnetic Rag - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Magnetic Rag - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Mando Rag - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Mando Rag - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Maple Leaf Rag - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Maple Leaf Rag - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Meadow Lark, The (Pitts) - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Meadow Lark, The (Pitts) - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Missouri Rag (Polla) - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Missouri Rag (Polla) - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Mo-Pac Tracks - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Mo-Pac Tracks - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/On The Pike - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/On The Pike - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Peppermint Candy - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Peppermint Candy - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Polar Bear Rag - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Polar Bear Rag - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Rag-Time Joke, A - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Rag-Time Joke, A - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Ragtime Dream, The (Goodwin & Brown) - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Ragtime Dream, The (Goodwin & Brown) - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Red Onion Rag (Kidwell & Steventon) - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Red Onion Rag (Kidwell & Steventon) - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Reinette Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Reinette Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Roxie Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Roxie Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Sashay - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Sashay - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Scuttlebutt Stomp - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Scuttlebutt Stomp - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Sewing Machine Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Sewing Machine Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Shoe Laces Rag (Bowie) - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Shoe Laces Rag (Bowie) - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Smiles and Chuckles - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Smiles and Chuckles - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Stop Rag, The - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Stop Rag, The - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Sugar Cube Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Sugar Cube Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Sun Flower Slow Drag - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Sun Flower Slow Drag - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Sweetheart Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Sweetheart Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Tea Time Waltz - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Tea Time Waltz - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Teal Blue Rag - Bowie.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Teal Blue Rag - Bowie.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Thriller!, The - BokerTov.mid
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Thriller!, The - BokerTov.notelist
+#	new file:   midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Today's Rag - Bowie.mid
+#
+# Changes not staged for commit:
+#	modified:   midiReader/nbproject/private/private.properties
+#	modified:   midiReader/nbproject/private/private.xml
+#	modified:   midiReader/output/table.csv
+#	modified:   midiReader/src/midireader/DataStructs/BiHashMap.java
+#	modified:   midiReader/src/midireader/Temperley/MonophonicStreams.java
+#	modified:   midiReader/src/midireader/XmkMain.java
+#	modified:   midiReader/src/midireader/auxClasses/Fractions.java
+#	modified:   midiReader/src/midireader/inputHumdrumMelisma/ChordAnalyzer.java
+#	modified:   midiReader/src/midireader/inputHumdrumMelisma/MelismaReader.java
+#
+# Untracked files:
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Today's Rag - Bowie.notelist
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Town Talk (Richardson & White) - BokerTov.mid
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Town Talk (Richardson & White) - BokerTov.notelist
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Tricycle Rag - Bowie.mid
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Tricycle Rag - Bowie.notelist
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Uplifted Rag - Bowie.mid
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Uplifted Rag - Bowie.notelist
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Vaudeville Swing - Bowie.mid
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Vaudeville Swing - Bowie.notelist
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Virginia Rag (Harris) - BokerTov.mid
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/BokerTov, Bowie & Brunk/Virginia Rag (Harris) - BokerTov.notelist
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Cookie Jar, Melody Lane & Crider/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Cowles/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Crausaz & Orton/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Decker, Kermit, Laura, Morgan, MSN, Midibiz & bTd/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Edwards/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/ElectriClef (Witherwax)/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Hiawatha & Radna/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Intartaglia & ex Intartaglia/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Keller/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/MIDIs added/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/MacDonald/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Mezjuev/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Misc Sequencers  A-E/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Misc Sequencers F-L/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Misc Sequencers M-R/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Misc Sequencers S-Z excl unks/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Misc Sequencers, unks/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/O'Dell/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Old Web & PRT/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Perry, incl ex Perry/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Pianocorder, PG Music, PianoDisc & Live (need to check Pianocorder titles)/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Pitt-Payne/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Ranalli/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Reublin/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Roache/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Schwartz/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Smythe/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Summers/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Trachtman rolls/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Trachtman/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Treemonisha (Davis & Wilson)/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Watanabe/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Wilson/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/ex Mathew/
+#	midiReader/input/InputV1/notefiles/RAG/RAG/walk.py
+#	midiReader/input/InputV1/notefiles/sonata01-2.notes
+#	midiReader/output.mid
+#	midiReader/output/Exceptions.txt
+#	midiReader/src/midireader/MidiReader.java
+#
+
