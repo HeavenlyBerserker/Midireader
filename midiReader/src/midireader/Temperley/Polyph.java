@@ -222,6 +222,98 @@ proximity_profile = new double[1000]; //100
 
 }
 
+
+public static void reset2()
+	{
+
+        streamlist = new Stream();
+        noteword = new char[10];
+
+        znote = new note_struct[100000];     
+        note = new note_struct[100000];     
+
+        segment = new segment_struct[MS+100];              
+
+        canceled= new int[1000];    
+
+        prov_analysis = new int[MAXV+1];
+
+
+        prov_trans = new int[MAXV+1];
+        ltransition = new int[MA][MT][MAXV]; 
+
+        ltranscard = new int[MA][MT];           
+
+        rtransition = new int[MA][MT][MAXV];
+        rtranscard= new int[MA][MT];
+
+
+        best_ltransition = new int[MAXV];
+        best_rtransition = new int[MAXV];
+
+        ltnum = new int[MA];
+        rtnum = new int[MA];              
+
+        best = new int[MS][MA];                          
+        global_analysis = new double[MS][MA];
+        final_ = new int[MS*10];
+        final_ltransition = new int[MS*10][MAXV];
+        final_rtransition = new int[MS*10][MAXV];
+        final_transcard = new int[MS];
+
+         //Subtactus  subt[][];
+
+         //Tactus  tactus[][];
+
+          tp = new int[100000];            
+          
+
+          upper = new upper_class[10000];
+
+        Polyph.streamlist = new Stream();
+
+        //pip = new Pip[100]; //?
+
+         
+
+
+          tactus_profile = new double[40][40];
+        //static double init_tactus[] = new double[24]; 
+        //static int tactus_min;
+        //static int tactus_max;
+        //static double another;
+        //static double lower_duple_score;
+
+        //static double L0_anchor_score[][] = new double[2][2];
+        //static double L1_duple_anchor_score[][] = new double[2][2];
+        //static double L1_triple_anchor_score[][][][] = new double[2][2][2][2];
+        //static double nonbeat_note_score;
+
+        //static double tactus_reg_score[] = new double[5];
+        //static double lower_reg_score[] = new double[3];
+        //static double init_phase_score[] = new double[5];
+
+          proximity_profile = new double[1000]; //100
+        //static double prox_var;
+        //static double harmony_profile[] = new double[12];
+
+          adjusted_profile = new double[1000]; //100
+
+        //static double raw_tactus_note_score;
+        //static double raw_harm_change;
+        //static double L2_note_score;
+        //static double L3_note_score;
+        //static double L2_harm_change;
+        //static double L3_harm_change;
+        //static double fifths_move;
+        //static double anch_penalty[] = new double[12];
+        //static double cont, nct_cont, unanch_nct_cont;
+
+        // double stream_prob;
+        //static double stream_cont;
+
+        }
+
 }
 
 class note_struct {

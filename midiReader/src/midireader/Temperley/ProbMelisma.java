@@ -28,7 +28,7 @@ public class ProbMelisma {
 
 		int param_file_specified = 0;
                 Globals.reset();
-                Polyph.reset();
+                Polyph.reset2();
                 Segment.reset();
 
 		Globals.verbosity = 0;   /* set verbosity */ //i added globals.
