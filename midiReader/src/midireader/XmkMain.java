@@ -37,6 +37,7 @@ import static midireader.inputXmk.xmReader.xmRead;
 import midireader.output.writeNotes;
 import midireader.processingXmk.RhythmChanger2;
 import midireader.processingXmk.syncopalooza;
+import midireader.output.ChainOutputs;
 
 
 public class XmkMain {
@@ -110,6 +111,14 @@ public class XmkMain {
         hash.writeToError("Zeroes", zeroes, "Zeroes Done");
         //hash.printMap();
         hash.writeToCsv("table");
+        
+        ArrayList<float[]> [][] chainByLength = new ArrayList[17][17];
+        
+        hash.MCAnalyze(chainByLength);
+        
+        ChainOutputs chainwrite = new ChainOutputs();
+        chainwrite.MCOutput(chainByLength, "ChainOutput", "");
+        
         /*
          syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));
         //input pattern data

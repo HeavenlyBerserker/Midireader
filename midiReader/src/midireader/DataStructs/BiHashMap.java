@@ -111,6 +111,7 @@ public class BiHashMap<K1, K2, V> {
     public void writeToCsv(String filename) {
         Iterator it = mMap.entrySet().iterator();
         
+        /*
         for(int j = 0; j < cols.length; j++){
             cols[j] = 0;
         }
@@ -133,12 +134,12 @@ public class BiHashMap<K1, K2, V> {
         
         for(int j = 0; j < cols.length; j++){
             if(cols[j] == 1){
-                columns.add(j);
+                //columns.add(j);
             }
         }
+        */
         
-        
-        StringBuilder content = new StringBuilder(filename + ",");
+        StringBuilder content = new StringBuilder(filename);
         for(int j = 0; j < columns.size(); j++){
             if(j == columns.size()-1) content.append(Integer.toString(columns.get(j)));
             else{
@@ -231,5 +232,69 @@ public class BiHashMap<K1, K2, V> {
         } catch (IOException e) {
                 e.printStackTrace();
         }
+    }
+    
+    public int[] MCAnalyze(ArrayList<float[]> [][] chain){
+         int [] data = new int[10];
+         
+         for(int i = 0; i < 17; i++){
+            for(int j = 0; j < 17; j++){
+                chain[i][j] = new ArrayList<>();
+            }
+         } 
+         
+        Iterator lt = mMap.entrySet().iterator();
+        while (lt.hasNext()) {
+            Map.Entry m = (Map.Entry)lt.next();
+
+            //System.out.println(m.getKey() + ": ");
+            Map<K2, V> map2 = (Map<K2, V>)m.getValue();
+            Iterator lt2 = map2.entrySet().iterator();
+            
+            int first = unkeyN((int)m.getKey());
+            
+            
+            while (lt2.hasNext()) {
+                Map.Entry pair = (Map.Entry)lt2.next();
+                int second = unkeyN((int)pair.getKey());
+                int measure = (int)pair.getKey();
+                int frequency = (int)pair.getValue();
+                float[] temp = {measure, frequency};
+                //System.out.println("First [" + first + "] Second[" + second + "]");
+                chain[first][second].add(temp);
+            }
+        }
+         
+         for(int i = 0; i < 17; i++){
+            for(int j = 0; j < 17; j++){
+                //System.out.println("Lenght of measures 1 & 2 [" + i + "][" + j + "]");
+                int countOfF = 0;
+                for(int k = 0; k < chain[i][j].size(); k++){
+                    countOfF += chain[i][j].get(k)[1];
+                }
+                for(int k = 0; k < chain[i][j].size(); k++){
+                    float[] temp = {chain[i][j].get(k)[0], chain[i][j].get(k)[1]/countOfF};
+                    chain[i][j].set(k, temp);
+                    //System.out.println("    [Measure = " + temp[0] + "][Probability = " + temp[1] + "]");
+                }
+            }
+         } 
+        
+         return data;
+    } 
+    
+    private int unkeyN(int key){
+        int count =0;
+        
+        String number = Integer.toBinaryString(key);
+        
+        //System.out.println("BinaryString [" + number + "]");
+        
+        for(int i = 0; i < number.length(); i++){
+            if(number.charAt(i) == '1')
+                count++;
+        }
+        
+        return count;
     }
 }
