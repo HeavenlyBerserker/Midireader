@@ -56,7 +56,7 @@ public class XmkMain {
     public static void main(String[] args) throws Exception {
         
         List<String> files = new ArrayList<>();
-        Path dir = Paths.get("input/InputV1/notefiles");
+        Path dir = Paths.get("input/InputV1/MiniTest");
         MelismaReader.getFileNames(files, dir);
         int successes = 0;
         
@@ -76,7 +76,7 @@ public class XmkMain {
         
         for (int i=0; i<files.size(); i++) {
             System.out.println(i + "/" + files.size() + " Curr file: " + files.get(i));
-            try {
+            //try {
                 ProbMelisma.analyzeRag(files.get(i), temp);
                 if(temp[0] > 0){
                     zamtcnt++;
@@ -84,12 +84,12 @@ public class XmkMain {
                 }
                 System.out.println("Success");
                 successes++;
-            }
-            catch (Exception e) {
-                System.out.println(e);
-                errors.append("------------------Exception " + err + "-------------------\n " + files.get(i) + "\n" + e + "\n");
-                err += 1;
-            }
+            //}
+            //catch (Exception e) {
+            //    System.out.println(e);
+            //    errors.append("------------------Exception " + err + "-------------------\n " + files.get(i) + "\n" + e + "\n");
+            //    err += 1;
+            //}
         }
         
         //Error report
