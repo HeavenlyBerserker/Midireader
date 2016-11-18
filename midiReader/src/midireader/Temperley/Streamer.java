@@ -719,7 +719,7 @@ static void assign_voice_numbers() {
 
 		int prev, twodigit, z, nv, collision, p;
 		String numstring;
-		char display[][] = new char[10000][970]; //used to be 97
+		char display[][] = new char[10000][1001]; //used to be 97
 
 		System.out.printf("                            C1          C2          C3          C4          C5          C6          C7\n");
 
