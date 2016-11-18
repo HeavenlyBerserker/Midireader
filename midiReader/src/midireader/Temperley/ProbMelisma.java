@@ -130,7 +130,7 @@ public class ProbMelisma {
                 //System.out.println(globseglength);
                 if (segtotal <= 0) //If there's a song with no notes
                     return;
-                display_streams();
+                //display_streams();
 
 		/*
 		printf("Notes as output by streamer:\n");
@@ -155,8 +155,8 @@ public class ProbMelisma {
                 // I can't find any examples of songs with short pickups so I'm not sure how it assigns the beginning anyway. It might handle them
                 // for us. 
                 
-                
                 /*
+                
 		make_profiles();
 
 		create_pipstreams();

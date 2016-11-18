@@ -99,7 +99,7 @@ public class MonophonicStreams {
     
     //ArrayList<Float> thissky = getSkyline(size,realend,numofstreams,min,max,average);
     
-    ArrayList<Float> thissky = getSkyline2(numofstreams,min2,max2,average);
+    char[][] thissky = getSkyline2(numofstreams,min2,max2,average);
     
     ArrayList<float[]> notes = new ArrayList();
     /*
@@ -110,9 +110,22 @@ public class MonophonicStreams {
     }*/
     
     int zamt = 0;
-    
     //BiHashMap<Integer, Integer, Integer> hash = new BiHashMap<Integer, Integer, Integer>();
-    
+    for (int i=0; i<thissky.length-1; i++) { 
+        int[] arr = key(String.valueOf(thissky[i]), String.valueOf(thissky[i+1]));
+        System.out.println(String.valueOf(thissky[i]) + " " + String.valueOf(thissky[i+1]) + " " + arr[0] + " " + arr[1]);
+        if(arr[0] == 0 && arr[1] == 0){
+            zamt++;
+        }
+        if(!XmkMain.hash.containsKeys(arr[0], arr[1])){
+            XmkMain.hash.put(arr[0], arr[1], 1);
+        }
+        else{
+            int r = XmkMain.hash.get(arr[0], arr[1]);
+            XmkMain.hash.put(arr[0], arr[1], r+1);
+        }
+    }
+    /*
     for (int i=0; i<(realend-realstart)/(16*globseglength); i++) { 
         //System.out.println(MeasureAnalyzer.getRhythm(notes, i, (float)globseglength));
         if(i < (realend-realstart)/(16*globseglength)-1){
@@ -129,7 +142,7 @@ public class MonophonicStreams {
                 XmkMain.hash.put(arr[0], arr[1], r+1);
             }
         }
-    }
+    }*/
     temp[0] = zamt;
     //System.out.println("###########################################################################");
     
@@ -235,26 +248,21 @@ public class MonophonicStreams {
     }
     
     
-    static ArrayList<Float> getSkyline2(float numofstreams, note_struct[] min2, note_struct[] max2, float[] average) {
-        ArrayList<Float> skyline = new ArrayList();
+    static char[][] getSkyline2(float numofstreams, note_struct[] min2, note_struct[] max2, float[] average) {
         
-        //size = number of segments
-        float[] mysky = new float[(int) segtotal+1];
-        float[] mystream = new float[(int) segtotal+1];
+        //Create arrays to store skyline - mysky stores the height at each segment, and mystream the best stream at each segment
+        float[] mysky = new float[segtotal+1];
+        float[] mystream = new float[segtotal+1];
         for (int i=0; i<segtotal+1; i++) {
             mysky[i] = 0;
             mystream[i] = 0;
         }
         
-        int left = 0;
-        float height = 0;
-        int right = 0;
+        //Maximize the height of the skyline for each segment, where height refers to a stream's average pitch
+        float height;
         for (int i=0; i<numofstreams; i++) {
-            //left = segment[min2[i].segment].start; //left and right are the first and last segments of the stream
             height = average[i];
-            //right = segment[max2[i].segment].start;
             for (int j = min2[i].segment; j <= max2[i].segment; j++) {
-                //System.out.println(numofstreams + " " + segtotal + " " + j + " " + min2[i].segment + " " + max2[i].segment);
                 if (height > mysky[j]) {
                     mysky[j] = height;
                     mystream[j] = i;
@@ -262,27 +270,56 @@ public class MonophonicStreams {
             }
         }
         
-        boolean[] isOnset = new boolean[segtotal+1];
-        for (int z = 0; z < segtotal+1; z++) isOnset[z] = false;
-        
+        //Create an array of each segment's melodic note, should one exist
+        note_struct[] firstNote = new note_struct[numnotes];
+        for (int z = 0; z < segtotal+1; z++) {
+            firstNote[z] = null;
+        }
+        int finalend = 0;
         for (int z = 0; z < numnotes; z++) {
             if (note[z].stream == mystream[note[z].segment]) {
-                isOnset[note[z].segment] = true;
+                firstNote[note[z].segment] = note[z];
+                if (note[z].offtime > finalend) {
+                    finalend = note[z].offtime;
+                }
             }
         }
-        int count=0;
-        String rhythm="";
-        for (int seg=0; seg<=segtotal; seg++) {
-            if (count>0 && ((count % 16) == 0)) {
-                rhythm+="\n";
-            }
-            if (isOnset[seg]) rhythm+="I";
-            else rhythm+="O";
-            count++;
-        }
-        System.out.print(rhythm);
         
-        return skyline;
+        //Find the average length of a segment
+        int averagelen=0;
+        for (int seg=0; seg<=segtotal; seg++) {
+            averagelen += segment[seg].end-segment[seg].start;
+        }
+        averagelen /= segtotal;
+        
+        //THIS NUMBER NEEDS TO BE CHANGED FOR EACH SONG'S GCD
+        
+        globseglength = 187.5;//166.5/2;//averagelen
+        //seems to work best as 3000/18 for cakewalkin shoes or 3000/16 for others?
+        
+        //Create the rhythm array
+        int size = (int)(finalend/(16*globseglength)+1);
+        char[][] rhythm= new char[size][16];
+        for (int i=0; i<size; i++) {
+            for (int j=0; j<16; j++) 
+                rhythm[i][j] = 'O';
+        }
+        for (int seg=0; seg<=segtotal; seg++) {
+            if (firstNote[seg] != null)
+                rhythm[(int)((firstNote[seg].ontime+2)/(16*globseglength))][(int)((firstNote[seg].ontime+2)/globseglength % 16)] = 'I';
+        }
+        
+        //print rhythm array
+        /*
+        for (int i=0; i<segtotal/16; i++) {
+            for (int j=0; j<16; j++) {
+                System.out.print(rhythm[i][j]);
+            }
+            System.out.println();
+        }
+        System.out.println();*/
+        
+        return rhythm;
     }
     
     

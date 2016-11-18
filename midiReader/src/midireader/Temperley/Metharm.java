@@ -289,7 +289,8 @@ static void create_pipstreams() {
     pip = new Pip[num_pips];//pip = malloc(num_pips * sizeof(struct Pip));
 
     /* For each pip p, create a "pip streamlist" - a list of all streams containing only notes on or after p */
-
+    //System.out.println("num_pips");
+    //System.out.println(piplength);
     for(p=0; p<num_pips; p++) {
 			if (pip[p]==null) pip[p] = new Pip();
 	pip[p].stream = null;
@@ -318,7 +319,7 @@ static void create_pipstreams() {
 
 	    s=s.next;
 	}
-	//printf("%d: %d; ", p, pip[p].hasnote);
+	//System.out.println(p + " " + pip[p].hasnote);
     }
 
     /* For each pip, print the first note of each pipstream */

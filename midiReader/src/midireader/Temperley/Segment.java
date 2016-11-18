@@ -365,6 +365,5 @@ public class Segment {
 		}
 
 		segtotal = s - 1;
-                globseglength = seglength;
 	}
 }
