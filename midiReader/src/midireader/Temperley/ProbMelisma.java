@@ -155,7 +155,11 @@ public class ProbMelisma {
                 // I can't find any examples of songs with short pickups so I'm not sure how it assigns the beginning anyway. It might handle them
                 // for us. 
                 
+<<<<<<< HEAD
                 /*
+=======
+                
+>>>>>>> 16f9aaa7a4d260a98cb5d6fab28a946101de6f34
                 
 		make_profiles();
 

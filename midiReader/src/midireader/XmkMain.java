@@ -56,7 +56,13 @@ public class XmkMain {
     public static void main(String[] args) throws Exception {
         
         List<String> files = new ArrayList<>();
+<<<<<<< HEAD
         Path dir = Paths.get("input/InputV1/TestFiles");
+=======
+        
+        Path dir = Paths.get("input/InputV1/TestFiles");
+        
+>>>>>>> 16f9aaa7a4d260a98cb5d6fab28a946101de6f34
         MelismaReader.getFileNames(files, dir);
         int successes = 0;
         
