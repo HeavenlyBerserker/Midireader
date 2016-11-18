@@ -28,12 +28,18 @@ import javax.sound.midi.Sequence;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
+import midireader.MChainNoteNum.MChainProcess;
+import static midireader.MChainNoteNum.MChainProcess.GCD;
+import static midireader.MChainNoteNum.MChainProcess.MEASURES;
+import static midireader.MChainNoteNum.MChainProcess.MM;
+import static midireader.MChainNoteNum.MChainProcess.resolution;
+import midireader.MChainNoteNum.MChainRead;
 import midireader.Temperley.Globals;
 import midireader.auxClasses.fooCallers;
 import midireader.inputHumdrumMelisma.readMidi;
 import midireader.Temperley.ProbMelisma;
-import static midireader.processingHumdrumMelisma.chordMaker.printF;
 import static midireader.inputXmk.xmReader.xmRead;
+import static midireader.processingHumdrumMelisma.chordMaker.printF;
 import midireader.output.writeNotes;
 import midireader.processingXmk.RhythmChanger2;
 import midireader.processingXmk.syncopalooza;
@@ -55,69 +61,81 @@ public class XmkMain {
     
     public static void main(String[] args) throws Exception {
         
-        List<String> files = new ArrayList<>();
-        Path dir = Paths.get("input/InputV1/TestFiles");
-        MelismaReader.getFileNames(files, dir);
-        int successes = 0;
+        //Uncomment the following line to run note analysis
+        //fooCallers.noteAnalysis("input/InputV1/TestFiles", "table");
         
-        //Zeroes analysis
-        StringBuilder zeroes = new StringBuilder();
-        int[] zamt = new int[files.size()];
-        int zamtcnt = 0;
-        int[] temp = new int[1];
-        for(int i=0; i<zamt.length; i++){
-            zamt[i] = 0;
+        //Reading chainOutput (toggle second arg for print or not)
+        ArrayList<float[]> [][] chain = MChainRead.readChainOutput("output/ChainOutput.csv", false);
+        
+        //
+        //MChainProcess.processingS1("yankeeDb", true, chain);
+        
+        ArrayList<String[]> patternData = rhythmFrequency.readFile("input/InputV1/" + "lhlpatterns_depth_nots.csv");
+        patternData = rhythmFrequency.changeToIO(patternData);
+
+        GCD = (int)(1000*60/(240*2));
+        resolution = GCD*4; //GCD*4; // (ticks/beat)
+        
+        //All input filenames here------------------------------------------------------------------------------------
+        String fileName = "BethSonata1.1Allegro";
+        String filenameHar = fileName + "_tsroot.txt";
+        String filenameMel = "sonata01-1.notes";
+        String inFolderN = "";
+        String outFolderN = "";
+        String file = "yankeeDb";
+        String filenameXm = "input/xm/" + file + ".xmk";
+        
+        //Print Some info.
+        System.out.println("Filename: " + file);
+        
+        ArrayList<float[]> noteXmRead = new ArrayList();
+        noteXmRead = xmRead(filenameXm);
+        ArrayList<float[]> chords = xmPlayer.xmPlay(noteXmRead,1);
+        ArrayList<float[]> notesXm = xmPlayer.xmPlay(noteXmRead,0);
+        
+        GCD = (int)(60000/(noteXmRead.get(0)[2]*4));
+        ArrayList<String> patterns = new ArrayList();
+        ArrayList<ArrayList<Float>> patternNums = new ArrayList();
+        float lhloverall = 0;
+        
+        
+        //chordMaker.print(notesXm);
+        //chordMaker.print(noteXmRead);
+        ArrayList<float[]> noteXm = new ArrayList();
+        noteXm = xmPlayer.xmPlay(noteXmRead, 1);
+        
+        MEASURES = basicTransformations.measures(notesXm);
+        //System.out.println(MEASURES);
+        for (int i=0; i<MEASURES; i++) {
+            patterns.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            //System.out.println(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            lhloverall += MeasureAnalyzer.LHL(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            patternNums.add(MeasureAnalyzer.patternNums(basicTransformations.getHalfMeasure(notesXm,i),GCD,patterns.get(i),GCD*i*16));
+            
         }
+        lhloverall = lhloverall/MEASURES;
+        //System.out.println("Syncopation: " + lhloverall);
+        //ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
         
-        //Error report
-        StringBuilder errors = new StringBuilder();
-        errors.append("Error Report"+ "\n");
-        int err = 0;
+        //ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
+        ArrayList<String> rules = syncopalooza.makeRules(patterns);
+        //System.out.println();
+        notesXm = RhythmChanger2.changeSongSync(notesXm,patterns,rules,patternNums,0.1);
         
-        for (int i=0; i<files.size(); i++) {
-            System.out.println(i + "/" + files.size() + " Curr file: " + files.get(i));
-            try {
-                ProbMelisma.analyzeRag(files.get(i), temp);
-                if(temp[0] > 0){
-                    zamtcnt++;
-                    zamt[i] = temp[0];
-                }
-                System.out.println("Success");
-                successes++;
-            }
-            catch (Exception e) {
-                System.out.println(e);
-                errors.append("------------------Exception " + err + "-------------------\n " + files.get(i) + "\n" + e + "\n");
-                err += 1;
-            }
+        ArrayList<String> patternsb = new ArrayList();
+        ArrayList<ArrayList<Float>> patternNumsb = new ArrayList();
+        //System.out.println();
+        for (int i=0; i<MEASURES; i++) {
+            patternsb.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            patternNumsb.add(MeasureAnalyzer.patternNums(basicTransformations.getHalfMeasure(notesXm,i),GCD,patternsb.get(i),GCD*i*16));
         }
-        
-        //Error report
-        System.out.println("Files successfully analyzed: "+successes+ "/" +files.size());
-        errors.append("Error count: " + err + "\n");
-        errors.append("Files successfully analyzed: "+successes+ "/" +files.size());
-        
-        //Zeroes analysis
-        zeroes.append("Files with zeroes count: " + zamtcnt + "\n");
-        for(int i=0; i<zamt.length; i++){
-            if(zamt[i] > 0){
-                zeroes.append("[" + zamt[i] + "] " + files.get(i) + "\n");
-            }
-        }
-        zeroes.append("Files successfully analyzed: "+successes+ "/" +files.size());
+        ArrayList<String> rulesb = syncopalooza.makeRules(patternsb);
+        notesXm = RhythmChanger2.changeSongSync(notesXm,patternsb,rulesb,patternNumsb,0.1);
         
         
-        hash.writeToError("Exceptions", errors, "Exceptions Done");
-        hash.writeToError("Zeroes", zeroes, "Zeroes Done");
-        //hash.printMap();
-        hash.writeToCsv("table");
-        
-        ArrayList<float[]> [][] chainByLength = new ArrayList[17][17];
-        
-        hash.MCAnalyze(chainByLength);
-        
-        ChainOutputs chainwrite = new ChainOutputs();
-        chainwrite.MCOutput(chainByLength, "ChainOutput", "");
+        chords.addAll(notesXm);
+        //chordMaker.print(noteXm);
+        writeMidi.write(chords, "output/xmk/palooza/" + outFolderN + file + ".mid");
         
         /*
          syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));

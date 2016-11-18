@@ -128,7 +128,7 @@ public static String randomlyChange(String string1, String string2, double chanc
             output += "O";
             curplace++;
         }
-        System.out.println(output);
+        //System.out.println(output);
         return output;
     }
 
