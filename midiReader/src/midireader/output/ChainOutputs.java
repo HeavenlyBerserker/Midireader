@@ -40,7 +40,7 @@ public class ChainOutputs {
                 BufferedWriter bw = new BufferedWriter(fw2);
                 content.delete(0, content.length());
                 
-                bw.write(filename + ": " + comments);
+                bw.write(filename + ": " + comments + "\n");
                 
                 for(int i = 0; i < 17; i++){
                     for(int j = 0; j < 17; j++){

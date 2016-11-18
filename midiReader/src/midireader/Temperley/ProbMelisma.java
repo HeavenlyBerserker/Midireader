@@ -156,7 +156,7 @@ public class ProbMelisma {
                 // for us. 
                 
                 
-                /*
+                
 		make_profiles();
 
 		create_pipstreams();
