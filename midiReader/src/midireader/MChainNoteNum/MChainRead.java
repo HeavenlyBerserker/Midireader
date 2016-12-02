@@ -46,7 +46,7 @@ public class MChainRead {
                     int t1 = Integer.parseInt(values[0]), t2 = Integer.parseInt(values[1]);
                     for(int i = 2; i < values.length; i++){
                         String[] trans = values[i].split("=");
-                        float [] f = {Float.parseFloat(trans[0]), Float.parseFloat(trans[0])}; 
+                        float [] f = {Float.parseFloat(trans[0]), Float.parseFloat(trans[1])}; 
                         chainByLength[t1][t2].add(f);
                     }
                 }

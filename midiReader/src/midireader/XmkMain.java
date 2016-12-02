@@ -29,16 +29,14 @@ import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
 import midireader.MChainNoteNum.MChainProcess;
-import static midireader.MChainNoteNum.MChainProcess.GCD;
-import static midireader.MChainNoteNum.MChainProcess.MEASURES;
-import static midireader.MChainNoteNum.MChainProcess.MM;
-import static midireader.MChainNoteNum.MChainProcess.resolution;
 import midireader.MChainNoteNum.MChainRead;
 import midireader.Temperley.Globals;
 import midireader.auxClasses.fooCallers;
 import midireader.inputHumdrumMelisma.readMidi;
 import midireader.Temperley.ProbMelisma;
 import static midireader.inputXmk.xmReader.xmRead;
+import static midireader.auxClasses.basicTransformations.getHalfMeasure;
+import static midireader.auxClasses.basicTransformations.getHalfMeasure;
 import static midireader.processingHumdrumMelisma.chordMaker.printF;
 import midireader.output.writeNotes;
 import midireader.processingXmk.RhythmChanger2;
@@ -70,6 +68,9 @@ public class XmkMain {
         //
         //MChainProcess.processingS1("yankeeDb", true, chain);
         
+        MChainProcess. processingS1("yankeeDb", false, chain);
+        
+        /*
         ArrayList<String[]> patternData = rhythmFrequency.readFile("input/InputV1/" + "lhlpatterns_depth_nots.csv");
         patternData = rhythmFrequency.changeToIO(patternData);
 
@@ -136,6 +137,9 @@ public class XmkMain {
         chords.addAll(notesXm);
         //chordMaker.print(noteXm);
         writeMidi.write(chords, "output/xmk/palooza/" + outFolderN + file + ".mid");
+        -------------------------------------------------------------------------------------------------------*/
+        
+        
         
         /*
          syncopalooza.resynch(syncopalooza.desynch(syncopalooza.resynch("OOOOIOIOIOOIOOOO")));

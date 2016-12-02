@@ -12,51 +12,40 @@ import static midireader.XmkMain.MEASURES;
 import static midireader.XmkMain.MM;
 import static midireader.XmkMain.resolution;
 import midireader.auxClasses.basicTransformations;
+import static midireader.auxClasses.basicTransformations.getHalfMeasure;
+import midireader.inputHumdrumMelisma.ChordAnalyzer;
+import midireader.inputHumdrumMelisma.MelismaReader;
 import static midireader.inputXmk.xmReader.xmRead;
 import midireader.output.writeMidi;
 import midireader.patternDataProcessing.rhythmFrequency;
 import midireader.processingHumdrumMelisma.chordMaker;
 import midireader.processingXmk.MeasureAnalyzer;
+import midireader.processingXmk.RhythmChanger;
 import midireader.processingXmk.RhythmChanger2;
 import midireader.processingXmk.syncopalooza;
+import static midireader.processingXmk.syncopalooza.desynch;
+import static midireader.processingXmk.syncopalooza.resynch;
 import midireader.processingXmk.xmPlayer;
+import java.util.Random;
 
 /**
  *
  * @author domini
  */
 public class MChainProcess {
-    public static final int NOTE_ON = 0x90;
-    public static final int NOTE_OFF = 0x80;
-    public static final String[] NOTE_NAMES = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"};
-    public static ArrayList differences = new ArrayList();
-    public static int GCD = 0;
-    public static float resolution;
-    public static float ppq;
-    public static float MEASURES;
-    public static float MM; //beats per minute from melisma
-    public static int lines[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     
-    public static void processingS1(String filename, boolean b, ArrayList<float[]> [][] chain) throws IOException{
-        ArrayList<String[]> patternData = rhythmFrequency.readFile("input/InputV1/" + "lhlpatterns_depth_nots.csv");
-        patternData = rhythmFrequency.changeToIO(patternData);
-
+    public static void processingS1(String file, boolean b, ArrayList<float[]> [][] chain) throws IOException{
+        
         System.out.println("\nMM " + MM);
         GCD = (int)(1000*60/(240*2));
         System.out.println("GCD " + GCD);
         resolution = GCD*4; //GCD*4; // (ticks/beat)
         
         //All input filenames here------------------------------------------------------------------------------------
-        String fileName = "BethSonata1.1Allegro";
-        String filenameHar = fileName + "_tsroot.txt";
-        String filenameMel = "sonata01-1.notes";
-        String inFolderN = "";
-        String outFolderN = "";
-        String file = "yankeeDb";
         String filenameXm = "input/xm/" + file + ".xmk";
         
         //Print Some info.
-        System.out.println("Filename: " + fileName);
+        System.out.println("Filename: " + filenameXm);
         
         ArrayList<float[]> noteXmRead = new ArrayList();
         noteXmRead = xmRead(filenameXm);
@@ -74,6 +63,7 @@ public class MChainProcess {
         ArrayList<float[]> noteXm = new ArrayList();
         noteXm = xmPlayer.xmPlay(noteXmRead, 1);
         
+        
         MEASURES = basicTransformations.measures(notesXm);
         System.out.println(MEASURES);
         for (int i=0; i<MEASURES; i++) {
@@ -81,30 +71,150 @@ public class MChainProcess {
             //System.out.println(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
             lhloverall += MeasureAnalyzer.LHL(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
             patternNums.add(MeasureAnalyzer.patternNums(basicTransformations.getHalfMeasure(notesXm,i),GCD,patterns.get(i),GCD*i*16));
-            
         }
         lhloverall = lhloverall/MEASURES;
         System.out.println("Syncopation: " + lhloverall);
         //ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
         
         //ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
-        ArrayList<String> rules = syncopalooza.makeRules(patterns);
+        ArrayList<String> rules = makeRules(patterns, chain);
         System.out.println();
-        notesXm = RhythmChanger2.changeSongSync(notesXm,patterns,rules,patternNums,0.1);
+        notesXm = RhythmChanger2.changeSongSync(notesXm,patterns,rules,patternNums,1);
         
-        ArrayList<String> patternsb = new ArrayList();
-        ArrayList<ArrayList<Float>> patternNumsb = new ArrayList();
-        System.out.println();
-        for (int i=0; i<MEASURES; i++) {
-            patternsb.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
-            patternNumsb.add(MeasureAnalyzer.patternNums(basicTransformations.getHalfMeasure(notesXm,i),GCD,patternsb.get(i),GCD*i*16));
-        }
-        ArrayList<String> rulesb = syncopalooza.makeRules(patternsb);
-        notesXm = RhythmChanger2.changeSongSync(notesXm,patternsb,rulesb,patternNumsb,0.1);
-        
+        printL("Rules:",rules);
+        printL("\nPatterns: ", patterns);
         
         chords.addAll(notesXm);
-        chordMaker.print(noteXm);
-        writeMidi.write(chords, "output/xmk/palooza/" + outFolderN + file + ".mid");
+        //chordMaker.print(noteXm);
+        writeMidi.write(chords, "output/V2.0/" + file + ".mid");
+        
+    }
+    
+    private static void printL(String s, ArrayList<String> a){
+        System.out.println(s);
+        for(int i = 0; i < a.size(); i++){
+            System.out.println(a.get(i));
+        }
+    }
+    
+    private static ArrayList<String> makeRules(ArrayList<String> patterns, ArrayList<float[]> [][] chain) {
+        ArrayList<String> rules = new ArrayList();
+        Random rand = new Random();
+
+
+        int size = (patterns.get(0).length() - patterns.get(0).replace("I", "").length());
+        float sum = 0;
+        for(int i = 0; i < 17; i++){
+            for(int j = 0; j < chain[i][size].size(); j++){
+                sum += chain[i][size].get(j)[1];
+            }
+        }
+        System.out.println("sum " + sum);
+        
+        float finalX = sum * rand.nextFloat();
+        
+        sum = 0;
+        int b = 0;
+        for(int i = 0; i < 17; i++){
+            for(int j = 0; j < chain[i][size].size(); j++){
+                sum += chain[i][size].get(j)[1];
+                if(sum >= finalX){
+                    rules.add(patterns.get(0) + " " + KeytoIO(chain[i][size].get(j)[0]));
+                    b = 1;
+                    break;
+                }
+            }
+            if(b == 1) break;
+        }
+        
+        
+        
+        for (int i=1; i<patterns.size(); i++) {
+            int size1 = (patterns.get(i-1).length() - patterns.get(i-1).replace("I", "").length());
+            size = (patterns.get(i).length() - patterns.get(i).replace("I", "").length());
+            
+            int flag = 0;
+            for (int j=0; j<rules.size(); j++) {
+                if (patterns.get(i).equals( (rules.get(j)).substring(0,16) )) {
+                    flag = 1;
+                }
+            }
+            if (flag == 0) {
+                float ra = rand.nextFloat();
+                float c = 0;
+                for(int j = 0; j < chain[size1][size].size(); j++){
+                    c += chain[size1][size].get(j)[1];
+                    if(c >= ra){
+                        rules.add(patterns.get(i) + " " + KeytoIO(chain[size1][size].get(j)[0]));
+                        break;
+                    }
+                }
+            }
+        }
+        
+        //printL("Rules:",rules);
+        
+        return rules;
+    }
+    
+    /*-------------------------------------------
+    Hashmap functions
+    -------------------------------------------*/
+    static int[] key(String a, String b) {
+        int ak  = 0 , bk = 0;
+        for(int i = a.length()-1; i >=0; i--){
+            if(a.charAt(i) == 'I'){
+                ak += Math.pow(2,a.length()-1 -i);
+            }
+            if(b.charAt(i) == 'I'){
+                bk += Math.pow(2,a.length()-1 -i);
+            }
+        }
+        
+        int[] keys = {ak,bk};
+        return keys;
+    }
+    
+    
+    private static String KeytoIO(int key){
+        String s = "";
+        
+        String number = Integer.toBinaryString(key);
+        
+        //System.out.println("BinaryString [" + number + "]");
+        
+        for(int i = 0; i < number.length(); i++){
+            if(number.charAt(i) == '1')
+                s += "I";
+            else
+                s += "O";
+        }
+        
+        while(s.length() < 16){
+            s = "O" + s;
+        }
+        return s;
+    }
+    
+    private static String KeytoIO(float key){
+        String s = "";
+        
+        int k = (int)key;
+        String number = Integer.toBinaryString(k);
+        
+        //System.out.println("BinaryString [" + number + "]");
+        
+        for(int i = 0; i < number.length(); i++){
+            if(number.charAt(i) == '1')
+                s += "I";
+            else
+                s += "O";
+        }
+        
+        while(s.length() < 16){
+            s = "O" + s;
+        }
+        
+        return s;
     }
 }
