@@ -119,7 +119,7 @@ public class fooCallers {
         
         for (int i=0; i<files.size(); i++) {
             System.out.println(i + "/" + files.size() + " Curr file: " + files.get(i));
-            try {
+            //try {
                 ProbMelisma.analyzeRag(files.get(i), temp);
                 if(temp[0] > 0){
                     zamtcnt++;
@@ -127,12 +127,12 @@ public class fooCallers {
                 }
                 System.out.println("Success");
                 successes++;
-            }
-            catch (Exception e) {
+            //}
+            /*catch (Exception e) {
                 System.out.println(e);
                 errors.append("------------------Exception " + err + "-------------------\n " + files.get(i) + "\n" + e + "\n");
                 err += 1;
-            }
+            }*/
         }
         
         //Error report

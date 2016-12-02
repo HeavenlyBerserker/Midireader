@@ -294,7 +294,7 @@ public class MonophonicStreams {
         
         //THIS NUMBER NEEDS TO BE CHANGED FOR EACH SONG'S GCD
         
-        globseglength = 187.5;//166.5/2;//averagelen
+        globseglength = beatInduction.induceBeat(note);//166.5/2;//averagelen
         //seems to work best as 3000/18 for cakewalkin shoes or 3000/16 for others?
         
         //Create the rhythm array
