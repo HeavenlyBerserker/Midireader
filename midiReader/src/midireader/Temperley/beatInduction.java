@@ -87,7 +87,7 @@ public class beatInduction {
             out = 166.65;
         }
             
-        System.out.println("Induced beat: " + out);
+        //System.out.println("Induced beat: " + out);
         return out;
     }
 

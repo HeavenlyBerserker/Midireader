@@ -60,7 +60,7 @@ public class XmkMain {
     public static void main(String[] args) throws Exception {
         
         //Uncomment the following line to run note analysis
-        fooCallers.noteAnalysis("input/InputV1/TestFiles", "table");
+        fooCallers.noteAnalysis("input/InputV1/notefiles", "table");
         
         //Reading chainOutput (toggle second arg for print or not)
         ArrayList<float[]> [][] chain = MChainRead.readChainOutput("output/ChainOutput.csv", false);

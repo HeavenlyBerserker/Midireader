@@ -79,10 +79,10 @@ public class MonophonicStreams {
     }
     
     float size = realend;
-    System.out.println("Real start:");
-    System.out.println(realstart);
-    System.out.println(segment[0].start);
-    System.out.println(globseglength);
+    //System.out.println("Real start:");
+    //System.out.println(realstart);
+    //System.out.println(segment[0].start);
+    //System.out.println(globseglength);
     
     
     //for (int i=0; i<500; i++) {
@@ -113,7 +113,7 @@ public class MonophonicStreams {
     //BiHashMap<Integer, Integer, Integer> hash = new BiHashMap<Integer, Integer, Integer>();
     for (int i=0; i<thissky.length-1; i++) { 
         int[] arr = key(String.valueOf(thissky[i]), String.valueOf(thissky[i+1]));
-        System.out.println(String.valueOf(thissky[i]) + " " + String.valueOf(thissky[i+1]) + " " + arr[0] + " " + arr[1]);
+        //System.out.println(String.valueOf(thissky[i]) + " " + String.valueOf(thissky[i+1]) + " " + arr[0] + " " + arr[1]);
         if(arr[0] == 0 && arr[1] == 0){
             zamt++;
         }
@@ -300,7 +300,7 @@ public class MonophonicStreams {
         while (globseglength > 334) {
             globseglength /= 2;
         }*/
-        System.out.println("Beat used: " + globseglength);
+        //System.out.println("Beat used: " + globseglength);
         //delta 25:
         //max 1001
         //table.csv with note: 122 lines
