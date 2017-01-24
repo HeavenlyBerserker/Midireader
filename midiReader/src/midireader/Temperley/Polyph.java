@@ -39,7 +39,8 @@ static double seglength;
 static double globseglength;
 
 static note_struct znote[] = new note_struct[100000];     /* Notes as input - not necessarily chronological */
-static note_struct note[] = new note_struct[100000];      /* Notes sorted chronologically */
+static note_struct note[] = new note_struct[100000];      /* Notes sorted chronologically */   /* Notes as input - not necessarily chronological */
+static note_struct note2[] = new note_struct[100000];     /* Used for beat induction, not rounded to pips*/
 
 static segment_struct segment[] = new segment_struct[MS+100];        /* An array storing the notes in each segment. */
 static int segtotal;              /* total number of segments - 1 */
@@ -143,6 +144,7 @@ public static void reset()
  
  znote = new note_struct[100000];     /* Notes as input - not necessarily chronological */
  note = new note_struct[100000];      /* Notes sorted chronologically */
+note2 = new note_struct[100000];     /* Used for beat induction, not rounded to pips
 
  segment = new segment_struct[MS+100];        /* An array storing the notes in each segment. */
 
@@ -231,6 +233,7 @@ public static void reset2()
 
         znote = new note_struct[100000];     
         note = new note_struct[100000];     
+        note2 = new note_struct[100000];     
 
         segment = new segment_struct[MS+100];              
 
@@ -326,6 +329,7 @@ class note_struct {
   int stream;
   int valid;
   byte done;
+  
 };
 
 /* In what follows, a black square in a segment is a note onset; a blue square is a note continuation; a grey square is one that could be a rest in

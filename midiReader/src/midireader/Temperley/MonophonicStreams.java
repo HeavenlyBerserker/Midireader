@@ -294,8 +294,44 @@ public class MonophonicStreams {
         
         //THIS NUMBER NEEDS TO BE CHANGED FOR EACH SONG'S GCD
         
-        globseglength = beatInduction.induceBeat(note);//166.5/2;//averagelen
-        //seems to work best as 3000/18 for cakewalkin shoes or 3000/16 for others?
+        globseglength = beatInduction.induceBeat(note2);//166.5/2;//averagelen
+        //globseglength = 135;
+        /*
+        while (globseglength > 334) {
+            globseglength /= 2;
+        }*/
+        System.out.println("Beat used: " + globseglength);
+        //delta 25:
+        //max 1001
+        //table.csv with note: 122 lines
+        //table.csv with note2: 194 lines
+        //table.csv with beat=166.5/2: 1326
+        //table.csv with note2/2: 513 lines
+        //table.csv with round(note2/2): 473 lines
+        //table.csv with round(note2)/2: 474 lines
+        //table.csv with round(note2/4): 915 lines
+        //delta 20:
+        //table.csv with round(note2/2): 412 lines
+        //delta 15:
+        //table.csv with round(note2/2): 418 lines
+        //delta 20:
+        //table.csv with round(note2) divided until < 200: 812 lines
+        //max 999
+        //table.csv with round(note2) divided until < 200: 812 lines
+        //max 979
+        //table.csv with round(note2) divided until < 200: 812 lines
+        //table.csv with round(note2): 143 lines
+        //max 371
+        //table.csv with round(note2): 421 lines
+        //table.csv with round(note2) with special cases: 627 lines
+        //table.csv with note2 with similardivide: 855 lines
+        //table.csv with note2 with similardividev2: 913 lines
+        //table.csv with note2 with firstcluster: 802 lines
+        //table.csv with note2 with firstcluster plus similardivide: 922 lines
+        //table.csv with note2 with firstcluster plus similardivide plus floorceil: 910 lines
+        //table.csv with note2 with similardivide plus floorceil2: 880 lines
+        //table.csv with note2 with similardivide plus floorceil3: 729 lines
+        //non quantized - 356
         
         //Create the rhythm array
         int size = (int)(finalend/(16*globseglength)+1);
@@ -304,9 +340,19 @@ public class MonophonicStreams {
             for (int j=0; j<16; j++) 
                 rhythm[i][j] = 'O';
         }
+        /* Previous version using quantized data
         for (int seg=0; seg<=segtotal; seg++) {
-            if (firstNote[seg] != null)
-                rhythm[(int)((firstNote[seg].ontime+2)/(16*globseglength))][(int)((firstNote[seg].ontime+2)/globseglength % 16)] = 'I';
+            if (firstNote[seg] != null) {
+                System.out.println(firstNote[seg].ontime);
+                rhythm[(int)((firstNote[seg].ontime+10)/(16*globseglength))][(int)((firstNote[seg].ontime+10)/globseglength % 16)] = 'I';
+            }
+        }*/
+        
+        for (int seg=0; seg<numnotes; seg++) {
+            //if (firstNote[seg] != null) {
+            //System.out.println(note2[seg].ontime);
+            rhythm[(int)((note2[seg].ontime+10)/(16*globseglength))][(int)((note2[seg].ontime+10)/globseglength % 16)] = 'I';
+            //}
         }
         
         //print rhythm array

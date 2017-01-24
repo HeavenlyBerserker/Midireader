@@ -34,6 +34,7 @@ public class Segment {
 
 	}
 
+        @SuppressWarnings("empty-statement")
 	static void adjust_notes() {
 
 		/*
@@ -152,9 +153,18 @@ public class Segment {
 				}
 			}
 		}
-
+                
+                /* Copy note array to note2, which is not rounded, for beat induction purposes*/
+                for (z = 0; z < numnotes; z++) {
+			//System.out.println("Note "+ note[z].ontime+ " " + note[z].offtime);
+                        note2[z] = new note_struct();
+			note2[z].ontime = note[z].ontime;
+			note2[z].offtime = note[z].offtime;
+			//note2[z].copyFrom(note[z]);
+		}
+                
 		/* Now round them off to the nearest pip */
-
+                
 		for (z = 0; z < numnotes; z++) {
 			note[z].ontime = myround(note[z].ontime);
 			note[z].offtime = myround(note[z].offtime);
