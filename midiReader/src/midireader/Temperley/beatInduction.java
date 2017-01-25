@@ -14,8 +14,8 @@ public class beatInduction {
     static double induceBeat(note_struct[] notes) {
         
         ArrayList<cluster> clusters = new ArrayList();
-        double delta = 20; 
-        double maxDist = 371;
+        double delta = 30; 
+        double maxDist = 351+delta;
         
         //for each pair of onset times ti < tj
         for (int i=0; i<numnotes; i++) {
@@ -67,7 +67,6 @@ public class beatInduction {
         }
         //out = Math.round(out);
         //out  = clusters.get(0).average;
-        
         while (true) {
             if (similar(clusters,out/2) > 0) {
                 out = similar(clusters,out/2);
@@ -77,23 +76,23 @@ public class beatInduction {
             }
             else break;
         }
-        if ((out % 25) < 1) {
+        if ((out % 25) <= 1) {
             out -= (out % 25);
         }
-        else if ((out % 25) > 24) {
+        else if ((out % 25) >= 24) {
             out += 25-(out % 25);
         }
         else if (Math.abs(out-166.666667) < 2) {
             out = 166.65;
         }
-            
-        //System.out.println("Induced beat: " + out);
+        //if (out > 250) out /= 2;
+        System.out.println("Induced beat: " + out);
         return out;
     }
 
     private static double similar(ArrayList<cluster> c, double d) {
         for (int i=0; i<c.size(); i++) {
-            if (Math.abs(c.get(i).average - d) < 2) {
+            if (Math.abs(c.get(i).average - d) < 1) {
                 return c.get(i).average;
             }
         }

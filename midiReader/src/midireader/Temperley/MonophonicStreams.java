@@ -113,7 +113,7 @@ public class MonophonicStreams {
     //BiHashMap<Integer, Integer, Integer> hash = new BiHashMap<Integer, Integer, Integer>();
     for (int i=0; i<thissky.length-1; i++) { 
         int[] arr = key(String.valueOf(thissky[i]), String.valueOf(thissky[i+1]));
-        //System.out.println(String.valueOf(thissky[i]) + " " + String.valueOf(thissky[i+1]) + " " + arr[0] + " " + arr[1]);
+        System.out.println(String.valueOf(thissky[i]) + " " + String.valueOf(thissky[i+1]) + " " + arr[0] + " " + arr[1]);
         if(arr[0] == 0 && arr[1] == 0){
             zamt++;
         }
@@ -278,9 +278,9 @@ public class MonophonicStreams {
         int finalend = 0;
         for (int z = 0; z < numnotes; z++) {
             if (note[z].stream == mystream[note[z].segment]) {
-                firstNote[note[z].segment] = note[z];
-                if (note[z].offtime > finalend) {
-                    finalend = note[z].offtime;
+                firstNote[note[z].segment] = note2[z];
+                if (note2[z].offtime > finalend) {
+                    finalend = note2[z].offtime;
                 }
             }
         }
@@ -301,59 +301,35 @@ public class MonophonicStreams {
             globseglength /= 2;
         }*/
         //System.out.println("Beat used: " + globseglength);
-        //delta 25:
-        //max 1001
+
         //table.csv with note: 122 lines
         //table.csv with note2: 194 lines
         //table.csv with beat=166.5/2: 1326
-        //table.csv with note2/2: 513 lines
-        //table.csv with round(note2/2): 473 lines
-        //table.csv with round(note2)/2: 474 lines
-        //table.csv with round(note2/4): 915 lines
-        //delta 20:
-        //table.csv with round(note2/2): 412 lines
-        //delta 15:
-        //table.csv with round(note2/2): 418 lines
-        //delta 20:
-        //table.csv with round(note2) divided until < 200: 812 lines
-        //max 999
-        //table.csv with round(note2) divided until < 200: 812 lines
-        //max 979
-        //table.csv with round(note2) divided until < 200: 812 lines
-        //table.csv with round(note2): 143 lines
-        //max 371
-        //table.csv with round(note2): 421 lines
-        //table.csv with round(note2) with special cases: 627 lines
-        //table.csv with note2 with similardivide: 855 lines
-        //table.csv with note2 with similardividev2: 913 lines
-        //table.csv with note2 with firstcluster: 802 lines
-        //table.csv with note2 with firstcluster plus similardivide: 922 lines
-        //table.csv with note2 with firstcluster plus similardivide plus floorceil: 910 lines
-        //table.csv with note2 with similardivide plus floorceil2: 880 lines
-        //table.csv with note2 with similardivide plus floorceil3: 729 lines
-        //non quantized - 356
+        //non quantized all notes: 356
+        //top stream: 595
         
         //Create the rhythm array
-        int size = (int)(finalend/(16*globseglength)+1);
+        int size = (int)((finalend+10)/(16*globseglength)+1);
         char[][] rhythm= new char[size][16];
         for (int i=0; i<size; i++) {
             for (int j=0; j<16; j++) 
                 rhythm[i][j] = 'O';
         }
-        /* Previous version using quantized data
+         //Previous version using quantized data
         for (int seg=0; seg<=segtotal; seg++) {
             if (firstNote[seg] != null) {
-                System.out.println(firstNote[seg].ontime);
+                //System.out.println(firstNote[seg].ontime);
                 rhythm[(int)((firstNote[seg].ontime+10)/(16*globseglength))][(int)((firstNote[seg].ontime+10)/globseglength % 16)] = 'I';
             }
-        }*/
-        
-        for (int seg=0; seg<numnotes; seg++) {
+        }
+        /*
+        System.out.println("N: " +numnotes);
+        for (int z=0; z<numnotes; z++) {
             //if (firstNote[seg] != null) {
             //System.out.println(note2[seg].ontime);
-            rhythm[(int)((note2[seg].ontime+10)/(16*globseglength))][(int)((note2[seg].ontime+10)/globseglength % 16)] = 'I';
+            rhythm[(int)((note2[z].ontime+10)/(16*globseglength))][(int)((note2[z].ontime+10)/globseglength % 16)] = 'I';
             //}
-        }
+        }*/
         
         //print rhythm array
         /*
