@@ -95,7 +95,7 @@ public class fooCallers {
             return readingMid;
     }
     
-    public static boolean noteAnalysis(String path, String tname) throws IOException, InvalidMidiDataException{
+    public static boolean noteAnalysis(String path, String tname) throws IOException, InvalidMidiDataException , OutOfMemoryError{
         boolean t = true;
         
         List<String> files = new ArrayList<>();

@@ -101,7 +101,7 @@ public class MChainProcess {
         ArrayList<String> rules = new ArrayList();
         Random rand = new Random();
 
-
+        //Create random rule for first measure
         int size = (patterns.get(0).length() - patterns.get(0).replace("I", "").length());
         float sum = 0;
         for(int i = 0; i < 17; i++){
@@ -126,20 +126,24 @@ public class MChainProcess {
             }
             if(b == 1) break;
         }
+        //
         
-        
-        
+        //All other non-first measure rules
         for (int i=1; i<patterns.size(); i++) {
+            //# of zeroes in previous pattern
             int size1 = (patterns.get(i-1).length() - patterns.get(i-1).replace("I", "").length());
+            //# of zeroes in current pattern
             size = (patterns.get(i).length() - patterns.get(i).replace("I", "").length());
             
             int flag = 0;
             for (int j=0; j<rules.size(); j++) {
+                //If first measure pattern, do nothing
                 if (patterns.get(i).equals( (rules.get(j)).substring(0,16) )) {
                     flag = 1;
                 }
             }
             if (flag == 0) {
+                //Adding rules
                 float ra = rand.nextFloat();
                 float c = 0;
                 for(int j = 0; j < chain[size1][size].size(); j++){

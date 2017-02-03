@@ -60,15 +60,83 @@ public class XmkMain {
     public static void main(String[] args) throws Exception {
         
         //Uncomment the following line to run note analysis
-        fooCallers.noteAnalysis("input/InputV1/notefiles/RAG", "table");
+        //fooCallers.noteAnalysis("input/InputV1/MiniTest", "table");
         
+        //------Reads transition probabilities from file-------------------
         //Reading chainOutput (toggle second arg for print or not)
-        ArrayList<float[]> [][] chain = MChainRead.readChainOutput("output/ChainOutput.csv", false);
+        //ArrayList<float[]> [][] chain = MChainRead.readChainOutput("output/ChainOutput.csv", false);
+        //-----------------------------------------------------------------
         
-        //
+        //-------------Version 1 activation-------------------
+        
+        //----------------------------------------------------
+        
+        //-------------Version 2 activation-------------------
+        //Line 1 prints out results, line 2 doesn't.
         //MChainProcess.processingS1("yankeeDb", true, chain);
+        //MChainProcess. processingS1("yankeeDb", false, chain);
+        //----------------------------------------------------
         
-        MChainProcess. processingS1("yankeeDb", false, chain);
+        //-------------Syncopalooza activation-------------------
+        ArrayList<String[]> patternData = rhythmFrequency.readFile("input/InputV1/" + "lhlpatterns_depth_nots.csv");
+        patternData = rhythmFrequency.changeToIO(patternData);
+        GCD = (int)(1000*60/(240*2));
+        resolution = GCD*4; //GCD*4; // (ticks/beat)
+        
+        
+        String inFolderN = "";
+        String outFolderN = "";
+        String file = "yankeeDb";
+        String filenameXm = "input/xm/" + file + ".xmk";
+        ArrayList<float[]> noteXmRead = new ArrayList();
+        noteXmRead = xmRead(filenameXm);
+        ArrayList<float[]> chords = xmPlayer.xmPlay(noteXmRead,1);
+        ArrayList<float[]> notesXm = xmPlayer.xmPlay(noteXmRead,0);
+        
+        GCD = (int)(60000/(noteXmRead.get(0)[2]*4));
+        ArrayList<String> patterns = new ArrayList();
+        ArrayList<ArrayList<Float>> patternNums = new ArrayList();
+        float lhloverall = 0;
+        
+        
+        //chordMaker.print(notesXm);
+        //chordMaker.print(noteXmRead);
+        ArrayList<float[]> noteXm = new ArrayList();
+        noteXm = xmPlayer.xmPlay(noteXmRead, 1);
+        
+        MEASURES = basicTransformations.measures(notesXm);
+        //System.out.println(MEASURES);
+        for (int i=0; i<MEASURES; i++) {
+            patterns.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            //System.out.println(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            lhloverall += MeasureAnalyzer.LHL(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            patternNums.add(MeasureAnalyzer.patternNums(basicTransformations.getHalfMeasure(notesXm,i),GCD,patterns.get(i),GCD*i*16));
+            
+        }
+        lhloverall = lhloverall/MEASURES;
+        //System.out.println("Syncopation: " + lhloverall);
+        //ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
+        
+        //ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
+        ArrayList<String> rules = syncopalooza.makeRules(patterns);
+        //System.out.println();
+        notesXm = RhythmChanger2.changeSongSync(notesXm,patterns,rules,patternNums,0.1);
+        
+        ArrayList<String> patternsb = new ArrayList();
+        ArrayList<ArrayList<Float>> patternNumsb = new ArrayList();
+        //System.out.println();
+        for (int i=0; i<MEASURES; i++) {
+            patternsb.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
+            patternNumsb.add(MeasureAnalyzer.patternNums(basicTransformations.getHalfMeasure(notesXm,i),GCD,patternsb.get(i),GCD*i*16));
+        }
+        ArrayList<String> rulesb = syncopalooza.makeRules(patternsb);
+        notesXm = RhythmChanger2.changeSongSync(notesXm,patternsb,rulesb,patternNumsb,0.1);
+        
+        
+        chords.addAll(notesXm);
+        //chordMaker.print(noteXm);
+        writeMidi.write(chords, "output/xmk/palooza/" + outFolderN + file + ".mid");
+        //----------------------------------------------------
         
         /*
         ArrayList<String[]> patternData = rhythmFrequency.readFile("input/InputV1/" + "lhlpatterns_depth_nots.csv");
