@@ -1,6 +1,6 @@
 
 
-package midireader;
+package midireader.inputHumdrumMelisma;
 
 
 import java.io.File;

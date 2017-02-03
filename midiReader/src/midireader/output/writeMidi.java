@@ -84,6 +84,7 @@ public class writeMidi {
             //****  write the MIDI sequence to a MIDI file  ****
             File f = new File(filename);
             MidiSystem.write(s, 1, f);
+            System.out.println("Midifile write successful: " + filename);
         } //try //try
         catch (Exception e) {
             System.out.println("Exception caught " + e.toString());

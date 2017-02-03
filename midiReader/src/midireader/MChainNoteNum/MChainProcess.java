@@ -36,16 +36,20 @@ public class MChainProcess {
     
     public static void processingS1(String file, boolean b, ArrayList<float[]> [][] chain) throws IOException{
         
-        System.out.println("\nMM " + MM);
+        
+        
+        //System.out.println("\nMM " + MM);
         GCD = (int)(1000*60/(240*2));
-        System.out.println("GCD " + GCD);
+        //System.out.println("GCD " + GCD);
         resolution = GCD*4; //GCD*4; // (ticks/beat)
         
         //All input filenames here------------------------------------------------------------------------------------
         String filenameXm = "input/xm/" + file + ".xmk";
         
-        //Print Some info.
-        System.out.println("Filename: " + filenameXm);
+        System.out.print("--------------------------------\n"
+                + "Version 2 run on file : " + filenameXm + "\n"
+                + "--------------------------------\n");
+       
         
         ArrayList<float[]> noteXmRead = new ArrayList();
         noteXmRead = xmRead(filenameXm);
@@ -65,7 +69,7 @@ public class MChainProcess {
         
         
         MEASURES = basicTransformations.measures(notesXm);
-        System.out.println(MEASURES);
+        //System.out.println(MEASURES);
         for (int i=0; i<MEASURES; i++) {
             patterns.add(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
             //System.out.println(MeasureAnalyzer.getRhythm(notesXm,i,GCD));
@@ -73,16 +77,16 @@ public class MChainProcess {
             patternNums.add(MeasureAnalyzer.patternNums(basicTransformations.getHalfMeasure(notesXm,i),GCD,patterns.get(i),GCD*i*16));
         }
         lhloverall = lhloverall/MEASURES;
-        System.out.println("Syncopation: " + lhloverall);
+        //System.out.println("Syncopation: " + lhloverall);
         //ArrayList<String[]> patterns2 = MeasureAnalyzer.measureFrequencies(patterns);
         
         //ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
         ArrayList<String> rules = makeRules(patterns, chain);
-        System.out.println();
+        //System.out.println();
         notesXm = RhythmChanger2.changeSongSync(notesXm,patterns,rules,patternNums,1);
         
-        printL("Rules:",rules);
-        printL("\nPatterns: ", patterns);
+        //printL("Rules:",rules);
+        //printL("\nPatterns: ", patterns);
         
         chords.addAll(notesXm);
         //chordMaker.print(noteXm);
@@ -109,7 +113,7 @@ public class MChainProcess {
                 sum += chain[i][size].get(j)[1];
             }
         }
-        System.out.println("sum " + sum);
+        //System.out.println("sum " + sum);
         
         float finalX = sum * rand.nextFloat();
         
