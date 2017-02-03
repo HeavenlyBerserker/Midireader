@@ -1,3 +1,9 @@
 Error Report
-Error count: 0
-Files successfully analyzed: 0/0
+------------------Exception 0-------------------
+ D:\Users\Joel\Desktop\Documents\NetBeansProjects\Midireader\midiReader\input\InputV1\MiniTest\Can't Help Lovin' Dat Man - dfsm.notelist
+java.util.EmptyStackException
+------------------Exception 1-------------------
+ D:\Users\Joel\Desktop\Documents\NetBeansProjects\Midireader\midiReader\input\InputV1\MiniTest\Harmony Club Waltz - Wilson.notelist
+java.util.EmptyStackException
+Error count: 2
+Files successfully analyzed: 14/16
