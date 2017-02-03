@@ -3,6 +3,7 @@ package midireader.Temperley;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.EmptyStackException;
 import static midireader.Temperley.Polyph.*;
 import midireader.DataStructs.BiHashMap;
 import midireader.XmkMain;
@@ -309,6 +310,10 @@ public class MonophonicStreams {
         //top stream: 595
         
         //Create the rhythm array
+        if (globseglength == 0) {
+            System.out.println("Induced beat of 0");
+            throw new EmptyStackException();
+        }
         int size = (int)((finalend+10)/(16*globseglength)+1);
         char[][] rhythm= new char[size][16];
         for (int i=0; i<size; i++) {
@@ -321,6 +326,24 @@ public class MonophonicStreams {
                 //System.out.println(firstNote[seg].ontime);
                 rhythm[(int)((firstNote[seg].ontime+10)/(16*globseglength))][(int)((firstNote[seg].ontime+10)/globseglength % 16)] = 'I';
             }
+        }
+        
+        int num[] = new int[16];
+        int total = 0;
+        for (int i=0; i<size; i++) {
+            for (int j=0; j<16; j++) 
+                if (rhythm[i][j] == 'I') {
+                    num[j] ++;
+                    total++;
+                }
+        }
+        
+        float avgnotes = (float)total/size; //average number of notes/measure
+        System.out.println(avgnotes);
+        System.out.println(((float)num[0])/(total));
+        if ((float)num[0]/total <= 0.0625){ //some valid looking 
+            System.out.println("Failed to induce valid beat, incidence of onset 0 is " + (float)num[0]/total);
+            throw new EmptyStackException();
         }
         /*
         System.out.println("N: " +numnotes);

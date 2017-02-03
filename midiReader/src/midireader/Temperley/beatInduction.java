@@ -14,8 +14,8 @@ public class beatInduction {
     static double induceBeat(note_struct[] notes) {
         
         ArrayList<cluster> clusters = new ArrayList();
-        double delta = 30; 
-        double maxDist = 351+delta;
+        double delta = 25; 
+        double maxDist = 1001;
         
         //for each pair of onset times ti < tj
         for (int i=0; i<numnotes; i++) {
@@ -76,6 +76,7 @@ public class beatInduction {
             }
             else break;
         }
+        
         if ((out % 25) <= 1) {
             out -= (out % 25);
         }
