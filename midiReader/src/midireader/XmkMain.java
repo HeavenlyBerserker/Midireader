@@ -60,7 +60,7 @@ public class XmkMain {
     public static void main(String[] args) throws Exception {
         
         //Uncomment the following line to run note analysis
-        //fooCallers.noteAnalysis("input/InputV1/MiniTest", "table");
+        FunctionCallers.noteAnalysis("input/InputV1/notefiles", "table");
         
         //------Reads transition probabilities from file-------------------
         //Reading chainOutput (toggle second arg for print or not)
@@ -81,10 +81,6 @@ public class XmkMain {
         //Input file location: "input/xm/" + filePath + ".xmk"
         FunctionCallers.SyncoCall("yankeeDb",0.5f);
         //----------------------------------------------------
-        
-        
-        
-        
         
     }
 
