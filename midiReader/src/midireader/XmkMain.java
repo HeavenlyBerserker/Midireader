@@ -33,19 +33,22 @@ public class XmkMain {
         ArrayList<float[]> [][] chain = MChainRead.readChainOutput("output/ChainOutput.csv", false);
         //-----------------------------------------------------------------
         
+        //Names of file
+        String filename = "spring";
+        
         //-------------Version 1 activation-------------------
-        FunctionCallers.V1Call("ronda44",0.3f);
+        FunctionCallers.V1Call(filename,0.3f);
         //----------------------------------------------------
         
         //-------------Version 2 activation-------------------
         //Line 1 prints out results, line 2 doesn't.
         //MChainProcess.processingS1("yankeeDb", true, chain);
-        MChainProcess. processingS1("ronda44", false, chain);
+        MChainProcess. processingS1(filename, false, chain, 0.3f);
         //----------------------------------------------------
         
         //-------------Syncopalooza activation-------------------
         //Input file location: "input/xm/" + filePath + ".xmk"
-        FunctionCallers.SyncoCall("ronda44",0.3f);
+        FunctionCallers.SyncoCall(filename,0.3f);
         //----------------------------------------------------
         
     }
