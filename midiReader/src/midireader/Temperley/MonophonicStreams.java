@@ -2,13 +2,11 @@
 package midireader.Temperley;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.EmptyStackException;
 import static midireader.Temperley.Polyph.*;
-import midireader.DataStructs.BiHashMap;
+import static midireader.Temperley.beatInduction.getDeviation;
 import midireader.XmkMain;
 
-import midireader.processingXmk.MeasureAnalyzer;
 
 public class MonophonicStreams {
     
@@ -293,58 +291,32 @@ public class MonophonicStreams {
         }
         averagelen /= segtotal;
         
-        //THIS NUMBER NEEDS TO BE CHANGED FOR EACH SONG'S GCD
-        
-        globseglength = beatInduction.induceBeat(note2);//166.5/2;//averagelen
-        //globseglength = 135;
-        /*
-        while (globseglength > 334) {
-            globseglength /= 2;
-        }*/
-        //System.out.println("Beat used: " + globseglength);
-
-        //table.csv with note: 122 lines
-        //table.csv with note2: 194 lines
-        //table.csv with beat=166.5/2: 1326
-        //non quantized all notes: 356
-        //top stream: 595
+        globseglength = beatInduction.induceBeat(note2,segtotal,finalend,firstNote);
         
         //Create the rhythm array
         if (globseglength == 0) {
             System.out.println("Induced beat of 0");
             throw new EmptyStackException();
         }
+        
+        if (getDeviation(globseglength,segtotal,finalend,firstNote) < 0.033) {
+            System.out.println("Poorly induced beat of " + globseglength);
+            throw new EmptyStackException();
+        }
+        
         int size = (int)((finalend+10)/(16*globseglength)+1);
         char[][] rhythm= new char[size][16];
         for (int i=0; i<size; i++) {
             for (int j=0; j<16; j++) 
                 rhythm[i][j] = 'O';
         }
-         //Previous version using quantized data
         for (int seg=0; seg<=segtotal; seg++) {
-            if (firstNote[seg] != null) {
+            if (firstNote[seg] != null) { 
                 //System.out.println(firstNote[seg].ontime);
                 rhythm[(int)((firstNote[seg].ontime+10)/(16*globseglength))][(int)((firstNote[seg].ontime+10)/globseglength % 16)] = 'I';
             }
         }
         
-        int num[] = new int[16];
-        int total = 0;
-        for (int i=0; i<size; i++) {
-            for (int j=0; j<16; j++) 
-                if (rhythm[i][j] == 'I') {
-                    num[j] ++;
-                    total++;
-                }
-        }
-        
-        float avgnotes = (float)total/size; //average number of notes/measure
-        System.out.println(avgnotes);
-        System.out.println(((float)num[0])/(total));
-        if ((float)num[0]/total <= 0.0625){ //some valid looking 
-            System.out.println("Failed to induce valid beat, incidence of onset 0 is " + (float)num[0]/total);
-            throw new EmptyStackException();
-        }
         /*
         System.out.println("N: " +numnotes);
         for (int z=0; z<numnotes; z++) {
