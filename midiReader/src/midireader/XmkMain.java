@@ -4,44 +4,10 @@ package midireader;
 
 
 import midireader.DataStructs.BiHashMap;
-import midireader.patternDataProcessing.rhythmFrequency;
-import midireader.processingXmk.RhythmChanger;
-import midireader.processingXmk.MeasureAnalyzer;
-import midireader.processingXmk.xmPlayer;
-import midireader.output.writeMidi;
-import midireader.processingHumdrumMelisma.chordMaker;
-import midireader.auxClasses.basicTransformations;
-import midireader.inputHumdrumMelisma.MelismaReader;
-import midireader.inputHumdrumMelisma.ChordAnalyzer;
-import java.io.File;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import javax.sound.midi.MetaMessage;
-
-import javax.sound.midi.MidiEvent;
-import javax.sound.midi.MidiMessage;
-import javax.sound.midi.MidiSystem;
-import javax.sound.midi.Sequence;
-import javax.sound.midi.ShortMessage;
-import javax.sound.midi.SysexMessage;
-import javax.sound.midi.Track;
 import midireader.MChainNoteNum.MChainProcess;
 import midireader.MChainNoteNum.MChainRead;
-import midireader.Temperley.Globals;
 import midireader.auxClasses.FunctionCallers;
-import midireader.inputHumdrumMelisma.readMidi;
-import midireader.Temperley.ProbMelisma;
-import static midireader.inputXmk.xmReader.xmRead;
-import static midireader.auxClasses.basicTransformations.getHalfMeasure;
-import static midireader.auxClasses.basicTransformations.getHalfMeasure;
-import static midireader.processingHumdrumMelisma.chordMaker.printF;
-import midireader.output.writeNotes;
-import midireader.processingXmk.RhythmChanger2;
-import midireader.processingXmk.syncopalooza;
-import midireader.output.ChainOutputs;
 
 
 public class XmkMain {
