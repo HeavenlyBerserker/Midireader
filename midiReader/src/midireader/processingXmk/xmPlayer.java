@@ -177,16 +177,54 @@ public class xmPlayer {
                     else if((beat == 0 || beat == 2) && passing == 1){
                         passing = 0;
                         if(chord.size() > 0){
-                            float[] arr = {0,0,0};
-                            arr[0] = (float)Math.floor((bMid(chord.get(0)) + bMid(xm.get(i)[3]))/2);
-                            arr[1] = tempTime - (float).25*speed;
-                            arr[2] = tempTime + speed*xm.get(i)[0]/ xm.get(i)[1] - (float).25*speed;
-                            notes.add(arr);
-                            float[] arr2 = {0,0,0};
-                            arr2[0] = (float)Math.floor((bMid(chord.get(0)) + bMid(xm.get(i)[3]))/2) - 12;
-                            arr2[1] = tempTime - (float).25*speed;
-                            arr2[2] = tempTime + speed*xm.get(i)[0]/ xm.get(i)[1] - (float).25*speed;
-                            notes.add(arr2);
+                            float[] arrr = {0,0,0};
+                            arrr[0] = (float)Math.floor((bMid(chord.get(0)) + bMid(xm.get(i)[3]))/2);
+                            arrr[1] = tempTime - (float).25*speed;
+                            arrr[2] = tempTime + speed*xm.get(i)[0]/ xm.get(i)[1] - (float).25*speed;
+                            if(arrr[0] != bMid(chord.get(0))){
+                                notes.add(arrr);
+                                float[] arr2 = {0,0,0};
+                                arr2[0] = (float)Math.floor((bMid(chord.get(0)) + bMid(xm.get(i)[3]))/2) - 12;
+                                arr2[1] = tempTime - (float).25*speed;
+                                arr2[2] = tempTime + speed*xm.get(i)[0]/ xm.get(i)[1] - (float).25*speed;
+                                notes.add(arr2);
+                            }
+                            else{
+                                if(beat == 0){
+                                    float[] arr = {0,0,0};
+                                    arr[0] = bMid(xm.get(i)[3]);
+                                    arr[1] = tempTime;
+                                    arr[2] = tempTime + speed*xm.get(i)[0]/ xm.get(i)[1];
+                                    notes.add(arr);
+                                    float[] arr2 = {0,0,0};
+                                    arr2[0] = bMid(xm.get(i)[3])-12;
+                                    arr2[1] = tempTime;
+                                    arr2[2] = tempTime + speed*xm.get(i)[0]/ xm.get(i)[1];
+                                    notes.add(arr2);
+                                }
+                                else if(beat == 2){
+                                    float[] arr = {0,0,0};
+                                    arr[0] = bMid(xm.get(i)[5]);
+                                    arr[1] = tempTime;
+                                    arr[2] = tempTime + speed*xm.get(i)[0]/ xm.get(i)[1];
+                                    notes.add(arr);
+                                    float[] arr2 = {0,0,0};
+                                    arr2[0] = bMid(xm.get(i)[5])-12;
+                                    arr2[1] = tempTime;
+                                    arr2[2] = tempTime + speed*xm.get(i)[0]/ xm.get(i)[1];
+                                    notes.add(arr2);
+                                }
+                                //Prepare last chord
+                                for(int j = 3; j < xm.get(i).length; j++){
+                                    float[] arr3 = {0,0,0};
+                                    //lastNote = xm.get(i)[2];
+                                    arr3[0] = cMid(xm.get(i)[j]);
+                                    //System.out.print(xm.get(i)[j] + ", ");
+                                    chord.add(xm.get(i)[j]);
+                                    arr3[1] = tempTime;
+                                    arr3[2] = tempTime + speed*xm.get(i)[0]/ xm.get(i)[1];
+                                }
+                            }
                         }
                         float[] arr = {0,0,0};
                         arr[0] = bMid(xm.get(i)[3]);
