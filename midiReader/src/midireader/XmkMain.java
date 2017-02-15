@@ -37,18 +37,18 @@ public class XmkMain {
         String filename = "spring";
         
         //-------------Version 1 activation-------------------
-        FunctionCallers.V1Call(filename,0.3f);
+        FunctionCallers.V1Call(filename,1f);
         //----------------------------------------------------
         
         //-------------Version 2 activation-------------------
         //Line 1 prints out results, line 2 doesn't.
         //MChainProcess.processingS1("yankeeDb", true, chain);
-        MChainProcess. processingS1(filename, false, chain, 0.3f);
+        MChainProcess. processingS1(filename, false, chain, 1f);
         //----------------------------------------------------
         
         //-------------Syncopalooza activation-------------------
         //Input file location: "input/xm/" + filePath + ".xmk"
-        FunctionCallers.SyncoCall(filename,0.3f);
+        FunctionCallers.SyncoCall(filename,1f);
         //----------------------------------------------------
         
     }
