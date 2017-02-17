@@ -159,14 +159,16 @@ public class RhythmChanger2 {
                             }
                         }
                         else {
-                            currtime2 = patternNums.get(currplace);
-                            //System.out.println(currplace + " " + currtime2 + " " + notes.get(j)[0]);
-                            currnote = notes.get(j);
-                            currnote[1] = currtime;
-                            currnote[2] = currtime+currtime2;
-                            notes2.add(currnote);
-                            j++;
-                            currplace++;
+                            if (notes.size()>j) {
+                                currtime2 = patternNums.get(currplace);
+                                //System.out.println(currplace + " " + currtime2 + " " + notes.get(j)[0]);
+                                currnote = notes.get(j);
+                                currnote[1] = currtime;
+                                currnote[2] = currtime+currtime2;
+                                notes2.add(currnote);
+                                j++;
+                                currplace++;
+                            }
                         }
                     }
                 }

@@ -26,26 +26,29 @@ public class XmkMain {
     public static void main(String[] args) throws Exception {
         
         //Uncomment the following line to run note analysis
-        FunctionCallers.noteAnalysis("input/InputV1/notefiles", "table");
+        //FunctionCallers.noteAnalysis("input/InputV1/notefiles", "table");
         
         //------Reads transition probabilities from file-------------------
         //Reading chainOutput (toggle second arg for print or not)
         ArrayList<float[]> [][] chain = MChainRead.readChainOutput("output/ChainOutput.csv", false);
         //-----------------------------------------------------------------
         
+        //Names of file
+        String filename = "spring";
+        
         //-------------Version 1 activation-------------------
-        FunctionCallers.V1Call("yankeeDb",0.5f);
+        FunctionCallers.V1Call(filename,1f);
         //----------------------------------------------------
         
         //-------------Version 2 activation-------------------
         //Line 1 prints out results, line 2 doesn't.
         //MChainProcess.processingS1("yankeeDb", true, chain);
-        MChainProcess. processingS1("yankeeDb", false, chain);
+        MChainProcess. processingS1(filename, false, chain, 1f);
         //----------------------------------------------------
         
         //-------------Syncopalooza activation-------------------
         //Input file location: "input/xm/" + filePath + ".xmk"
-        FunctionCallers.SyncoCall("yankeeDb",0.5f);
+        FunctionCallers.SyncoCall(filename,1f);
         //----------------------------------------------------
         
     }

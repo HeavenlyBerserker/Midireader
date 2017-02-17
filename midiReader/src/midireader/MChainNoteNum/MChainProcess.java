@@ -34,7 +34,7 @@ import java.util.Random;
  */
 public class MChainProcess {
     
-    public static void processingS1(String file, boolean b, ArrayList<float[]> [][] chain) throws IOException{
+    public static void processingS1(String file, boolean b, ArrayList<float[]> [][] chain, float prob) throws IOException{
         
         
         
@@ -83,7 +83,7 @@ public class MChainProcess {
         //ArrayList<String> rules = RhythmChanger.makeRules(patterns,patternData);
         ArrayList<String> rules = makeRules(patterns, chain);
         //System.out.println();
-        notesXm = RhythmChanger2.changeSongSync(notesXm,patterns,rules,patternNums,1);
+        notesXm = RhythmChanger2.changeSongSync(notesXm,patterns,rules,patternNums,prob);
         
         //printL("Rules:",rules);
         //printL("\nPatterns: ", patterns);
