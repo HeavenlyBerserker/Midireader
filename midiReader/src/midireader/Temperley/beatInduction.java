@@ -11,7 +11,7 @@ public class beatInduction {
     static double induceBeat(note_struct[] notes, int segtotal, int finalend, note_struct[] firstNote) {
         
         ArrayList<cluster> clusters = new ArrayList();
-        double delta = 25; 
+        double delta = 4; 
         double maxDist = 351+delta;
         
         //for each pair of onset times ti < tj
@@ -42,27 +42,30 @@ public class beatInduction {
             }
         }
         //merge duplicate clusters
-        
+        /*
         for (int k=0; k<0; k++) {
             for (int i=0; i<clusters.size(); i++) {
                 for (int j=i+1; j<clusters.size(); j++) {
-                    if (abs(clusters.get(i).average-clusters.get(j).average) < delta/2) {
+                    if (abs(clusters.get(i).average-clusters.get(j).average) < delta) {
                         clusters.get(i).average = (clusters.get(i).average*clusters.get(i).number + clusters.get(j).average*clusters.get(j).number)/(clusters.get(i).number+clusters.get(j).number);
                         clusters.remove(j);
                     }
                 }
             }
-        }
+        }*/
         
         double out=0,maxDeviation=0, dev;
         ArrayList<cluster> deviations = new ArrayList();
+        double thisavg;
         for (int i=0; i<clusters.size(); i++) { //find cluster with highest standard deviation
-            
-            dev = getDeviation(clusters.get(i).average,segtotal,finalend,firstNote);
-            //System.out.println(i + " " + clusters.get(i).average + " " + dev);
-            if (dev > maxDeviation) {
-                maxDeviation = dev;
-                out = clusters.get(i).average;
+            thisavg = clusters.get(i).average;
+            for (float j=-16; j<=16; j+=0.1) {
+                dev = getDeviation(thisavg+j,segtotal,finalend,firstNote);
+                //System.out.println(i + " " + clusters.get(i).average + " " + dev);
+                if (dev > maxDeviation) {
+                    maxDeviation = dev;
+                    out = thisavg+j;
+                }
             }
         }
         
@@ -101,38 +104,26 @@ public class beatInduction {
     }
     
 static double getDeviation(double average, int segtotal, int finalend, note_struct[] firstNote) {
-        
-        int size = (int)((finalend+10)/(16*average)+1);
-        char[][] rhythm= new char[size][16];
-        for (int i=0; i<size; i++) {
-            for (int j=0; j<16; j++) 
-                rhythm[i][j] = 'O';
-        }
+
+        float num[] = new float[16];
+        int total = 0;
         
         for (int seg=0; seg<=segtotal; seg++) {
             if (firstNote[seg] != null) {
                 //System.out.println(firstNote[seg].ontime);
-                rhythm[(int)((firstNote[seg].ontime+10)/(16*average))][(int)((firstNote[seg].ontime+10)/average % 16)] = 'I';
+                num[(int)((firstNote[seg].ontime+10)/average % 16)] ++;
+                total++;
             }
         }
         
-        float num[] = new float[16];
-        float total = 0;
-        for (int i=0; i<Math.min(size,7); i++) {
-            for (int j=0; j<16; j++) 
-                if (rhythm[i][j] == 'I') {
-                    num[j]++;
-                    total++;
-                }
-        }
         if (total == 0) {
             return 0;
         }
         float avg = 0;
         for (int j=0; j<16; j++) {
+            avg += num[j]/total;
             num[j] = num[j]/total;
             //System.out.print(num[j] + " ");
-            avg += num[j];
         }
         //System.out.println();
         avg = avg/16;
@@ -141,11 +132,7 @@ static double getDeviation(double average, int segtotal, int finalend, note_stru
         for (int j=0; j<16; j++) {
             variance += Math.pow(num[j]-avg,2)/16;
         }
-        double standardDeviation = Math.sqrt(variance);
-        //System.out.println("Average: " + avg + " Variance: " + variance + " SD: " + standardDeviation);
-        
-        
-        return standardDeviation;
+        return Math.sqrt(variance);
         //return 0;
     }
 }

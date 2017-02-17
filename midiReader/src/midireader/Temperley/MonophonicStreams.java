@@ -299,7 +299,7 @@ public class MonophonicStreams {
             throw new EmptyStackException();
         }
         
-        if (getDeviation(globseglength,segtotal,finalend,firstNote) < 0.033) {
+        if (getDeviation(globseglength,segtotal,finalend,firstNote) < 0.03) {
             System.out.println("Poorly induced beat of " + globseglength);
             throw new EmptyStackException();
         }
