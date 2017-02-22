@@ -704,9 +704,10 @@ static void assign_voice_numbers() {
 	seg = note[z].segment;
 	f = final_[seg];
 	for(i=0; i<segment[seg].analcard[f]; i++) {
+            //System.out.println(segment[seg].analysis[f][i] + " " + note[z].pitch);
 	    if(segment[seg].analysis[f][i] == note[z].pitch) {
 		note[z].stream = segment[seg].voice_number[i];
-		//System.out.printf("Note %d %d %d %d\n", note[z].ontime, note[z].offtime, note[z].pitch, note[z].stream);
+                //System.out.printf("Note %d %d %d %d\n", note[z].ontime, note[z].offtime, note[z].pitch, note[z].stream);
 		break;
 	    }
 	}

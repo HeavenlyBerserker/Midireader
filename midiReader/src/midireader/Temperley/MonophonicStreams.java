@@ -276,7 +276,10 @@ public class MonophonicStreams {
         }
         int finalend = 0;
         for (int z = 0; z < numnotes; z++) {
+            //System.out.println(note[z].stream);
+            //System.out.println(mystream[note[z].segment]);
             if (note[z].stream == mystream[note[z].segment]) {
+                //System.out.println(note[z].ontime);
                 firstNote[note[z].segment] = note2[z];
                 if (note2[z].offtime > finalend) {
                     finalend = note2[z].offtime;
@@ -293,16 +296,19 @@ public class MonophonicStreams {
         
         globseglength = beatInduction.induceBeat(note2,segtotal,finalend,firstNote);
         
-        //Create the rhythm array
         if (globseglength == 0) {
             System.out.println("Induced beat of 0");
             throw new EmptyStackException();
         }
-        
-        if (getDeviation(globseglength,segtotal,finalend,firstNote) < 0.03) {
+        if (getDeviation(globseglength,segtotal,finalend,firstNote) < 0.04) {
             System.out.println("Poorly induced beat of " + globseglength);
             throw new EmptyStackException();
         }
+        if (getDeviation(globseglength,segtotal,finalend,firstNote) > 0.12) {
+            System.out.println("Streamer program failure");
+            throw new EmptyStackException();
+        }
+        System.out.println("Induced beat of " + globseglength);
         
         int size = (int)((finalend+10)/(16*globseglength)+1);
         char[][] rhythm= new char[size][16];
