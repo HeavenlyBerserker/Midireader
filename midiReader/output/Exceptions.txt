@@ -16,7 +16,7 @@ java.lang.ArrayIndexOutOfBoundsException: 137
 java.util.EmptyStackException
 ------------------Exception 5-------------------
  /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Reublin/Memphis Blues, The [song] - Reublin.notelist
-java.lang.ArrayIndexOutOfBoundsException
+java.lang.ArrayIndexOutOfBoundsException: 301
 ------------------Exception 6-------------------
  /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Reublin/Underneath The Cotton Moon - Reublin.notelist
 java.lang.ArrayIndexOutOfBoundsException
@@ -208,7 +208,7 @@ java.lang.ArrayIndexOutOfBoundsException
 java.lang.ArrayIndexOutOfBoundsException: -1
 ------------------Exception 69-------------------
  /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Roache/Space Shuffle - Roache.notelist
-java.lang.ArrayIndexOutOfBoundsException
+java.lang.ArrayIndexOutOfBoundsException: -1
 ------------------Exception 70-------------------
  /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Roache/Greased Limelight - Roache.notelist
 java.util.EmptyStackException
@@ -223,7 +223,7 @@ java.lang.ArrayIndexOutOfBoundsException
 java.util.EmptyStackException
 ------------------Exception 74-------------------
  /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Roache/Baltimore Tolodo, The - Roache.notelist
-java.lang.ArrayIndexOutOfBoundsException
+java.lang.ArrayIndexOutOfBoundsException: -1
 ------------------Exception 75-------------------
  /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Roache/Solace - Roache.notelist
 java.lang.ArrayIndexOutOfBoundsException
@@ -241,7 +241,7 @@ java.lang.ArrayIndexOutOfBoundsException
 java.lang.ArrayIndexOutOfBoundsException
 ------------------Exception 80-------------------
  /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Roache/Baltimore Tolodo, The - Roache1.notelist
-java.lang.ArrayIndexOutOfBoundsException
+java.lang.ArrayIndexOutOfBoundsException: -1
 ------------------Exception 81-------------------
  /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Roache/Bethena - Roache.notelist
 java.lang.ArrayIndexOutOfBoundsException
@@ -11979,4 +11979,4 @@ java.util.EmptyStackException
  /home/domini/Documents/Kirlin/git/Midireader/midiReader/input/InputV1/notefiles/RAG/RAG/MathewCollection/Pianocorder, PG Music, PianoDisc & Live (need to check Pianocorder titles)/Maple Leaf Rag - Thompson ex PianoDisc.notelist
 java.util.EmptyStackException
 Error count: 3993
-Files successfully analyzed: 7562/11555
+Files successfully analyzed: 7563/11556

@@ -25,6 +25,8 @@ public class XmkMain {
     
     public static void main(String[] args) throws Exception {
         
+        //System.out.print("Hello World\n");
+        
         //Uncomment the following line to run note analysis
         FunctionCallers.noteAnalysis("input/InputV1/notefiles", "table");
         

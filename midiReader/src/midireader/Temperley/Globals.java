@@ -157,6 +157,7 @@ raw_harm_change = 0.6;
 
  stream_prob = 0.1;
  stream_cont = 0.95;
+ System.gc();
 }
 
 }

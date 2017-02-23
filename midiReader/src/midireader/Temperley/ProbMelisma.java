@@ -121,11 +121,14 @@ public class ProbMelisma {
 		if (Globals.verbosity > 0) {
 			System.out.printf("Creating segments and streams...\n");
 		}
-
+                
+                //Couldn't this be causing the problems in figuring out time tics?
 		adjust_notes();
-
+                
+                //Is segmentation working properly?
 		create_segments();
-
+                
+                //Is this working properly?
 		create_streams();
                 //System.out.println(globseglength);
                 if (segtotal <= 0) //If there's a song with no notes
@@ -138,7 +141,7 @@ public class ProbMelisma {
 		for(n=0; n<numnotes; n++) {
 		printf("Note %d %d %d %d\n", note[n].ontime, note[n].offtime, note[n].pitch, note[n].stream);
 		}  */
-
+                
 		create_streamlists();
 
 		//print_streams(Polyph.streamlist, -1, -1, 1);

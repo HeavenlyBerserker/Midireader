@@ -195,6 +195,7 @@ public class Segment {
 				}
 			}
 		}
+                System.gc();
 
 	}
 
