@@ -60,11 +60,13 @@ public class beatInduction {
         for (int i=0; i<clusters.size(); i++) { //find cluster with highest standard deviation
             thisavg = clusters.get(i).average;
             for (float j=-16; j<=16; j+=0.1) {
-                dev = getDeviation(thisavg+j,segtotal,finalend,firstNote);
-                //System.out.println(i + " " + clusters.get(i).average + " " + dev);
-                if (dev > maxDeviation) {
-                    maxDeviation = dev;
-                    out = thisavg+j;
+                if (thisavg+j > 25) {
+                    dev = getDeviation(thisavg+j,segtotal,finalend,firstNote);
+                    //System.out.println(i + " " + clusters.get(i).average + " " + dev);
+                    if (dev > maxDeviation) {
+                        maxDeviation = dev;
+                        out = thisavg+j;
+                    }
                 }
             }
         }

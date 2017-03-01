@@ -296,6 +296,7 @@ public class MonophonicStreams {
         
         globseglength = beatInduction.induceBeat(note2,segtotal,finalend,firstNote);
         
+        
         if (globseglength == 0) {
             System.out.println("Induced beat of 0");
             throw new EmptyStackException();
@@ -310,7 +311,11 @@ public class MonophonicStreams {
         }
         System.out.println("Induced beat of " + globseglength);
         
-        int size = (int)((finalend+10)/(16*globseglength)+1);
+        
+        int offset = induceOffset(firstNote);
+        System.out.println("Induced offset of " + offset + " beats");
+        
+        int size = (int)((finalend+10+globseglength*offset)/(16*globseglength)+1);
         char[][] rhythm= new char[size][16];
         for (int i=0; i<size; i++) {
             for (int j=0; j<16; j++) 
@@ -319,7 +324,7 @@ public class MonophonicStreams {
         for (int seg=0; seg<=segtotal; seg++) {
             if (firstNote[seg] != null) { 
                 //System.out.println(firstNote[seg].ontime);
-                rhythm[(int)((firstNote[seg].ontime+10)/(16*globseglength))][(int)((firstNote[seg].ontime+10)/globseglength % 16)] = 'I';
+                rhythm[(int)((firstNote[seg].ontime+10+globseglength*offset)/(16*globseglength))][(int)((firstNote[seg].ontime+10+globseglength*offset)/globseglength % 16)] = 'I';
             }
         }
         
@@ -343,6 +348,37 @@ public class MonophonicStreams {
         System.out.println();*/
         
         return rhythm;
+    }
+    
+    
+    static int induceOffset(note_struct[] firstNote) {
+        
+        float num[] = new float[16];
+        int total = 0;
+        int weights[] = {5,1,2,1,3,1,2,1,4,1,2,1,3,1,2,1};
+        int offset = 0;
+        for (int seg=0; seg<=segtotal; seg++) {
+            if (firstNote[seg] != null) {
+                //System.out.println(firstNote[seg].ontime);
+                num[(int)((firstNote[seg].ontime+10)/globseglength % 16)] ++;
+                total++;
+            }
+        }
+        
+        double currscore = 0, maxscore = 0;
+        for (int i=0; i<16; i++) {
+            currscore = 0;
+            for (int j=0; j<16; j++) {
+                currscore += weights[(j+i) % 16]*num[j];
+            }
+            if (currscore > maxscore) {
+                maxscore = currscore;
+                offset = i;
+            }
+        }
+        
+        
+        return offset;
     }
     
     
