@@ -1,2 +1,0 @@
-midireader.Temperley.Segment
-midireader.Temperley.Timepoint

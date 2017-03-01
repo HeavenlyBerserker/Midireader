@@ -314,7 +314,6 @@ public static void reset2()
 
         // double stream_prob;
         //static double stream_cont;
-        System.gc();
         }
 
 }
