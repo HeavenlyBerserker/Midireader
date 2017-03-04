@@ -1,9 +1,0 @@
-midireader.Temperley.segment_struct
-midireader.Temperley.Polyph
-midireader.Temperley.note_struct
-midireader.Temperley.upper_class
-midireader.Temperley.Tactus
-midireader.Temperley.Pip
-midireader.Temperley.Stream
-midireader.Temperley.Snote
-midireader.Temperley.Subtactus
