@@ -90,7 +90,7 @@ public class MChainProcess {
         
         chords.addAll(notesXm);
         //chordMaker.print(noteXm);
-        writeMidi.write(chords, "output/V2.0/" + file + ".mid");
+        writeMidi.write(chords, "output/xmk/V2.0/" + file + ".mid");
         
     }
     

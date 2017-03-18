@@ -245,10 +245,22 @@ public class FunctionCallers {
         return true;
     }
     
-    public static boolean V1Call(String filePath, float prob) throws IOException, InvalidMidiDataException , OutOfMemoryError{
-        
+    public static boolean V1Call(String filePath, float prob, ArrayList<String[]> patternData) throws IOException, InvalidMidiDataException , OutOfMemoryError{
+        /*
         ArrayList<String[]> patternData = rhythmFrequency.readFile("input/InputV1/" + "lhlpatterns_depth_nots.csv");
+        for(int i = 0; i < patternData.size() ; i ++){
+            for(int j = 0; j < patternData.get(i).length ; j ++){
+                System.out.print(patternData.get(i)[j] + " ");
+            }
+            System.out.println();
+        }
         patternData = rhythmFrequency.changeToIO(patternData);
+        for(int i = 0; i < patternData.size() ; i ++){
+            for(int j = 0; j < patternData.get(i).length ; j ++){
+                System.out.print(patternData.get(i)[j] + " ");
+            }
+            System.out.println();
+        }*/
 
         ArrayList<float[]> notes = new ArrayList();
         ArrayList<float[]> chordsWrite = new ArrayList();
@@ -287,6 +299,7 @@ public class FunctionCallers {
         //chordMaker.print(noteXmRead);
         ArrayList<float[]> noteXm = new ArrayList();
         noteXm = xmPlayer.xmPlay(noteXmRead,0);
+        
         
         MEASURES = basicTransformations.measures(notesXm);
         for (int i=0; i<MEASURES; i++) {

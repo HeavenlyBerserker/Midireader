@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import midireader.MChainNoteNum.MChainProcess;
 import midireader.MChainNoteNum.MChainRead;
 import midireader.auxClasses.FunctionCallers;
+import java.io.File; 
 
 
 public class XmkMain {
@@ -28,31 +29,64 @@ public class XmkMain {
         //System.out.print("Hello World\n");
         
         //Uncomment the following line to run note analysis
-        FunctionCallers.noteAnalysis("input/InputV1/notefiles", "table");
+        //FunctionCallers.noteAnalysis("input/InputV1/notefiles", "table");
         
         //------Reads transition probabilities from file-------------------
         //Reading chainOutput (toggle second arg for print or not)
         ArrayList<float[]> [][] chain = MChainRead.readChainOutput("output/ChainOutput.csv", false);
         //-----------------------------------------------------------------
         
-        //Names of file
-        String filename = "spring";
+        //------Reads table-------------------
+        ArrayList<String[]> patterns = MChainRead.readTable("output/table.csv", true);
+        //------------------------------------
         
-        //-------------Version 1 activation-------------------
-        FunctionCallers.V1Call(filename,1f);
-        //----------------------------------------------------
         
-        //-------------Version 2 activation-------------------
-        //Line 1 prints out results, line 2 doesn't.
-        //MChainProcess.processingS1("yankeeDb", true, chain);
-        MChainProcess. processingS1(filename, false, chain, 1f);
-        //----------------------------------------------------
-        
-        //-------------Syncopalooza activation-------------------
-        //Input file location: "input/xm/" + filePath + ".xmk"
-        FunctionCallers.SyncoCall(filename,1f);
-        //----------------------------------------------------
+        File dir = new File("input/xm/");
+        File[] directoryListing = dir.listFiles();
+        int songNum = 0;
+        if (directoryListing != null) {
+          for (File child : directoryListing) {
+            
+            String name = child.getName();
+            if(name.endsWith(".xmk")){
+                name = name.substring(0, name.length() - 4);
+                System.out.println(name);
+                songNum++;
+                
+                //-------------Version 1 activation-------------------
+                FunctionCallers.V1Call(name,1f,patterns);
+                //----------------------------------------------------
+
+                //-------------Version 2 activation-------------------
+                //Line 1 prints out results, line 2 doesn't.
+                //MChainProcess.processingS1("yankeeDb", true, chain);
+                MChainProcess. processingS1(name, false, chain, 1f);
+                //----------------------------------------------------
+
+                //-------------Syncopalooza activation-------------------
+                //Input file location: "input/xm/" + filePath + ".xmk"
+                FunctionCallers.SyncoCall(name,1f);
+                //----------------------------------------------------
+            }
+          }
+          System.out.println("Transformed: " + songNum + " songs.");
+          for (File child : directoryListing) {
+            
+            String name = child.getName();
+            if(name.endsWith(".xmk")){
+                name = name.substring(0, name.length() - 4);
+                System.out.println(name);
+            }
+          }
+        }
         
     }
 
 }
+/*      for(int i = 0; i < patterns.size() ; i ++){
+            for(int j = 0; j < patterns.get(i).length ; j ++){
+                System.out.print(patterns.get(i)[j] + " ");
+            }
+            System.out.println();
+        }
+*/

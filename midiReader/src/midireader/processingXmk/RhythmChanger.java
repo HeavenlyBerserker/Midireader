@@ -28,7 +28,9 @@ public class RhythmChanger {
                 double curnum = 0;
                 for (int j=0; j<patternData.size(); j++) { //lines[size]
                     if (Float.parseFloat(patternData.get(j)[0]) == (patterns.get(i).length() - patterns.get(i).replace("I", "").length()) ) { //if same number of I's
+                       //System.out.print(i + " ");
                         if (randy < curnum+Float.parseFloat(patternData.get(j)[1])) {
+                            //System.out.println("\n" + i + " " + j + " " + randy + " " + curnum+Float.parseFloat(patternData.get(j)[1]));
                             //System.out.println(curnum + " " + randy);
                             if (MeasureAnalyzer.onsetDistance(patternData.get(j)[2], patterns.get(i)) < 8) { //if onsets aren't moved too much
                                 if (!patternData.get(j)[2].equals(patterns.get(i)))  {//if not equal
@@ -40,7 +42,6 @@ public class RhythmChanger {
                                     break;
                                 }
                                 else { //skip rules that would not change anything
-
                                     //System.out.println(curnum + " " + randy);
                                     //randy = Math.random();
                                     //System.out.println("Rule not added: "+ patterns.get(i) + " " + patternData.get(j)[2]);
@@ -52,6 +53,8 @@ public class RhythmChanger {
                         curnum += Float.parseFloat(patternData.get(j)[1]);
                     }
                 }
+                //flag = 1;
+                //break;
             }
         }
         return rules;

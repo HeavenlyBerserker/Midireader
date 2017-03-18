@@ -21,6 +21,8 @@ import midireader.XmkMain;
  * @author domini
  */
 public class writeMidi {
+    public static final int NOTE_ON = 0x90;
+    public static final int NOTE_OFF = 0x80;
 
     public static void write(ArrayList<float[]> notes, String filename) {
         System.out.println("midifile begin ");
@@ -62,16 +64,20 @@ public class writeMidi {
             mm.setMessage(198, 15, 5);
             me = new MidiEvent(mm, (long) 0);
             t.add(me);
+            
+            int volume = 70;
             for (int i = 0; i < notes.size(); i++) {
                 float[] note = notes.get(i);
                 //****  note on  ****
+                if(note[0] > 66)volume = 96;
+                else volume = 50;
                 mm = new ShortMessage();
-                mm.setMessage(XmkMain.NOTE_ON, (int) note[0], 96);
+                mm.setMessage(NOTE_ON, (int) note[0], volume);
                 me = new MidiEvent(mm, (long) note[1]); //time on
                 t.add(me);
                 //****  note off  ****
                 mm = new ShortMessage();
-                mm.setMessage(XmkMain.NOTE_OFF, (int) note[0], 64);
+                mm.setMessage(NOTE_OFF, (int) note[0], 64);
                 me = new MidiEvent(mm, (long) note[2]); //time off
                 t.add(me);
             }
