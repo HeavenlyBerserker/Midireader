@@ -137,6 +137,8 @@ public class MChainRead {
             // ex.printStackTrace();
         }
         
+        
+        
         for(int i = 0; i < chainByLength.size() ; i ++){
             String [] str = chainByLength.get(i);
             //System.out.println(str[1] + " divides " + sum1);
@@ -144,14 +146,6 @@ public class MChainRead {
             chainByLength.set(i, str);
         }
         
-        float[] f = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}; 
-        for(int i = 0; i < chainByLength.size() ; i ++){
-            String [] str = chainByLength.get(i);
-            //System.out.println(str[1] + " divides " + sum1);
-            f[Integer.parseInt(str[0])] += Float.parseFloat(str[1]);
-            str[1] = Float.toString(f[Integer.parseInt(str[0])]);
-            chainByLength.set(i, str);
-        }
         
         return chainByLength;
      }
