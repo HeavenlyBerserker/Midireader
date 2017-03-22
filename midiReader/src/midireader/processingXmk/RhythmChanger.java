@@ -37,7 +37,7 @@ public class RhythmChanger {
                                     rules.add(patterns.get(i) + " " + patternData.get(j)[2]);
 
                                     //System.out.println(curnum + " " + randy);
-                                    //System.out.println("Rule added: " + i + ", "+ patterns.get(i) + " " + patternData.get(j)[2]);
+                                    System.out.println("Rule added: " + i + ", "+ patterns.get(i) + " " + patternData.get(j)[2]);
                                     flag = 1;
                                     break;
                                 }

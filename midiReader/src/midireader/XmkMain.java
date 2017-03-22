@@ -39,12 +39,12 @@ public class XmkMain {
         //------Reads table-------------------
         ArrayList<String[]> patterns = MChainRead.readTable("output/table.csv", true);
         //------------------------------------
-        for(int i = 0; i < patterns.size() ; i ++){
+        /*for(int i = 0; i < patterns.size() ; i ++){
             for(int j = 0; j < patterns.get(i).length ; j ++){
                 System.out.print(patterns.get(i)[j] + " ");
             }
             System.out.println();
-        }
+        }*/
         
         File dir = new File("input/xm/");
         File[] directoryListing = dir.listFiles();
@@ -70,7 +70,7 @@ public class XmkMain {
 
                 //-------------Syncopalooza activation-------------------
                 //Input file location: "input/xm/" + filePath + ".xmk"
-                FunctionCallers.SyncoCall(name,1f);
+                FunctionCallers.SyncoCall(name,0.7f);
                 //----------------------------------------------------
             }
           }
