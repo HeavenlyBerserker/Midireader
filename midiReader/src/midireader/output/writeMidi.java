@@ -69,8 +69,8 @@ public class writeMidi {
             for (int i = 0; i < notes.size(); i++) {
                 float[] note = notes.get(i);
                 //****  note on  ****
-                if(note[0] > 66)volume = 96;
-                else volume = 50;
+                if(note[0] > 66)volume = 70+(int)(1.5*((int)note[0]-66));
+                else volume = 60;
                 mm = new ShortMessage();
                 mm.setMessage(NOTE_ON, (int) note[0], volume);
                 me = new MidiEvent(mm, (long) note[1]); //time on
