@@ -72,8 +72,10 @@ import midireader.processingXmk.xmPlayer;
  *
  * @author domini
  */
+
 public class FunctionCallers {
     
+    public static float resolution;
     public static ArrayList<float[]> midiToNotes(String filename) throws IOException, InvalidMidiDataException{
             ArrayList<float[]> readingMid = new ArrayList();
             Sequence sequence = MidiSystem.getSequence(new File("input/midiNotes/" + filename));
@@ -265,8 +267,8 @@ public class FunctionCallers {
         ArrayList<float[]> notes = new ArrayList();
         ArrayList<float[]> chordsWrite = new ArrayList();
         
-        GCD = (int)(1000*60/(240*2));
-        resolution = GCD*4; //GCD*4; // (ticks/beat)
+        //GCD = (int)(1000*60/(240*2));
+        //resolution = GCD*4; //GCD*4; // (ticks/beat)
         
         //notes = gcds(notes);
         //notes = melodyChanger.makeMonophonic(notes);

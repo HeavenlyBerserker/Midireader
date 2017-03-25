@@ -117,7 +117,7 @@ public class RhythmChanger2 {
                 }
             }
             output.addAll(changeRhythm(basicTransformations.getHalfMeasure(notes,i),newSequence,(float)GCD*i*16,patternNums.get(i)));
-            //System.out.println(newSequence);
+            //System.out.println(GCD);
         }
         return output;
     }

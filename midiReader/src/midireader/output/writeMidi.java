@@ -15,6 +15,7 @@ import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 import javax.sound.midi.Track;
 import midireader.XmkMain;
+import midireader.auxClasses.FunctionCallers;
 
 /**
  *
@@ -28,7 +29,7 @@ public class writeMidi {
         System.out.println("midifile begin ");
         try {
             //****  Create a new MIDI sequence with 24 ticks per beat  ****
-            Sequence s = new Sequence(Sequence.PPQ, (int) XmkMain.resolution);
+            Sequence s = new Sequence(Sequence.PPQ, (int) 500);
             //****  Obtain a MIDI track from the sequence  ****
             Track t = s.createTrack();
             //****  General MIDI sysex -- turn on General MIDI sound set  ****
