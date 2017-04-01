@@ -137,8 +137,32 @@ public class MChainRead {
             // ex.printStackTrace();
         }
         
+        //##########################################################
+        /*
+        ArrayList<String[]> chainByLength2 = chainByLength;
+        ArrayList<String[]> chainByLength3 = new ArrayList();
+        for(int i = 0; i < chainByLength2.size() ; i ++){
+            int max = 0;
+            int maxi = 0;
+            for(int j = 0; j < chainByLength2.size() ; j ++){
+                if(Integer.parseInt(chainByLength2.get(j)[1]) > max){
+                    max = Integer.parseInt(chainByLength2.get(j)[1]);
+                    maxi = j;
+                }
+            }
+            String[] in = {chainByLength2.get(maxi)[1] + "," + chainByLength2.get(maxi)[2]};
+            chainByLength3.add(in);
+            chainByLength2.remove(maxi);
+        }
         
-        
+        for(int i = 0; i < chainByLength3.size() ; i ++){
+            for(int j = 0; j < chainByLength3.get(i).length ; j ++){
+                System.out.print(chainByLength3.get(i)[j] + "");
+            }
+            System.out.println();
+        }
+        */
+        //########################################################3333
         for(int i = 0; i < chainByLength.size() ; i ++){
             String [] str = chainByLength.get(i);
             //System.out.println(str[1] + " divides " + sum1);
